@@ -1,0 +1,289 @@
+{
+  "case": "r6_corner_tran_ff_125",
+  "events": [
+    {
+      "name": "load_up_1",
+      "definition": {
+        "name": "load_up_1",
+        "edge_start_s": 5e-06,
+        "edge_end_s": 5.1e-06,
+        "pre_window_s": [
+          4.4e-06,
+          4.9000000000000005e-06
+        ],
+        "post_window_s": [
+          2.7420000000000002e-05,
+          2.9900000000000002e-05
+        ],
+        "analysis_window_s": [
+          5e-06,
+          2.9900000000000002e-05
+        ],
+        "pre_dc_role": "pre",
+        "post_dc_role": "high",
+        "tail_fit_window_s": [
+          1.75e-05,
+          2.9900000000000002e-05
+        ]
+      },
+      "status": "computed",
+      "pre_event_window": {
+        "status": "computed",
+        "window_s": [
+          4.4e-06,
+          4.9000000000000005e-06
+        ],
+        "mean_v": 0.9000874053371498,
+        "minimum_v": 0.9000874053371494,
+        "maximum_v": 0.9000874053371498,
+        "peak_to_peak_v": 4.440892098500626e-16,
+        "endpoint_drift_v": 4.440892098500626e-16,
+        "endpoint_slope_v_per_s": 8.881784197001247e-10,
+        "sample_count_including_interpolated_bounds": 102,
+        "maximum_sample_interval_s": 5.000000000000799e-09,
+        "mean_method": "time_weighted_trapezoidal"
+      },
+      "post_event_window": {
+        "status": "computed",
+        "window_s": [
+          2.7420000000000002e-05,
+          2.9900000000000002e-05
+        ],
+        "mean_v": 0.8999699193436862,
+        "minimum_v": 0.8999699193436852,
+        "maximum_v": 0.8999699193436871,
+        "peak_to_peak_v": 1.887379141862766e-15,
+        "endpoint_drift_v": 8.881784197001252e-16,
+        "endpoint_slope_v_per_s": 3.581364595565021e-10,
+        "sample_count_including_interpolated_bounds": 498,
+        "maximum_sample_interval_s": 5.0000000000075754e-09,
+        "mean_method": "time_weighted_trapezoidal",
+        "settled_candidate": true,
+        "settling_checks": {
+          "ripple_limit_v": 0.009000000000000001,
+          "endpoint_drift_limit_v": 0.0045000000000000005
+        }
+      },
+      "minimum_v": 0.7589776953891304,
+      "maximum_v": 0.9000874053371498,
+      "minimum_time_s": 5.11961429860517e-06,
+      "maximum_time_s": 5e-06,
+      "undershoot_from_target_v": 0.14102230461086962,
+      "overshoot_from_target_v": 8.740533714979293e-05,
+      "pre_to_post_mean_change_v": -0.00011748599346361743,
+      "post_mean_error_from_target_v": -3.0080656313824505e-05,
+      "edge_duration_s": 9.999999999999989e-08,
+      "recovery": {
+        "status": "computed_estimate",
+        "value": 1.7810655358222028e-06,
+        "unit": "s",
+        "band_center_v": 0.9,
+        "band_half_width_v": 0.009000000000000001,
+        "band_v": [
+          0.891,
+          0.909
+        ],
+        "method": "last_outside_sample_then_linear_boundary_interpolation",
+        "observation_end_s": 2.9900000000000002e-05,
+        "from_edge_end_s": 1.7810655358222028e-06,
+        "from_edge_start_s": 1.8810655358222027e-06,
+        "recovered_at_s": 6.881065535822203e-06,
+        "qualification": "remains_in_band_only_until_observation_end",
+        "band_crossing_bracket": {
+          "time_s": [
+            6.878131869856405e-06,
+            6.883131869856405e-06
+          ],
+          "vout_v": [
+            0.8909603230638128,
+            0.8910279465367129
+          ],
+          "width_s": 4.999999999999952e-09,
+          "first_saved_or_boundary_sample_inside_s": 6.883131869856405e-06
+        },
+        "precision_note": "linear-interpolant estimate within saved-point bracket; no substep physical accuracy claim"
+      },
+      "sampling": {
+        "maximum_sample_interval_s": 5.0000000000109636e-09,
+        "edge_interval_count": 71,
+        "numerical_convergence": "not_checked_compare_independent_runs"
+      },
+      "finite_observation": {
+        "edge_end_s": 5.1e-06,
+        "observation_end_s": 2.9900000000000002e-05,
+        "hold_observed_after_edge_s": 2.48e-05,
+        "post_mean_is_not_a_static_reference": true
+      },
+      "pre_residual_to_dc": {
+        "status": "computed",
+        "window_s": [
+          4.4e-06,
+          4.9000000000000005e-06
+        ],
+        "static_dc_vout_v": 0.9000874035402676,
+        "mean_residual_v": 1.7968821985903105e-09,
+        "maximum_abs_residual_v": 1.7968821985903105e-09,
+        "endpoint_drift_v": 4.440892098500626e-16,
+        "endpoint_slope_v_per_s": 8.881784197001247e-10,
+        "native_stability_state": "stable"
+      },
+      "post_residual_to_dc": {
+        "status": "computed",
+        "window_s": [
+          2.7420000000000002e-05,
+          2.9900000000000002e-05
+        ],
+        "static_dc_vout_v": 0.8999696105789176,
+        "mean_residual_v": 3.0876476864172275e-07,
+        "maximum_abs_residual_v": 3.0876476952990117e-07,
+        "endpoint_drift_v": 8.881784197001252e-16,
+        "endpoint_slope_v_per_s": 3.581364595565021e-10,
+        "native_stability_state": "stable",
+        "observation_end_residual_v": 3.0876476853070045e-07,
+        "post_window_candidate_within_9mv_of_dc": true
+      }
+    },
+    {
+      "name": "load_down_2",
+      "definition": {
+        "name": "load_down_2",
+        "edge_start_s": 3e-05,
+        "edge_end_s": 3.01e-05,
+        "pre_window_s": [
+          2.741e-05,
+          2.9900000000000002e-05
+        ],
+        "post_window_s": [
+          5.701e-05,
+          6e-05
+        ],
+        "analysis_window_s": [
+          3e-05,
+          6e-05
+        ],
+        "pre_dc_role": "high",
+        "post_dc_role": "post",
+        "tail_fit_window_s": [
+          4.505e-05,
+          6e-05
+        ]
+      },
+      "status": "computed",
+      "pre_event_window": {
+        "status": "computed",
+        "window_s": [
+          2.741e-05,
+          2.9900000000000002e-05
+        ],
+        "mean_v": 0.8999699193436862,
+        "minimum_v": 0.8999699193436852,
+        "maximum_v": 0.8999699193436871,
+        "peak_to_peak_v": 1.887379141862766e-15,
+        "endpoint_drift_v": 5.551115123125783e-16,
+        "endpoint_slope_v_per_s": 2.229363503263365e-10,
+        "sample_count_including_interpolated_bounds": 500,
+        "maximum_sample_interval_s": 5.0000000000075754e-09,
+        "mean_method": "time_weighted_trapezoidal"
+      },
+      "post_event_window": {
+        "status": "computed",
+        "window_s": [
+          5.701e-05,
+          6e-05
+        ],
+        "mean_v": 0.9000874053371477,
+        "minimum_v": 0.9000874053371477,
+        "maximum_v": 0.9000874053371479,
+        "peak_to_peak_v": 2.220446049250313e-16,
+        "endpoint_drift_v": 2.220446049250313e-16,
+        "endpoint_slope_v_per_s": 7.426240967392343e-11,
+        "sample_count_including_interpolated_bounds": 600,
+        "maximum_sample_interval_s": 5.000000000004187e-09,
+        "mean_method": "time_weighted_trapezoidal",
+        "settled_candidate": true,
+        "settling_checks": {
+          "ripple_limit_v": 0.009000000000000001,
+          "endpoint_drift_limit_v": 0.0045000000000000005
+        }
+      },
+      "minimum_v": 0.8716594502534879,
+      "maximum_v": 1.029909714629591,
+      "minimum_time_s": 3.229555088467195e-05,
+      "maximum_time_s": 3.025055088467283e-05,
+      "undershoot_from_target_v": 0.028340549746512123,
+      "overshoot_from_target_v": 0.129909714629591,
+      "pre_to_post_mean_change_v": 0.00011748599346150801,
+      "post_mean_error_from_target_v": 8.74053371476835e-05,
+      "edge_duration_s": 9.999999999999904e-08,
+      "recovery": {
+        "status": "computed_estimate",
+        "value": 2.92740178873616e-06,
+        "unit": "s",
+        "band_center_v": 0.9,
+        "band_half_width_v": 0.009000000000000001,
+        "band_v": [
+          0.891,
+          0.909
+        ],
+        "method": "last_outside_sample_then_linear_boundary_interpolation",
+        "observation_end_s": 6e-05,
+        "from_edge_end_s": 2.92740178873616e-06,
+        "from_edge_start_s": 3.027401788736159e-06,
+        "recovered_at_s": 3.302740178873616e-05,
+        "qualification": "remains_in_band_only_until_observation_end",
+        "band_crossing_bracket": {
+          "time_s": [
+            3.302555088467157e-05,
+            3.303055088467157e-05
+          ],
+          "vout_v": [
+            0.8909587831694067,
+            0.8910701255976335
+          ],
+          "width_s": 5.000000000004187e-09,
+          "first_saved_or_boundary_sample_inside_s": 3.303055088467157e-05
+        },
+        "precision_note": "linear-interpolant estimate within saved-point bracket; no substep physical accuracy claim"
+      },
+      "sampling": {
+        "maximum_sample_interval_s": 5.0000000000075754e-09,
+        "edge_interval_count": 53,
+        "numerical_convergence": "not_checked_compare_independent_runs"
+      },
+      "finite_observation": {
+        "edge_end_s": 3.01e-05,
+        "observation_end_s": 6e-05,
+        "hold_observed_after_edge_s": 2.9900000000000002e-05,
+        "post_mean_is_not_a_static_reference": true
+      },
+      "pre_residual_to_dc": {
+        "status": "computed",
+        "window_s": [
+          2.741e-05,
+          2.9900000000000002e-05
+        ],
+        "static_dc_vout_v": 0.8999696105789176,
+        "mean_residual_v": 3.0876476864172275e-07,
+        "maximum_abs_residual_v": 3.0876476952990117e-07,
+        "endpoint_drift_v": 5.551115123125783e-16,
+        "endpoint_slope_v_per_s": 2.229363503263365e-10,
+        "native_stability_state": "stable"
+      },
+      "post_residual_to_dc": {
+        "status": "computed",
+        "window_s": [
+          5.701e-05,
+          6e-05
+        ],
+        "static_dc_vout_v": 0.9000874035402676,
+        "mean_residual_v": 1.7968800891665637e-09,
+        "maximum_abs_residual_v": 1.7968803112111686e-09,
+        "endpoint_drift_v": 2.220446049250313e-16,
+        "endpoint_slope_v_per_s": 7.426240967392343e-11,
+        "native_stability_state": "stable",
+        "observation_end_residual_v": 1.7968803112111686e-09,
+        "post_window_candidate_within_9mv_of_dc": true
+      }
+    }
+  ]
+}

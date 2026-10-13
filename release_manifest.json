@@ -1,0 +1,617 @@
+{
+  "schema": "circuit-portfolio-release-v1",
+  "release_date": "2026-10-13",
+  "projects": [
+    "ldo-130nm",
+    "two-phase-buck"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 87,
+      "sha256": "4340e6bd123e0c88b423e8b2b4e0037613104ebe8130b309ec25cf5b2547d470"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 391,
+      "sha256": "e2eefa98564e465900e42a7e819676f07fd19c8b9487c3b9dea8a73dc2b28e11"
+    },
+    {
+      "path": "docs/validation-scope.md",
+      "bytes": 2641,
+      "sha256": "e1b8aa811ef989ad89ce72f03a0bdffafcf9282aa7d45c9ff79578ffacfb291b"
+    },
+    {
+      "path": "projects/ldo-130nm/data/convergence_T10.json",
+      "bytes": 9362,
+      "sha256": "e5ff978b61a0e46ede9455e8b52653547cf34aabdae22863df81344a5109f8d7"
+    },
+    {
+      "path": "projects/ldo-130nm/data/convergence_T100.json",
+      "bytes": 9364,
+      "sha256": "94d4b77d770cfdfd0e30f95fe905f1e929ed3580d43a78dd60a7a5f7fbad36b3"
+    },
+    {
+      "path": "projects/ldo-130nm/data/dc_regulation_dropout.json",
+      "bytes": 2390,
+      "sha256": "d3459cd2b9b6d5b9ee97731425b8dc8bcc2a5f7669d4b79d90103af88df391eb"
+    },
+    {
+      "path": "projects/ldo-130nm/data/nominal/r6_pvt_tt_27_heavy/ac.csv",
+      "bytes": 18277,
+      "sha256": "55336fbe42c29120e7a8c1b6387ac97c7180d1bf0d75621e9bc8e3c989f50e59"
+    },
+    {
+      "path": "projects/ldo-130nm/data/nominal/r6_pvt_tt_27_heavy/loop.csv",
+      "bytes": 15364,
+      "sha256": "c68e6b82e72a1f7a42bbebeaefca0a7b3e293ede3d6f46d979e18792441b1c92"
+    },
+    {
+      "path": "projects/ldo-130nm/data/nominal/r6_pvt_tt_27_heavy/native.json",
+      "bytes": 337,
+      "sha256": "0453c06fe1797d3d005b0db0dec927f5d875daaac780aba0dd26fc72b763aac1"
+    },
+    {
+      "path": "projects/ldo-130nm/data/nominal/r6_pvt_tt_27_heavy/noise.csv",
+      "bytes": 11453,
+      "sha256": "3f06e0d199585c219a7300e8ab3b32b0e774f25bfae88a269c44274ac3c78005"
+    },
+    {
+      "path": "projects/ldo-130nm/data/nominal/r6_pvt_tt_27_light/ac.csv",
+      "bytes": 18460,
+      "sha256": "f4faaeae446168d037e33efbdc1bfd65d6bacd8cf7de8559e36670ea4ced92e3"
+    },
+    {
+      "path": "projects/ldo-130nm/data/nominal/r6_pvt_tt_27_light/loop.csv",
+      "bytes": 15297,
+      "sha256": "ebe50819ed163274b52423031be00837daa55413ea6dc528dd6bc4a7912fbb4b"
+    },
+    {
+      "path": "projects/ldo-130nm/data/nominal/r6_pvt_tt_27_light/native.json",
+      "bytes": 338,
+      "sha256": "c0a8f9e811963eb7c67a26e611d0fc58d4a0bf7c8fd8d8fe1978ea84f7b2503b"
+    },
+    {
+      "path": "projects/ldo-130nm/data/nominal/r6_pvt_tt_27_light/noise.csv",
+      "bytes": 11451,
+      "sha256": "e9db01fd691eec21f1aecc1ab39be0abcafb96192ce3bafc8cf08b278b644264"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C1000_heavy/loop.csv",
+      "bytes": 15364,
+      "sha256": "c68e6b82e72a1f7a42bbebeaefca0a7b3e293ede3d6f46d979e18792441b1c92"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C1000_heavy/native.json",
+      "bytes": 337,
+      "sha256": "0453c06fe1797d3d005b0db0dec927f5d875daaac780aba0dd26fc72b763aac1"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C1000_light/loop.csv",
+      "bytes": 15297,
+      "sha256": "ebe50819ed163274b52423031be00837daa55413ea6dc528dd6bc4a7912fbb4b"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C1000_light/native.json",
+      "bytes": 338,
+      "sha256": "c0a8f9e811963eb7c67a26e611d0fc58d4a0bf7c8fd8d8fe1978ea84f7b2503b"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C1000_mid/loop.csv",
+      "bytes": 15502,
+      "sha256": "de7ea29d073c85d8e9072134ef3fcb12c5859a9558dc63ee6974dbb04ccd8528"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C1000_mid/native.json",
+      "bytes": 338,
+      "sha256": "f8b5c95789e89286852b118885c06d03219a4c30529e431c4005c566a24829f0"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C100_heavy/loop.csv",
+      "bytes": 15387,
+      "sha256": "1ca5ba43d2c0cdc09e49e16edd17876fbfee484d950ea0164aaefeda94d6a7b3"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C100_heavy/native.json",
+      "bytes": 337,
+      "sha256": "b51660ba50306fe96cc3f58f2d1a98ba1307ba48cd3daaedf0abe23b949d76d6"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C100_light/loop.csv",
+      "bytes": 15086,
+      "sha256": "630bedf3efccc67cc26df86d090dcb925e63faf0c7ce93bf24318ca5d770b92c"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C100_light/native.json",
+      "bytes": 338,
+      "sha256": "c90c16b7460888eca38167ef14973fb9ac077482a3e426bd2faf7b1d5455c949"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C100_mid/loop.csv",
+      "bytes": 15410,
+      "sha256": "64fad292609a99f0356ac4609a5b5a8848e9e108a440e85109c9954331a28b3c"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C100_mid/native.json",
+      "bytes": 338,
+      "sha256": "b531033401fb6cbf9a76f2cff3c199e59690602d0fa63cf9ed7bb38d1c43e858"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C10_heavy/loop.csv",
+      "bytes": 15286,
+      "sha256": "921f8de407996a04dd912040a9ad79a4201c63f65bfbfed59ef1a81dd5525330"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C10_heavy/native.json",
+      "bytes": 355,
+      "sha256": "a5e72e56ab4a4d64fbc88d036cb47e460fe56a4e2522553eca703b447314d90c"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C10_light/loop.csv",
+      "bytes": 15088,
+      "sha256": "f69e0d701ff89f01a978ba2347b64ab1e336830cb340412ab7b6031bad11601a"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C10_light/native.json",
+      "bytes": 355,
+      "sha256": "a5d3e8a23e19b0813ea528620021db413ca91608c32fc167f025545eed9c710f"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C10_mid/loop.csv",
+      "bytes": 15347,
+      "sha256": "7758e3f4b2b5a793ac68a8d04cfb671283ef883892a9c89d248956bf4798fe1e"
+    },
+    {
+      "path": "projects/ldo-130nm/data/stability/r6_stability_C10_mid/native.json",
+      "bytes": 355,
+      "sha256": "491af5ee09bd7b96daab3f00410af3ff4c792af0c7546e7085094b22313b036f"
+    },
+    {
+      "path": "projects/ldo-130nm/data/static.csv",
+      "bytes": 48384,
+      "sha256": "8b9240de9608fed16579518859cd531edaa478d5e8a523f441d199a8ac86fea5"
+    },
+    {
+      "path": "projects/ldo-130nm/data/static.json",
+      "bytes": 154507,
+      "sha256": "cd5d8182d6984a5eb637fc7f7a5f3f4f6f9a6f0a73133a7b46994c04991adf5a"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/index.json",
+      "bytes": 1059,
+      "sha256": "2ad82158218bbbd6a40fe2e86a765720bd1cc2cf44216551588650d13eb9fcfe"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_convergence_T100_step2p5ns/events.json",
+      "bytes": 910,
+      "sha256": "984a5536c9e9d957f7fd439d4f69f1e679aea9cd7ded536efd11d3f269a466c2"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_convergence_T100_step2p5ns/expected.json",
+      "bytes": 10217,
+      "sha256": "6ee9307a29e7e383f1a29d4a1ecd1ae72f34abe680b9054013d98eba062bbc05"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_convergence_T100_step2p5ns/metadata.json",
+      "bytes": 2223,
+      "sha256": "6efccb41dcc7c66690cb10362c0c6f914662c722c018774ad785e6a89bdbedc4"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_convergence_T100_step2p5ns/waveform.csv",
+      "bytes": 2172321,
+      "sha256": "4f2926d13d78cb5a00cdae54539c61fe16c6042606c95fe18f8c4bcffe803160"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_convergence_T10_step0p5ns/events.json",
+      "bytes": 918,
+      "sha256": "44471d1c4253c1a3935899d0685ef0576d11e80d19fe8fbbf46ebfab70b5facc"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_convergence_T10_step0p5ns/expected.json",
+      "bytes": 10268,
+      "sha256": "93c4dea0c49825ac68978944a5b9e515ce37783414077a17583027158e6424fe"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_convergence_T10_step0p5ns/metadata.json",
+      "bytes": 2220,
+      "sha256": "bc688178f070591d0a58677d1920df35d491d6189eb6c3f5a2137a1aa27be073"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_convergence_T10_step0p5ns/waveform.csv",
+      "bytes": 10815983,
+      "sha256": "a9e79182a1369aaf192ec48f82159d6df44135e16ea30f187d03669450b1a9a5"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ff_125/events.json",
+      "bytes": 910,
+      "sha256": "984a5536c9e9d957f7fd439d4f69f1e679aea9cd7ded536efd11d3f269a466c2"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ff_125/expected.json",
+      "bytes": 10337,
+      "sha256": "229c1a039fad01947dab0284bba430d90ed2987004bef1ddf127d73b34d13d52"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ff_125/metadata.json",
+      "bytes": 2216,
+      "sha256": "4a308ab2fe1c68bcb0cad7a6d49daa58f52ad5dc405ac1453fd44f20b8bea705"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ff_125/waveform.csv",
+      "bytes": 1096413,
+      "sha256": "46d48962d50600afff94b1660405e234a224f442db02d3421a1814d2204f4fc2"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ff_m40/events.json",
+      "bytes": 910,
+      "sha256": "984a5536c9e9d957f7fd439d4f69f1e679aea9cd7ded536efd11d3f269a466c2"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ff_m40/expected.json",
+      "bytes": 10251,
+      "sha256": "45bfc7679f2792c939c3bfdf7948830eb166ac307983b89882c934acc05017a8"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ff_m40/metadata.json",
+      "bytes": 2214,
+      "sha256": "5d8a42a33d5a7249ef54771bfb82ddea52b339aa0f890ad9b1f9e957c05205f9"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ff_m40/waveform.csv",
+      "bytes": 1096727,
+      "sha256": "c0a0f1e24e88d2085276024c1b2e636cc96b7618a0660a86e188ab205f236894"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ss_125/events.json",
+      "bytes": 910,
+      "sha256": "984a5536c9e9d957f7fd439d4f69f1e679aea9cd7ded536efd11d3f269a466c2"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ss_125/expected.json",
+      "bytes": 10275,
+      "sha256": "82024083badadab6d89e5d19a0344d7b42e3ad4c93a662fae92a9799f2755670"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ss_125/metadata.json",
+      "bytes": 2216,
+      "sha256": "12f5d3ad8856a1db424194aae18a994017cc701b55871868ab14f850ac799a9a"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ss_125/waveform.csv",
+      "bytes": 1095560,
+      "sha256": "b45954aa5d67f28222e328c5190719739de2abe77719ccfca38cb9c7da1d6a20"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ss_m40/events.json",
+      "bytes": 910,
+      "sha256": "984a5536c9e9d957f7fd439d4f69f1e679aea9cd7ded536efd11d3f269a466c2"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ss_m40/expected.json",
+      "bytes": 10238,
+      "sha256": "228f2f729ded1875004f8368d4bb659679a277b7c0bc88a48eb12dd1cfa69df0"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ss_m40/metadata.json",
+      "bytes": 2216,
+      "sha256": "41c90f8e788f04860c1351fcd4e09818a4c358619d0a61573d1688e733637714"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_corner_tran_ss_m40/waveform.csv",
+      "bytes": 1095837,
+      "sha256": "a514660ef4331ea990cd7eaf9c84268b0a72c2e8351404f06bb6ab7aa91ff6c0"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_line_heavy/events.json",
+      "bytes": 910,
+      "sha256": "404d04eedb9fa461040a3f4a46ddd325e64d2ab02bb633637aee5a07c4d78e01"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_line_heavy/expected.json",
+      "bytes": 10335,
+      "sha256": "6d9d8d389a3a5332af3242d57deeda02304dbb738cf6ea3e730cdc6754d2e95c"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_line_heavy/metadata.json",
+      "bytes": 2192,
+      "sha256": "afa7b4ee0d1a63927a8469ff86a6b98dcb637792d7d8256c3357bfda772c9792"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_line_heavy/waveform.csv",
+      "bytes": 1091820,
+      "sha256": "597c386109ad8490943d12e535e3766d7f01867a312e58aa3f4f1a63f89a24cb"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_line_light/events.json",
+      "bytes": 910,
+      "sha256": "404d04eedb9fa461040a3f4a46ddd325e64d2ab02bb633637aee5a07c4d78e01"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_line_light/expected.json",
+      "bytes": 10261,
+      "sha256": "d6f10da542b4074c3b0a7a4782294db0b2b50b0629ff1b7c07d3953d8272c50a"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_line_light/metadata.json",
+      "bytes": 2192,
+      "sha256": "75a295e50e1ed2c1783f35c7ef6397939f0bb4c0900079cdd57f66d9db5d215b"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_line_light/waveform.csv",
+      "bytes": 1101218,
+      "sha256": "a5ab82830b140c06b5b9c2d9ccfddca7279623a5543bd37b86c6e21837811bb3"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_load_C1000_T10/events.json",
+      "bytes": 918,
+      "sha256": "44471d1c4253c1a3935899d0685ef0576d11e80d19fe8fbbf46ebfab70b5facc"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_load_C1000_T10/expected.json",
+      "bytes": 10260,
+      "sha256": "67cfd915f4e1aa80e5ee0ac8e65f2ee2ec9080fc857da4aae62940999558ba72"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_load_C1000_T10/metadata.json",
+      "bytes": 2210,
+      "sha256": "2f0c91f565c5e2a5232678d73ce862d868a8faf6ccfaeabac4660bb64d8f50a8"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_load_C1000_T10/waveform.csv",
+      "bytes": 5419002,
+      "sha256": "6c2cab2b00cdb2020d7e1fc7efc56893eb089d80c17ac3b5d9a6b9c7421ba913"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_load_C1000_T100/events.json",
+      "bytes": 910,
+      "sha256": "984a5536c9e9d957f7fd439d4f69f1e679aea9cd7ded536efd11d3f269a466c2"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_load_C1000_T100/expected.json",
+      "bytes": 10183,
+      "sha256": "b2bda3473f96d894686d2c79b0e14853bb6124cfac7d717f70977c259b82c7e0"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_load_C1000_T100/metadata.json",
+      "bytes": 2207,
+      "sha256": "5597398f10a55bfd576f229d47616f69fcb3f3e89f4fee9f14d98efdc7d103a8"
+    },
+    {
+      "path": "projects/ldo-130nm/data/transients/r6_load_C1000_T100/waveform.csv",
+      "bytes": 1096467,
+      "sha256": "df98914f42c05678cd6e6f369648ddf4417456c254335cb87be1635248ae8b8d"
+    },
+    {
+      "path": "projects/ldo-130nm/data/tt_load_sweep.csv",
+      "bytes": 441,
+      "sha256": "404cc9dc58adc2077afe0df99729c92167bdafe34f4fd7d72be7703f925cd962"
+    },
+    {
+      "path": "projects/ldo-130nm/data/tt_vin_sweep.csv",
+      "bytes": 3865,
+      "sha256": "5f1734850d337f0553424f23ea07315782c8cf5086ed659e76ad1124eda7e7f4"
+    },
+    {
+      "path": "projects/ldo-130nm/design.md",
+      "bytes": 2496,
+      "sha256": "f722f3a61e56f5563d11668c4a0bf660f77b04700c7e4353de84fb0852af1d3c"
+    },
+    {
+      "path": "projects/ldo-130nm/README.md",
+      "bytes": 7003,
+      "sha256": "581240a6113227b2efccc4cbda68c376db89fc2713da9393bbfdf3f72ada40d7"
+    },
+    {
+      "path": "projects/ldo-130nm/results/convergence.json",
+      "bytes": 5086,
+      "sha256": "8049ea33b6bc487b4743f581e19469155f6d429eb0d91e54dd5ff2e3cf0f3108"
+    },
+    {
+      "path": "projects/ldo-130nm/results/events.csv",
+      "bytes": 3980,
+      "sha256": "73c82d5494044aef186d3001edc5ec9ec5fbc2f50ff161b83a694b4f82b8b4e0"
+    },
+    {
+      "path": "projects/ldo-130nm/results/figures/dc_sweep.png",
+      "bytes": 84485,
+      "sha256": "f7aa43887cc2c771450c0119cb1c3b97725e3fea91014f8e41a6d34509610016"
+    },
+    {
+      "path": "projects/ldo-130nm/results/figures/loop_psrr_noise.png",
+      "bytes": 185063,
+      "sha256": "3126b526ecf89b9e71f6350bdfb4a56bfa10576871ec7ea9f96e742f4f1ea13c"
+    },
+    {
+      "path": "projects/ldo-130nm/results/figures/pvt.png",
+      "bytes": 121763,
+      "sha256": "7013b5afd603c47978f327d7956f6cd7feb19c152b5f892b66d25a5a9a3a40cd"
+    },
+    {
+      "path": "projects/ldo-130nm/results/figures/transients.png",
+      "bytes": 189525,
+      "sha256": "b3869a65dcc386fd46ab09486e7060b2492379e972782b96c2212a29e4fd9984"
+    },
+    {
+      "path": "projects/ldo-130nm/results/summary.json",
+      "bytes": 307142,
+      "sha256": "dbdd440f3de24a899e85122c509125ca9aee6015a0ccccca4d6bcc9e2e83103c"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/analyze_results.py",
+      "bytes": 33560,
+      "sha256": "95a10f60740560f9d8ff316692d006c0915c7ca731e2a230d8382211d3fdebbd"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/reproduce.py",
+      "bytes": 15961,
+      "sha256": "31df96f64bc957349e6df36ebae7591a1957f4247b76af26295ebf72bca2446a"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/waveform_comparison.py",
+      "bytes": 3777,
+      "sha256": "74e8f12cbf51cdfd0d4380be5ab01e6a3a8e0ca4b23c2dc1c579b67eacee6803"
+    },
+    {
+      "path": "projects/two-phase-buck/asset_manifest.json",
+      "bytes": 4555,
+      "sha256": "c69b87e2ffe00f7b42e7951aa3cbb381f83b94fb1e7c8eab2e86929464f345bf"
+    },
+    {
+      "path": "projects/two-phase-buck/controller/buck_control.va",
+      "bytes": 9032,
+      "sha256": "071a6e61778a0ed45e95055bba763106d46cb56a6918ea5342a146a74676ca61"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r8_events.csv",
+      "bytes": 26626,
+      "sha256": "73b967f30c01b470a4d071b32f62052a3bfadd9722933d1e54f231c540baffa2"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r8_hardware.csv",
+      "bytes": 12576,
+      "sha256": "0222d49a79cd15aaf8b8eabe0c65915d8860f2e433245182da9f34c6a4b8b677"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r8_measurements.json",
+      "bytes": 397371,
+      "sha256": "595d5e671a97cff58eaf6e68a31d72cc90408e02c42c65725b58d61c0fa77105"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r8_paired_events.csv",
+      "bytes": 15152,
+      "sha256": "79579d73e55ceddde0233fe169b55066e05c9b2db49a8c368dc31f8f740d93d0"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r8_solver_sensitivity.json",
+      "bytes": 48433,
+      "sha256": "638d65bfef1099c9774a2d0beaea438a50de9be458eb6db6e60a626fdb22aabb"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r8_steady.csv",
+      "bytes": 40622,
+      "sha256": "22639beebfe6a947a183ca26dc62d198381656427f06d985a9e3091e5fecef55"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r9_events.csv",
+      "bytes": 4771,
+      "sha256": "020a2d2acf46c1c4cab159c57f81016db61d57247af61df8e61e549717c3cbf1"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r9_hardware.csv",
+      "bytes": 12766,
+      "sha256": "fd05ce1e53a13019499ab81cf6904366b97b8220d7217b114b23e6b911d1e72a"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r9_measurements.json",
+      "bytes": 68578,
+      "sha256": "ce0333c77411d065f7f8192d2e8f33f4b863678dea44ebd9aefb736b004dd823"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r9_paired_events.csv",
+      "bytes": 2966,
+      "sha256": "536326bee994dbbf05823a107171b83b34ef8f5ec8c6481eccccd9a91b9c9614"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r9_solver_sensitivity.json",
+      "bytes": 24425,
+      "sha256": "05da774f934e91ed7605e33eeb1950529b3654497a305e991b8adf5932a83c80"
+    },
+    {
+      "path": "projects/two-phase-buck/data/r9_steady.csv",
+      "bytes": 7186,
+      "sha256": "b1f3ce222be25fbad7b519e63dd4e2f2696fa880aa04817ddfbc179a698b8f79"
+    },
+    {
+      "path": "projects/two-phase-buck/data/selected_parameters.json",
+      "bytes": 1635,
+      "sha256": "d3cd86aff5314d8ea02fb436b38a6ec64db23b737af73fcb849c314b05b4c49c"
+    },
+    {
+      "path": "projects/two-phase-buck/data/waveforms/r9_pdn_hard_p0_off.csv",
+      "bytes": 944048,
+      "sha256": "c86ef761d1eaec5f50defcf6b6b16c518ce41123ee064564ad15b119e366a787"
+    },
+    {
+      "path": "projects/two-phase-buck/data/waveforms/r9_pdn_hard_p0_on.csv",
+      "bytes": 942015,
+      "sha256": "e2f506061334cdd51d1cf514ea6c8b8b04444cc0be7e1e971f575d1d1bef3bcf"
+    },
+    {
+      "path": "projects/two-phase-buck/data/waveforms/v3_nom100_off.csv",
+      "bytes": 943955,
+      "sha256": "a51eeeb6124213e1505b2fd09758ec150ac16a3496e80d7b7ace01bb44a9bbd2"
+    },
+    {
+      "path": "projects/two-phase-buck/data/waveforms/v3_nom100_on.csv",
+      "bytes": 941962,
+      "sha256": "cf0f78942f8e5fe902ffc4d8b271f7cf5c776c80434f1f0b6b822e4df4d25ccd"
+    },
+    {
+      "path": "projects/two-phase-buck/data/waveforms/v3_pdn_hard_p0_off.csv",
+      "bytes": 943905,
+      "sha256": "fec9747d9b8585888c8760b049f541e00dc59b808dcce835573390345463e2ac"
+    },
+    {
+      "path": "projects/two-phase-buck/data/waveforms/v3_pdn_hard_p0_on.csv",
+      "bytes": 942189,
+      "sha256": "876723e90d20de0618aa786c96eb695c27339eca71fc6c2e6fcb3569f568502a"
+    },
+    {
+      "path": "projects/two-phase-buck/figures/architecture.png",
+      "bytes": 119987,
+      "sha256": "93c652b1ef6789750b9c259ddf20e6849a7092c40c8793d52e6995576acc9b0d"
+    },
+    {
+      "path": "projects/two-phase-buck/figures/architecture.svg",
+      "bytes": 12607,
+      "sha256": "00db667d97f611f9da8a53e27f2a18b8eb4e5a866e788cd4577f74e0909bfed2"
+    },
+    {
+      "path": "projects/two-phase-buck/figures/tradeoffs.png",
+      "bytes": 219810,
+      "sha256": "3d23fd724b2fcbc7440f2a634f9a03c8044b5bd03dfdd9776dbcb5df4703fd07"
+    },
+    {
+      "path": "projects/two-phase-buck/figures/tradeoffs.svg",
+      "bytes": 104294,
+      "sha256": "3fcdce028950e20e3437299cac1ab90aca32c3b31516f445e453d58e0379eff1"
+    },
+    {
+      "path": "projects/two-phase-buck/README.md",
+      "bytes": 5012,
+      "sha256": "581bbc1ad9e16ad623c668429cb6c83904c9beaa89ba49f6d2fb580d7b6a9126"
+    },
+    {
+      "path": "projects/two-phase-buck/scripts/reproduce.py",
+      "bytes": 11281,
+      "sha256": "013cda687123ff5f40322acf29f5e2de30b4218f4fe3a29aee6ccd7ee68c0acb"
+    },
+    {
+      "path": "projects/two-phase-buck/tests/test_reproduce.py",
+      "bytes": 1844,
+      "sha256": "37497f5de4400b42bd02c0e5f4c3b20e1ecb3247bd85e1ffdc59c2d08f82846b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2997,
+      "sha256": "0cba66588c0df9de42bc6cc7becb30e881eed16aba6ab8ce41911c4f08c6be86"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 105,
+      "sha256": "89aada88f02189e8209c0b55e92facf3d3f49d8a4ed06754094a19cf43c9d66f"
+    },
+    {
+      "path": "tools/reproduce_all.py",
+      "bytes": 1566,
+      "sha256": "75975440211c83fb7df638f70cd81b766e8e7ce5460c28f57ea8e0461d57efd1"
+    },
+    {
+      "path": "tools/verify_release.py",
+      "bytes": 1122,
+      "sha256": "d1ea9bf8ea50f00e1fa217056ab19d6a7d34bb3e0e0a25e66f90a57bc872c46f"
+    }
+  ],
+  "file_count": 121,
+  "total_bytes": 34454755
+}

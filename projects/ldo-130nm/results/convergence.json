@@ -1,0 +1,134 @@
+[
+  {
+    "coarse_case": "r6_load_C1000_T100",
+    "fine_case": "r6_convergence_T100_step2p5ns",
+    "coverage_s": [
+      0.0,
+      6e-05
+    ],
+    "coarse_saved_samples": 12141,
+    "fine_saved_samples": 24085,
+    "union_time_knots": 36168,
+    "method": "all saved knots, linear interpolation, exact linear-segment integral of error squared",
+    "qualification": "comparison of saved interpolants; cannot bound unsaved internal-solver excursions",
+    "channels": {
+      "vout_v": {
+        "maximum_absolute_error": 5.63122224213064e-05,
+        "maximum_absolute_error_time_s": 5.027510977232563e-06,
+        "rms_error": 1.6785556265516568e-06,
+        "mean_absolute_error": 3.63817445237509e-07,
+        "mean_signed_error": 2.407104808473834e-08
+      },
+      "gate_v": {
+        "maximum_absolute_error": 0.00017802516873233198,
+        "maximum_absolute_error_time_s": 5.027510977232563e-06,
+        "rms_error": 7.067147473867494e-06,
+        "mean_absolute_error": 1.306275621856923e-06,
+        "mean_signed_error": 1.109173307935894e-06
+      },
+      "fb_v": {
+        "maximum_absolute_error": 3.124403786053387e-05,
+        "maximum_absolute_error_time_s": 5.027510977232563e-06,
+        "rms_error": 8.516354302078462e-07,
+        "mean_absolute_error": 1.84377760413293e-07,
+        "mean_signed_error": 1.3736246838667088e-08
+      },
+      "vin_v": {
+        "maximum_absolute_error": 0.0,
+        "maximum_absolute_error_time_s": 0.0,
+        "rms_error": 0.0,
+        "mean_absolute_error": 0.0,
+        "mean_signed_error": 0.0
+      },
+      "load_a": {
+        "maximum_absolute_error": 7.595391871874357e-15,
+        "maximum_absolute_error_time_s": 4.999999999999957e-06,
+        "rms_error": 2.9061988100909504e-17,
+        "mean_absolute_error": 3.875679875780311e-19,
+        "mean_signed_error": -2.554994407708642e-19
+      }
+    },
+    "events": [
+      {
+        "event": "load_up_1",
+        "undershoot_delta_v": 1.5337907988133281e-07,
+        "overshoot_delta_v": 1.4099832412739488e-14,
+        "recovery_delta_s": -2.2593608695774996e-11
+      },
+      {
+        "event": "load_down_2",
+        "undershoot_delta_v": 1.0766971864195618e-05,
+        "overshoot_delta_v": 1.1400020136109745e-05,
+        "recovery_delta_s": 4.436458884925199e-10
+      }
+    ],
+    "comparison_scope": "matched stimuli and model conditions verified in private source audit; only public samples compared here",
+    "performance_pass": null
+  },
+  {
+    "coarse_case": "r6_load_C1000_T10",
+    "fine_case": "r6_convergence_T10_step0p5ns",
+    "coverage_s": [
+      0.0,
+      6e-05
+    ],
+    "coarse_saved_samples": 60090,
+    "fine_saved_samples": 120041,
+    "union_time_knots": 180071,
+    "method": "all saved knots, linear interpolation, exact linear-segment integral of error squared",
+    "qualification": "comparison of saved interpolants; cannot bound unsaved internal-solver excursions",
+    "channels": {
+      "vout_v": {
+        "maximum_absolute_error": 3.0502565065204656e-05,
+        "maximum_absolute_error_time_s": 5.001869915357628e-06,
+        "rms_error": 8.050301968643032e-07,
+        "mean_absolute_error": 1.3670248122646932e-07,
+        "mean_signed_error": 3.3097241516138406e-09
+      },
+      "gate_v": {
+        "maximum_absolute_error": 6.855291563490074e-05,
+        "maximum_absolute_error_time_s": 3.004709542701674e-05,
+        "rms_error": 3.2193394431709544e-06,
+        "mean_absolute_error": 5.569199813886804e-07,
+        "mean_signed_error": 4.4081239873831707e-07
+      },
+      "fb_v": {
+        "maximum_absolute_error": 1.3141212099221367e-05,
+        "maximum_absolute_error_time_s": 3.004609542701674e-05,
+        "rms_error": 4.5282458683039543e-07,
+        "mean_absolute_error": 7.234859358261952e-08,
+        "mean_signed_error": 1.7502173005424557e-09
+      },
+      "vin_v": {
+        "maximum_absolute_error": 0.0,
+        "maximum_absolute_error_time_s": 0.0,
+        "rms_error": 0.0,
+        "mean_absolute_error": 0.0,
+        "mean_signed_error": 0.0
+      },
+      "load_a": {
+        "maximum_absolute_error": 1.0210129725192474e-13,
+        "maximum_absolute_error_time_s": 5.000000000000029e-06,
+        "rms_error": 3.355049063370483e-17,
+        "mean_absolute_error": 3.1526104070042025e-19,
+        "mean_signed_error": -1.7691462664640365e-20
+      }
+    },
+    "events": [
+      {
+        "event": "load_up_1",
+        "undershoot_delta_v": 1.1864445540132884e-05,
+        "overshoot_delta_v": -2.1094237467877974e-14,
+        "recovery_delta_s": 3.94094110813079e-13
+      },
+      {
+        "event": "load_down_2",
+        "undershoot_delta_v": 3.699769081766391e-06,
+        "overshoot_delta_v": 6.295819893198384e-06,
+        "recovery_delta_s": 1.1938297040796656e-10
+      }
+    ],
+    "comparison_scope": "matched stimuli and model conditions verified in private source audit; only public samples compared here",
+    "performance_pass": null
+  }
+]

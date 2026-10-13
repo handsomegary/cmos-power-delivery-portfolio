@@ -1,0 +1,1212 @@
+{
+  "schema": "public-buck-solver-sensitivity-v1",
+  "quantified_comparison_count": 4,
+  "performance_pass": null,
+  "qualification": "Solver/strobe/tolerance sensitivity is quantified, not a convergence pass. Recovery and pointwise trajectories remain sensitive.",
+  "comparisons": [
+    {
+      "name": "nominal_10ns_off",
+      "coarse": "v3_nom10_p0_off",
+      "fine": "v3_fine10_off",
+      "performance_pass": null,
+      "solver_settings": {
+        "coarse": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "fine": {
+          "errpreset": "conservative",
+          "iabstol": 1e-12,
+          "maxstep_s": 5e-10,
+          "reltol": 0.0001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 1e-09,
+          "vabstol": 1e-07
+        }
+      },
+      "comparison_event_windows": [
+        {
+          "event": "load_up",
+          "coarse_original_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "fine_original_window_s": [
+            6e-05,
+            9.999950000000001e-05
+          ],
+          "common_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "qualification": "Same event and steady windows; only proven native-maxstep pre-next-edge guard may differ. Both metrics and waveform errors use the earlier common observation end."
+        },
+        {
+          "event": "load_down",
+          "coarse_original_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "fine_original_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "common_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "qualification": "Same event and steady windows; only proven native-maxstep pre-next-edge guard may differ. Both metrics and waveform errors use the earlier common observation end."
+        }
+      ],
+      "waveform_errors": [
+        {
+          "window_name": "whole_run",
+          "role": "vload_v",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.07457586107518534,
+          "max_abs_error_time_s": 1e-09,
+          "signed_error_at_max_abs": -0.07457586107518534,
+          "time_weighted_rms_interpolated_error": 0.0007675910830667387,
+          "time_weighted_mean_error": 0.00011415430626748669,
+          "comparison_grid_count": 191171,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "vconv_v",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.021236263536374974,
+          "max_abs_error_time_s": 1e-09,
+          "signed_error_at_max_abs": -0.021236263536374974,
+          "time_weighted_rms_interpolated_error": 0.0007464797034291892,
+          "time_weighted_mean_error": 0.00011415092598272302,
+          "comparison_grid_count": 191171,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "il1_a",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.042205378331114166,
+          "max_abs_error_time_s": 0.0001153230000001704,
+          "signed_error_at_max_abs": 0.042205378331114166,
+          "time_weighted_rms_interpolated_error": 0.007296769952345604,
+          "time_weighted_mean_error": -2.3020334255284102e-05,
+          "comparison_grid_count": 191171,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "il2_a",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.0422928730292653,
+          "max_abs_error_time_s": 0.0001094230000001575,
+          "signed_error_at_max_abs": 0.0422928730292653,
+          "time_weighted_rms_interpolated_error": 0.007389772996521831,
+          "time_weighted_mean_error": 4.10861650603545e-05,
+          "comparison_grid_count": 191171,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "vload_v",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.0013052121322134624,
+          "max_abs_error_time_s": 9.262500000012056e-05,
+          "signed_error_at_max_abs": 0.0013052121322134624,
+          "time_weighted_rms_interpolated_error": 0.0004277679815142494,
+          "time_weighted_mean_error": 6.159791412244373e-05,
+          "comparison_grid_count": 56297,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "vconv_v",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.0012870671022393587,
+          "max_abs_error_time_s": 9.262400000012058e-05,
+          "signed_error_at_max_abs": 0.0012870671022393587,
+          "time_weighted_rms_interpolated_error": 0.00042745211902314235,
+          "time_weighted_mean_error": 6.070547275552045e-05,
+          "comparison_grid_count": 56297,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "il1_a",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.0033417710243117335,
+          "max_abs_error_time_s": 6.0276e-05,
+          "signed_error_at_max_abs": 0.0033417710243117335,
+          "time_weighted_rms_interpolated_error": 0.0007502653837692768,
+          "time_weighted_mean_error": -1.9109683158562617e-05,
+          "comparison_grid_count": 56297,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "il2_a",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.002816769131209859,
+          "max_abs_error_time_s": 7.023900000007153e-05,
+          "signed_error_at_max_abs": 0.002816769131209859,
+          "time_weighted_rms_interpolated_error": 0.0005903160074251202,
+          "time_weighted_mean_error": 3.278023335196233e-05,
+          "comparison_grid_count": 56297,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "vload_v",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.003501592276829779,
+          "max_abs_error_time_s": 0.000110546,
+          "signed_error_at_max_abs": 0.003501592276829779,
+          "time_weighted_rms_interpolated_error": 0.0010144947041755969,
+          "time_weighted_mean_error": 0.0002504032248382346,
+          "comparison_grid_count": 45475,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "vconv_v",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.0034316573332657807,
+          "max_abs_error_time_s": 0.0001105450000001599,
+          "signed_error_at_max_abs": 0.0034316573332657807,
+          "time_weighted_rms_interpolated_error": 0.0010073201606249874,
+          "time_weighted_mean_error": 0.0002504826407760844,
+          "comparison_grid_count": 45475,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "il1_a",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.042205378331114166,
+          "max_abs_error_time_s": 0.0001153230000001704,
+          "signed_error_at_max_abs": 0.042205378331114166,
+          "time_weighted_rms_interpolated_error": 0.009986692333807662,
+          "time_weighted_mean_error": -0.00011785291714337266,
+          "comparison_grid_count": 45475,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "il2_a",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.0422928730292653,
+          "max_abs_error_time_s": 0.0001094230000001575,
+          "signed_error_at_max_abs": 0.0422928730292653,
+          "time_weighted_rms_interpolated_error": 0.010419745255672715,
+          "time_weighted_mean_error": 0.00012381814279081925,
+          "comparison_grid_count": 45475,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        }
+      ],
+      "events": [
+        {
+          "event": "load_up",
+          "comparison_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "metrics_recomputed_on_common_observation_window": true,
+          "droop_from_target_v_coarse": 0.14396288517018263,
+          "droop_from_target_v_fine": 0.14349917819558777,
+          "droop_from_target_v_delta_fine_minus_coarse": -0.00046370697459485744,
+          "overshoot_from_target_v_coarse": 0.009008299114425466,
+          "overshoot_from_target_v_fine": 0.008763045248849077,
+          "overshoot_from_target_v_delta_fine_minus_coarse": -0.0002452538655763892,
+          "raw_recovery_s_coarse": 1.2338277216232726e-05,
+          "raw_recovery_s_fine": 7.452833048455415e-06,
+          "raw_recovery_s_delta_fine_minus_coarse": -4.885444167777311e-06,
+          "cycle_mean_recovery_s_coarse": 7.600000000000002e-06,
+          "cycle_mean_recovery_s_fine": 7.600000000000002e-06,
+          "cycle_mean_recovery_s_delta_fine_minus_coarse": 0.0
+        },
+        {
+          "event": "load_down",
+          "comparison_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "metrics_recomputed_on_common_observation_window": true,
+          "droop_from_target_v_coarse": 0.0011146829304407024,
+          "droop_from_target_v_fine": 0.0012292539155484006,
+          "droop_from_target_v_delta_fine_minus_coarse": 0.00011457098510769814,
+          "overshoot_from_target_v_coarse": 0.08492898990673803,
+          "overshoot_from_target_v_fine": 0.0846527243252242,
+          "overshoot_from_target_v_delta_fine_minus_coarse": -0.00027626558151383485,
+          "raw_recovery_s_coarse": 1.6344951351838865e-05,
+          "raw_recovery_s_fine": 1.66857144882579e-05,
+          "raw_recovery_s_delta_fine_minus_coarse": 3.407631364190343e-07,
+          "cycle_mean_recovery_s_coarse": 1.579999999999999e-05,
+          "cycle_mean_recovery_s_fine": 1.6199999999999987e-05,
+          "cycle_mean_recovery_s_delta_fine_minus_coarse": 3.9999999999999617e-07
+        }
+      ],
+      "status": "quantified_same_input_solver_strobe_tolerance_sensitivity"
+    },
+    {
+      "name": "nominal_10ns_on",
+      "coarse": "v3_nom10_p0_on",
+      "fine": "v3_fine10_on",
+      "performance_pass": null,
+      "solver_settings": {
+        "coarse": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "fine": {
+          "errpreset": "conservative",
+          "iabstol": 1e-12,
+          "maxstep_s": 5e-10,
+          "reltol": 0.0001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 1e-09,
+          "vabstol": 1e-07
+        }
+      },
+      "comparison_event_windows": [
+        {
+          "event": "load_up",
+          "coarse_original_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "fine_original_window_s": [
+            6e-05,
+            9.999950000000001e-05
+          ],
+          "common_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "qualification": "Same event and steady windows; only proven native-maxstep pre-next-edge guard may differ. Both metrics and waveform errors use the earlier common observation end."
+        },
+        {
+          "event": "load_down",
+          "coarse_original_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "fine_original_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "common_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "qualification": "Same event and steady windows; only proven native-maxstep pre-next-edge guard may differ. Both metrics and waveform errors use the earlier common observation end."
+        }
+      ],
+      "waveform_errors": [
+        {
+          "window_name": "whole_run",
+          "role": "vload_v",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.07457586107518534,
+          "max_abs_error_time_s": 1e-09,
+          "signed_error_at_max_abs": -0.07457586107518534,
+          "time_weighted_rms_interpolated_error": 0.0008122625032433938,
+          "time_weighted_mean_error": 3.1360353350076315e-05,
+          "comparison_grid_count": 189398,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "vconv_v",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.021236263536374974,
+          "max_abs_error_time_s": 1e-09,
+          "signed_error_at_max_abs": -0.021236263536374974,
+          "time_weighted_rms_interpolated_error": 0.0007263626377139969,
+          "time_weighted_mean_error": 3.138981035190229e-05,
+          "comparison_grid_count": 189398,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "il1_a",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.040758643993115046,
+          "max_abs_error_time_s": 2.5524e-05,
+          "signed_error_at_max_abs": -0.040758643993115046,
+          "time_weighted_rms_interpolated_error": 0.007341553943153142,
+          "time_weighted_mean_error": -1.33501716581924e-05,
+          "comparison_grid_count": 189398,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "il2_a",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.04189476365709381,
+          "max_abs_error_time_s": 0.0001066250000001513,
+          "signed_error_at_max_abs": 0.04189476365709381,
+          "time_weighted_rms_interpolated_error": 0.007449559036046765,
+          "time_weighted_mean_error": 4.01695914057321e-05,
+          "comparison_grid_count": 189398,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "vload_v",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.0069570772676724735,
+          "max_abs_error_time_s": 6.051900000005023e-05,
+          "signed_error_at_max_abs": 0.0069570772676724735,
+          "time_weighted_rms_interpolated_error": 0.0004954259940786162,
+          "time_weighted_mean_error": 5.240891332662424e-06,
+          "comparison_grid_count": 56054,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "vconv_v",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.0018150416997065877,
+          "max_abs_error_time_s": 6.124800000000001e-05,
+          "signed_error_at_max_abs": -0.0018150416997065877,
+          "time_weighted_rms_interpolated_error": 0.0004514098875401531,
+          "time_weighted_mean_error": 3.7161947832430204e-06,
+          "comparison_grid_count": 56054,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "il1_a",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.003339436724820729,
+          "max_abs_error_time_s": 6.0276e-05,
+          "signed_error_at_max_abs": 0.003339436724820729,
+          "time_weighted_rms_interpolated_error": 0.0005801628630789039,
+          "time_weighted_mean_error": -2.2001948220473808e-05,
+          "comparison_grid_count": 56054,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "il2_a",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.003542270963585184,
+          "max_abs_error_time_s": 6.223900000005399e-05,
+          "signed_error_at_max_abs": 0.003542270963585184,
+          "time_weighted_rms_interpolated_error": 0.0006665219106743497,
+          "time_weighted_mean_error": 5.752361470244524e-05,
+          "comparison_grid_count": 56054,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "vload_v",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.022048626315826603,
+          "max_abs_error_time_s": 0.0001002450000001373,
+          "signed_error_at_max_abs": 0.022048626315826603,
+          "time_weighted_rms_interpolated_error": 0.001101707313610324,
+          "time_weighted_mean_error": 1.693529841537473e-05,
+          "comparison_grid_count": 43945,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "vconv_v",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.005429153076364712,
+          "max_abs_error_time_s": 0.0001002450000001373,
+          "signed_error_at_max_abs": 0.005429153076364712,
+          "time_weighted_rms_interpolated_error": 0.0009433688256473533,
+          "time_weighted_mean_error": 1.7761800764988838e-05,
+          "comparison_grid_count": 43945,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "il1_a",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.040077007988049085,
+          "max_abs_error_time_s": 0.0001081230000001546,
+          "signed_error_at_max_abs": 0.040077007988049085,
+          "time_weighted_rms_interpolated_error": 0.010112111058049867,
+          "time_weighted_mean_error": -8.110553227764876e-05,
+          "comparison_grid_count": 43945,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "il2_a",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.04189476365709381,
+          "max_abs_error_time_s": 0.0001066250000001513,
+          "signed_error_at_max_abs": 0.04189476365709381,
+          "time_weighted_rms_interpolated_error": 0.010563166048306422,
+          "time_weighted_mean_error": 9.578647920719184e-05,
+          "comparison_grid_count": 43945,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        }
+      ],
+      "events": [
+        {
+          "event": "load_up",
+          "comparison_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "metrics_recomputed_on_common_observation_window": true,
+          "droop_from_target_v_coarse": 0.1076164522677111,
+          "droop_from_target_v_fine": 0.10719048872085823,
+          "droop_from_target_v_delta_fine_minus_coarse": -0.00042596354685286997,
+          "overshoot_from_target_v_coarse": 0.011983638927897,
+          "overshoot_from_target_v_fine": 0.011809367674703752,
+          "overshoot_from_target_v_delta_fine_minus_coarse": -0.00017427125319324777,
+          "raw_recovery_s_coarse": 1.3662024349499832e-05,
+          "raw_recovery_s_fine": 1.3642028566376568e-05,
+          "raw_recovery_s_delta_fine_minus_coarse": -1.999578312326391e-08,
+          "cycle_mean_recovery_s_coarse": 1.379999999999999e-05,
+          "cycle_mean_recovery_s_fine": 1.379999999999999e-05,
+          "cycle_mean_recovery_s_delta_fine_minus_coarse": 0.0
+        },
+        {
+          "event": "load_down",
+          "comparison_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "metrics_recomputed_on_common_observation_window": true,
+          "droop_from_target_v_coarse": 0.0024520137341405013,
+          "droop_from_target_v_fine": 0.002408442267083255,
+          "droop_from_target_v_delta_fine_minus_coarse": -4.357146705724624e-05,
+          "overshoot_from_target_v_coarse": 0.05254939387139079,
+          "overshoot_from_target_v_fine": 0.052432942326234855,
+          "overshoot_from_target_v_delta_fine_minus_coarse": -0.00011645154515593781,
+          "raw_recovery_s_coarse": 1.274579990012941e-05,
+          "raw_recovery_s_fine": 1.2767245781021452e-05,
+          "raw_recovery_s_delta_fine_minus_coarse": 2.1445880892041638e-08,
+          "cycle_mean_recovery_s_coarse": 1.2199999999999985e-05,
+          "cycle_mean_recovery_s_fine": 1.299999999999999e-05,
+          "cycle_mean_recovery_s_delta_fine_minus_coarse": 8.000000000000059e-07
+        }
+      ],
+      "status": "quantified_same_input_solver_strobe_tolerance_sensitivity"
+    },
+    {
+      "name": "hard_PDN_off",
+      "coarse": "v3_pdn_hard_p0_off",
+      "fine": "v3_fine_pdn_off",
+      "performance_pass": null,
+      "solver_settings": {
+        "coarse": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "fine": {
+          "errpreset": "conservative",
+          "iabstol": 1e-12,
+          "maxstep_s": 5e-10,
+          "reltol": 0.0001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 1e-09,
+          "vabstol": 1e-07
+        }
+      },
+      "comparison_event_windows": [
+        {
+          "event": "load_up",
+          "coarse_original_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "fine_original_window_s": [
+            6e-05,
+            9.999950000000001e-05
+          ],
+          "common_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "qualification": "Same event and steady windows; only proven native-maxstep pre-next-edge guard may differ. Both metrics and waveform errors use the earlier common observation end."
+        },
+        {
+          "event": "load_down",
+          "coarse_original_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "fine_original_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "common_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "qualification": "Same event and steady windows; only proven native-maxstep pre-next-edge guard may differ. Both metrics and waveform errors use the earlier common observation end."
+        }
+      ],
+      "waveform_errors": [
+        {
+          "window_name": "whole_run",
+          "role": "vload_v",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.08983723712408928,
+          "max_abs_error_time_s": 1e-09,
+          "signed_error_at_max_abs": 0.08983723712408928,
+          "time_weighted_rms_interpolated_error": 0.0006945515816681008,
+          "time_weighted_mean_error": 4.577775195420035e-05,
+          "comparison_grid_count": 191412,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "vconv_v",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.008255360008628336,
+          "max_abs_error_time_s": 1e-09,
+          "signed_error_at_max_abs": 0.008255360008628336,
+          "time_weighted_rms_interpolated_error": 0.0006553402585878414,
+          "time_weighted_mean_error": 4.521145659547381e-05,
+          "comparison_grid_count": 191412,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "il1_a",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.04096417631032478,
+          "max_abs_error_time_s": 0.000118314,
+          "signed_error_at_max_abs": 0.04096417631032478,
+          "time_weighted_rms_interpolated_error": 0.006179854836913652,
+          "time_weighted_mean_error": 3.613099484870045e-05,
+          "comparison_grid_count": 191412,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "il2_a",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.040797820085115226,
+          "max_abs_error_time_s": 0.0001098230000001583,
+          "signed_error_at_max_abs": 0.040797820085115226,
+          "time_weighted_rms_interpolated_error": 0.0063043552465634365,
+          "time_weighted_mean_error": -1.0457350447499936e-05,
+          "comparison_grid_count": 191412,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "vload_v",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.002064028745569213,
+          "max_abs_error_time_s": 6.001500000004912e-05,
+          "signed_error_at_max_abs": 0.002064028745569213,
+          "time_weighted_rms_interpolated_error": 0.00035449923340200495,
+          "time_weighted_mean_error": 2.311718454097857e-05,
+          "comparison_grid_count": 56311,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "vconv_v",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.0013173684561080812,
+          "max_abs_error_time_s": 6.184599999997066e-05,
+          "signed_error_at_max_abs": 0.0013173684561080812,
+          "time_weighted_rms_interpolated_error": 0.0003530749452398238,
+          "time_weighted_mean_error": 2.260428392744018e-05,
+          "comparison_grid_count": 56311,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "il1_a",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.0027250089474991496,
+          "max_abs_error_time_s": 7.8342e-05,
+          "signed_error_at_max_abs": -0.0027250089474991496,
+          "time_weighted_rms_interpolated_error": 0.000753815959326509,
+          "time_weighted_mean_error": -2.0839095431438856e-05,
+          "comparison_grid_count": 56311,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "il2_a",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.003215147661648203,
+          "max_abs_error_time_s": 6.1426e-05,
+          "signed_error_at_max_abs": 0.003215147661648203,
+          "time_weighted_rms_interpolated_error": 0.0007567482287290686,
+          "time_weighted_mean_error": 3.798210809115564e-05,
+          "comparison_grid_count": 56311,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "vload_v",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.003257948641111952,
+          "max_abs_error_time_s": 0.000122196,
+          "signed_error_at_max_abs": 0.003257948641111952,
+          "time_weighted_rms_interpolated_error": 0.0008738899044996685,
+          "time_weighted_mean_error": 0.0002352305388790137,
+          "comparison_grid_count": 45699,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "vconv_v",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.003116786694860041,
+          "max_abs_error_time_s": 0.000118902,
+          "signed_error_at_max_abs": 0.003116786694860041,
+          "time_weighted_rms_interpolated_error": 0.0008671093917714101,
+          "time_weighted_mean_error": 0.00023538385604686502,
+          "comparison_grid_count": 45699,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "il1_a",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.04096417631032478,
+          "max_abs_error_time_s": 0.000118314,
+          "signed_error_at_max_abs": 0.04096417631032478,
+          "time_weighted_rms_interpolated_error": 0.007867085499877361,
+          "time_weighted_mean_error": 0.00010162337082220539,
+          "comparison_grid_count": 45699,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "il2_a",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.040797820085115226,
+          "max_abs_error_time_s": 0.0001098230000001583,
+          "signed_error_at_max_abs": 0.040797820085115226,
+          "time_weighted_rms_interpolated_error": 0.00898673073800225,
+          "time_weighted_mean_error": -8.147789558559743e-05,
+          "comparison_grid_count": 45699,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        }
+      ],
+      "events": [
+        {
+          "event": "load_up",
+          "comparison_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "metrics_recomputed_on_common_observation_window": true,
+          "droop_from_target_v_coarse": 0.1480339016877874,
+          "droop_from_target_v_fine": 0.14678869537760453,
+          "droop_from_target_v_delta_fine_minus_coarse": -0.001245206310182878,
+          "overshoot_from_target_v_coarse": 0.009692152035740476,
+          "overshoot_from_target_v_fine": 0.00971027561016169,
+          "overshoot_from_target_v_delta_fine_minus_coarse": 1.8123574421213817e-05,
+          "raw_recovery_s_coarse": 1.2857468973005824e-05,
+          "raw_recovery_s_fine": 1.2954196246549764e-05,
+          "raw_recovery_s_delta_fine_minus_coarse": 9.672727354393957e-08,
+          "cycle_mean_recovery_s_coarse": 1.2999999999999998e-05,
+          "cycle_mean_recovery_s_fine": 1.2999999999999998e-05,
+          "cycle_mean_recovery_s_delta_fine_minus_coarse": 0.0
+        },
+        {
+          "event": "load_down",
+          "comparison_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "metrics_recomputed_on_common_observation_window": true,
+          "droop_from_target_v_coarse": 0.001134053023751691,
+          "droop_from_target_v_fine": 0.0013064444325441293,
+          "droop_from_target_v_delta_fine_minus_coarse": 0.0001723914087924383,
+          "overshoot_from_target_v_coarse": 0.08688872248161461,
+          "overshoot_from_target_v_fine": 0.08722362329325761,
+          "overshoot_from_target_v_delta_fine_minus_coarse": 0.0003349008116430019,
+          "raw_recovery_s_coarse": 1.6384147374300153e-05,
+          "raw_recovery_s_fine": 1.6407713138613138e-05,
+          "raw_recovery_s_delta_fine_minus_coarse": 2.356576431298543e-08,
+          "cycle_mean_recovery_s_coarse": 1.6199999999999987e-05,
+          "cycle_mean_recovery_s_fine": 1.6199999999999987e-05,
+          "cycle_mean_recovery_s_delta_fine_minus_coarse": 0.0
+        }
+      ],
+      "status": "quantified_same_input_solver_strobe_tolerance_sensitivity"
+    },
+    {
+      "name": "hard_PDN_on",
+      "coarse": "v3_pdn_hard_p0_on",
+      "fine": "v3_fine_pdn_on",
+      "performance_pass": null,
+      "solver_settings": {
+        "coarse": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "fine": {
+          "errpreset": "conservative",
+          "iabstol": 1e-12,
+          "maxstep_s": 5e-10,
+          "reltol": 0.0001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 1e-09,
+          "vabstol": 1e-07
+        }
+      },
+      "comparison_event_windows": [
+        {
+          "event": "load_up",
+          "coarse_original_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "fine_original_window_s": [
+            6e-05,
+            9.999950000000001e-05
+          ],
+          "common_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "qualification": "Same event and steady windows; only proven native-maxstep pre-next-edge guard may differ. Both metrics and waveform errors use the earlier common observation end."
+        },
+        {
+          "event": "load_down",
+          "coarse_original_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "fine_original_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "common_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "qualification": "Same event and steady windows; only proven native-maxstep pre-next-edge guard may differ. Both metrics and waveform errors use the earlier common observation end."
+        }
+      ],
+      "waveform_errors": [
+        {
+          "window_name": "whole_run",
+          "role": "vload_v",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.08983723712408928,
+          "max_abs_error_time_s": 1e-09,
+          "signed_error_at_max_abs": 0.08983723712408928,
+          "time_weighted_rms_interpolated_error": 0.001134420112291781,
+          "time_weighted_mean_error": 0.00010091030557864685,
+          "comparison_grid_count": 189696,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "vconv_v",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.008255360008628336,
+          "max_abs_error_time_s": 1e-09,
+          "signed_error_at_max_abs": 0.008255360008628336,
+          "time_weighted_rms_interpolated_error": 0.0007433746865823394,
+          "time_weighted_mean_error": 9.909838374644791e-05,
+          "comparison_grid_count": 189696,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "il1_a",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.043166971900746115,
+          "max_abs_error_time_s": 0.000108528,
+          "signed_error_at_max_abs": -0.043166971900746115,
+          "time_weighted_rms_interpolated_error": 0.007116241810299564,
+          "time_weighted_mean_error": 3.239593093159919e-05,
+          "comparison_grid_count": 189696,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "whole_run",
+          "role": "il2_a",
+          "window_s": [
+            0,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.0419909841823737,
+          "max_abs_error_time_s": 0.00011102,
+          "signed_error_at_max_abs": -0.0419909841823737,
+          "time_weighted_rms_interpolated_error": 0.0069343396408958514,
+          "time_weighted_mean_error": -1.2420715204928246e-05,
+          "comparison_grid_count": 189696,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "vload_v",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.040281753896221795,
+          "max_abs_error_time_s": 6.0394e-05,
+          "signed_error_at_max_abs": -0.040281753896221795,
+          "time_weighted_rms_interpolated_error": 0.0012204933831665278,
+          "time_weighted_mean_error": 3.879722754070731e-05,
+          "comparison_grid_count": 56309,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "vconv_v",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.0033044898027457803,
+          "max_abs_error_time_s": 6.012799999996997e-05,
+          "signed_error_at_max_abs": -0.0033044898027457803,
+          "time_weighted_rms_interpolated_error": 0.0003518135499016856,
+          "time_weighted_mean_error": 3.902766981222523e-05,
+          "comparison_grid_count": 56309,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "il1_a",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.0031089746506423946,
+          "max_abs_error_time_s": 6.049599999996953e-05,
+          "signed_error_at_max_abs": -0.0031089746506423946,
+          "time_weighted_rms_interpolated_error": 0.0006625751481366264,
+          "time_weighted_mean_error": -3.7771157458803574e-06,
+          "comparison_grid_count": 56309,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_up",
+          "role": "il2_a",
+          "window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "max_abs_interpolated_error": 0.0032926987521807866,
+          "max_abs_error_time_s": 6.664100000006364e-05,
+          "signed_error_at_max_abs": 0.0032926987521807866,
+          "time_weighted_rms_interpolated_error": 0.000710456197721835,
+          "time_weighted_mean_error": 3.688411109070858e-05,
+          "comparison_grid_count": 56309,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "vload_v",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.07376993066216275,
+          "max_abs_error_time_s": 0.000100392,
+          "signed_error_at_max_abs": 0.07376993066216275,
+          "time_weighted_rms_interpolated_error": 0.0014884892374465337,
+          "time_weighted_mean_error": 0.0004124895350734871,
+          "comparison_grid_count": 43985,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "vconv_v",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.005924312092441264,
+          "max_abs_error_time_s": 0.000100392,
+          "signed_error_at_max_abs": 0.005924312092441264,
+          "time_weighted_rms_interpolated_error": 0.0010880020996443414,
+          "time_weighted_mean_error": 0.000407539838877156,
+          "comparison_grid_count": 43985,
+          "unit": "V",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "il1_a",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.043166971900746115,
+          "max_abs_error_time_s": 0.000108528,
+          "signed_error_at_max_abs": -0.043166971900746115,
+          "time_weighted_rms_interpolated_error": 0.010276005483831339,
+          "time_weighted_mean_error": 7.146181541363699e-05,
+          "comparison_grid_count": 43985,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        },
+        {
+          "window_name": "load_down",
+          "role": "il2_a",
+          "window_s": [
+            0.0001,
+            0.00014
+          ],
+          "max_abs_interpolated_error": 0.0419909841823737,
+          "max_abs_error_time_s": 0.00011102,
+          "signed_error_at_max_abs": -0.0419909841823737,
+          "time_weighted_rms_interpolated_error": 0.010489034490193293,
+          "time_weighted_mean_error": -8.725011892828495e-05,
+          "comparison_grid_count": 43985,
+          "unit": "A",
+          "method": "fine_minus_coarse_piecewise_linear_saved_waveforms_on_union_grid; exact_time_integral_of_squared_linear_error"
+        }
+      ],
+      "events": [
+        {
+          "event": "load_up",
+          "comparison_window_s": [
+            6e-05,
+            9.9998e-05
+          ],
+          "metrics_recomputed_on_common_observation_window": true,
+          "droop_from_target_v_coarse": 0.11643740925876711,
+          "droop_from_target_v_fine": 0.11545786576740269,
+          "droop_from_target_v_delta_fine_minus_coarse": -0.0009795434913644208,
+          "overshoot_from_target_v_coarse": 0.019381778045107323,
+          "overshoot_from_target_v_fine": 0.01970550742618915,
+          "overshoot_from_target_v_delta_fine_minus_coarse": 0.0003237293810818276,
+          "raw_recovery_s_coarse": 1.376318452293944e-05,
+          "raw_recovery_s_fine": 1.3956839005482853e-05,
+          "raw_recovery_s_delta_fine_minus_coarse": 1.9365448254341335e-07,
+          "cycle_mean_recovery_s_coarse": 1.3999999999999995e-05,
+          "cycle_mean_recovery_s_fine": 1.42e-05,
+          "cycle_mean_recovery_s_delta_fine_minus_coarse": 2.0000000000000486e-07
+        },
+        {
+          "event": "load_down",
+          "comparison_window_s": [
+            0.0001,
+            0.00014
+          ],
+          "metrics_recomputed_on_common_observation_window": true,
+          "droop_from_target_v_coarse": 0.039015623974347546,
+          "droop_from_target_v_fine": 0.03902486661973226,
+          "droop_from_target_v_delta_fine_minus_coarse": 9.242645384710535e-06,
+          "overshoot_from_target_v_coarse": 0.11029828472300196,
+          "overshoot_from_target_v_fine": 0.11071254199282687,
+          "overshoot_from_target_v_delta_fine_minus_coarse": 0.0004142572698249136,
+          "raw_recovery_s_coarse": 1.2876284713792354e-05,
+          "raw_recovery_s_fine": 1.3465337327024258e-05,
+          "raw_recovery_s_delta_fine_minus_coarse": 5.89052613231904e-07,
+          "cycle_mean_recovery_s_coarse": 1.239999999999999e-05,
+          "cycle_mean_recovery_s_fine": 1.2799999999999986e-05,
+          "cycle_mean_recovery_s_delta_fine_minus_coarse": 3.9999999999999617e-07
+        }
+      ],
+      "status": "quantified_same_input_solver_strobe_tolerance_sensitivity"
+    }
+  ]
+}

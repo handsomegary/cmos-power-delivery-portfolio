@@ -1,0 +1,48 @@
+[
+  {
+    "name": "line_up_1",
+    "edge_start_s": 5e-06,
+    "edge_end_s": 5.1e-06,
+    "pre_window_s": [
+      4.4e-06,
+      4.9000000000000005e-06
+    ],
+    "post_window_s": [
+      2.7420000000000002e-05,
+      2.9900000000000002e-05
+    ],
+    "analysis_window_s": [
+      5e-06,
+      2.9900000000000002e-05
+    ],
+    "pre_dc_role": "pre",
+    "post_dc_role": "high",
+    "tail_fit_window_s": [
+      1.75e-05,
+      2.9900000000000002e-05
+    ]
+  },
+  {
+    "name": "line_down_2",
+    "edge_start_s": 3e-05,
+    "edge_end_s": 3.01e-05,
+    "pre_window_s": [
+      2.741e-05,
+      2.9900000000000002e-05
+    ],
+    "post_window_s": [
+      5.701e-05,
+      6e-05
+    ],
+    "analysis_window_s": [
+      3e-05,
+      6e-05
+    ],
+    "pre_dc_role": "high",
+    "post_dc_role": "post",
+    "tail_fit_window_s": [
+      4.505e-05,
+      6e-05
+    ]
+  }
+]

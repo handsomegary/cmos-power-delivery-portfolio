@@ -1,0 +1,140 @@
+{
+  "schema": "buck-published-assets-v1",
+  "files": [
+    {
+      "path": "controller/buck_control.va",
+      "bytes": 9032,
+      "sha256": "071a6e61778a0ed45e95055bba763106d46cb56a6918ea5342a146a74676ca61"
+    },
+    {
+      "path": "data/r8_events.csv",
+      "bytes": 26626,
+      "sha256": "73b967f30c01b470a4d071b32f62052a3bfadd9722933d1e54f231c540baffa2"
+    },
+    {
+      "path": "data/r8_hardware.csv",
+      "bytes": 12576,
+      "sha256": "0222d49a79cd15aaf8b8eabe0c65915d8860f2e433245182da9f34c6a4b8b677"
+    },
+    {
+      "path": "data/r8_measurements.json",
+      "bytes": 397371,
+      "sha256": "595d5e671a97cff58eaf6e68a31d72cc90408e02c42c65725b58d61c0fa77105"
+    },
+    {
+      "path": "data/r8_paired_events.csv",
+      "bytes": 15152,
+      "sha256": "79579d73e55ceddde0233fe169b55066e05c9b2db49a8c368dc31f8f740d93d0"
+    },
+    {
+      "path": "data/r8_solver_sensitivity.json",
+      "bytes": 48433,
+      "sha256": "638d65bfef1099c9774a2d0beaea438a50de9be458eb6db6e60a626fdb22aabb"
+    },
+    {
+      "path": "data/r8_steady.csv",
+      "bytes": 40622,
+      "sha256": "22639beebfe6a947a183ca26dc62d198381656427f06d985a9e3091e5fecef55"
+    },
+    {
+      "path": "data/r9_events.csv",
+      "bytes": 4771,
+      "sha256": "020a2d2acf46c1c4cab159c57f81016db61d57247af61df8e61e549717c3cbf1"
+    },
+    {
+      "path": "data/r9_hardware.csv",
+      "bytes": 12766,
+      "sha256": "fd05ce1e53a13019499ab81cf6904366b97b8220d7217b114b23e6b911d1e72a"
+    },
+    {
+      "path": "data/r9_measurements.json",
+      "bytes": 68578,
+      "sha256": "ce0333c77411d065f7f8192d2e8f33f4b863678dea44ebd9aefb736b004dd823"
+    },
+    {
+      "path": "data/r9_paired_events.csv",
+      "bytes": 2966,
+      "sha256": "536326bee994dbbf05823a107171b83b34ef8f5ec8c6481eccccd9a91b9c9614"
+    },
+    {
+      "path": "data/r9_solver_sensitivity.json",
+      "bytes": 24425,
+      "sha256": "05da774f934e91ed7605e33eeb1950529b3654497a305e991b8adf5932a83c80"
+    },
+    {
+      "path": "data/r9_steady.csv",
+      "bytes": 7186,
+      "sha256": "b1f3ce222be25fbad7b519e63dd4e2f2696fa880aa04817ddfbc179a698b8f79"
+    },
+    {
+      "path": "data/selected_parameters.json",
+      "bytes": 1635,
+      "sha256": "d3cd86aff5314d8ea02fb436b38a6ec64db23b737af73fcb849c314b05b4c49c"
+    },
+    {
+      "path": "data/waveforms/r9_pdn_hard_p0_off.csv",
+      "bytes": 944048,
+      "sha256": "c86ef761d1eaec5f50defcf6b6b16c518ce41123ee064564ad15b119e366a787"
+    },
+    {
+      "path": "data/waveforms/r9_pdn_hard_p0_on.csv",
+      "bytes": 942015,
+      "sha256": "e2f506061334cdd51d1cf514ea6c8b8b04444cc0be7e1e971f575d1d1bef3bcf"
+    },
+    {
+      "path": "data/waveforms/v3_nom100_off.csv",
+      "bytes": 943955,
+      "sha256": "a51eeeb6124213e1505b2fd09758ec150ac16a3496e80d7b7ace01bb44a9bbd2"
+    },
+    {
+      "path": "data/waveforms/v3_nom100_on.csv",
+      "bytes": 941962,
+      "sha256": "cf0f78942f8e5fe902ffc4d8b271f7cf5c776c80434f1f0b6b822e4df4d25ccd"
+    },
+    {
+      "path": "data/waveforms/v3_pdn_hard_p0_off.csv",
+      "bytes": 943905,
+      "sha256": "fec9747d9b8585888c8760b049f541e00dc59b808dcce835573390345463e2ac"
+    },
+    {
+      "path": "data/waveforms/v3_pdn_hard_p0_on.csv",
+      "bytes": 942189,
+      "sha256": "876723e90d20de0618aa786c96eb695c27339eca71fc6c2e6fcb3569f568502a"
+    },
+    {
+      "path": "figures/architecture.png",
+      "bytes": 119987,
+      "sha256": "93c652b1ef6789750b9c259ddf20e6849a7092c40c8793d52e6995576acc9b0d"
+    },
+    {
+      "path": "figures/architecture.svg",
+      "bytes": 12607,
+      "sha256": "00db667d97f611f9da8a53e27f2a18b8eb4e5a866e788cd4577f74e0909bfed2"
+    },
+    {
+      "path": "figures/tradeoffs.png",
+      "bytes": 219810,
+      "sha256": "3d23fd724b2fcbc7440f2a634f9a03c8044b5bd03dfdd9776dbcb5df4703fd07"
+    },
+    {
+      "path": "figures/tradeoffs.svg",
+      "bytes": 104294,
+      "sha256": "3fcdce028950e20e3437299cac1ab90aca32c3b31516f445e453d58e0379eff1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5012,
+      "sha256": "581bbc1ad9e16ad623c668429cb6c83904c9beaa89ba49f6d2fb580d7b6a9126"
+    },
+    {
+      "path": "scripts/reproduce.py",
+      "bytes": 11281,
+      "sha256": "013cda687123ff5f40322acf29f5e2de30b4218f4fe3a29aee6ccd7ee68c0acb"
+    },
+    {
+      "path": "tests/test_reproduce.py",
+      "bytes": 1844,
+      "sha256": "37497f5de4400b42bd02c0e5f4c3b20e1ecb3247bd85e1ffdc59c2d08f82846b"
+    }
+  ]
+}

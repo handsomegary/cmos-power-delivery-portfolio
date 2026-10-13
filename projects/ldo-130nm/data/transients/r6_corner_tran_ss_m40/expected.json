@@ -1,0 +1,289 @@
+{
+  "case": "r6_corner_tran_ss_m40",
+  "events": [
+    {
+      "name": "load_up_1",
+      "definition": {
+        "name": "load_up_1",
+        "edge_start_s": 5e-06,
+        "edge_end_s": 5.1e-06,
+        "pre_window_s": [
+          4.4e-06,
+          4.9000000000000005e-06
+        ],
+        "post_window_s": [
+          2.7420000000000002e-05,
+          2.9900000000000002e-05
+        ],
+        "analysis_window_s": [
+          5e-06,
+          2.9900000000000002e-05
+        ],
+        "pre_dc_role": "pre",
+        "post_dc_role": "high",
+        "tail_fit_window_s": [
+          1.75e-05,
+          2.9900000000000002e-05
+        ]
+      },
+      "status": "computed",
+      "pre_event_window": {
+        "status": "computed",
+        "window_s": [
+          4.4e-06,
+          4.9000000000000005e-06
+        ],
+        "mean_v": 0.8999831491923272,
+        "minimum_v": 0.8999831491923272,
+        "maximum_v": 0.8999831491923272,
+        "peak_to_peak_v": 0.0,
+        "endpoint_drift_v": 0.0,
+        "endpoint_slope_v_per_s": 0.0,
+        "sample_count_including_interpolated_bounds": 102,
+        "maximum_sample_interval_s": 5.000000000000799e-09,
+        "mean_method": "time_weighted_trapezoidal"
+      },
+      "post_event_window": {
+        "status": "computed",
+        "window_s": [
+          2.7420000000000002e-05,
+          2.9900000000000002e-05
+        ],
+        "mean_v": 0.899932792916541,
+        "minimum_v": 0.8999327929165404,
+        "maximum_v": 0.8999327929165424,
+        "peak_to_peak_v": 1.9984014443252818e-15,
+        "endpoint_drift_v": 1.1102230246251565e-15,
+        "endpoint_slope_v_per_s": 4.4767057444562763e-10,
+        "sample_count_including_interpolated_bounds": 498,
+        "maximum_sample_interval_s": 5.0000000000075754e-09,
+        "mean_method": "time_weighted_trapezoidal",
+        "settled_candidate": true,
+        "settling_checks": {
+          "ripple_limit_v": 0.009000000000000001,
+          "endpoint_drift_limit_v": 0.0045000000000000005
+        }
+      },
+      "minimum_v": 0.7848575752456766,
+      "maximum_v": 0.8999831491923272,
+      "minimum_time_s": 5.115144117766563e-06,
+      "maximum_time_s": 5e-06,
+      "undershoot_from_target_v": 0.11514242475432346,
+      "overshoot_from_target_v": 0.0,
+      "pre_to_post_mean_change_v": -5.035627578620083e-05,
+      "post_mean_error_from_target_v": -6.720708345897553e-05,
+      "edge_duration_s": 9.999999999999989e-08,
+      "recovery": {
+        "status": "computed_estimate",
+        "value": 1.6228691821061667e-06,
+        "unit": "s",
+        "band_center_v": 0.9,
+        "band_half_width_v": 0.009000000000000001,
+        "band_v": [
+          0.891,
+          0.909
+        ],
+        "method": "last_outside_sample_then_linear_boundary_interpolation",
+        "observation_end_s": 2.9900000000000002e-05,
+        "from_edge_end_s": 1.6228691821061667e-06,
+        "from_edge_start_s": 1.7228691821061665e-06,
+        "recovered_at_s": 6.722869182106167e-06,
+        "qualification": "remains_in_band_only_until_observation_end",
+        "band_crossing_bracket": {
+          "time_s": [
+            6.719788856448721e-06,
+            6.724788856448721e-06
+          ],
+          "vout_v": [
+            0.8909569816104368,
+            0.8910268092753449
+          ],
+          "width_s": 5.000000000000799e-09,
+          "first_saved_or_boundary_sample_inside_s": 6.724788856448721e-06
+        },
+        "precision_note": "linear-interpolant estimate within saved-point bracket; no substep physical accuracy claim"
+      },
+      "sampling": {
+        "maximum_sample_interval_s": 5.0000000000109636e-09,
+        "edge_interval_count": 70,
+        "numerical_convergence": "not_checked_compare_independent_runs"
+      },
+      "finite_observation": {
+        "edge_end_s": 5.1e-06,
+        "observation_end_s": 2.9900000000000002e-05,
+        "hold_observed_after_edge_s": 2.48e-05,
+        "post_mean_is_not_a_static_reference": true
+      },
+      "pre_residual_to_dc": {
+        "status": "computed",
+        "window_s": [
+          4.4e-06,
+          4.9000000000000005e-06
+        ],
+        "static_dc_vout_v": 0.8999831491887298,
+        "mean_residual_v": 3.5974556666928947e-12,
+        "maximum_abs_residual_v": 3.5974556666928947e-12,
+        "endpoint_drift_v": 0.0,
+        "endpoint_slope_v_per_s": 0.0,
+        "native_stability_state": "stable"
+      },
+      "post_residual_to_dc": {
+        "status": "computed",
+        "window_s": [
+          2.7420000000000002e-05,
+          2.9900000000000002e-05
+        ],
+        "static_dc_vout_v": 0.8999327919199669,
+        "mean_residual_v": 9.965741565309827e-10,
+        "maximum_abs_residual_v": 9.965754887986122e-10,
+        "endpoint_drift_v": 1.1102230246251565e-15,
+        "endpoint_slope_v_per_s": 4.4767057444562763e-10,
+        "native_stability_state": "stable",
+        "observation_end_residual_v": 9.965746006201925e-10,
+        "post_window_candidate_within_9mv_of_dc": true
+      }
+    },
+    {
+      "name": "load_down_2",
+      "definition": {
+        "name": "load_down_2",
+        "edge_start_s": 3e-05,
+        "edge_end_s": 3.01e-05,
+        "pre_window_s": [
+          2.741e-05,
+          2.9900000000000002e-05
+        ],
+        "post_window_s": [
+          5.701e-05,
+          6e-05
+        ],
+        "analysis_window_s": [
+          3e-05,
+          6e-05
+        ],
+        "pre_dc_role": "high",
+        "post_dc_role": "post",
+        "tail_fit_window_s": [
+          4.505e-05,
+          6e-05
+        ]
+      },
+      "status": "computed",
+      "pre_event_window": {
+        "status": "computed",
+        "window_s": [
+          2.741e-05,
+          2.9900000000000002e-05
+        ],
+        "mean_v": 0.899932792916541,
+        "minimum_v": 0.8999327929165404,
+        "maximum_v": 0.8999327929165424,
+        "peak_to_peak_v": 1.9984014443252818e-15,
+        "endpoint_drift_v": 7.771561172376096e-16,
+        "endpoint_slope_v_per_s": 3.1211089045687114e-10,
+        "sample_count_including_interpolated_bounds": 500,
+        "maximum_sample_interval_s": 5.0000000000075754e-09,
+        "mean_method": "time_weighted_trapezoidal"
+      },
+      "post_event_window": {
+        "status": "computed",
+        "window_s": [
+          5.701e-05,
+          6e-05
+        ],
+        "mean_v": 0.8999831491923286,
+        "minimum_v": 0.8999831491923284,
+        "maximum_v": 0.8999831491923286,
+        "peak_to_peak_v": 2.220446049250313e-16,
+        "endpoint_drift_v": -2.220446049250313e-16,
+        "endpoint_slope_v_per_s": -7.426240967392343e-11,
+        "sample_count_including_interpolated_bounds": 600,
+        "maximum_sample_interval_s": 5.000000000004187e-09,
+        "mean_method": "time_weighted_trapezoidal",
+        "settled_candidate": true,
+        "settling_checks": {
+          "ripple_limit_v": 0.009000000000000001,
+          "endpoint_drift_limit_v": 0.0045000000000000005
+        }
+      },
+      "minimum_v": 0.8916091884453009,
+      "maximum_v": 1.007626672713924,
+      "minimum_time_s": 3.185029392522368e-05,
+      "maximum_time_s": 3.022029392522432e-05,
+      "undershoot_from_target_v": 0.008390811554699118,
+      "overshoot_from_target_v": 0.10762667271392401,
+      "pre_to_post_mean_change_v": 5.03562757875331e-05,
+      "post_mean_error_from_target_v": -1.6850807671442425e-05,
+      "edge_duration_s": 9.999999999999904e-08,
+      "recovery": {
+        "status": "computed_estimate",
+        "value": 1.2767419740899964e-06,
+        "unit": "s",
+        "band_center_v": 0.9,
+        "band_half_width_v": 0.009000000000000001,
+        "band_v": [
+          0.891,
+          0.909
+        ],
+        "method": "last_outside_sample_then_linear_boundary_interpolation",
+        "observation_end_s": 6e-05,
+        "from_edge_end_s": 1.2767419740899964e-06,
+        "from_edge_start_s": 1.3767419740899954e-06,
+        "recovered_at_s": 3.1376741974089996e-05,
+        "qualification": "remains_in_band_only_until_observation_end",
+        "band_crossing_bracket": {
+          "time_s": [
+            3.137529392522393e-05,
+            3.138029392522392e-05
+          ],
+          "vout_v": [
+            0.9091096072738368,
+            0.9087311418905019
+          ],
+          "width_s": 4.999999999990635e-09,
+          "first_saved_or_boundary_sample_inside_s": 3.138029392522392e-05
+        },
+        "precision_note": "linear-interpolant estimate within saved-point bracket; no substep physical accuracy claim"
+      },
+      "sampling": {
+        "maximum_sample_interval_s": 5.0000000000075754e-09,
+        "edge_interval_count": 53,
+        "numerical_convergence": "not_checked_compare_independent_runs"
+      },
+      "finite_observation": {
+        "edge_end_s": 3.01e-05,
+        "observation_end_s": 6e-05,
+        "hold_observed_after_edge_s": 2.9900000000000002e-05,
+        "post_mean_is_not_a_static_reference": true
+      },
+      "pre_residual_to_dc": {
+        "status": "computed",
+        "window_s": [
+          2.741e-05,
+          2.9900000000000002e-05
+        ],
+        "static_dc_vout_v": 0.8999327919199669,
+        "mean_residual_v": 9.965741565309827e-10,
+        "maximum_abs_residual_v": 9.965754887986122e-10,
+        "endpoint_drift_v": 7.771561172376096e-16,
+        "endpoint_slope_v_per_s": 3.1211089045687114e-10,
+        "native_stability_state": "stable"
+      },
+      "post_residual_to_dc": {
+        "status": "computed",
+        "window_s": [
+          5.701e-05,
+          6e-05
+        ],
+        "static_dc_vout_v": 0.8999831491887298,
+        "mean_residual_v": 3.598787934322445e-12,
+        "maximum_abs_residual_v": 3.598787934322445e-12,
+        "endpoint_drift_v": -2.220446049250313e-16,
+        "endpoint_slope_v_per_s": -7.426240967392343e-11,
+        "native_stability_state": "stable",
+        "observation_end_residual_v": 3.59856588971752e-12,
+        "post_window_candidate_within_9mv_of_dc": true
+      }
+    }
+  ]
+}

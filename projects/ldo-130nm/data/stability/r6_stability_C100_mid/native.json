@@ -1,0 +1,9 @@
+{
+  "phase_margin_deg": 15.71514997992161,
+  "gain_margin_db": 3.705411503974102,
+  "pm_frequency_hz": 32121244.38395241,
+  "gm_frequency_hz": 41484183.06475218,
+  "status": "native_margin_file_export",
+  "native_state_text": "The circuit is stable. Gain and phase margin are both found.",
+  "native_stability_state": "stable"
+}

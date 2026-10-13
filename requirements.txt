@@ -1,0 +1,2 @@
+# Needed only to regenerate plots; numerical analysis uses Python's standard library.
+matplotlib>=3.8,<4

@@ -1,0 +1,87 @@
+{
+  "process": "130 nm CMOS",
+  "scope": "TT,27C,ideal_Vref,external_Cout; sampled DC data",
+  "load_regulation": {
+    "status": "computed",
+    "load_range_a": [
+      0.0001,
+      0.005
+    ],
+    "delta_vout_v": -5.807030810300873e-05,
+    "slope_mv_per_ma": -0.011851083286328312,
+    "vout_range_v": [
+      0.8999504618287572,
+      0.9000085321368602
+    ]
+  },
+  "line_regulation": [
+    {
+      "status": "computed",
+      "load_a": 0.0001,
+      "vin_range_v": [
+        1.1,
+        1.2
+      ],
+      "delta_vout_v": 3.7526225765249777e-05,
+      "slope_mv_per_v": 0.37526225765249827
+    },
+    {
+      "status": "computed",
+      "load_a": 0.005,
+      "vin_range_v": [
+        1.1,
+        1.2
+      ],
+      "delta_vout_v": 4.766233441244605e-05,
+      "slope_mv_per_v": 0.4766233441244611
+    }
+  ],
+  "dropout": [
+    {
+      "load_a": 0.0001,
+      "status": "bracketed_with_interpolated_estimate",
+      "definition": "1% loss from this load's Vout at Vin=1.2V",
+      "sample_step_v": 0.01,
+      "baseline_vout_v": 0.9000085321368602,
+      "threshold_vout_v": 0.8910084468154915,
+      "vin_bracket_v": [
+        0.89,
+        0.9
+      ],
+      "vout_bracket_v": [
+        0.8872072225493467,
+        0.8971962052741596
+      ],
+      "vin_at_threshold_v_estimate": 0.893805416798552,
+      "dropout_v_estimate": 0.002796969983060449,
+      "dropout_bracket_v": [
+        -0.0010084468154915038,
+        0.008991553184508505
+      ],
+      "precision_limit": "10mV input sweep bracket; interpolation does not establish finer accuracy"
+    },
+    {
+      "load_a": 0.005,
+      "status": "bracketed_with_interpolated_estimate",
+      "definition": "1% loss from this load's Vout at Vin=1.2V",
+      "sample_step_v": 0.01,
+      "baseline_vout_v": 0.8999504618287572,
+      "threshold_vout_v": 0.8909509572104696,
+      "vin_bracket_v": [
+        1.02,
+        1.03
+      ],
+      "vout_bracket_v": [
+        0.8893574487022229,
+        0.8977099408038782
+      ],
+      "vin_at_threshold_v_estimate": 1.0219078240228816,
+      "dropout_v_estimate": 0.13095686681241203,
+      "dropout_bracket_v": [
+        0.12904904278953044,
+        0.13904904278953045
+      ],
+      "precision_limit": "10mV input sweep bracket; interpolation does not establish finer accuracy"
+    }
+  ]
+}
