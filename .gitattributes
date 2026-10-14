@@ -1,3 +1,4 @@
 # Preserve exact release bytes for the published SHA256 receipts.
 * -text
 *.png binary
+*.pdf binary

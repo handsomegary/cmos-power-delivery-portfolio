@@ -1,6 +1,6 @@
 {
   "schema": "circuit-portfolio-release-v1",
-  "release_date": "2026-10-13",
+  "release_date": "2026-10-14",
   "projects": [
     "ldo-130nm",
     "two-phase-buck"
@@ -8,8 +8,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 87,
-      "sha256": "4340e6bd123e0c88b423e8b2b4e0037613104ebe8130b309ec25cf5b2547d470"
+      "bytes": 100,
+      "sha256": "ec631ed7b0601e071a5633230141aea2e84bfc05c4787c3bdc13d01efe35de63"
     },
     {
       "path": ".gitignore",
@@ -17,9 +17,19 @@
       "sha256": "e2eefa98564e465900e42a7e819676f07fd19c8b9487c3b9dea8a73dc2b28e11"
     },
     {
+      "path": "docs/technical-brief.pdf",
+      "bytes": 820859,
+      "sha256": "a9cfbaf9ba748c87fc3fda1d495d9b4c13f50c86288ca593f2bd3fe98ef84087"
+    },
+    {
       "path": "docs/validation-scope.md",
       "bytes": 2641,
       "sha256": "e1b8aa811ef989ad89ce72f03a0bdffafcf9282aa7d45c9ff79578ffacfb291b"
+    },
+    {
+      "path": "projects/ldo-130nm/data/circuit.json",
+      "bytes": 4737,
+      "sha256": "8de883b287356cf29cdfb365985b019d385f77c296f10b7501a06816b7dc209a"
     },
     {
       "path": "projects/ldo-130nm/data/convergence_T10.json",
@@ -393,13 +403,13 @@
     },
     {
       "path": "projects/ldo-130nm/design.md",
-      "bytes": 2496,
-      "sha256": "f722f3a61e56f5563d11668c4a0bf660f77b04700c7e4353de84fb0852af1d3c"
+      "bytes": 5331,
+      "sha256": "529913902562584eb4ac5547ab9d3eefd9cba45b8b0cb0c9fc21d2fb74e889b8"
     },
     {
       "path": "projects/ldo-130nm/README.md",
-      "bytes": 7003,
-      "sha256": "581240a6113227b2efccc4cbda68c376db89fc2713da9393bbfdf3f72ada40d7"
+      "bytes": 13361,
+      "sha256": "c2fa0b915d3b340ec5479e396b3a6f90b564f0cd77dd1b7ff15b72eb924ac29b"
     },
     {
       "path": "projects/ldo-130nm/results/convergence.json",
@@ -410,6 +420,21 @@
       "path": "projects/ldo-130nm/results/events.csv",
       "bytes": 3980,
       "sha256": "73c82d5494044aef186d3001edc5ec9ec5fbc2f50ff161b83a694b4f82b8b4e0"
+    },
+    {
+      "path": "projects/ldo-130nm/results/figures/architecture.png",
+      "bytes": 150161,
+      "sha256": "b323214325860dd4fcde8a3bd45c36e3e5d95dc75afdc5bb2c5c43e197e751f0"
+    },
+    {
+      "path": "projects/ldo-130nm/results/figures/architecture.svg",
+      "bytes": 109210,
+      "sha256": "3878527bfa24ec3d78d6f7df99b84616feaa522a679258127f6ec62f727ab539"
+    },
+    {
+      "path": "projects/ldo-130nm/results/figures/circuit_drawing_provenance.json",
+      "bytes": 297,
+      "sha256": "1f85bc27daaed41f6d9350ffdd78a8dce805c193115b18e40298ce7410bc2c7c"
     },
     {
       "path": "projects/ldo-130nm/results/figures/dc_sweep.png",
@@ -427,14 +452,34 @@
       "sha256": "7013b5afd603c47978f327d7956f6cd7feb19c152b5f892b66d25a5a9a3a40cd"
     },
     {
+      "path": "projects/ldo-130nm/results/figures/schematic.png",
+      "bytes": 261821,
+      "sha256": "457c08e2da11b1c0fe54ae4b93e50c04f02a757e215625cf2cf8ff42515852e8"
+    },
+    {
+      "path": "projects/ldo-130nm/results/figures/schematic.svg",
+      "bytes": 181852,
+      "sha256": "40634b39831b118e83fa98bab84a78a506685c7fdcbfeddd220d0e10825e54af"
+    },
+    {
       "path": "projects/ldo-130nm/results/figures/transients.png",
       "bytes": 189525,
       "sha256": "b3869a65dcc386fd46ab09486e7060b2492379e972782b96c2212a29e4fd9984"
     },
     {
+      "path": "projects/ldo-130nm/results/figures_of_merit.csv",
+      "bytes": 2578,
+      "sha256": "be86f6220d637a8990575b0a915506ad5a81ce36bbee8fb0ec816e21a4ddd6ae"
+    },
+    {
+      "path": "projects/ldo-130nm/results/figures_of_merit.json",
+      "bytes": 29644,
+      "sha256": "8873cd93ca13d6e39349d6d49baea347d613cb43002fb2626c2736eeb8a9b1fe"
+    },
+    {
       "path": "projects/ldo-130nm/results/summary.json",
-      "bytes": 307142,
-      "sha256": "dbdd440f3de24a899e85122c509125ca9aee6015a0ccccca4d6bcc9e2e83103c"
+      "bytes": 307420,
+      "sha256": "09c80165d46da962a7246634dc8374fb0adeda35f689e0f2e28f244f4e92cd0b"
     },
     {
       "path": "projects/ldo-130nm/scripts/analyze_results.py",
@@ -442,9 +487,19 @@
       "sha256": "95a10f60740560f9d8ff316692d006c0915c7ca731e2a230d8382211d3fdebbd"
     },
     {
+      "path": "projects/ldo-130nm/scripts/figures_of_merit.py",
+      "bytes": 8495,
+      "sha256": "9f652b42e89788753c1fcfdfca9f62d74f56469bb2ec0ced8f0aada393cf3987"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/render_circuits.py",
+      "bytes": 14861,
+      "sha256": "ddb71c1ca62d1199e6a405bf8b64eb71e48c419bcead7a5aeed2cc53fba68e6c"
+    },
+    {
       "path": "projects/ldo-130nm/scripts/reproduce.py",
-      "bytes": 15961,
-      "sha256": "31df96f64bc957349e6df36ebae7591a1957f4247b76af26295ebf72bca2446a"
+      "bytes": 16285,
+      "sha256": "5cc632bf1cde0a7e2552e6735d90dc6f9d89eb04569510175c014b91ab1ceeef"
     },
     {
       "path": "projects/ldo-130nm/scripts/waveform_comparison.py",
@@ -453,13 +508,28 @@
     },
     {
       "path": "projects/two-phase-buck/asset_manifest.json",
-      "bytes": 4555,
-      "sha256": "c69b87e2ffe00f7b42e7951aa3cbb381f83b94fb1e7c8eab2e86929464f345bf"
+      "bytes": 5695,
+      "sha256": "9954a4d53ff19b5b116dceb63b505b42d118d8536568637281be3712b00b5ec9"
     },
     {
       "path": "projects/two-phase-buck/controller/buck_control.va",
       "bytes": 9032,
       "sha256": "071a6e61778a0ed45e95055bba763106d46cb56a6918ea5342a146a74676ca61"
+    },
+    {
+      "path": "projects/two-phase-buck/data/assist_port_work.json",
+      "bytes": 66914,
+      "sha256": "1a6afdf157c79cc9470e2b49c4dd600c26b6e2d385edeeffe0b9337c9ab6b42d"
+    },
+    {
+      "path": "projects/two-phase-buck/data/comparison_metrics.json",
+      "bytes": 70337,
+      "sha256": "5347a5802b7df4a8c0b595f87b58bd3d74fb581896f47e69a7c7772af15590e1"
+    },
+    {
+      "path": "projects/two-phase-buck/data/mos_dimensions.csv",
+      "bytes": 5377,
+      "sha256": "d5981feed7cb4106a58e961add706d417cca24587f136e6de45f7b5416e92d88"
     },
     {
       "path": "projects/two-phase-buck/data/r8_events.csv",
@@ -557,49 +627,74 @@
       "sha256": "876723e90d20de0618aa786c96eb695c27339eca71fc6c2e6fcb3569f568502a"
     },
     {
+      "path": "projects/two-phase-buck/design.md",
+      "bytes": 10497,
+      "sha256": "bc89bd81fb1f2983903b00e15ebff97d15c380db5e708f1cbeea048c963b74fc"
+    },
+    {
       "path": "projects/two-phase-buck/figures/architecture.png",
-      "bytes": 119987,
-      "sha256": "93c652b1ef6789750b9c259ddf20e6849a7092c40c8793d52e6995576acc9b0d"
+      "bytes": 263605,
+      "sha256": "f9f1054038f07d0f5da2696772980dd8a97c5c10e673d206b262308fba111388"
     },
     {
       "path": "projects/two-phase-buck/figures/architecture.svg",
-      "bytes": 12607,
-      "sha256": "00db667d97f611f9da8a53e27f2a18b8eb4e5a866e788cd4577f74e0909bfed2"
+      "bytes": 69164,
+      "sha256": "e947254a2d80ad42c479910173b26c35aefa7da43b819c425dbb1618d7ca93df"
+    },
+    {
+      "path": "projects/two-phase-buck/figures/block_diagram.png",
+      "bytes": 132695,
+      "sha256": "3e52be3d46dba030013aa18afd9af548c0760b1aa5e4f5d2196adc0f68b6ebd1"
+    },
+    {
+      "path": "projects/two-phase-buck/figures/block_diagram.svg",
+      "bytes": 17449,
+      "sha256": "23d684bf78036aa362ea2dd71de72ed67992ec771cf381d921047bbee76c2f77"
     },
     {
       "path": "projects/two-phase-buck/figures/tradeoffs.png",
-      "bytes": 219810,
-      "sha256": "3d23fd724b2fcbc7440f2a634f9a03c8044b5bd03dfdd9776dbcb5df4703fd07"
+      "bytes": 216011,
+      "sha256": "b83f06a0e40f423970408771024a5920fcfa32657cfe68162987c55a5b1299a7"
     },
     {
       "path": "projects/two-phase-buck/figures/tradeoffs.svg",
-      "bytes": 104294,
-      "sha256": "3fcdce028950e20e3437299cac1ab90aca32c3b31516f445e453d58e0379eff1"
+      "bytes": 89266,
+      "sha256": "14a11f7685d3facc27f5ead6f995e02057ac3089628a2e4f3eea94738606ca67"
     },
     {
       "path": "projects/two-phase-buck/README.md",
-      "bytes": 5012,
-      "sha256": "581bbc1ad9e16ad623c668429cb6c83904c9beaa89ba49f6d2fb580d7b6a9126"
+      "bytes": 8335,
+      "sha256": "e0f0421358d72954f4eeea5714dc14fccc81c30678473e151f5bdc83d9ba55c9"
+    },
+    {
+      "path": "projects/two-phase-buck/scripts/figures.py",
+      "bytes": 10158,
+      "sha256": "bbdd503a90f65707cb0c2a0b586651d7d58b209523b7c08ebf7f9654efc8c4c8"
     },
     {
       "path": "projects/two-phase-buck/scripts/reproduce.py",
-      "bytes": 11281,
-      "sha256": "013cda687123ff5f40322acf29f5e2de30b4218f4fe3a29aee6ccd7ee68c0acb"
+      "bytes": 16213,
+      "sha256": "c94d20aba3abb8005b06278b0cccf6fc2357a4cf08c14a961cac45e9021942ea"
     },
     {
       "path": "projects/two-phase-buck/tests/test_reproduce.py",
-      "bytes": 1844,
-      "sha256": "37497f5de4400b42bd02c0e5f4c3b20e1ecb3247bd85e1ffdc59c2d08f82846b"
+      "bytes": 3125,
+      "sha256": "553f5fc2eeb4d83d39249ab4a474a21889c1a1ecd8ebc6c7120a25497eecaeb7"
     },
     {
       "path": "README.md",
-      "bytes": 2997,
-      "sha256": "0cba66588c0df9de42bc6cc7becb30e881eed16aba6ab8ce41911c4f08c6be86"
+      "bytes": 3873,
+      "sha256": "91eac9731d22fe3797492c86f60a33fe8914b8bdf3a8e69a16625cb45c45176a"
     },
     {
       "path": "requirements.txt",
-      "bytes": 105,
-      "sha256": "89aada88f02189e8209c0b55e92facf3d3f49d8a4ed06754094a19cf43c9d66f"
+      "bytes": 182,
+      "sha256": "a903fb96ed3113bf97bb42aff07b28f7201057b3fea5510fa0f02dfc08a2cdc1"
+    },
+    {
+      "path": "tools/build_technical_brief.py",
+      "bytes": 24749,
+      "sha256": "3542d364cbfab61e6533c5ffce4ed253feec4262f1fb44c6289108a607b9dd03"
     },
     {
       "path": "tools/reproduce_all.py",
@@ -612,6 +707,6 @@
       "sha256": "d1ea9bf8ea50f00e1fa217056ab19d6a7d34bb3e0e0a25e66f90a57bc872c46f"
     }
   ],
-  "file_count": 121,
-  "total_bytes": 34454755
+  "file_count": 140,
+  "total_bytes": 36580231
 }

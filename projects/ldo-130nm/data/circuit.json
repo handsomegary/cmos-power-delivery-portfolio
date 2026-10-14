@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "revision": 6,
+  "process": "130 nm CMOS",
+  "devices": [
+    {
+      "id": "M1",
+      "type": "PMOS",
+      "role": "pass",
+      "drain": "VOUT",
+      "gate": "GATE",
+      "source": "VIN",
+      "body": "VIN",
+      "w_unit_um": 10.0,
+      "l_um": 0.15,
+      "m": 10,
+      "nf": 1,
+      "w_total_um": 100.0
+    },
+    {
+      "id": "M2",
+      "type": "PMOS",
+      "role": "reference differential input",
+      "drain": "MIRROR",
+      "gate": "VREF",
+      "source": "TAIL",
+      "body": "VIN",
+      "w_unit_um": 2.5,
+      "l_um": 1.0,
+      "m": 4,
+      "nf": 1,
+      "w_total_um": 10.0
+    },
+    {
+      "id": "M3",
+      "type": "PMOS",
+      "role": "feedback differential input",
+      "drain": "EAOUT",
+      "gate": "FBIN",
+      "source": "TAIL",
+      "body": "VIN",
+      "w_unit_um": 2.5,
+      "l_um": 1.0,
+      "m": 4,
+      "nf": 1,
+      "w_total_um": 10.0
+    },
+    {
+      "id": "M4",
+      "type": "PMOS",
+      "role": "input-stage tail",
+      "drain": "TAIL",
+      "gate": "BIAS",
+      "source": "VIN",
+      "body": "VIN",
+      "w_unit_um": 2.5,
+      "l_um": 1.0,
+      "m": 8,
+      "nf": 1,
+      "w_total_um": 20.0
+    },
+    {
+      "id": "M5",
+      "type": "PMOS",
+      "role": "diode-connected bias",
+      "drain": "BIAS",
+      "gate": "BIAS",
+      "source": "VIN",
+      "body": "VIN",
+      "w_unit_um": 2.5,
+      "l_um": 1.0,
+      "m": 2,
+      "nf": 1,
+      "w_total_um": 5.0
+    },
+    {
+      "id": "M6",
+      "type": "NMOS",
+      "role": "diode-connected mirror",
+      "drain": "MIRROR",
+      "gate": "MIRROR",
+      "source": "GND",
+      "body": "GND",
+      "w_unit_um": 2.0,
+      "l_um": 1.0,
+      "m": 2,
+      "nf": 1,
+      "w_total_um": 4.0
+    },
+    {
+      "id": "M7",
+      "type": "NMOS",
+      "role": "mirror output",
+      "drain": "EAOUT",
+      "gate": "MIRROR",
+      "source": "GND",
+      "body": "GND",
+      "w_unit_um": 2.0,
+      "l_um": 1.0,
+      "m": 2,
+      "nf": 1,
+      "w_total_um": 4.0
+    },
+    {
+      "id": "M8",
+      "type": "PMOS",
+      "role": "gate-driver pull-up",
+      "drain": "GATE",
+      "gate": "BIAS",
+      "source": "VIN",
+      "body": "VIN",
+      "w_unit_um": 2.5,
+      "l_um": 1.0,
+      "m": 8,
+      "nf": 1,
+      "w_total_um": 20.0
+    },
+    {
+      "id": "M9",
+      "type": "NMOS",
+      "role": "common-source gate-driver sink",
+      "drain": "GATE",
+      "gate": "EAOUT",
+      "source": "GND",
+      "body": "GND",
+      "w_unit_um": 2.0,
+      "l_um": 1.0,
+      "m": 4,
+      "nf": 1,
+      "w_total_um": 8.0
+    }
+  ],
+  "passives": [
+    {
+      "id": "RTOP",
+      "type": "resistor",
+      "nodes": [
+        "VOUT",
+        "FB"
+      ],
+      "value": 200000.0,
+      "unit": "ohm"
+    },
+    {
+      "id": "RBOT",
+      "type": "resistor",
+      "nodes": [
+        "FB",
+        "GND"
+      ],
+      "value": 200000.0,
+      "unit": "ohm"
+    },
+    {
+      "id": "RBIAS",
+      "type": "resistor",
+      "nodes": [
+        "BIAS",
+        "GND"
+      ],
+      "value": 100000.0,
+      "unit": "ohm"
+    },
+    {
+      "id": "RBUF",
+      "type": "resistor",
+      "nodes": [
+        "EAOUT",
+        "CBUFMID"
+      ],
+      "value": 36000.0,
+      "unit": "ohm"
+    },
+    {
+      "id": "CBUF",
+      "type": "capacitor",
+      "nodes": [
+        "CBUFMID",
+        "GATE"
+      ],
+      "value": 1.8e-11,
+      "unit": "F"
+    },
+    {
+      "id": "RZ",
+      "type": "resistor",
+      "nodes": [
+        "GATE",
+        "CMMID"
+      ],
+      "value": 1000,
+      "unit": "ohm"
+    },
+    {
+      "id": "CMILL",
+      "type": "capacitor",
+      "nodes": [
+        "CMMID",
+        "VOUT"
+      ],
+      "value": 1e-15,
+      "unit": "F"
+    },
+    {
+      "id": "CCOMP",
+      "type": "capacitor",
+      "nodes": [
+        "GATE",
+        "GND"
+      ],
+      "value": 1e-13,
+      "unit": "F"
+    },
+    {
+      "id": "COUT",
+      "type": "capacitor",
+      "nodes": [
+        "VOUT",
+        "GND"
+      ],
+      "value": 1e-09,
+      "unit": "F",
+      "scope": "external ideal zero-ESR test condition"
+    }
+  ],
+  "analysis_probe": {
+    "nodes": [
+      "FB",
+      "FBIN"
+    ],
+    "dc_behavior": "zero-impedance loop probe",
+    "purpose": "native loop-gain injection"
+  },
+  "width_convention": "Wtotal = Wunit * nf * m; nf=1 in every saved instance; m denotes parallel replicas, not new multi-finger layout",
+  "geometry_scope": "drawn design dimensions; no layout extraction or fabricated dimensions"
+}

@@ -10,6 +10,7 @@
   "event_count": 20,
   "saved_transient_samples": 289248,
   "data_sha256": {
+    "data/circuit.json": "8de883b287356cf29cdfb365985b019d385f77c296f10b7501a06816b7dc209a",
     "data/convergence_T10.json": "e5ff978b61a0e46ede9455e8b52653547cf34aabdae22863df81344a5109f8d7",
     "data/convergence_T100.json": "94d4b77d770cfdfd0e30f95fe905f1e929ed3580d43a78dd60a7a5f7fbad36b3",
     "data/dc_regulation_dropout.json": "d3459cd2b9b6d5b9ee97731425b8dc8bcc2a5f7669d4b79d90103af88df391eb",
@@ -8490,7 +8491,12 @@
       "figures/dc_sweep.png",
       "figures/loop_psrr_noise.png",
       "figures/pvt.png",
-      "figures/transients.png"
+      "figures/transients.png",
+      "figures/architecture.svg",
+      "figures/architecture.png",
+      "figures/schematic.svg",
+      "figures/schematic.png",
+      "figures/circuit_drawing_provenance.json"
     ]
   }
 }

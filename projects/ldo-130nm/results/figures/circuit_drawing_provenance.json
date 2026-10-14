@@ -1,0 +1,6 @@
+{
+  "circuit_data_sha256": "8de883b287356cf29cdfb365985b019d385f77c296f10b7501a06816b7dc209a",
+  "renderer_sha256": "ddb71c1ca62d1199e6a405bf8b64eb71e48c419bcead7a5aeed2cc53fba68e6c",
+  "source": "data/circuit.json",
+  "scope": "design drawing; no circuit simulation or layout extraction"
+}

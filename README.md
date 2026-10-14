@@ -1,19 +1,29 @@
-# CMOS Power Delivery Portfolio
+# CMOS Power Delivery: Circuit Design and Verification
 
-Two schematic-level power-management projects using licensed **130 nm CMOS** transistor models, Cadence Virtuoso, and Spectre. This repository contains original design descriptions, selected numerical simulation exports, measurement analysis, plots, and original behavioral controller code where applicable.
+Two **130 nm CMOS** circuit studies developed in Cadence Virtuoso and evaluated with Spectre: a transistor-level analog LDO and a PDN-aware two-phase Buck with fast transient assist. The presentation connects architecture, block operation, complete device sizing, performance figures and reproducible numerical analysis.
 
-| Project | Implemented design | Evidence and limits |
+**[Download the two-column technical report](docs/technical-brief.pdf)**
+
+| Study | Circuit implementation | Verification evidence |
 | --- | --- | --- |
-| [Analog LDO](projects/ldo-130nm/README.md) | Transistor-level error amplifier, buffer, PMOS pass device, feedback, and compensation | DC, native loop analysis, load transients, process/temperature exploration, and capacitance-boundary failures. Ideal reference and ideal external passives; pre-layout. |
-| [Two-phase Buck with transient assist](projects/two-phase-buck/README.md) | Transistor power bridges, gate drivers, window detectors, and source/sink assist, combined with behavioral control | 47 main cases and 8 separate gate-resistor exploration cases completed. Matching OFF/ON comparisons include adverse outcomes. PI/PWM/timing and current sensing remain behavioral or ideal. |
+| [Analog LDO](projects/ldo-130nm/README.md) | 9 MOS instances: differential amplifier, bias, driver and PMOS pass stage | 164 static/DC configurations; 10 transient runs; native loop analysis, PSRR, noise and disclosed transient FoM definitions |
+| [Two-phase Buck with transient assist](projects/two-phase-buck/README.md) | 59 MOS instances: two power bridges, six drivers, two window comparators and source/sink assist; behavioral control | 47 main cases + 8 gate-resistance cases; matched assist comparisons, normalized transient metrics and solver sensitivity |
 
-## What to review
+## Architecture and implementation
 
-- The LDO shows sizing, bias/headroom, compensation, and load/capacitance tradeoffs. Small-capacitance failures remain in the dataset.
-- The Buck shows the interaction between a switching regulator, a declared RLC power-delivery network, and a finite transient-assist path. Lower peak droop does not automatically mean shorter recovery or lower unload overshoot.
-- Measurement definitions, actual operating conditions, and numerical sensitivity are stated alongside results. Completed cases are not a count of cases meeting all performance requirements.
+![LDO regulation architecture](projects/ldo-130nm/results/figures/architecture.png)
 
-Start with each project's README and figures, then inspect its numerical data and reproduce the analysis.
+![Two-phase Buck and transient-assist block diagram](projects/two-phase-buck/figures/block_diagram.png)
+
+Each study includes block-by-block operation, transistor connectivity, **unit W/L, parallel multiplicity, finger count and total width**. All 9 LDO and 59 Buck MOS instances are listed individually. These are drawn dimensions; layout area is not inferred from W/L.
+
+## Performance interpretation
+
+The LDO evaluates bias/headroom, compensation, external capacitance and load-step tradeoffs. Its literature-defined FoM equations state the voltage excursion, current denominator and quiescent-current convention. Recovery time is reported separately.
+
+The Buck evaluates the remote-load response and finite transient-assist path. Its matched-condition metrics include normalized peak deviation, recovery in nominal switching cycles and modeled event energy. These expose the tradeoff between smaller droop, recovery and unload overshoot. Complete physical efficiency and area-based metrics remain unavailable.
+
+Both studies retain adverse results: small-capacitance LDO failures, limited low-supply headroom, hard-PDN Buck unload overshoot and numerical sensitivity. Completed-case counts describe verification coverage.
 
 ## Reproduce the published analysis
 
@@ -26,6 +36,8 @@ python tools/reproduce_all.py --outdir reproduced
 ```
 
 The scripts read the published exports and write fresh analysis outputs. They do not launch Virtuoso, Spectre, a virtual machine, or any remote connection.
+
+Regenerate the six-page technical report with `python -B tools/build_technical_brief.py`. Its tables use the published numerical exports and the complete device inventory; ReportLab is the additional document dependency.
 
 ## Simulation scope
 

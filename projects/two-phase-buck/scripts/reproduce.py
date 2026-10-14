@@ -74,6 +74,27 @@ def hardware_summary(revision):
             'qualification': 'Own connectivity and geometry inventory; technology setup is a separate dependency.'}
 
 
+def verify_dimensions():
+    with (PROJECT/'data/mos_dimensions.csv').open(encoding='utf-8',newline='') as stream:
+        dimensions=list(csv.DictReader(stream))
+    with (PROJECT/'data/r8_hardware.csv').open(encoding='utf-8',newline='') as stream:
+        hardware={r['instance']:r for r in csv.DictReader(stream) if r['role'].endswith(('NMOS','PMOS'))}
+    if len(dimensions)!=59 or {r['instance'] for r in dimensions}!=set(hardware):
+        raise ValueError('Device table must enumerate exactly all 59 MOS instances')
+    for r in dimensions:
+        h=hardware[r['instance']]
+        expected=float(r['Wunit_um'])*float(r['m'])*float(r['nf'])
+        if not math.isclose(expected,float(r['Wtotal_um']),rel_tol=1e-12):
+            raise ValueError('Finger/multiplier width arithmetic differs')
+        for actual,reference in [(float(r['Wtotal_um'])*1e-6,float(h['effective_total_width_m'])),
+                                 (float(r['L_um'])*1e-6,float(h['length_m']))]:
+            if not math.isclose(actual,reference,rel_tol=1e-12):raise ValueError('Dimension table differs from hardware')
+        if [r[k] for k in ('D','G','S','B')]!=json.loads(h['connected_nodes']):
+            raise ValueError('Terminal table differs from hardware')
+    return {'complete_MOS_rows':59,'block_counts':{b:sum(r['block']==b for r in dimensions)
+                for b in sorted({r['block'] for r in dimensions})}}
+
+
 def sensitivity_summary(data):
     events = [e for c in data['comparisons'] for e in c['events']]
     waveform = [e for c in data['comparisons'] for e in c['waveform_errors']
@@ -89,14 +110,71 @@ def sensitivity_summary(data):
             'convergence_pass': None}
 
 
+def comparison_metrics(datasets, assist_work):
+    """Matched-condition diagnostics, not a universal or literature benchmark FoM."""
+    work={(e['case'],e['event']):e for e in assist_work['events']}
+    rows=[]
+    for revision,data in datasets.items():
+        cases={c['name']:c for c in data['cases']}
+        events={(e['case'],e['event']):e for e in data['events']}
+        for pair in data['pairs']:
+            baseline,variant=pair['baseline'],pair['variant']
+            bc,vc=cases[baseline]['config'],cases[variant]['config']
+            for key in ('VOUT_REQ','FSW','COUT','CLOAD','R_PDN','L_PDN','L_PHASE','PHASES'):
+                if bc['parameters'][key]!=vc['parameters'][key]:
+                    raise ValueError('Comparison conditions differ: '+key)
+            target=bc['parameters']['VOUT_REQ'];fsw=bc['parameters']['FSW']
+            for event_row in pair['events']:
+                name=event_row['event']
+                be,ve=events[baseline,name],events[variant,name]
+                bw,vw=work[baseline,name],work[variant,name]
+                if be['window_s']!=ve['window_s'] or be['window_s']!=bw['window_s'] or ve['window_s']!=vw['window_s']:
+                    raise ValueError('Event energy windows differ')
+                metric='droop_from_target_v' if name in ('load_up','line_down') else 'overshoot_from_target_v'
+                bp,vp=be[metric],ve[metric]
+                bt,vt=be['raw_recovery_s'],ve['raw_recovery_s']
+                row={'revision':revision,'pair':pair['name'],'event':name,'peak_definition':metric,
+                     'baseline':baseline,'variant':variant,'target_v':target,'fsw_hz':fsw,
+                     'window_s':be['window_s'],
+                     'peak_v_baseline':bp,'peak_v_variant':vp,
+                     'normalized_peak_pct_baseline':100*bp/target,
+                     'normalized_peak_pct_variant':100*vp/target,
+                     'relative_peak_reduction_pct':100*(bp-vp)/bp if bp else None,
+                     'raw_recovery_cycles_baseline':bt*fsw if bt is not None else None,
+                     'raw_recovery_cycles_variant':vt*fsw if vt is not None else None,
+                     'raw_recovery_change_pct':100*(vt-bt)/bt if bt and vt is not None else None,
+                     'modeled_supply_event_energy_delta_nj':(ve['input_energy_j']-be['input_energy_j'])*1e9}
+                for mode,w in [('baseline',bw),('variant',vw)]:
+                    row['source_VLOAD_port_work_nj_'+mode]=w['up_signed_energy_j']*1e9
+                    row['sink_VLOAD_port_work_nj_'+mode]=w['down_signed_energy_j']*1e9
+                    row['net_assist_VLOAD_work_nj_'+mode]=(w['up_signed_energy_j']-w['down_signed_energy_j'])*1e9
+                rows.append(row)
+    return rows
+
+
+def metric_document(rows):
+    return {'schema':'matched-transient-diagnostics-v1',
+            'qualification':'Within matched cases only; derived diagnostics, not a literature FoM, composite score or efficiency estimate. Case conditions remain in r8/r9 measurements.',
+            'definitions':{
+                'normalized_peak_pct':'100 * target-referenced primary peak / target voltage',
+                'relative_peak_reduction_pct':'100 * (baseline peak - variant peak) / baseline peak; negative is worse',
+                'raw_recovery_cycles':'command switching frequency * finite saved-grid recovery time',
+                'raw_recovery_change_pct':'100 * (variant recovery - baseline recovery) / baseline recovery; positive is slower',
+                'source_VLOAD_port_work':'Integral of VLOAD * Iup over the stated event window; positive current enters VLOAD',
+                'sink_VLOAD_port_work':'Integral of VLOAD * Idn over the stated event window; positive current leaves VLOAD',
+                'net_assist_VLOAD_work':'source port work minus sink port work; not complete assist loss',
+                'modeled_supply_event_energy_delta':'variant minus baseline exact VI event energy at the modeled VIN and VDDC ports; includes main-loop and stored-energy changes; excludes unmodeled controller internal power',
+            },'rows':rows}
+
+
 def plots(outdir, r8, r9, sensitivities):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
-    from matplotlib.patches import FancyBboxPatch
-    plt.rcParams.update({'font.size': 10, 'svg.fonttype': 'none'})
+    plt.rcParams.update({'font.size': 10, 'font.family':'DejaVu Sans', 'svg.fonttype': 'none',
+                         'axes.spines.top':False,'axes.spines.right':False})
     metadata = {'Date': None}
-    colors = ['#2666a4', '#df7d2a']
+    colors = ['#222222', '#24629a']
     groups = [('r8 nominal\n100 ns up', event(r8, 'v3_nom100', 'load_up'), 'droop_from_target_v'),
               ('r8 nominal\n100 ns down', event(r8, 'v3_nom100', 'load_down'), 'overshoot_from_target_v'),
               ('r8 hard PDN\n10 ns up', event(r8, 'v3_pdn_hard_p0', 'load_up'), 'droop_from_target_v'),
@@ -138,28 +216,9 @@ def plots(outdir, r8, r9, sensitivities):
     fig.savefig(outdir/'tradeoffs.svg',metadata=metadata)
     plt.close(fig)
 
-    fig,ax=plt.subplots(figsize=(13,7),layout='constrained')
-    ax.set(xlim=(0,13),ylim=(0,7));ax.axis('off')
-    def box(x,y,w,h,text,color='#e9eef5'):
-        ax.add_patch(FancyBboxPatch((x,y),w,h,boxstyle='round,pad=0.1',facecolor=color,edgecolor='#283849'))
-        ax.text(x+w/2,y+h/2,text,ha='center',va='center',fontsize=10)
-    def arrow(a,b,color='#33475b'):
-        ax.annotate('',xy=b,xytext=a,arrowprops={'arrowstyle':'->','color':color,'lw':1.5})
-    box(.3,4.4,2.2,1.5,'Algorithmic PI / PWM\n180-degree phases\nideal 1 V/A sensing','#e8f2e8')
-    box(3.1,4.4,2.1,1.5,'I/O MOS drivers\n+ two MOS bridges\n1.8 V input')
-    box(5.8,4.4,1.6,1.5,'External L\n2.2 uH / phase\nDCR 50 mohm')
-    box(8.1,4.4,1.6,1.5,'VCONV\nCout 1 uF\nESR / ESL')
-    box(10.3,4.4,2.2,1.5,'Parameterized PDN\nR / L + load C\nVLOAD: 0.9 V')
-    for a,b in [((2.5,5.15),(3.1,5.15)),((5.2,5.15),(5.8,5.15)),((7.4,5.15),(8.1,5.15)),((9.7,5.15),(10.3,5.15))]:arrow(a,b)
-    box(8.3,1.8,3.4,1.3,'Core-MOS voltage-window detectors\n+ I/O MOS source / sink assist')
-    arrow((11.4,4.4),(10.8,3.1));arrow((9.4,3.1),(11.4,4.4),'#b66625')
-    ax.plot([11.4,11.4,1.4,1.4],[4.4,.9,.9,4.4],color='#327447',lw=1.2)
-    ax.text(5.8,1.0,'VLOAD feedback + event-driven PI-state handoff (mode 2, 40 mA)',ha='center',color='#327447',fontsize=10)
-    ax.text(6.5,6.65,'Own mixed-level architecture | r8: 59 MOS, r9: assist gate R = 1k / 2k',ha='center',fontsize=14)
-    ax.text(6.5,.2,'Pre-layout; external ideal L/C; assumed PDN. Controller internal power is unmodeled.',ha='center',fontsize=10)
-    fig.savefig(outdir/'architecture.png',dpi=160)
-    fig.savefig(outdir/'architecture.svg',metadata=metadata)
-    plt.close(fig)
+    from figures import draw_architecture, draw_block_diagram
+    draw_architecture(outdir)
+    draw_block_diagram(outdir)
 
 
 def main():
@@ -176,13 +235,20 @@ def main():
     r8,r9=load('r8_measurements.json'),load('r9_measurements.json')
     counts={'r8':verify_measurements(r8,47,24),'r9':verify_measurements(r9,8,4)}
     sensitivities={r:sensitivity_summary(load(f'{r}_solver_sensitivity.json')) for r in ['r8','r9']}
+    metrics=comparison_metrics({'r8':r8,'r9':r9},load('assist_port_work.json'))
+    if load('comparison_metrics.json')!=metric_document(metrics):
+        raise ValueError('Published comparison metrics differ from reproduced arithmetic')
     report={'schema':'buck-public-reproduction-v1','validated_asset_count':assets,
             'counts':counts,'hardware':{r:hardware_summary(r) for r in ['r8','r9']},
-            'solver_sensitivity':sensitivities,'simulation_rerun':False,
+            'device_table':verify_dimensions(),
+            'solver_sensitivity':sensitivities,'comparison_metrics':metrics,'simulation_rerun':False,
             'scope':'Recomputed pair arithmetic and result figures from published measurements. No new raw-waveform parsing or transistor simulation.',
             'physical_overall_efficiency':None,'switching_stability_signoff':None}
     outdir.mkdir(parents=True,exist_ok=True)
     (outdir/'summary.json').write_text(json.dumps(report,indent=2,allow_nan=False)+'\n',encoding='utf-8')
+    (outdir/'comparison_metrics.json').write_text(json.dumps(metric_document(metrics),indent=2,allow_nan=False)+'\n',encoding='utf-8')
+    with (outdir/'comparison_metrics.csv').open('w',encoding='utf-8',newline='') as stream:
+        writer=csv.DictWriter(stream,fieldnames=list(metrics[0]));writer.writeheader();writer.writerows(metrics)
     if not args.no_plots:plots(outdir,r8,r9,sensitivities)
     print('Reproduced r8: 47 cases/24 pairs; r9: 8 cases/4 pairs. Performance status remains unassigned.')
 

@@ -259,9 +259,14 @@ def main():
         'native_stability':native,'transients':list(cases.values()),'nominal':nominal}
     cli.outdir.mkdir(parents=True)
     result['plots']={'status':'disabled'} if cli.no_plots else plots(cli.outdir,static,cases,data)
+    if not cli.no_plots and result['plots']['status']=='generated':
+        from render_circuits import draw_all
+        result['plots']['files'].extend('figures/'+name for name in draw_all(cli.outdir/'figures'))
     dump(cli.outdir/'summary.json',result)
     dump(cli.outdir/'convergence.json',comparisons)
     write_events(cli.outdir/'events.csv',cases)
+    from figures_of_merit import write as write_figures_of_merit
+    write_figures_of_merit(cli.outdir,result)
     print(json.dumps({'static':164,'transients':10,'events':20,
         'exported_measurement_parity':'verified','plots':result['plots']['status'],
         'saved_samples':result['saved_transient_samples']}))
