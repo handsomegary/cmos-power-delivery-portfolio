@@ -1,50 +1,61 @@
-# CMOS Power Delivery: Circuit Design and Verification
+# 130 nm CMOS Power Delivery: LDO and PDN-Aware Two-Phase Buck
 
-Two **130 nm CMOS** circuit studies developed in Cadence Virtuoso and evaluated with Spectre: a transistor-level analog LDO and a PDN-aware two-phase Buck with fast transient assist. The presentation connects architecture, block operation, complete device sizing, performance figures and reproducible numerical analysis.
+Two circuit studies connect transistor sizing and feedback design with supply-transient verification: an analog LDO and a two-phase Buck with local source/sink assist at a remote load. Both were developed in Virtuoso and simulated in Spectre.
 
-**[Download the two-column technical report](docs/technical-brief.pdf)**
+**[Technical report](docs/technical-brief.pdf)** · **[Circuit atlas](report/circuit-atlas.pdf)** · **[Editable LaTeX and build instructions](report/README.md)**
 
-| Study | Circuit implementation | Verification evidence |
+The published evidence belongs to **LDO r6 and Buck r8/r9**. These historical schematic-level experiments are separate from later local LDO development.
+
+| Study | Circuit implementation | Selected result and condition |
 | --- | --- | --- |
-| [Analog LDO](projects/ldo-130nm/README.md) | 9 MOS instances: differential amplifier, bias, driver and PMOS pass stage | 164 static/DC configurations; 10 transient runs; native loop analysis, PSRR, noise and disclosed transient FoM definitions |
-| [Two-phase Buck with transient assist](projects/two-phase-buck/README.md) | 59 MOS instances: two power bridges, six drivers, two window comparators and source/sink assist; behavioral control | 47 main cases + 8 gate-resistance cases; matched assist comparisons, normalized transient metrics and solver sensitivity |
+| [Analog LDO, r6](projects/ldo-130nm/README.md) | 9 MOS instances; 1.2 V to 0.9 V; 0.1–5 mA load | 63.89° minimum native PM in the 45-point 1.2 V matrix; nominal 100 ns load-up: 126.823 mV undershoot and 1.690 us recovery |
+| [Two-phase Buck, r8](projects/two-phase-buck/README.md) | 59 MOS instances plus behavioral control; 1.8 V to 0.9 V; 5 MHz per phase | Nominal 100 ns load-up: assist changes droop from 143.37 to 107.39 mV, while recovery increases from 7.55 to 13.74 us |
+| [Buck gate-resistance study, r9](projects/two-phase-buck/results.md) | Same MOS dimensions; revised source/sink gate resistance | Hard-PDN unload: 87.13 mV OFF versus 94.55 mV ON; the overshoot penalty remains |
 
-## Architecture and implementation
+The quoted LDO transient uses an external ideal 1 nF output capacitor. Buck OFF/ON values are paired within each revision. Recovery definitions differ between the studies; their detailed result pages retain the conditions, measurement windows, FoM equations and adverse cases.
 
-![LDO regulation architecture](projects/ldo-130nm/results/figures/architecture.png)
+## Read the design
 
-![Two-phase Buck and transient-assist block diagram](projects/two-phase-buck/figures/block_diagram.png)
+The six-page technical report presents the measurements and design tradeoffs. The circuit atlas presents the architecture and transistor circuits as editable **American CircuitikZ** drawings, with PDF and white-background SVG exports from the same sources.
 
-Each study includes block-by-block operation, transistor connectivity, **unit W/L, parallel multiplicity, finger count and total width**. All 9 LDO and 59 Buck MOS instances are listed individually. These are drawn dimensions; layout area is not inferred from W/L.
+| Question | Open |
+| --- | --- |
+| How do the power path, control and feedback work? | [Architecture and block functions](docs/architecture.md) |
+| What are the connections and dimensions? | [LDO circuit: all 9 instances](projects/ldo-130nm/design.md) · [Buck circuit: all 59 instances](projects/two-phase-buck/design.md) |
+| What passed, what failed, and how was it measured? | [LDO results](projects/ldo-130nm/results.md) · [Buck results](projects/two-phase-buck/results.md) |
+| How are the vector drawings edited and built? | [Circuit sources and drawing profile](report/README.md) |
+| How can the saved numerical results be reproduced? | [Offline reproduction guide](docs/reproducibility.md) |
 
-## Performance interpretation
+![LDO regulation architecture](report/figures/ldo-architecture.svg)
 
-The LDO evaluates bias/headroom, compensation, external capacitance and load-step tradeoffs. Its literature-defined FoM equations state the voltage excursion, current denominator and quiescent-current convention. Recovery time is reported separately.
+![Two-phase Buck and transient-assist architecture](report/figures/buck-architecture.svg)
 
-The Buck evaluates the remote-load response and finite transient-assist path. Its matched-condition metrics include normalized peak deviation, recovery in nominal switching cycles and modeled event energy. These expose the tradeoff between smaller droop, recovery and unload overshoot. Complete physical efficiency and area-based metrics remain unavailable.
+The circuit drawings use black linework, white blocks, restrained gray grouping and mathematical terminal labels. Full sizing tables disclose unit W/L, parallel multiplicity, finger count and total width. Drawn device dimensions do not establish layout area.
 
-Both studies retain adverse results: small-capacitance LDO failures, limited low-supply headroom, hard-PDN Buck unload overshoot and numerical sensitivity. Completed-case counts describe verification coverage.
+## Reproduce the saved results
 
-## Reproduce the published analysis
+Python 3.10 or later is sufficient for numerical verification. From the repository root:
 
-Use Python 3.10 or later. Core numerical checks use the standard library. Install the plotting dependency if plots are needed:
+```sh
+python tools/verify_repository.py
+python tests/test_download.py
+python tools/reproduce_all.py --no-plots --outdir reproduced/numerical
+```
+
+The LDO analysis remeasures retained transient samples. The Buck analysis checks retained measurement tables and matched-pair arithmetic; its display traces are not used to remeasure energy or recovery. Neither command starts a simulator.
+
+For plots and the technical report:
 
 ```sh
 python -m pip install -r requirements.txt
-python tools/verify_release.py
-python tools/reproduce_all.py --outdir reproduced
+python tools/reproduce_all.py --outdir reproduced/with-plots
+python tools/build_technical_brief.py --output reproduced/technical-brief.pdf
 ```
 
-The scripts read the published exports and write fresh analysis outputs. They do not launch Virtuoso, Spectre, a virtual machine, or any remote connection.
+Rebuilding the CircuitikZ drawings additionally requires LaTeX and Poppler; see the [figure build guide](report/README.md). Use fresh analysis output directories.
 
-Regenerate the six-page technical report with `python -B tools/build_technical_brief.py`. Its tables use the published numerical exports and the complete device inventory; ReportLab is the additional document dependency.
+## Verification scope
 
-## Simulation scope
+The LDO amplifier, driver and pass element use transistor models. Buck bridges, gate drivers, window detectors and assist devices use transistor models; PI/PWM control and current sensing are behavioral. Ideal references and external passive-network assumptions are identified in each study.
 
-The original designs were simulated with real licensed transistor models. Connectivity and geometry tables describe the implemented circuits.
-
-The included scripts reproduce analysis of the published simulation exports. A new transistor simulation requires an authorized technology setup, simulator, and configured design/netlist.
-
-These results are pre-layout simulation. They do not establish silicon measurements, extracted package behavior, physical reliability, or complete switching-loop signoff. Full physical Buck efficiency is not reported because all controller, reference, and sensing power is not modeled.
-
-See [validation scope](docs/validation-scope.md) and the project-specific measurement definitions for details.
+This release supports schematic-level analysis of the stated revisions. It does not establish layout/PEX closure, silicon performance, physical package extraction or complete Buck efficiency. A new transistor simulation requires a compatible technology installation, simulator and configured design/netlist. See [validation scope](docs/validation-scope.md).

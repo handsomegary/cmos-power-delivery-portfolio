@@ -1,8 +1,8 @@
 # Circuit implementation and sizing
 
-![Complete transistor circuit](results/figures/schematic.svg)
+![Complete transistor circuit](../../report/figures/ldo-core.svg)
 
-**Fig. 2.** Complete core, compensation, feedback, and ideal load connections. Repeated node labels denote electrical connections. Every bulk terminal is explicitly labeled. [PNG](results/figures/schematic.png) · [machine-readable circuit](data/circuit.json).
+**Fig. 2.** Complete core, compensation, feedback, and ideal load connections. Repeated node labels denote electrical connections. Bulk connections are explicitly identified. [Editable CircuitikZ](../../report/figures/ldo-core.tex) · [vector PDF](../../report/figures/ldo-core.pdf) · [machine-readable circuit](data/circuit.json).
 
 ## A. Block functions
 
@@ -62,6 +62,14 @@ M2/M3 bodies connect to VIN, **not TAIL**. The other PMOS bodies connect to VIN;
 The capacitor study changes only COUT to 100 pF or 10 pF. It does not substitute new amplifier sizing. All passives are ideal in the reported simulations. At VIN=1.1 V, the slow/slow −40 C light-load tail margin is only about 0.44 mV; native DC/STB results should not be read as ample bias compliance below the sampled conditions.
 
 ## D. Recreate the drawings
+
+The current American CircuitikZ figure is built from the repository root with:
+
+```sh
+python report/build_circuits.py --only ldo-core
+```
+
+See the [shared drawing profile and atlas](../../report/README.md). The original drawing generator remains available for the historical presentation:
 
 ```text
 python -B projects/ldo-130nm/scripts/render_circuits.py --outdir reproduced/ldo-circuits

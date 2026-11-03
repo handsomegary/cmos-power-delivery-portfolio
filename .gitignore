@@ -39,3 +39,8 @@ __pycache__/
 venv/
 .DS_Store
 Thumbs.db
+
+# LaTeX intermediates; compiled figure PDFs/SVGs are intentional release assets.
+*.aux
+*.out
+*.synctex.gz

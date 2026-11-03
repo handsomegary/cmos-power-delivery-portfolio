@@ -4,7 +4,9 @@
 
 The 130 nm CMOS study uses two synchronous MOS bridges, explicit transistor-level drivers and voltage-window detectors, and a behavioral current-reference/PWM controller. The load is sensed at VLOAD after a parameterized series PDN. r8 contains 59 MOS instances; r9 retains their dimensions and inserts 1 kohm/2 kohm in the source/sink assist gate paths.
 
-![Electrical architecture](figures/architecture.png)
+![Electrical architecture](../../report/figures/buck-architecture.svg)
+
+[Power stage and assist](../../report/figures/buck-power.svg) · [Gate drivers](../../report/figures/buck-driver.svg) · [Window detectors](../../report/figures/buck-detector.svg) · [Editable CircuitikZ and vector PDF](../../report/README.md). The figures use shared templates and explicit instance maps; the tables below enumerate all 59 devices.
 
 ## Device-size convention
 

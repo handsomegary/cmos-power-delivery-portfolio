@@ -12,7 +12,7 @@ def main():
     args = parser.parse_args()
     repo = Path(__file__).resolve().parents[1]
     destination = args.outdir.resolve()
-    protected = [repo / name for name in ('projects', 'docs', 'tools')]
+    protected = [repo / name for name in ('projects', 'docs', 'tools', 'report', 'tests', '.github', '.git')]
     if destination == repo or any(destination == p or p in destination.parents for p in protected):
         parser.error('Choose a fresh output directory instead of a source directory.')
     if destination.exists() and any(destination.iterdir()):

@@ -118,8 +118,8 @@
     },
     {
       "path": "design.md",
-      "bytes": 10497,
-      "sha256": "bc89bd81fb1f2983903b00e15ebff97d15c380db5e708f1cbeea048c963b74fc"
+      "bytes": 10867,
+      "sha256": "317c5a8568334b57bfd2653da447a041e1b7afff37f1b031a4e3862e8b45e7af"
     },
     {
       "path": "figures/architecture.png",
@@ -153,8 +153,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8335,
-      "sha256": "e0f0421358d72954f4eeea5714dc14fccc81c30678473e151f5bdc83d9ba55c9"
+      "bytes": 4229,
+      "sha256": "f474c414adb6c9f9be7bd24c161a4e7bc46629f40fb62c868824759b9c448a61"
     },
     {
       "path": "scripts/figures.py",

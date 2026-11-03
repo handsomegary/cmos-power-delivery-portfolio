@@ -1,0 +1,89 @@
+% Historical r6: exactly M1--M9 and all passives in data/circuit.json.
+% MOS body anchors are explicit: PMOS -> VIN; NMOS -> GND.
+\begin{circuitikz}[american,font=\sffamily\bfseries\small]
+  \begin{scope}[on background layer]
+    \draw[pmic group] (-.7,.0) rectangle (2.25,6.7);
+    \draw[pmic group] (2.5,.0) rectangle (8.2,6.7);
+    \draw[pmic group] (8.45,.0) rectangle (11.7,6.7);
+    \draw[pmic group] (11.95,.0) rectangle (16.7,6.7);
+    \draw[pmic group] (-.7,-3.5) rectangle (16.7,-.3);
+  \end{scope}
+  \node[anchor=north west] at (-.58,6.58) {Bias};
+  \node[anchor=north west] at (2.62,6.58) {Differential amplifier};
+  \node[anchor=north west] at (8.57,6.58) {Gate driver};
+  \node[anchor=north west] at (12.07,6.58) {Pass and feedback};
+  \node[anchor=north west] at (-.58,-.4) {Compensation and loop probe};
+  \draw (1,5.95) -- (15.4,5.95) node[right] {$V_{\mathrm{IN}}$};
+  \node[pmos,bulk] (m5) at (1,4.8) {};
+  \node[pmos,bulk] (m4) at (5.4,4.9) {};
+  \node[pmos,bulk] (m2) at (4,3.15) {};
+  \node[pmos,bulk] (m3) at (7,3.15) {};
+  \node[nmos,bulk] (m6) at (4,1.2) {};
+  \node[nmos,bulk] (m7) at (7,1.2) {};
+  \node[pmos,bulk] (m8) at (9.7,4.8) {};
+  \node[nmos,bulk] (m9) at (9.7,1.2) {};
+  \node[pmos,bulk] (m1) at (13.2,4.8) {};
+  \foreach \dev/\xx in {m5/1,m4/5.4,m8/9.7,m1/13.2} {
+    \draw (\dev.S) -- (\xx,5.95) node[circ] {};
+  }
+  \node at (.7,5.3) {$M_5$};
+  \node at (3.7,3.7) {$M_2$};
+  \node at (6.7,3.7) {$M_3$};
+  \node at (5.1,5.4) {$M_4$};
+  \node at (9.4,5.3) {$M_8$};
+  \node at (12.9,5.3) {$M_1$};
+  \node at (3.7,1.8) {$M_6$};
+  \node at (6.7,1.8) {$M_7$};
+  \node at (9.4,1.8) {$M_9$};
+  \foreach \dev in {m1,m2,m3,m4,m5,m8} {
+    \draw (\dev.bulk) -- ++(.18,0) node[right,font=\footnotesize] {$V_{\mathrm{IN}}$};
+  }
+  \foreach \dev in {m6,m7,m9} {
+    \draw (\dev.bulk) -- ++(.18,0) node[right,font=\footnotesize] {$0$};
+  }
+  \draw (m5.D) -- (1,3.6) node[circ] (bias) {} to[R,l={$R_{\mathrm{BIAS}}$},a={$100\,\mathrm{k\Omega}$}] (1,.4) node[ground] {};
+  \draw (bias) -- (0,3.6) |- (m5.G);
+  \node[right] at (bias) {$V_{\mathrm{BIAS}}$};
+  \draw (m4.G) -- ++(-.45,0) node[left] {$V_{\mathrm{BIAS}}$};
+  \draw (m4.D) -- (5.4,4.0) node[circ] {};
+  \draw (m2.S) -- (4,4.0) -- (7,4.0) -- (m3.S);
+  \node[above right,font=\footnotesize] at (5.6,4.0) {$V_{\mathrm{TAIL}}$};
+  \draw (m2.G) -- ++(-.25,0) node[above,font=\footnotesize] {$V_{\mathrm{REF}}$};
+  \draw (m3.G) -- ++(-.25,0) node[above,font=\footnotesize] {$V_{\mathrm{FBIN}}$};
+  \draw (m2.D) -- (m6.D);
+  \draw (4,2.3) node[circ] {} -- (3.0,2.3) |- (m6.G);
+  \node[above,font=\footnotesize] at (3.5,2.3) {$V_{\mathrm{MIR}}$};
+  \draw (m7.G) -- ++(-.3,0) node[left] {$V_{\mathrm{MIR}}$};
+  \draw (m3.D) -- (m7.D);
+  \draw (7,2.3) node[circ] {} -- (7.5,2.3) node[right] {$V_{\mathrm{EA}}$};
+  \foreach \dev/\xx in {m6/4,m7/7,m9/9.7} {
+    \draw (\dev.S) -- (\xx,.4) node[ground] {};
+  }
+  \draw (m8.G) -- ++(-.3,0) node[above,xshift=.2cm,font=\footnotesize] {$V_{\mathrm{BIAS}}$};
+  \draw (m9.G) -- ++(-.3,0) node[above,xshift=.2cm,font=\footnotesize] {$V_{\mathrm{EA}}$};
+  \draw (m8.D) -- (m9.D);
+  \draw (9.7,3.35) node[circ] {} -- (10.6,3.35) node[right] {$V_{\mathrm{G}}$};
+  \draw (m1.G) -- ++(-.35,0) node[above,xshift=.2cm,font=\footnotesize] {$V_{\mathrm{G}}$};
+  \draw (m1.D) -- (13.2,3.5) -- (16.35,3.5) node[right] {$V_{\mathrm{OUT}}$};
+  \draw (13.2,3.5) node[circ] {} to[R,l={$R_{\mathrm{TOP}}$},a={$200\,\mathrm{k\Omega}$}] (13.2,2.05)
+    node[circ] (fb) {} to[R,l={$R_{\mathrm{BOT}}$},a={$200\,\mathrm{k\Omega}$}] (13.2,.4) node[ground] {};
+  \draw (fb) -- (12.35,2.05) node[left] {$V_{\mathrm{FB}}$};
+  \draw (15.7,3.5) node[circ] {} to[C,l={$C_{\mathrm{OUT}}$},a={$1\,\mathrm{nF}$}] (15.7,.4) node[ground] {};
+  \node[font=\sffamily\bfseries\footnotesize,align=right] at (15.0,2.8) {External\\ideal};
+  % Independent branch drawings share the explicitly named electrical nets.
+  \draw (.0,-1.55) node[left] {$V_{\mathrm{EA}}$} to[R,l={$R_{\mathrm{BUF}}$},a_={$36\,\mathrm{k\Omega}$}] (2.2,-1.55)
+    to[C,l={$C_{\mathrm{BUF}}$},a_={$18\,\mathrm{pF}$}] (4.4,-1.55) node[right] {$V_{\mathrm{G}}$};
+  \draw (6.2,-1.55) node[left] {$V_{\mathrm{G}}$} to[R,l={$R_Z$},a_={$1\,\mathrm{k\Omega}$}] (8.4,-1.55)
+    to[C,l={$C_{\mathrm{MILL}}$},a_={$1\,\mathrm{fF}$}] (10.6,-1.55) node[right] {$V_{\mathrm{OUT}}$};
+  \draw (13.3,-1.55) node[left] {$V_{\mathrm{G}}$} to[C,l={$C_{\mathrm{COMP}}$}] (15.3,-1.55) node[ground,rotate=90] {};
+  \node[above,font=\footnotesize] at (15.7,-1.55) {$0.1\,\mathrm{pF}$};
+  \draw (.0,-2.7) node[left] {$V_{\mathrm{FB}}$} -- (1,-2.7) node[ocirc] {} -- (2,-2.7) node[ocirc] {} -- (3,-2.7) node[right] {$V_{\mathrm{FBIN}}$};
+  \node[above,font=\sffamily\bfseries\footnotesize] at (1.5,-2.7) {Loop probe};
+  \node[font=\sffamily\bfseries\footnotesize,anchor=west] at (5,-2.7) {$V_{\mathrm{REF}}=0.45\,\mathrm{V}$ ideal; $V_{\mathrm{IN}}=1.2\,\mathrm{V}$};
+  \draw (13,-2.7) node[left] {$V_{\mathrm{OUT}}$} to[I,l={$I_{\mathrm{LOAD}}$},a_={$0.1$--$5\,\mathrm{mA}$}] (15.5,-2.7) node[ground,rotate=90] {};
+  \node[anchor=north,inner sep=0pt,font=\sffamily\bfseries\small] at (8,-3.9) {\begin{tabular}{c|cccccc}
+    Device & $M_1$ & $M_2,M_3$ & $M_4,M_8$ & $M_5$ & $M_6,M_7$ & $M_9$\\\hline
+    $W_{\mathrm{unit}}/L$ ($\mu$m) & $10/0.15$ & $2.5/1$ & $2.5/1$ & $2.5/1$ & $2/1$ & $2/1$\\
+    $m$; $n_f=1$ for all & 10 & 4 & 8 & 2 & 2 & 4
+  \end{tabular}};
+\end{circuitikz}

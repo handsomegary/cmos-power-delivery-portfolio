@@ -10,8 +10,10 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Paragraph, Table, TableStyle
 from reportlab.lib.utils import ImageReader
+from pypdf import PdfReader, PdfWriter, Transformation
 
 ROOT = Path(__file__).resolve().parents[1]
+VECTOR_FIGURES = []
 BLUE = colors.HexColor('#174568')
 INK = colors.HexColor('#111111')
 GRAY = colors.HexColor('#555555')
@@ -50,7 +52,7 @@ class Page:
         pdf.setFillColor(GRAY)
         pdf.setFont('Times-Roman', 8)
         pdf.drawString(LEFT, 765, 'CMOS POWER DELIVERY | TECHNICAL REPORT')
-        pdf.drawRightString(RIGHT, 765, '130 nm CMOS | 14 October 2026')
+        pdf.drawRightString(RIGHT, 765, '130 nm CMOS | Historical r6 / r8 / r9')
         self.heading = heading
         self.y = TOP
 
@@ -87,13 +89,22 @@ class Page:
 
     def image(self, relative, caption, y, max_height, width=RIGHT-LEFT):
         path = ROOT / relative
-        im = ImageReader(str(path))
-        iw, ih = im.getSize()
+        if path.suffix.lower() == '.pdf':
+            box = PdfReader(path).pages[0].mediabox
+            iw, ih = float(box.width), float(box.height)
+            im = None
+        else:
+            im = ImageReader(str(path))
+            iw, ih = im.getSize()
         height = min(max_height, width * ih / iw)
         drawn_width = height * iw / ih
         if y-height < BOTTOM:
             raise ValueError('Figure overflows')
-        self.pdf.drawImage(im,LEFT+(width-drawn_width)/2,y-height,drawn_width,height,mask='auto')
+        x = LEFT+(width-drawn_width)/2
+        if im is None:
+            VECTOR_FIGURES.append((self.number-1, path, x, y-height, drawn_width/iw))
+        else:
+            self.pdf.drawImage(im,x,y-height,drawn_width,height,mask='auto')
         return self.paragraph(caption,LEFT,y-height-7,width,'caption')
 
     def finish(self):
@@ -107,10 +118,10 @@ class Page:
 def architecture_page(pdf):
     p=Page(pdf,2,'Architecture')
     y=p.section('II. CIRCUIT ARCHITECTURES',width=RIGHT-LEFT)
-    y=p.image('projects/ldo-130nm/results/figures/architecture.png',
+    y=p.image('report/figures/ldo-architecture.pdf',
         '<b>Fig. 1.</b> LDO regulation path, bias, feedback and compensation. Solid power connections and explicit feedback polarity identify the implemented loop. The reference and external output capacitor are testbench elements.',y,270)
     y-=12
-    y=p.image('projects/two-phase-buck/figures/block_diagram.png',
+    y=p.image('report/figures/buck-architecture.pdf',
         '<b>Fig. 2.</b> Two-phase Buck, remote load and transient-assist architecture. The energy path, analog detector path and behavioral control boundary are distinguished. Source and sink assist act at VLOAD.',y,280)
     p.finish()
 
@@ -309,6 +320,7 @@ def sizing_page(pdf):
 
 
 def main():
+    VECTOR_FIGURES.clear()
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,default=ROOT/'docs/technical-brief.pdf')
     args=parser.parse_args()
@@ -325,6 +337,20 @@ def main():
     buck_results_page(pdf)
     sizing_page(pdf)
     pdf.save()
+    reader = PdfReader(output)
+    for page_index, figure_path, x, y, scale in VECTOR_FIGURES:
+        figure = PdfReader(figure_path).pages[0]
+        reader.pages[page_index].merge_transformed_page(
+            figure, Transformation().scale(scale).translate(x, y))
+    writer = PdfWriter()
+    for page in reader.pages:
+        writer.add_page(page)
+    writer.add_metadata({str(k):str(v) for k,v in (reader.metadata or {}).items()})
+    # Serialize before reopening the destination so all source streams remain valid.
+    import io
+    buffer = io.BytesIO()
+    writer.write(buffer)
+    output.write_bytes(buffer.getvalue())
     print(output)
 
 

@@ -1,0 +1,52 @@
+{
+  "schema": "circuitikz-exports-v1",
+  "style_sha256": "3318af93c53a33942829bad4a2921e5337a34a271571eee61eed9f2a4bc7c9a8",
+  "builder_sha256": "a4e3adc854a84ead85a8405478b826e1646e8ad9ed4de110d10ff8ca5844f83d",
+  "figures": [
+    {
+      "name": "ldo-architecture",
+      "source_sha256": "3eb73013cfb6666c6c6d684eb3d09ab427991b3aa3f71cdd84c46ec6f224ba45",
+      "pdf_sha256": "824fa42454e04741431ab4c5a362b798b0ca4ede2f084049399070e2d22e1697",
+      "svg_sha256": "729b44e16aedb64416e5b390a68ab42577881a392bcf35e1cd54a277499bb109",
+      "png_sha256": "9ac585fd2c76f1938dd23f159025a7fe821d5a920e1988ae36520397e649922c"
+    },
+    {
+      "name": "ldo-core",
+      "source_sha256": "f2da3b1ba9d5f8b593bec36c164fa540fd8a111bc06bf20daa8c9556a0f98754",
+      "pdf_sha256": "ad044799b71af6ca39efb2e7eff357e13d5187169e929572027f41a7dfb46479",
+      "svg_sha256": "38e187bbf594c27a9874072f04ae5591e50d718138801afb5cda66db3ff0e935",
+      "png_sha256": "0c5107c804fc3f81bc950f5c93beec6b3c4419ba63b2c2cd83813f1594c1c46e"
+    },
+    {
+      "name": "buck-architecture",
+      "source_sha256": "148dafcefd5bd4d63cfa6576805a05f16110a4a8e013bd306fd91080f4c20b2b",
+      "pdf_sha256": "a7ceedeebcdd9d66ea9219d06a183f46550f6d15adc1bcf86dca0067fed0ecad",
+      "svg_sha256": "1947cdd70153e5332456b561f89b286ec3c4b7f8a4acdcfbf20c8d29bab68160",
+      "png_sha256": "88c11125361b448c4b5e78d33c2f67dc0d01667aa077da688f2fa83c4a515ab8"
+    },
+    {
+      "name": "buck-power",
+      "source_sha256": "7c829be9798cc4c8b6b61040f877f0552d67e568f49c5fcbfc10fa0ebfb4c573",
+      "pdf_sha256": "8b23cc5a9795221d982105e4328d2067499ee9e781357e8a7a907fc7c5b178f8",
+      "svg_sha256": "94ad783088d4e8cd9a03471f82043f483cd0462862190a713215ce418836337c",
+      "png_sha256": "0ae9d1d7f448378841d7de243e6adc0252a5d1a9357cc399f6ee99f5fdfc2669"
+    },
+    {
+      "name": "buck-driver",
+      "source_sha256": "49aa070c8dddacc94ab519168b92848ff6422df6b55cda20e5eac52e9c2a2650",
+      "pdf_sha256": "b63c674e3a29637698beeaeb09bbce1f499e5d442223e7bb2aac87343a9db612",
+      "svg_sha256": "56f2b3a8ef55c15b172d6b029ad8307a2a57861765dc7f1bd5adf86413035714",
+      "png_sha256": "4d7d2980b38376b9a70852dc513c4ad7fb7ad6353a097d1c76fc6ae316aa73de"
+    },
+    {
+      "name": "buck-detector",
+      "source_sha256": "c53a32242c2b5f7a807d708568e9c41fc9db0f2722a574405c3f32510e4fa2bd",
+      "pdf_sha256": "bfdeec668ff382755608f72e48f74f9b95d55221469aed7d3657772123952449",
+      "svg_sha256": "1e4ee5b16bc6e34bc0fddab7bd594c436186d5d8697e4fa30a88ca44fc8b1d78",
+      "png_sha256": "384b23b79edcfbe79a33016d4f8c2ff56c04618fb5e399e0031fab4a4c012833"
+    }
+  ],
+  "atlas_source_sha256": "95d81a8f97193d1e271d3bd6b9b08c03d61b75ff2f764ea312d3ecc141ef4c6b",
+  "atlas_pdf_sha256": "f27672190f9a0a0217fa82386663998db510ac561e3c66d26df499a734ecefe9",
+  "note": "Drawing exports only; no new simulation."
+}

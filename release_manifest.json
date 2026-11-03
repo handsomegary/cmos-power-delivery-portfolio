@@ -1,6 +1,6 @@
 {
   "schema": "circuit-portfolio-release-v1",
-  "release_date": "2026-10-14",
+  "release_date": "2026-11-02",
   "projects": [
     "ldo-130nm",
     "two-phase-buck"
@@ -12,19 +12,44 @@
       "sha256": "ec631ed7b0601e071a5633230141aea2e84bfc05c4787c3bdc13d01efe35de63"
     },
     {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 769,
+      "sha256": "14380a62b0f8d1fffb19d68e67355dfaff7d57d8af76658c3bb4fc4a46a6eb79"
+    },
+    {
       "path": ".gitignore",
-      "bytes": 391,
-      "sha256": "e2eefa98564e465900e42a7e819676f07fd19c8b9487c3b9dea8a73dc2b28e11"
+      "bytes": 498,
+      "sha256": "09971e3f56316d59516055bf105116a7a97f92c9b54d5e1191483af6596ba88a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4665,
+      "sha256": "cd51613c0dbe80bc87b541ea53d66a7145f07fd6e168b1c79e29bf5ea7bd9ac7"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 4307,
+      "sha256": "aabe7d7d6ef6510df793fdff6f3b3e424beb54e7712c2f98aae7af7c688df0fd"
+    },
+    {
+      "path": "docs/reproducibility.md",
+      "bytes": 3146,
+      "sha256": "b3eebf8980b62213287aaf5e00403b6446bccee48b7b1b2e1abeb53ecaf9aecd"
     },
     {
       "path": "docs/technical-brief.pdf",
-      "bytes": 820859,
-      "sha256": "a9cfbaf9ba748c87fc3fda1d495d9b4c13f50c86288ca593f2bd3fe98ef84087"
+      "bytes": 674471,
+      "sha256": "5c5edca029b7df4ec501ad751d5efa2119c36c0a7b44024ca5e046f43ffe6782"
     },
     {
       "path": "docs/validation-scope.md",
       "bytes": 2641,
       "sha256": "e1b8aa811ef989ad89ce72f03a0bdffafcf9282aa7d45c9ff79578ffacfb291b"
+    },
+    {
+      "path": "projects/ldo-130nm/README.md",
+      "bytes": 3574,
+      "sha256": "5e9e11941e90893eabd68885e5fe29a6dbd7adadf2cf4e3df706aa01f5aefef3"
     },
     {
       "path": "projects/ldo-130nm/data/circuit.json",
@@ -403,11 +428,11 @@
     },
     {
       "path": "projects/ldo-130nm/design.md",
-      "bytes": 5331,
-      "sha256": "529913902562584eb4ac5547ab9d3eefd9cba45b8b0cb0c9fc21d2fb74e889b8"
+      "bytes": 5705,
+      "sha256": "e73092aad68739926960c74308e39392c24193f370e10542f45099d2407b0ac3"
     },
     {
-      "path": "projects/ldo-130nm/README.md",
+      "path": "projects/ldo-130nm/results.md",
       "bytes": 13361,
       "sha256": "c2fa0b915d3b340ec5479e396b3a6f90b564f0cd77dd1b7ff15b72eb924ac29b"
     },
@@ -507,9 +532,14 @@
       "sha256": "74e8f12cbf51cdfd0d4380be5ab01e6a3a8e0ca4b23c2dc1c579b67eacee6803"
     },
     {
+      "path": "projects/two-phase-buck/README.md",
+      "bytes": 4229,
+      "sha256": "f474c414adb6c9f9be7bd24c161a4e7bc46629f40fb62c868824759b9c448a61"
+    },
+    {
       "path": "projects/two-phase-buck/asset_manifest.json",
       "bytes": 5695,
-      "sha256": "9954a4d53ff19b5b116dceb63b505b42d118d8536568637281be3712b00b5ec9"
+      "sha256": "8a1c9b034348285073b88e56d8038672311e80699a1ecf58b1d8f7635c8307af"
     },
     {
       "path": "projects/two-phase-buck/controller/buck_control.va",
@@ -628,8 +658,8 @@
     },
     {
       "path": "projects/two-phase-buck/design.md",
-      "bytes": 10497,
-      "sha256": "bc89bd81fb1f2983903b00e15ebff97d15c380db5e708f1cbeea048c963b74fc"
+      "bytes": 10867,
+      "sha256": "317c5a8568334b57bfd2653da447a041e1b7afff37f1b031a4e3862e8b45e7af"
     },
     {
       "path": "projects/two-phase-buck/figures/architecture.png",
@@ -662,7 +692,7 @@
       "sha256": "14a11f7685d3facc27f5ead6f995e02057ac3089628a2e4f3eea94738606ca67"
     },
     {
-      "path": "projects/two-phase-buck/README.md",
+      "path": "projects/two-phase-buck/results.md",
       "bytes": 8335,
       "sha256": "e0f0421358d72954f4eeea5714dc14fccc81c30678473e151f5bdc83d9ba55c9"
     },
@@ -682,31 +712,191 @@
       "sha256": "553f5fc2eeb4d83d39249ab4a474a21889c1a1ecd8ebc6c7120a25497eecaeb7"
     },
     {
-      "path": "README.md",
-      "bytes": 3873,
-      "sha256": "91eac9731d22fe3797492c86f60a33fe8914b8bdf3a8e69a16625cb45c45176a"
+      "path": "report/README.md",
+      "bytes": 4862,
+      "sha256": "18ca8df67276209a4a9f0d040c4f92b0f69b5ea13cb092c405da55e31b24d513"
+    },
+    {
+      "path": "report/build_circuits.py",
+      "bytes": 5920,
+      "sha256": "a4e3adc854a84ead85a8405478b826e1646e8ad9ed4de110d10ff8ca5844f83d"
+    },
+    {
+      "path": "report/circuit-atlas.pdf",
+      "bytes": 228485,
+      "sha256": "f27672190f9a0a0217fa82386663998db510ac561e3c66d26df499a734ecefe9"
+    },
+    {
+      "path": "report/circuit-atlas.tex",
+      "bytes": 2726,
+      "sha256": "95d81a8f97193d1e271d3bd6b9b08c03d61b75ff2f764ea312d3ecc141ef4c6b"
+    },
+    {
+      "path": "report/circuit-style.tex",
+      "bytes": 792,
+      "sha256": "3318af93c53a33942829bad4a2921e5337a34a271571eee61eed9f2a4bc7c9a8"
+    },
+    {
+      "path": "report/figures/buck-architecture.pdf",
+      "bytes": 66860,
+      "sha256": "a7ceedeebcdd9d66ea9219d06a183f46550f6d15adc1bcf86dca0067fed0ecad"
+    },
+    {
+      "path": "report/figures/buck-architecture.png",
+      "bytes": 116786,
+      "sha256": "88c11125361b448c4b5e78d33c2f67dc0d01667aa077da688f2fa83c4a515ab8"
+    },
+    {
+      "path": "report/figures/buck-architecture.svg",
+      "bytes": 116046,
+      "sha256": "1947cdd70153e5332456b561f89b286ec3c4b7f8a4acdcfbf20c8d29bab68160"
+    },
+    {
+      "path": "report/figures/buck-architecture.tex",
+      "bytes": 3367,
+      "sha256": "148dafcefd5bd4d63cfa6576805a05f16110a4a8e013bd306fd91080f4c20b2b"
+    },
+    {
+      "path": "report/figures/buck-detector.pdf",
+      "bytes": 79884,
+      "sha256": "bfdeec668ff382755608f72e48f74f9b95d55221469aed7d3657772123952449"
+    },
+    {
+      "path": "report/figures/buck-detector.png",
+      "bytes": 134998,
+      "sha256": "384b23b79edcfbe79a33016d4f8c2ff56c04618fb5e399e0031fab4a4c012833"
+    },
+    {
+      "path": "report/figures/buck-detector.svg",
+      "bytes": 176159,
+      "sha256": "1e4ee5b16bc6e34bc0fddab7bd594c436186d5d8697e4fa30a88ca44fc8b1d78"
+    },
+    {
+      "path": "report/figures/buck-detector.tex",
+      "bytes": 4176,
+      "sha256": "c53a32242c2b5f7a807d708568e9c41fc9db0f2722a574405c3f32510e4fa2bd"
+    },
+    {
+      "path": "report/figures/buck-driver.pdf",
+      "bytes": 70233,
+      "sha256": "b63c674e3a29637698beeaeb09bbce1f499e5d442223e7bb2aac87343a9db612"
+    },
+    {
+      "path": "report/figures/buck-driver.png",
+      "bytes": 93905,
+      "sha256": "4d7d2980b38376b9a70852dc513c4ad7fb7ad6353a097d1c76fc6ae316aa73de"
+    },
+    {
+      "path": "report/figures/buck-driver.svg",
+      "bytes": 108926,
+      "sha256": "56f2b3a8ef55c15b172d6b029ad8307a2a57861765dc7f1bd5adf86413035714"
+    },
+    {
+      "path": "report/figures/buck-driver.tex",
+      "bytes": 2164,
+      "sha256": "49aa070c8dddacc94ab519168b92848ff6422df6b55cda20e5eac52e9c2a2650"
+    },
+    {
+      "path": "report/figures/buck-power.pdf",
+      "bytes": 75244,
+      "sha256": "8b23cc5a9795221d982105e4328d2067499ee9e781357e8a7a907fc7c5b178f8"
+    },
+    {
+      "path": "report/figures/buck-power.png",
+      "bytes": 134084,
+      "sha256": "0ae9d1d7f448378841d7de243e6adc0252a5d1a9357cc399f6ee99f5fdfc2669"
+    },
+    {
+      "path": "report/figures/buck-power.svg",
+      "bytes": 141645,
+      "sha256": "94ad783088d4e8cd9a03471f82043f483cd0462862190a713215ce418836337c"
+    },
+    {
+      "path": "report/figures/buck-power.tex",
+      "bytes": 2930,
+      "sha256": "7c829be9798cc4c8b6b61040f877f0552d67e568f49c5fcbfc10fa0ebfb4c573"
+    },
+    {
+      "path": "report/figures/drawing_manifest.json",
+      "bytes": 2907,
+      "sha256": "11889d97394a61aed2d0ccbcca99c3374c2a387d3711fb3107b688e0b9e4fb80"
+    },
+    {
+      "path": "report/figures/ldo-architecture.pdf",
+      "bytes": 63840,
+      "sha256": "824fa42454e04741431ab4c5a362b798b0ca4ede2f084049399070e2d22e1697"
+    },
+    {
+      "path": "report/figures/ldo-architecture.png",
+      "bytes": 61163,
+      "sha256": "9ac585fd2c76f1938dd23f159025a7fe821d5a920e1988ae36520397e649922c"
+    },
+    {
+      "path": "report/figures/ldo-architecture.svg",
+      "bytes": 91552,
+      "sha256": "729b44e16aedb64416e5b390a68ab42577881a392bcf35e1cd54a277499bb109"
+    },
+    {
+      "path": "report/figures/ldo-architecture.tex",
+      "bytes": 2332,
+      "sha256": "3eb73013cfb6666c6c6d684eb3d09ab427991b3aa3f71cdd84c46ec6f224ba45"
+    },
+    {
+      "path": "report/figures/ldo-core.pdf",
+      "bytes": 68482,
+      "sha256": "ad044799b71af6ca39efb2e7eff357e13d5187169e929572027f41a7dfb46479"
+    },
+    {
+      "path": "report/figures/ldo-core.png",
+      "bytes": 118994,
+      "sha256": "0c5107c804fc3f81bc950f5c93beec6b3c4419ba63b2c2cd83813f1594c1c46e"
+    },
+    {
+      "path": "report/figures/ldo-core.svg",
+      "bytes": 181709,
+      "sha256": "38e187bbf594c27a9874072f04ae5591e50d718138801afb5cda66db3ff0e935"
+    },
+    {
+      "path": "report/figures/ldo-core.tex",
+      "bytes": 5402,
+      "sha256": "f2da3b1ba9d5f8b593bec36c164fa540fd8a111bc06bf20daa8c9556a0f98754"
+    },
+    {
+      "path": "report/source_provenance.json",
+      "bytes": 24469,
+      "sha256": "5fc2501bee84cda2b5db64a20355c5993c725c0259a15e1e3019dbbc18ee4443"
     },
     {
       "path": "requirements.txt",
-      "bytes": 182,
-      "sha256": "a903fb96ed3113bf97bb42aff07b28f7201057b3fea5510fa0f02dfc08a2cdc1"
+      "bytes": 262,
+      "sha256": "c2fa1ebed6f1010322ca1957b36db94be288f247a3ed97ad713fe00be435e694"
+    },
+    {
+      "path": "tests/test_download.py",
+      "bytes": 3839,
+      "sha256": "acd26e05169d5af93bcc5f825db7b5170e0e11db5f753d8956e84d9498a96c8d"
     },
     {
       "path": "tools/build_technical_brief.py",
-      "bytes": 24749,
-      "sha256": "3542d364cbfab61e6533c5ffce4ed253feec4262f1fb44c6289108a607b9dd03"
+      "bytes": 25795,
+      "sha256": "0b18baf756242294424a5cd050ad0326b775840642cb2bb5386bb02eb94fd3fb"
     },
     {
       "path": "tools/reproduce_all.py",
-      "bytes": 1566,
-      "sha256": "75975440211c83fb7df638f70cd81b766e8e7ce5460c28f57ea8e0461d57efd1"
+      "bytes": 1604,
+      "sha256": "ca76e02db09c06f74c763a2d7e86ff872ddd1bf77aa64f12629eda3b9c8c7dbe"
     },
     {
       "path": "tools/verify_release.py",
-      "bytes": 1122,
-      "sha256": "d1ea9bf8ea50f00e1fa217056ab19d6a7d34bb3e0e0a25e66f90a57bc872c46f"
+      "bytes": 162,
+      "sha256": "0747e16b295c5bbcedca34926bb7ca96cf517c54d6d4e68cd037cc5a72106d0f"
+    },
+    {
+      "path": "tools/verify_repository.py",
+      "bytes": 8560,
+      "sha256": "012ffb616a2f7be4c6025e2dfe3db7d65b36c97c13419e371ddfcd80ab1fe3bf"
     }
   ],
-  "file_count": 140,
-  "total_bytes": 36580231
+  "file_count": 178,
+  "total_bytes": 38655156
 }

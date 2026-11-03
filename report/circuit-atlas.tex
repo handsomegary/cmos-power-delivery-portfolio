@@ -1,0 +1,22 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{hidelinks,pdftitle={130 nm CMOS Power Delivery: Circuit Atlas},pdfauthor={Guan Cheng Lin}}
+\setlength{\parindent}{0pt}
+\newcommand{\atlaspage}[4]{%
+  \section*{#1}\textit{130 nm CMOS power delivery --- historical published circuits}\par\bigskip
+  \begin{center}\includegraphics[width=#4,height=.64\textheight,keepaspectratio]{figures/#2.pdf}\end{center}
+  \textbf{#1.} #3\par\medskip
+  Source: \texttt{report/figures/#2.tex}. The PDF and SVG share this drawing source.\par
+  \vfill\footnotesize Schematic-level circuit documentation. See the project device inventories and result definitions for complete conditions.\newpage}
+\begin{document}
+\atlaspage{1. LDO regulation architecture}{ldo-architecture}{Historical r6. The reference and external output capacitor are ideal testbench elements. The amplifier, gate driver and PMOS pass stage use transistor models. The compensation network is shown functionally; its complete topology is on the following page.}{\textwidth}
+\atlaspage{2. LDO transistor circuit}{ldo-core}{All nine MOS instances of r6. Matching net labels denote electrical connections. Filled dots identify junctions; unmarked crossings are not connected. Dimensions are in micrometers, $m$ is parallel multiplicity and $n_f=1$. Body connections are labeled separately. In the source inventory, $V_{\mathrm{EA}}$ maps to EAOUT, $V_{\mathrm{G}}$ to GATE, and $V_{\mathrm{MIR}}$ to MIRROR; ground is node 0.}{\textwidth}
+\atlaspage{3. Buck system architecture}{buck-architecture}{Two interleaved phases regulate the remote load. Local MOS assist and coordinated PI-state handoff both contribute to the ON condition. PI/PWM control and current sensing are behavioral; the PDN and external passives are parameterized test conditions.}{\textwidth}
+\atlaspage{4. Buck power stage and assist}{buck-power}{Parallel-bank labels enumerate the power devices. The r9 variation retains all MOS dimensions and inserts the stated assist gate resistances. Identical net labels are connected.}{\textwidth}
+\atlaspage{5. Gate-driver circuits}{buck-driver}{Six instances use the common two-stage inverter topology and the displayed instance/terminal mapping. Each instance contains four MOS devices; two inversions preserve command polarity.}{\textwidth}
+\atlaspage{6. Window-detector circuits}{buck-detector}{Two ten-MOS circuits use the template and mapping shown. Input assignment distinguishes low and high voltage detection. Matching net labels denote electrical connection. Reference voltages are bench conditions.}{\textwidth}
+\end{document}
