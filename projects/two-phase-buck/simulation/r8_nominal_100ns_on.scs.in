@@ -1,0 +1,185 @@
+// Circuit portfolio input. Set the model binding in the run directory.
+simulator lang=spectre
+global 0
+parameters ASSIST_BOOST=0.04 ASSIST_COORD=2 WINDOW=0.025 ILOAD_DC=0.01 \
+    CLOAD_ESL=5e-11 CLOAD_ESR=0.02 CLOAD=1e-08 L_PDN=5e-10 R_PDN=0.1 \
+    COUT_ESL=2e-10 COUT_ESR=0.02 COUT=1e-06 R_DCR=0.05 L_PHASE=2.2e-06 \
+    DIODE_EMULATION=1 VOLTAGE_TAU=1e-07 SENSE_TAU=1.5e-07 KII=2000000 \
+    KPI=4 KIV=200000 KPV=1 PHASE_LIMIT=0.15 ASSIST_LIMIT=0.12 \
+    ASSIST_MAX_PULSES=4 ASSIST_COOL=5e-08 ASSIST_PULSE=2e-07 \
+    ASSIST_DELAY=1.5e-08 ASSIST_BLANK=5e-05 SOFT_START=2e-05 \
+    DEAD_TIME=1e-08 CTRL_TICK=2e-09 ASSIST_EN=1 PHASES=2 FSW=5000000 \
+    VOUT_REQ=0.9 VLOGIC=1.2 VIN_DC=1.8
+include "models.local.scs"
+
+// Library name: pdn_buck_lib
+// Cell name: tb_buck_two_r8
+// View name: schematic
+VDNOFF (REFDN REFDN_BASE) vsource dc=WINDOW/2 type=dc
+VUPOFF (REFUP_BASE REFUP) vsource dc=WINDOW/2 type=dc
+VVREQ (VREQ 0) vsource dc=VOUT_REQ type=dc
+VVDDC (VDDC 0) vsource dc=VLOGIC type=dc
+VVIN (VIN 0) vsource dc=VIN_DC type=dc
+DAD_P2 (GBDN DAD_MID VIN VIN) p33 w=(20u) l=500n as=7p ad=7p ps=40.7u \
+        pd=40.7u nrd=10.5m nrs=10.5m sa=350n sb=350n m=(20)*(1)
+DAD_P1 (DAD_MID CMDDN VIN VIN) p33 w=(8u) l=500n as=2.8p ad=2.8p ps=16.7u \
+        pd=16.7u nrd=26.25m nrs=26.25m sa=350n sb=350n m=(2)*(1)
+DAU_P2 (GBUP DAU_MID VIN VIN) p33 w=(20u) l=500n as=7p ad=7p ps=40.7u \
+        pd=40.7u nrd=10.5m nrs=10.5m sa=350n sb=350n m=(20)*(1)
+DAU_P1 (DAU_MID CMDUP VIN VIN) p33 w=(8u) l=500n as=2.8p ad=2.8p ps=16.7u \
+        pd=16.7u nrd=26.25m nrs=26.25m sa=350n sb=350n m=(2)*(1)
+PASSUP_B1 (AS_UP GBUP VIN VIN) p33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(60)*(1)
+PASSUP (AS_UP GBUP VIN VIN) p33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(60)*(1)
+DL2_P2 (GL2 DL2_MID VIN VIN) p33 w=(20u) l=500n as=7p ad=7p ps=40.7u \
+        pd=40.7u nrd=10.5m nrs=10.5m sa=350n sb=350n m=(20)*(1)
+DL2_P1 (DL2_MID CMDL2 VIN VIN) p33 w=(8u) l=500n as=2.8p ad=2.8p ps=16.7u \
+        pd=16.7u nrd=26.25m nrs=26.25m sa=350n sb=350n m=(2)*(1)
+DH2_P2 (GH2 DH2_MID VIN VIN) p33 w=(20u) l=500n as=7p ad=7p ps=40.7u \
+        pd=40.7u nrd=10.5m nrs=10.5m sa=350n sb=350n m=(20)*(1)
+DH2_P1 (DH2_MID CMDH2 VIN VIN) p33 w=(8u) l=500n as=2.8p ad=2.8p ps=16.7u \
+        pd=16.7u nrd=26.25m nrs=26.25m sa=350n sb=350n m=(2)*(1)
+PHS2_B3 (SW2 GH2 VIN VIN) p33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+PHS2_B2 (SW2 GH2 VIN VIN) p33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+PHS2_B1 (SW2 GH2 VIN VIN) p33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+PHS2 (SW2 GH2 VIN VIN) p33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+DL1_P2 (GL1 DL1_MID VIN VIN) p33 w=(20u) l=500n as=7p ad=7p ps=40.7u \
+        pd=40.7u nrd=10.5m nrs=10.5m sa=350n sb=350n m=(20)*(1)
+DL1_P1 (DL1_MID CMDL1 VIN VIN) p33 w=(8u) l=500n as=2.8p ad=2.8p ps=16.7u \
+        pd=16.7u nrd=26.25m nrs=26.25m sa=350n sb=350n m=(2)*(1)
+DH1_P2 (GH1 DH1_MID VIN VIN) p33 w=(20u) l=500n as=7p ad=7p ps=40.7u \
+        pd=40.7u nrd=10.5m nrs=10.5m sa=350n sb=350n m=(20)*(1)
+DH1_P1 (DH1_MID CMDH1 VIN VIN) p33 w=(8u) l=500n as=2.8p ad=2.8p ps=16.7u \
+        pd=16.7u nrd=26.25m nrs=26.25m sa=350n sb=350n m=(2)*(1)
+PHS1_B3 (SW1 GH1 VIN VIN) p33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+PHS1_B2 (SW1 GH1 VIN VIN) p33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+PHS1_B1 (SW1 GH1 VIN VIN) p33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+PHS1 (SW1 GH1 VIN VIN) p33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+DAD_N2 (GBDN DAD_MID 0 0) n33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(20)*(1)
+DAD_N1 (DAD_MID CMDDN 0 0) n33 w=(4u) l=500n as=1.4p ad=1.4p ps=8.7u \
+        pd=8.7u nrd=52.5m nrs=52.5m sa=350n sb=350n m=(2)*(1)
+DAU_N2 (GBUP DAU_MID 0 0) n33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(20)*(1)
+DAU_N1 (DAU_MID CMDUP 0 0) n33 w=(4u) l=500n as=1.4p ad=1.4p ps=8.7u \
+        pd=8.7u nrd=52.5m nrs=52.5m sa=350n sb=350n m=(2)*(1)
+PASSDN (AS_DN GBDN 0 0) n33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(60)*(1)
+DL2_N2 (GL2 DL2_MID 0 0) n33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(20)*(1)
+DL2_N1 (DL2_MID CMDL2 0 0) n33 w=(4u) l=500n as=1.4p ad=1.4p ps=8.7u \
+        pd=8.7u nrd=52.5m nrs=52.5m sa=350n sb=350n m=(2)*(1)
+DH2_N2 (GH2 DH2_MID 0 0) n33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(20)*(1)
+DH2_N1 (DH2_MID CMDH2 0 0) n33 w=(4u) l=500n as=1.4p ad=1.4p ps=8.7u \
+        pd=8.7u nrd=52.5m nrs=52.5m sa=350n sb=350n m=(2)*(1)
+NLS2_B1 (SW2 GL2 0 0) n33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u pd=20.7u \
+        nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+NLS2 (SW2 GL2 0 0) n33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u pd=20.7u \
+        nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+DL1_N2 (GL1 DL1_MID 0 0) n33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(20)*(1)
+DL1_N1 (DL1_MID CMDL1 0 0) n33 w=(4u) l=500n as=1.4p ad=1.4p ps=8.7u \
+        pd=8.7u nrd=52.5m nrs=52.5m sa=350n sb=350n m=(2)*(1)
+DH1_N2 (GH1 DH1_MID 0 0) n33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u \
+        pd=20.7u nrd=21m nrs=21m sa=350n sb=350n m=(20)*(1)
+DH1_N1 (DH1_MID CMDH1 0 0) n33 w=(4u) l=500n as=1.4p ad=1.4p ps=8.7u \
+        pd=8.7u nrd=52.5m nrs=52.5m sa=350n sb=350n m=(2)*(1)
+NLS1_B1 (SW1 GL1 0 0) n33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u pd=20.7u \
+        nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+NLS1 (SW1 GL1 0 0) n33 w=(10u) l=500n as=3.5p ad=3.5p ps=20.7u pd=20.7u \
+        nrd=21m nrs=21m sa=350n sb=350n m=(100)*(1)
+LCLOAD (CLOAD_ESR CLOAD_NODE) inductor l=CLOAD_ESL
+LPDN (PDN_MID VLOAD) inductor l=L_PDN
+LMAIN (CMAIN_ESR CMAIN_NODE) inductor l=COUT_ESL
+L2 (SW2 LEND2) inductor l=L_PHASE
+L1 (SW1 LEND1) inductor l=L_PHASE
+CD_RB (CD_BIAS 0) resistor r=100k
+CU_RB (CU_BIAS 0) resistor r=100k
+RBOT (FB 0) resistor r=200k
+RTOP (VLOAD FB) resistor r=200k
+RCLOAD (VLOAD CLOAD_ESR) resistor r=CLOAD_ESR
+RPDN (VCONV PDN_MID) resistor r=R_PDN
+RMAIN (VCONV CMAIN_ESR) resistor r=COUT_ESR
+RDCR2 (LEND2 LCONN2) resistor r=R_DCR
+RDCR1 (LEND1 LCONN1) resistor r=R_DCR
+IASDN (VLOAD AS_DN IAS_DN) buck_sense
+IASUP (AS_UP VLOAD IAS_UP) buck_sense
+IS2 (LCONN2 VCONV ISEN2) buck_sense
+IS1 (LCONN1 VCONV ISEN1) buck_sense
+CD_CE (CD_EA 0) capacitor c=20f
+CU_CE (CU_EA 0) capacitor c=20f
+CLOCAL (CLOAD_NODE 0) capacitor c=CLOAD
+CMAIN (CMAIN_NODE 0) capacitor c=COUT
+ILOAD (VLOAD 0) isource dc=0 type=pwl wave=[0 0 3e-06 0 5e-06 0.01 6e-05 0.01 6.01e-05 0.1 0.0001 0.1 0.0001001 0.01 0.00014 0.01]
+EREFDN (REFDN_BASE 0 VREQ 0) vcvs gain=0.5
+EREFUP (REFUP_BASE 0 VREQ 0) vcvs gain=0.5
+CD_PI2 (OVER_RAW CD_MID VDDC VDDC) p12 w=(2u) l=150n as=660f ad=660f \
+        ps=4.66u pd=4.66u nrd=95m nrs=95m sa=330n sb=330n m=(1)*(1)
+CD_PI1 (CD_MID CD_EA VDDC VDDC) p12 w=(2u) l=150n as=660f ad=660f ps=4.66u \
+        pd=4.66u nrd=95m nrs=95m sa=330n sb=330n m=(1)*(1)
+CD_PR (CD_EA REFDN CD_TAIL VDDC) p12 w=(5u) l=500n as=1.65p ad=1.65p \
+        ps=10.66u pd=10.66u nrd=38m nrs=38m sa=330n sb=330n m=(4)*(1)
+CD_PL (CD_MIR FB CD_TAIL VDDC) p12 w=(5u) l=500n as=1.65p ad=1.65p \
+        ps=10.66u pd=10.66u nrd=38m nrs=38m sa=330n sb=330n m=(4)*(1)
+CD_PT (CD_TAIL CD_BIAS VDDC VDDC) p12 w=(2.5u) l=1u as=825f ad=825f \
+        ps=5.66u pd=5.66u nrd=76m nrs=76m sa=330n sb=330n m=(16)*(1)
+CD_PB (CD_BIAS CD_BIAS VDDC VDDC) p12 w=(2.5u) l=1u as=825f ad=825f \
+        ps=5.66u pd=5.66u nrd=76m nrs=76m sa=330n sb=330n m=(1)*(1)
+CU_PI2 (DROOP_RAW CU_MID VDDC VDDC) p12 w=(2u) l=150n as=660f ad=660f \
+        ps=4.66u pd=4.66u nrd=95m nrs=95m sa=330n sb=330n m=(1)*(1)
+CU_PI1 (CU_MID CU_EA VDDC VDDC) p12 w=(2u) l=150n as=660f ad=660f ps=4.66u \
+        pd=4.66u nrd=95m nrs=95m sa=330n sb=330n m=(1)*(1)
+CU_PR (CU_EA FB CU_TAIL VDDC) p12 w=(5u) l=500n as=1.65p ad=1.65p \
+        ps=10.66u pd=10.66u nrd=38m nrs=38m sa=330n sb=330n m=(4)*(1)
+CU_PL (CU_MIR REFUP CU_TAIL VDDC) p12 w=(5u) l=500n as=1.65p ad=1.65p \
+        ps=10.66u pd=10.66u nrd=38m nrs=38m sa=330n sb=330n m=(4)*(1)
+CU_PT (CU_TAIL CU_BIAS VDDC VDDC) p12 w=(2.5u) l=1u as=825f ad=825f \
+        ps=5.66u pd=5.66u nrd=76m nrs=76m sa=330n sb=330n m=(16)*(1)
+CU_PB (CU_BIAS CU_BIAS VDDC VDDC) p12 w=(2.5u) l=1u as=825f ad=825f \
+        ps=5.66u pd=5.66u nrd=76m nrs=76m sa=330n sb=330n m=(1)*(1)
+CD_NI2 (OVER_RAW CD_MID 0 0) n12 w=(1u) l=150n as=330f ad=330f ps=2.66u \
+        pd=2.66u nrd=190m nrs=190m sa=330n sb=330n m=(1)*(1)
+CD_NI1 (CD_MID CD_EA 0 0) n12 w=(1u) l=150n as=330f ad=330f ps=2.66u \
+        pd=2.66u nrd=190m nrs=190m sa=330n sb=330n m=(1)*(1)
+CD_NR (CD_EA CD_MIR 0 0) n12 w=(2u) l=1u as=660f ad=660f ps=4.66u pd=4.66u \
+        nrd=95m nrs=95m sa=330n sb=330n m=(4)*(1)
+CD_NL (CD_MIR CD_MIR 0 0) n12 w=(2u) l=1u as=660f ad=660f ps=4.66u \
+        pd=4.66u nrd=95m nrs=95m sa=330n sb=330n m=(4)*(1)
+CU_NI2 (DROOP_RAW CU_MID 0 0) n12 w=(1u) l=150n as=330f ad=330f ps=2.66u \
+        pd=2.66u nrd=190m nrs=190m sa=330n sb=330n m=(1)*(1)
+CU_NI1 (CU_MID CU_EA 0 0) n12 w=(1u) l=150n as=330f ad=330f ps=2.66u \
+        pd=2.66u nrd=190m nrs=190m sa=330n sb=330n m=(1)*(1)
+CU_NR (CU_EA CU_MIR 0 0) n12 w=(2u) l=1u as=660f ad=660f ps=4.66u pd=4.66u \
+        nrd=95m nrs=95m sa=330n sb=330n m=(4)*(1)
+CU_NL (CU_MIR CU_MIR 0 0) n12 w=(2u) l=1u as=660f ad=660f ps=4.66u \
+        pd=4.66u nrd=95m nrs=95m sa=330n sb=330n m=(4)*(1)
+CTRL (VIN VLOAD ISEN1 ISEN2 DROOP_RAW OVER_RAW IAS_UP IAS_DN VREQ CMDH1 \
+        CMDL1 CMDH2 CMDL2 CMDUP CMDDN VSET IREF DUTY1 DUTY2) buck_control \
+        fsw=FSW phases=PHASES assist_en=ASSIST_EN tick_s=CTRL_TICK \
+        dead_s=DEAD_TIME soft_s=SOFT_START assist_blank_s=ASSIST_BLANK \
+        assist_delay_s=ASSIST_DELAY assist_pulse_s=ASSIST_PULSE \
+        assist_cool_s=ASSIST_COOL assist_max_pulses=ASSIST_MAX_PULSES \
+        assist_limit_a=ASSIST_LIMIT phase_limit_a=PHASE_LIMIT kpv=KPV \
+        kiv=KIV kpi=KPI kii=KII sense_tau_s=SENSE_TAU \
+        voltage_tau_s=VOLTAGE_TAU diode_emulation=DIODE_EMULATION \
+        assist_coord=ASSIST_COORD assist_boost_a=ASSIST_BOOST
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+     checklimitdest=psf
+
+ahdl_include "buck_control.va"
+buckCaseOptions options temp=27 reltol=0.001 vabstol=1e-07 iabstol=1e-12
+buckSaveOptions options save=allpub currents=selected subcktprobelvl=2
+save IASDN:p IASUP:p IS1:p IS2:p VVDDC:p VVIN:p
+tran tran stop=0.00014 skipdc=yes maxstep=2e-09 errpreset=moderate strobeperiod=2e-09 strobeoutput=strobeonly

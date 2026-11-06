@@ -23,6 +23,7 @@ The minimum margins may occur at different sampled operating points. Recovery me
 - [Machine-readable circuit](data/circuit.json), [static results](data/static.json) and [transient index](data/transients/index.json): the published inputs behind the figures.
 - [Derived FoM data](results/figures_of_merit.json): separately defined sum/max-load and single-spike/load-step metrics, with the matching IQ and edge conditions.
 - [Technical report and build instructions](../../report/README.md): the two-column portfolio report.
+- [Spectre inputs and v32 verification conditions](simulation/README.md).
 
 ## Reproduce the saved results
 

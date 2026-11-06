@@ -1,6 +1,6 @@
 {
   "schema": "circuit-portfolio-release-v1",
-  "release_date": "2026-11-02",
+  "release_date": "2026-11-06",
   "projects": [
     "ldo-130nm",
     "two-phase-buck"
@@ -18,13 +18,13 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 498,
-      "sha256": "09971e3f56316d59516055bf105116a7a97f92c9b54d5e1191483af6596ba88a"
+      "bytes": 504,
+      "sha256": "46292f1ca332c595241cdd81b812dedc5edfb8d1d6e26ecf9a4cdf4486511026"
     },
     {
       "path": "README.md",
-      "bytes": 4665,
-      "sha256": "cd51613c0dbe80bc87b541ea53d66a7145f07fd6e168b1c79e29bf5ea7bd9ac7"
+      "bytes": 4772,
+      "sha256": "c522b57aaa66a77d7d49f78e5d1da42793c834d4b4a6770282065c4b995814b1"
     },
     {
       "path": "docs/architecture.md",
@@ -48,8 +48,8 @@
     },
     {
       "path": "projects/ldo-130nm/README.md",
-      "bytes": 3574,
-      "sha256": "5e9e11941e90893eabd68885e5fe29a6dbd7adadf2cf4e3df706aa01f5aefef3"
+      "bytes": 3648,
+      "sha256": "041bce032fc7eb2d256735bda16c8712ca98318145046449fe17cc8f983e387b"
     },
     {
       "path": "projects/ldo-130nm/data/circuit.json",
@@ -533,13 +533,13 @@
     },
     {
       "path": "projects/two-phase-buck/README.md",
-      "bytes": 4229,
-      "sha256": "f474c414adb6c9f9be7bd24c161a4e7bc46629f40fb62c868824759b9c448a61"
+      "bytes": 4359,
+      "sha256": "1c9bcb58d1b0ee357a5f261fd9db7a6cdbeb4eec580631fd5778eebb0c113879"
     },
     {
       "path": "projects/two-phase-buck/asset_manifest.json",
-      "bytes": 5695,
-      "sha256": "8a1c9b034348285073b88e56d8038672311e80699a1ecf58b1d8f7635c8307af"
+      "bytes": 7069,
+      "sha256": "152f84da2a3c1af39a527995cf1fd0c38d4cc5150745f3cd0e87b93373a7e958"
     },
     {
       "path": "projects/two-phase-buck/controller/buck_control.va",
@@ -895,8 +895,98 @@
       "path": "tools/verify_repository.py",
       "bytes": 8560,
       "sha256": "012ffb616a2f7be4c6025e2dfe3db7d65b36c97c13419e371ddfcd80ab1fe3bf"
+    },
+    {
+      "path": "docs/simulation-inputs.md",
+      "bytes": 2012,
+      "sha256": "032a072d50f35ee38d743a1686376983e0b19fe45722b90a2adb209de09606dc"
+    },
+    {
+      "path": "projects/ldo-130nm/simulation/README.md",
+      "bytes": 1187,
+      "sha256": "9800891b1f4921fc3a401f2f64548df093bd4d95aca30ae42f42aae87b931af1"
+    },
+    {
+      "path": "projects/ldo-130nm/simulation/r6_load_100ns.scs.in",
+      "bytes": 2621,
+      "sha256": "6da8bde49a54188f6118bea099cc93d43e55c93695ee71c4bd76bcd61f12a94d"
+    },
+    {
+      "path": "projects/ldo-130nm/simulation/r6_load_10ns.scs.in",
+      "bytes": 2623,
+      "sha256": "cd19bd39a77f623dff49aa6aef7133a2ef16639611ba6dae3aebef460bac2b8b"
+    },
+    {
+      "path": "projects/ldo-130nm/simulation/v32_extracted_load_matrix.json",
+      "bytes": 6781,
+      "sha256": "79ce20762ba064701ec949465082563a4ed03aa3b16fdce8bf33405837c9fd13"
+    },
+    {
+      "path": "projects/ldo-130nm/simulation/v32_grid24_fixture.scs.in",
+      "bytes": 946,
+      "sha256": "86fd2f27f4c40e36e06a8244f11f5740767acc62353568dc21af7018a5f95fde"
+    },
+    {
+      "path": "projects/two-phase-buck/simulation/README.md",
+      "bytes": 1264,
+      "sha256": "66625e39328ff237f8b7695c14908454beb529fdb16a6058216f847aa2a21c7e"
+    },
+    {
+      "path": "projects/two-phase-buck/simulation/nominal_parameters.json",
+      "bytes": 761,
+      "sha256": "25fd894ea2d7a788627f9efb99ec0ccb67d8bdb02d086e5d5a49a6fede612a5c"
+    },
+    {
+      "path": "projects/two-phase-buck/simulation/r8_nominal_100ns_off.scs.in",
+      "bytes": 11254,
+      "sha256": "c9baeb60a2fbf464630d3d5e334431f1457fee67e33933f3a81a3ef1990296f6"
+    },
+    {
+      "path": "projects/two-phase-buck/simulation/r8_nominal_100ns_on.scs.in",
+      "bytes": 11254,
+      "sha256": "e1cc3e4af16a3097af8e5428f3efd3b9c2e371c1f0a220870120222959697bfe"
+    },
+    {
+      "path": "projects/two-phase-buck/simulation/slew_all_eight.json",
+      "bytes": 8076,
+      "sha256": "e5561b15b1fad1724e1ca2b4984b3abcd2b74efab88d01057b3aeccde25ab76b"
+    },
+    {
+      "path": "projects/two-phase-buck/simulation/slew_pairs_eight.json",
+      "bytes": 791,
+      "sha256": "c899e31fe148ba65b29b95743a8d4d8054e6d5270f974462891adf1c819b0327"
+    },
+    {
+      "path": "projects/two-phase-buck/simulation/validation_all.json",
+      "bytes": 47057,
+      "sha256": "986515fd3e14e6cc54d0c49a71d2ad356385b1152201de086e441413fc30dd29"
+    },
+    {
+      "path": "projects/two-phase-buck/simulation/validation_pairs.json",
+      "bytes": 5025,
+      "sha256": "4cae056cc0d075bdde961c536925b91924a3303f8d14355e4e4526610f1c9800"
+    },
+    {
+      "path": "tools/audit_schematic.il",
+      "bytes": 692,
+      "sha256": "932d2854cc7c4572d39e036395450cf14402960ef998533ec2e2b488da01a04c"
+    },
+    {
+      "path": "tools/export_transient.ocn",
+      "bytes": 1221,
+      "sha256": "d30e2c5f4637da485793841f8ef8987ac7398f30c689d7a31758b65c31538226"
+    },
+    {
+      "path": "tools/parse_spectre_psf.py",
+      "bytes": 51040,
+      "sha256": "7c8c1107a87408d76d81330919d9fdbe90a93c2af43d780bf089e4a2b2ab4460"
+    },
+    {
+      "path": "tools/stage_spectre_case.py",
+      "bytes": 2010,
+      "sha256": "a98753910c4e9af89fe37e55a07f86016234f221496a1fc0043dc82ea235fcaf"
     }
   ],
-  "file_count": 178,
-  "total_bytes": 38655156
+  "file_count": 196,
+  "total_bytes": 38813462
 }

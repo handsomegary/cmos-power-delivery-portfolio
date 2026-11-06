@@ -25,6 +25,7 @@ The six-page technical report presents the measurements and design tradeoffs. Th
 | What passed, what failed, and how was it measured? | [LDO results](projects/ldo-130nm/results.md) · [Buck results](projects/two-phase-buck/results.md) |
 | How are the vector drawings edited and built? | [Circuit sources and drawing profile](report/README.md) |
 | How can the saved numerical results be reproduced? | [Offline reproduction guide](docs/reproducibility.md) |
+| How can a new Spectre run be staged? | [Simulator inputs and Cadence tools](docs/simulation-inputs.md) |
 
 ![LDO regulation architecture](report/figures/ldo-architecture.svg)
 

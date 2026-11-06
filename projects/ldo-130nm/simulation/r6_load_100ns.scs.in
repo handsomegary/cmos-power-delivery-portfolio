@@ -1,0 +1,53 @@
+// Circuit portfolio input. Set the model binding in the run directory.
+simulator lang=spectre
+global 0
+parameters rbot=200000.0 rtop=200000.0 rbias=100000.0 cb=1.8e-11 \
+    rb=36000 rz=1000.0 cm=1e-15 cc=1e-13 cout=1e-09 iload=0.0001 \
+    vref=0.45 vin=1.2
+include "models.local.scs"
+
+// Library name: ldo130_lib
+// Cell name: tb_ldo_r6
+// View name: schematic
+PBUF (GATE BIAS VIN VIN) p12 w=(2.5u) l=1u as=825f ad=825f ps=5.66u \
+        pd=5.66u nrd=76m nrs=76m sa=330n sb=330n m=(8)*(1)
+PPASS (VOUT GATE VIN VIN) p12 w=(10u) l=150n as=3.3p ad=3.3p ps=20.66u \
+        pd=20.66u nrd=19m nrs=19m sa=330n sb=330n m=(10)*(1)
+PR (EAOUT FBIN TAIL VIN) p12 w=(2.5u) l=1u as=825f ad=825f ps=5.66u \
+        pd=5.66u nrd=76m nrs=76m sa=330n sb=330n m=(4)*(1)
+PL (MIRROR VREF TAIL VIN) p12 w=(2.5u) l=1u as=825f ad=825f ps=5.66u \
+        pd=5.66u nrd=76m nrs=76m sa=330n sb=330n m=(4)*(1)
+PTAIL (TAIL BIAS VIN VIN) p12 w=(2.5u) l=1u as=825f ad=825f ps=5.66u \
+        pd=5.66u nrd=76m nrs=76m sa=330n sb=330n m=(8)*(1)
+PBIAS (BIAS BIAS VIN VIN) p12 w=(2.5u) l=1u as=825f ad=825f ps=5.66u \
+        pd=5.66u nrd=76m nrs=76m sa=330n sb=330n m=(2)*(1)
+NBUF (GATE EAOUT 0 0) n12 w=(2u) l=1u as=660f ad=660f ps=4.66u pd=4.66u \
+        nrd=95m nrs=95m sa=330n sb=330n m=(4)*(1)
+NR (EAOUT MIRROR 0 0) n12 w=(2u) l=1u as=660f ad=660f ps=4.66u pd=4.66u \
+        nrd=95m nrs=95m sa=330n sb=330n m=(2)*(1)
+NL (MIRROR MIRROR 0 0) n12 w=(2u) l=1u as=660f ad=660f ps=4.66u pd=4.66u \
+        nrd=95m nrs=95m sa=330n sb=330n m=(2)*(1)
+RBUF (EAOUT CBUFMID) resistor r=rb
+RZ (GATE CMMID) resistor r=rz
+RBOT (FB 0) resistor r=rbot
+RTOP (VOUT FB) resistor r=rtop
+RBIAS (BIAS 0) resistor r=rbias
+COUT (VOUT 0) capacitor c=cout
+CBUF (CBUFMID GATE) capacitor c=cb
+CMILL (CMMID VOUT) capacitor c=cm
+CCOMP (GATE 0) capacitor c=cc
+IPFB (FB FBIN) iprobe
+VVREF (VREF 0) vsource dc=vref type=dc
+VVIN (VIN 0) vsource dc=vin type=dc
+ILOAD (VOUT 0) isource dc=0.0001 type=pwl wave=[0 0.0001 5e-06 0.0001 5.1e-06 0.005 3e-05 0.005 3.01e-05 0.0001 6e-05 0.0001]
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27.0 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 \
+    rforce=1 maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../../../../../results/psf/sens.output" checklimitdest=psf
+saveOptions options save=allpub currents=all
+
+ldoOpts options temp=27 reltol=1e-5 vabstol=1e-7 iabstol=1e-12
+ldoSaveOptions options save=allpub currents=all subcktprobelvl=2
+dcOp dc write="spectre.dc" maxiters=150
+dcOpInfo info what=oppoint where=rawfile
+tran tran stop=6e-05 maxstep=5e-09 errpreset=conservative

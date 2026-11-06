@@ -33,6 +33,7 @@ license*
 
 # Reproduced outputs and Python state
 reproduced/
+runs/
 __pycache__/
 *.py[cod]
 .venv/

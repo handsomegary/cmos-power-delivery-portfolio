@@ -17,6 +17,8 @@ OFF and ON within each row share the stimulus, components, solver and measuremen
 
 ## Read the design
 
+[Spectre inputs and case manifests](simulation/README.md) contain a nominal assist OFF/ON pair and the full r8/r9 case settings.
+
 ![Two-phase Buck and assist architecture](../../report/figures/buck-architecture.svg)
 
 - [Circuit implementation and device inventory](design.md): each block's function, all 59 MOS dimensions and terminal connections, and the r8/r9 circuit differences.

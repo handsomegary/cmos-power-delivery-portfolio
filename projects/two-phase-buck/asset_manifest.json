@@ -153,8 +153,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4229,
-      "sha256": "f474c414adb6c9f9be7bd24c161a4e7bc46629f40fb62c868824759b9c448a61"
+      "bytes": 4359,
+      "sha256": "1c9bcb58d1b0ee357a5f261fd9db7a6cdbeb4eec580631fd5778eebb0c113879"
     },
     {
       "path": "scripts/figures.py",
@@ -170,6 +170,46 @@
       "path": "tests/test_reproduce.py",
       "bytes": 3125,
       "sha256": "553f5fc2eeb4d83d39249ab4a474a21889c1a1ecd8ebc6c7120a25497eecaeb7"
+    },
+    {
+      "path": "simulation/README.md",
+      "bytes": 1264,
+      "sha256": "66625e39328ff237f8b7695c14908454beb529fdb16a6058216f847aa2a21c7e"
+    },
+    {
+      "path": "simulation/nominal_parameters.json",
+      "bytes": 761,
+      "sha256": "25fd894ea2d7a788627f9efb99ec0ccb67d8bdb02d086e5d5a49a6fede612a5c"
+    },
+    {
+      "path": "simulation/r8_nominal_100ns_off.scs.in",
+      "bytes": 11254,
+      "sha256": "c9baeb60a2fbf464630d3d5e334431f1457fee67e33933f3a81a3ef1990296f6"
+    },
+    {
+      "path": "simulation/r8_nominal_100ns_on.scs.in",
+      "bytes": 11254,
+      "sha256": "e1cc3e4af16a3097af8e5428f3efd3b9c2e371c1f0a220870120222959697bfe"
+    },
+    {
+      "path": "simulation/slew_all_eight.json",
+      "bytes": 8076,
+      "sha256": "e5561b15b1fad1724e1ca2b4984b3abcd2b74efab88d01057b3aeccde25ab76b"
+    },
+    {
+      "path": "simulation/slew_pairs_eight.json",
+      "bytes": 791,
+      "sha256": "c899e31fe148ba65b29b95743a8d4d8054e6d5270f974462891adf1c819b0327"
+    },
+    {
+      "path": "simulation/validation_all.json",
+      "bytes": 47057,
+      "sha256": "986515fd3e14e6cc54d0c49a71d2ad356385b1152201de086e441413fc30dd29"
+    },
+    {
+      "path": "simulation/validation_pairs.json",
+      "bytes": 5025,
+      "sha256": "4cae056cc0d075bdde961c536925b91924a3303f8d14355e4e4526610f1c9800"
     }
   ]
 }
