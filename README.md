@@ -2,6 +2,12 @@
 
 Two circuit studies connect transistor sizing and feedback design with supply-transient verification: an analog LDO and a two-phase Buck with local source/sink assist at a remote load. Both were developed in Virtuoso and simulated in Spectre.
 
+## Research direction
+
+Alan Roth and colleagues' work on in-package regulation for HPC chiplets motivates the LDO and PDN-aware Buck studies here, particularly their focus on load droop and recovery. [VLSI Technology 2020 paper](https://ieeexplore.ieee.org/document/9265105)
+
+A planned follow-up will explore 48 V-to-1 V conversion using a switched-capacitor ladder and capacitor-assisted dual-inductor filtering, drawing on work by Chen Chen, Jin Liu, and Hoi Lee at UT Dallas. [ISSCC 2022 paper](https://ieeexplore.ieee.org/document/9731764/)
+
 **[Technical report](docs/technical-brief.pdf)** · **[Circuit atlas](report/circuit-atlas.pdf)** · **[Editable LaTeX and build instructions](report/README.md)**
 
 The published evidence belongs to **LDO r6 and Buck r8/r9**. These historical schematic-level experiments are separate from later local LDO development.

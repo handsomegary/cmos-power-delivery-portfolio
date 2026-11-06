@@ -23,8 +23,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4772,
-      "sha256": "c522b57aaa66a77d7d49f78e5d1da42793c834d4b4a6770282065c4b995814b1"
+      "bytes": 5318,
+      "sha256": "cc2a1094f68ec54c3a0918b7c8973defe6b80a486552d880a0f2abffee698fe0"
     },
     {
       "path": "docs/architecture.md",
@@ -988,5 +988,5 @@
     }
   ],
   "file_count": 196,
-  "total_bytes": 38813462
+  "total_bytes": 38814008
 }
