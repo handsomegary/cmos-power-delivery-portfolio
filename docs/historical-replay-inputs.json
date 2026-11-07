@@ -5168,6 +5168,402 @@
         "maxstep_s": 1e-09,
         "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
       }
+    },
+    "v32_grid00_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "3b481237e4edc3e2d7f53b8cf1a27135a899e8187c0a3919c9ec34bb7b8f6875"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_C": -40,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_full_ss_tm40_e10",
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid01_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "71f768cb402fd805f351a675336c07b71c8d6ef6b5a06c8b6b9281b322d7d7f0"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_C": -40,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_01_00",
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid02_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "134e1c78d5a545969499c840393ee6dfde0364f5ae86214050c0d72c7432b951"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_C": 125,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_full_ff_t125_e10",
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid03_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "145dc644a5689201143a572826436349f09514b1b6c18119d1270fa10aedf45f"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_C": 125,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_03_00",
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid04_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "58e38d00b34b4a26fc29800c807cd0d189d08f977d7689a72601a618ecac2764"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_C": -40,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_04_00",
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid05_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "7578607517a53c59f814b90f7964d4b5b9508a79f95f8e13707f43b32b3b4351"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_C": -40,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_05_00",
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid06_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "6182e443712739e70c1b1be4ceb6d0804f117e4a0513583e4b223678eb94b402"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_C": 125,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_06_00",
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid07_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "9dc7d7a329f7585e67257ff8bb051d86cc4682a46b9a5162c3864d85234ede12"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_C": 125,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_07_00",
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid08_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "c4ddf2fb9f1300507e90a685db7d33f3e5afdffb09681a447185d35a3f7ac227"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_C": 27,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_full_tt_t27_e10",
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid09_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "e14d9568e80c40fa1fb04d8a5a237b70ccf7f76c42c300c99b695c174cbb980b"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_C": 27,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_09_00",
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid10_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "00aa2a249a8020950159b53592490f616d20be8a92917fdc4c90ee685d0f9eaf"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_C": -40,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_10_00",
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid11_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "a20cdb7769bd6b8de1eba5911c29417578c37a322b5c4f6e0e89e14b5acb0f76"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_C": -40,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_11_00",
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid12_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "ca24bf0c2af54d83181c5970607235437c328c9a9c7a9c669a1f411137685679"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_C": 125,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_12_00",
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid13_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "094743678f2310a56f03836aa2d6ae110a0b86c8a08d55fb1d63727c3dcb5b22"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_C": 125,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_13_00",
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid14_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "28480a3c49663fc8c642301e3600a2ef521d8806d3207428aa99da35c70bdcdf"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_C": -40,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_14_00",
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid15_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "63f2eef6a7823a37a350a127710af5b5932a209a1ea305fd8e854f83c319e109"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_C": -40,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_15_00",
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid16_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "eeb2cda79f997fb7f7d07aa284f83a32d950d05c8a7533d5f4074c572bcb42aa"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_C": 27,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_16_00",
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid17_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "5279daace527035fba79510956f8eede0f19fce9c068ea5f18653f0c12e91273"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_C": 27,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_17_00",
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid18_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "6526c2de96211b72b2d489a36f4cf357622f3657d9c158ade290b4d51588bc79"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_C": 27,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_18_00",
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid19_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "6d60c2342b84c8c0da555f93ea6ff6ab176d181b42cf4d2a898df23a53f51803"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_C": 27,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_19_00",
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid21_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "2af110157d18692b482e9bbc38fb4599b1a5dc2aff46151bed572d6bd72c9086"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_C": 125,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_21_00",
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
+    },
+    "v32_grid22_physical_load": {
+      "group": "ldo-v32-completed-grid",
+      "files": {
+        "input.scs": "60f51b27167a9bbaac92ebf61ae3807c94d511fd6d05553d302d0a642228cb0f"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_C": -40,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "load_A": 0.0001,
+        "analysis": "load_tran",
+        "source_condition_name": "v32_native_load_22_00",
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "stop_s": 6e-05
+      }
     }
   },
   "replay_groups": {
@@ -5466,6 +5862,32 @@
       "licensed_model_entry_sha256": "fb70ef1fc3e536d9bbd993b954218c913b2ab1468d101a66d4a3033fd4f8cf7d",
       "retained_run_manifest_required": true,
       "replay_details": "Use the retained case command, numerical protocol, variant PEX and include-search directory map in the original manifest."
+    },
+    "ldo-v32-completed-grid": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "7050s",
+        "spectre",
+        "input.scs",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "+escchars",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "requires_exact_local_extracted_source": true,
+      "retained_numeric_signals": 204
     }
   }
 }
