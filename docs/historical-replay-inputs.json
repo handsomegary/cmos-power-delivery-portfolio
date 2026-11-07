@@ -86373,6 +86373,170 @@
         "temperature_c": 125,
         "up_s": 5e-06
       }
+    },
+    "closure_bleed67_loadPVT30_20261031_v17_part1__LOAD_ss_tm40_edge10ns": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "cb98dc49d2861a2536f9aa4b5e3099e7a10679c56c53e596014db848df5dc05a"
+      },
+      "conditions": {
+        "condition": "ss_tm40",
+        "analysis": "load_tran",
+        "variant": "analog69",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-08,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
+    },
+    "closure_bleed67_loadPVT30_20261031_v19_part1__LOAD_ss_tm40_edge10ns": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "24abe67b43ffdc7cfaea1e086136eb1b29b32c241abfe80ef3799b629cc9cbea"
+      },
+      "conditions": {
+        "condition": "ss_tm40",
+        "analysis": "load_tran",
+        "variant": "analog69",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-08,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
+    },
+    "closure_bleed67_loadPVT30_20261031_v19_part1__LOAD_ss_tm40_edge100ns": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "6966a9cd8f6057e8138fac818233ffec95a9d3693afb2b4111e5b3e78709dfc0"
+      },
+      "conditions": {
+        "condition": "ss_tm40",
+        "analysis": "load_tran",
+        "variant": "analog69",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-07,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
+    },
+    "closure_bleed67_loadPVT30_20261031_v19_part1__LOAD_ff_t125_edge10ns": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "d2a482d0cc837b857e63eab2f6e6122b8ff64694d4a11f8ab307389508d701aa"
+      },
+      "conditions": {
+        "condition": "ff_t125",
+        "analysis": "load_tran",
+        "variant": "analog69",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-08,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
+    },
+    "closure_bleed67_full_load_20261031_v21__tt27_full_load10": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "fb3455a511be7d2dd94e51703f2d8aefb5d8a6bff9fbe6e855614ebc37da5247"
+      },
+      "conditions": {
+        "condition": "tt27_full_load10",
+        "analysis": "load_tran",
+        "variant": "analog69",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
+    },
+    "closure_bleed67_loadPVT30_20261031_v21_case00__LOAD_ss_tm40_edge10ns": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "c64e14b749c1b9c471062d359ba8db1d95249547a71d1abcfa71b7d2123ec4ac"
+      },
+      "conditions": {
+        "condition": "ss_tm40",
+        "analysis": "load_tran",
+        "variant": "analog69",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-08,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
+    },
+    "closure_bleed67_loadPVT30_20261031_v21_case01__LOAD_ss_tm40_edge100ns": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "3f06a4e11a2deb6a9e14630b9ff721d8e6ef3a6cd390306a26229c3179599a36"
+      },
+      "conditions": {
+        "condition": "ss_tm40",
+        "analysis": "load_tran",
+        "variant": "analog69",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-07,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
+    },
+    "closure_bleed67_loadPVT30_20261031_v21_case02__LOAD_ff_t125_edge10ns": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "fd9b4bc9a4729ebed475c14f0bc76ef32af08b23d38cf70dfa58d61bc04b1c7d"
+      },
+      "conditions": {
+        "condition": "ff_t125",
+        "analysis": "load_tran",
+        "variant": "analog69",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-08,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
+    },
+    "closure_bleed67_loadPVT30_20261031_v21_case03__LOAD_ff_t125_edge100ns": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "7defde0b6e5e74565eafdf3dce56dee74bdbdc9b2f0250f665ba932a063616ab"
+      },
+      "conditions": {
+        "condition": "ff_t125",
+        "analysis": "load_tran",
+        "variant": "analog69",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-07,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
+    },
+    "closure_bleed67_loadPVT30_20261031_v21_case04__LOAD_snfp_tm40_edge10ns": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "d574f597ba31d8d1b15ebcb20db3c21e8a5b4bc3f8c2f7e00434818448a21acf"
+      },
+      "conditions": {
+        "condition": "snfp_tm40",
+        "analysis": "load_tran",
+        "variant": "analog69",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-08,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
+    },
+    "closure_bleed67_loadPVT30_20261031_v21_case05__LOAD_snfp_tm40_edge100ns": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "cdc66e28690fa5f8d5c862c9a2fc9ae77789e3c10a623bbb27829d1ff695e650"
+      },
+      "conditions": {
+        "condition": "snfp_tm40",
+        "analysis": "load_tran",
+        "variant": "analog69",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-07,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
     }
   },
   "replay_groups": {
