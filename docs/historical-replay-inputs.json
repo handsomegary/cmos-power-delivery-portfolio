@@ -1276,6 +1276,410 @@
         "cout_f": 1e-09,
         "vref_v": 0.45
       }
+    },
+    "r7trial_C18R36_load_T100": {
+      "group": "ldo-r7-trial",
+      "files": {
+        "input.scs": "50c3911b780bda55092affd874e6d726e40e2c97df5bb5bf803cbace23e80439",
+        "config.json": "17f588af439c8ae83a300543e48646e886296bf7315024432ba91759d064abfd"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7trial_C18R36_load_T10": {
+      "group": "ldo-r7-trial",
+      "files": {
+        "input.scs": "6a2d3f6b4d9984d431c79e2913ed318207fea1fae43543e20910cb7caf316099",
+        "config.json": "89903eb4ea4ba14954c2ffa90cfc7312956ef1c4a010dcbc76558d1f3657901c"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r7trial_C22R36_load_T100": {
+      "group": "ldo-r7-trial",
+      "files": {
+        "input.scs": "0d184bd4ac02e3c74bb65247e74ff5ddf19405a95d0e11568c150d3c52a00c2c",
+        "config.json": "6db84cf0b47ceb532fc273e029ba2369fd251da23e31fd9fd2bb80e10cb38169"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7trial_C22R36_load_T10": {
+      "group": "ldo-r7-trial",
+      "files": {
+        "input.scs": "d91b2dcc1d4d943357e233a91df1ffe9b2345ed11e439f4dc794b50a1dcd743c",
+        "config.json": "780a257d235c6c316e4ff9fc714ac3d6d9b809cc135133cce24c6f2a381f05c3"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r7trial_C22R38_load_T100": {
+      "group": "ldo-r7-trial",
+      "files": {
+        "input.scs": "391ec1dae2e7fb541b45a99858a2919170f2d81e4bbd9cb91da34d2e7cc2f39f",
+        "config.json": "a332a353a5fabf81b7dfe7c9a2bf878ba2109f1127162bd014515f61796c4db9"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7trial_C22R38_load_T10": {
+      "group": "ldo-r7-trial",
+      "files": {
+        "input.scs": "d8118b307a58bef33d9e8dc1256fe2f7ec785d0165e4d16200105f2fd7485ae3",
+        "config.json": "2d8694daee80fd5f46071db66662ab774251d4d2b1446d053b9489f31e3c201b"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r7trial_C22R40_load_T100": {
+      "group": "ldo-r7-trial",
+      "files": {
+        "input.scs": "17d4ba3442fe4e54dc4677826d5b83bc7739fb0e936433509ba5a30886f9c3f5",
+        "config.json": "95e71ee06d5d86ed40d91f13cf864c0c249413d863a7fbbf580101116b7f7263"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7trial_C22R40_load_T10": {
+      "group": "ldo-r7-trial",
+      "files": {
+        "input.scs": "a2169487193c9ca6be253179d823c095f1b50b4eb7fa3d4d982533d3c7c2e3c3",
+        "config.json": "683b9d68a1207adabff2d431a18677d70892ddeb3349bbec14dde50310c512a0"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r7driver_N6_C18R36_load_T100": {
+      "group": "ldo-r7-driver-trial",
+      "files": {
+        "input.scs": "b00abb1dbb31555e7f7e3aafa22dc93e9dd9c879cc9e31b6c8475a96dc9d92d3",
+        "config.json": "0464b136da9e3fa0b5a8db61a2b994e92f284da4d906c034877cf8820ffbdd16"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7driver_N6_C18R36_load_T10": {
+      "group": "ldo-r7-driver-trial",
+      "files": {
+        "input.scs": "ba6bc2ac520d94e5ac124ded95891b14791704e00d1e27b294ce1382a60b5dbc",
+        "config.json": "2b3a35a8bfdb40349276b2d872580551abf122fdc66b73b5d08b880ed3289391"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r7driver_N6_C22R36_load_T100": {
+      "group": "ldo-r7-driver-trial",
+      "files": {
+        "input.scs": "86b58f20792c261bf6b132529ff4c898cb05c4e019e5695d09fcab4e4e717e1a",
+        "config.json": "413cc31e22eacf61f47f76a45c9857fc7c5b0b072f8f8b6e8d77a8db3985c95f"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7driver_N6_C22R36_load_T10": {
+      "group": "ldo-r7-driver-trial",
+      "files": {
+        "input.scs": "4d6fbaf73c31b3892411ea4a4f9cceac5b8606447a23d1f9dbe7da1fde53b7f1",
+        "config.json": "f60bf6a152e4621be08e17015a12135fa184cd1a754800dcd5ec95fb7fba90e0"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r7driver_N6_C22R38_load_T100": {
+      "group": "ldo-r7-driver-trial",
+      "files": {
+        "input.scs": "483572e87e22388e845de920fea6355f36f4ed9316118695340b70bca460525b",
+        "config.json": "18dd98c75927586a1819062ce461d0e510aaaffe9bc14c569a1bb309e7e5374d"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7driver_N6_C22R38_load_T10": {
+      "group": "ldo-r7-driver-trial",
+      "files": {
+        "input.scs": "d15bad2be9d307dc9ee339a596c67a067de0fe8ea6d03847ac5c395353f3f98b",
+        "config.json": "1b4d4103e1dcf6dba5c3dac6f1d6f77469be0f20119c8de8daf3d81d8ae08ae2"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r7balance_N6_C18R38_load_T100": {
+      "group": "ldo-r7-balance-trial",
+      "files": {
+        "input.scs": "80d0c4b6e62045c11eea91bc010eea4c4cbf0b7a9cc28869cb18c9f257d90bef",
+        "config.json": "5dbedeb62e9c51e31a7346f633ba65a7429aca117ba9b19280822ed79da09e39"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7balance_N6_C18R38_load_T10": {
+      "group": "ldo-r7-balance-trial",
+      "files": {
+        "input.scs": "40dcad2c5809c2da26419809f37e19494f13762919483205fb25f624b6d03c2f",
+        "config.json": "05c56cb3fa5963487e6c2776e9d0e9eeba8bdec7ecab0c282a4c696eb2908a55"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r7balance_N6_C20R38_load_T100": {
+      "group": "ldo-r7-balance-trial",
+      "files": {
+        "input.scs": "02fdd5fe7b2ea97f85b0c4b964ee3606d93a82c09bb1c3cc7679be023881d0c7",
+        "config.json": "919be8669fdbde10f279f0a62c486f46b378b1d7a45acfa053f64255d9fb9e57"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7balance_N6_C20R38_load_T10": {
+      "group": "ldo-r7-balance-trial",
+      "files": {
+        "input.scs": "5681c0f909d62dca9a94e37463301bffe8920104fdd322ef7b456f3edb5e8ec7",
+        "config.json": "c0759b8b264f874c0d604d54a10d73eb3dba522cdf222ec90065df0d80b63dfa"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "b2_smoke_off": {
+      "group": "buck-b2-b4-smoke",
+      "files": {
+        "input.scs": "4669e62107376181f8f390b6a09f2c5b28dbf649e87e4bc22cef7a51735fb57f",
+        "config.json": "74d71b912b110563b6fc0a07eefb4a91bea3311867921ee025ef74056e66ce88",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc",
+        "buck_control.va": "e3337df5fc19c868f61c5fd694a3fb2fb6c1c0d2b8993175695efe60af2122f7"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 4e-05,
+        "down_s": 7e-05,
+        "stop_s": 0.0001,
+        "maxstep_s": 1e-09
+      }
+    },
+    "b3_smoke_off": {
+      "group": "buck-b2-b4-smoke",
+      "files": {
+        "input.scs": "ab901078812d6c375324778dcf05cdad4641e79c828260a5ed848c85c854bb70",
+        "config.json": "c68c9c59162460f3c16067e40d5a99083eebe1a883e7c22a50e60440a7ab8cbe",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc",
+        "buck_control.va": "54341d911690aabc4d01ecebbf627e771fb00d6fcd7de1940c1f718c12a0edc0"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 4e-05,
+        "down_s": 7e-05,
+        "stop_s": 0.0001,
+        "maxstep_s": 1e-09
+      }
+    },
+    "b4_smoke_off": {
+      "group": "buck-b2-b4-smoke",
+      "files": {
+        "input.scs": "d142661b24f64b104ddb2793bcc33f8a4225c8f761ba036e1c33bbf048e9af50",
+        "config.json": "3f3eaf6176c6dcd3c55d7e2195913ea4351dbd062dda6bbd59c61522ae5890cf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc",
+        "buck_control.va": "30d68e6e5a7d58b10af0620bea981941753ddfc77eec5a04ebf1ec1a3d900e20"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 4e-05,
+        "down_s": 7e-05,
+        "stop_s": 0.0001,
+        "maxstep_s": 1e-09
+      }
+    },
+    "b4_smoke_on": {
+      "group": "buck-b2-b4-smoke",
+      "files": {
+        "input.scs": "83047a39bb0585d088de5566a1b5af53dfe10b101f5233499e0bcb3694d35cae",
+        "config.json": "a4fa74c1ea7fe2945c391281f078e6a79994ff46eda23b27947493a469ce12fa",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc",
+        "buck_control.va": "30d68e6e5a7d58b10af0620bea981941753ddfc77eec5a04ebf1ec1a3d900e20"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 4e-05,
+        "down_s": 7e-05,
+        "stop_s": 0.0001,
+        "maxstep_s": 1e-09
+      }
     }
   },
   "replay_groups": {
@@ -1296,6 +1700,62 @@
         "10000"
       ],
       "licensed_resistor_model_sha256": "fa3e2161e7651bdd7cd910034f475e63f4e4c8126932d25941cc359003eafadc"
+    },
+    "ldo-r7-trial": {
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "spectre_version": "18.1.0.077"
+    },
+    "ldo-r7-driver-trial": {
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "spectre_version": "18.1.0.077"
+    },
+    "ldo-r7-balance-trial": {
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "spectre_version": "18.1.0.077"
+    },
+    "buck-b2-b4-smoke": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ]
     }
   }
 }

@@ -45,3 +45,5 @@ retained inputs and the matching licensed simulator and models.
 The B1 case was interrupted during startup, before its first load transition.
 Current extracted LDO work uses the separate
 [v32 fixture and matrix](../projects/ldo-130nm/simulation/README.md).
+
+The inventory also records 22 completed historical cases in buck-b2-b4-smoke, ldo-r7-balance-trial, ldo-r7-driver-trial, ldo-r7-trial. Each entry binds the exact retained input deck, configuration and companion files to its recorded test conditions. Use the group's simulator command and licensed dependency digests when replaying these cases. Their large waveforms and generated caches can be regenerated from those inputs after retaining the measurement summaries and analysis programs.
