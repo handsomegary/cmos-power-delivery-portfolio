@@ -114058,6 +114058,78 @@
         },
         "temperature_c": 125
       }
+    },
+    "original_r33formal_env_tt_tm40_v1150_i100_c900": {
+      "group": "ldo-R33-original-PEX-noise",
+      "files": {
+        "input.scs": "c5af7d9e77ec63e73efecace51287660c1c7d55354751f811db9e9bacaf7dd48",
+        "config.json": "c9f9696e5977ee5714384fd1a1426f34dd4664e74371c59ff431afa117584810"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "name": "original_r33formal_env_tt_tm40_v1150_i100_c900",
+        "temperature_c": -40
+      }
+    },
+    "original_r33formal_env_tt_tm40_v1150_i100_c1000": {
+      "group": "ldo-R33-original-PEX-noise",
+      "files": {
+        "input.scs": "ca3ce1593100afd1d9533ae6c9f10528b46565113970e7449384fbe8857a6b91",
+        "config.json": "eda4ae7005d77d404f1fd8f62c8c31c0cdf857b04c2ba09a30e2dd1f4b2e9f1a"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "name": "original_r33formal_env_tt_tm40_v1150_i100_c1000",
+        "temperature_c": -40
+      }
+    },
+    "original_r33formal_env_tt_tm40_v1150_i100_c1100": {
+      "group": "ldo-R33-original-PEX-noise",
+      "files": {
+        "input.scs": "fc3365bf31fc8a4041a90af7f3c9c947fff67f0e640365c2a83359f4c095a96b",
+        "config.json": "03dfe736ab1cdddcbacc102beecaea405699458c16635be4128ce3cc1231ef36"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "name": "original_r33formal_env_tt_tm40_v1150_i100_c1100",
+        "temperature_c": -40
+      }
+    },
+    "original_r33formal_env_tt_tm40_v1150_i1000_c900": {
+      "group": "ldo-R33-original-PEX-noise",
+      "files": {
+        "input.scs": "c9c0ad31c69f1d727247ebc0309ca8198ae51d9f264569642453769c013f1a86",
+        "config.json": "56d1a4ac4282a9ea78788d704c98832726dcff623f62719435cb9d2c95f1b050"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "name": "original_r33formal_env_tt_tm40_v1150_i1000_c900",
+        "temperature_c": -40
+      }
+    },
+    "original_r33formal_env_tt_tm40_v1150_i1000_c1000": {
+      "group": "ldo-R33-original-PEX-noise",
+      "files": {
+        "input.scs": "e5ccaeb53703735aae91b1b1a9616ef6b9af7d4b8399ef46dd2b00ffe24538ac",
+        "config.json": "dd26476a6bf87d79ee91c4456b5f855700a61c8dc1eb6b310ff76783139ca24e"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "name": "original_r33formal_env_tt_tm40_v1150_i1000_c1000",
+        "temperature_c": -40
+      }
+    },
+    "original_r33formal_env_tt_tm40_v1150_i1000_c1100": {
+      "group": "ldo-R33-original-PEX-noise",
+      "files": {
+        "input.scs": "efa3702dfe5e43b3a1bb40619ddd195fc2f70de5687ca576a1fa5f1f6e258bd5",
+        "config.json": "632cd6cb6a13f68ee5b956e306808dd4676ce4129f9b6d9f2b9db0f193e9af89"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "name": "original_r33formal_env_tt_tm40_v1150_i1000_c1100",
+        "temperature_c": -40
+      }
     }
   },
   "replay_groups": {
@@ -120062,6 +120134,22 @@
         "+log",
         "spectre.log"
       ]
+    },
+    "ldo-R33-original-PEX-noise": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "licensed_model_entry_sha256": "fb70ef1fc3e536d9bbd993b954218c913b2ab1468d101a66d4a3033fd4f8cf7d",
+      "retained_original_PEX_and_case_command_required": true
     }
   }
 }
