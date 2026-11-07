@@ -3182,6 +3182,502 @@
           ]
         ]
       }
+    },
+    "r5_load_C1000_T100": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "f6988ef8b6d2e3668b5bf916d4bfaa046b754c5f6c152a867d74e4ed458b432b",
+        "config.json": "cde2dc269aad602dd5fcbba155c0b3e767b380f5008f460a572d5e3655dc4f5a"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r5_load_C1000_T10": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "b5867512cebea1df5ce817d6c3a32368f61619d82e6f15676005d6fbcd632737",
+        "config.json": "caf257a5d37469c50e2c6c42acf30c0cbec48a50a83b3f9ac9b0b28fb38c193a"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        },
+        "edge_s": 1e-08,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r5_convergence_T100_step2p5ns": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "5fdeee77279ca2de1ee5ef43e7d860ae75f2be3474a9f83e2fa3fd389193746b",
+        "config.json": "0c9c9dffacc5dc9cfeb5c9b6728464bf918671221695abdf214d717bbd40cc68"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 2.5e-09
+      }
+    },
+    "r5_convergence_T10_step0p5ns": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "9807cfb163882330cf0709da3a18c987c0b64551cf32323433bc272b8b59db71",
+        "config.json": "8edab7ccddfdcada98bbd118d34f6534431fad7cdfdc2500446671f43e66ae8e"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        },
+        "edge_s": 1e-08,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-10
+      }
+    },
+    "r5_line_light": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "0eb95e39912fe3193be7669593efd84a0cecc77763a815ea2475b8931e3b53a3",
+        "config.json": "7425f57bc77717ad4780764dc0bc39076278c4526e4b5b4dc91233832affcd29"
+      },
+      "conditions": {
+        "mode": "line_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000,
+          "vin": 1.1
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r5_line_heavy": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "d45583cebdc91c844b3303fc61ab37249c665d97bf4491336b831b573ed413bc",
+        "config.json": "4a23321fb1daa83a87a7a500c6e86caa2097d98e5013bc3628e3967a1204d35e"
+      },
+      "conditions": {
+        "mode": "line_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cout": 1e-09,
+          "iload": 0.005,
+          "rb": 50000,
+          "vin": 1.1
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r5_corner_tran_ff_m40": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "4bbfa12a7218d674507f3ea5e8dfe8c05d920890560c75ea80fff62833c56944",
+        "config.json": "f6cc3bd2289dc9194439419e9211cead587eb09db42a2ba87677aa744099cb5b"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "ff",
+        "temperature_c": -40,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r5_corner_tran_ff_125": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "dfc187441aa59de4c22743e3cdbdefdab0f9486eb3ec2c2c7bc4255bd18c587c",
+        "config.json": "2565ba4ad27edeb485f7c78b048a6744883fc3fe11ef084bc416aa64ffa9bac4"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "ff",
+        "temperature_c": 125,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r5_corner_tran_ss_m40": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "ec65d0b01bc60ae43837bfd89f68bbfe578a981efe03303e08926421a0d65b64",
+        "config.json": "7c2faaff77b31150c290bdc17f41b5e01896c63e6431ce0fe081c2315bcf1b3c"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "ss",
+        "temperature_c": -40,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r5_corner_tran_ss_125": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "624e776c1fbd18e2021a73b5b8dfbfc5519794dbfa84f0341dc706f0edc6f982",
+        "config.json": "753a6e540cc05804e35f3c89ee2b51eaef2da45d05de68829094e69b0e232519"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "ss",
+        "temperature_c": 125,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r6_load_C1000_T100": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "6a5a2623a35981772aaef7b7492b08af504ae365211cad64cdf0ce0341f52f80",
+        "config.json": "77e7c5cca49233309307f910297c86ce18bd8ed8e14c9675ebcf42487442fcc8"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 1.8e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 36000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r6_load_C1000_T10": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "5b754415b8bc7fbd92e32755253d95d5fb5dec87005e38fbd94c4ab52ad30801",
+        "config.json": "bbb8f14650fb09e9ec140d3d57cf456f069699b42b13144dde3f4c4ea2bc5863"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 1.8e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 36000
+        },
+        "edge_s": 1e-08,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r6_convergence_T100_step2p5ns": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "00d5dea5d89195d38466c7672cd3d661818c375256c2fc59c51d19c7ad6fadfe",
+        "config.json": "edc39112d1779b851ffebebf1c527ba9db716690645db9612276e8ba8d0e7602"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 1.8e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 36000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 2.5e-09
+      }
+    },
+    "r6_convergence_T10_step0p5ns": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "da5d724da4ca33b455fd2851f9cc6c287b4259f0b28166d0b0d80606b33186bd",
+        "config.json": "9c0d81b9ad0f3fd36d59c45c0110d45ecd8d8a913f81f2a45ad94bf732384f6a"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 1.8e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 36000
+        },
+        "edge_s": 1e-08,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-10
+      }
+    },
+    "r6_line_light": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "085467c0e33c954a0734907e89c7a167b7947ed40f0c12de7068e0e73f6d6f6a",
+        "config.json": "cfed31a3aea631e0b92607b1d16b7f08dfac9715b633a899b003546efe76a0ba"
+      },
+      "conditions": {
+        "mode": "line_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 1.8e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 36000,
+          "vin": 1.1
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r6_line_heavy": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "161f8019734ea405ecb9c253a39ce4554216a154119a058db675b43a2d6b19ff",
+        "config.json": "17e46e3703a1cd059a78b0bce2980c62a73fc898d848f41a3e3ed6c254e9a82d"
+      },
+      "conditions": {
+        "mode": "line_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 1.8e-11,
+          "cout": 1e-09,
+          "iload": 0.005,
+          "rb": 36000,
+          "vin": 1.1
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r6_corner_tran_ff_m40": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "93c92950ee46c486eb51fe34cd88c254e94b5463ca41dce8cbca6da38a19dcaa",
+        "config.json": "e9bf43458375b28aa2e95fee28f5fd3d2f7f62ea49e8683861c1b5ea413261de"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "ff",
+        "temperature_c": -40,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 1.8e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 36000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r6_corner_tran_ff_125": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "23811b628ece5d152e5aee6101eca88c9ac81be886ea630fcd84e8530509a3c3",
+        "config.json": "14e054b6345b2682867f528489ad1dc6be3c328e539e74102bbe002a4aa164a6"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "ff",
+        "temperature_c": 125,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 1.8e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 36000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r6_corner_tran_ss_m40": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "cc9b6ffc84f289611863b1559d8a48751440fad818043c6fba06d3ed93307703",
+        "config.json": "d1afbd36e7e8f253cec0dd1c89019dbeb23b7f2793e328b05d38bf1bd9e28be3"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "ss",
+        "temperature_c": -40,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 1.8e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 36000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r6_corner_tran_ss_125": {
+      "group": "ldo-r5-r6-historical",
+      "files": {
+        "input.scs": "3a74b053cfa7d6eef5430d21415bf6e643e587760e03cc91c96b3dc3452d6df4",
+        "config.json": "6f94dac375cc1cbbfa52489085f901ece7784a57facd03104264ddc970d2f69a"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "ss",
+        "temperature_c": 125,
+        "stop_s": 6e-05,
+        "parameters": {
+          "cb": 1.8e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 36000
+        },
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09
+      }
     }
   },
   "replay_groups": {
@@ -3434,6 +3930,20 @@
         "spectre.log"
       ],
       "licensed_model_entry_sha256": "fb70ef1fc3e536d9bbd993b954218c913b2ab1468d101a66d4a3033fd4f8cf7d"
+    },
+    "ldo-r5-r6-historical": {
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "spectre_version": "18.1.0.077"
     }
   }
 }
