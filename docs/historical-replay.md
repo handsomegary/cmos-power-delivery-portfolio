@@ -1,6 +1,6 @@
 # Historical Spectre replay
 
-The [input inventory](historical-replay-inputs.json) records 7573 historical Spectre cases, including PFAST1, R28, LDO layout and load experiments, and Buck smoke and qualification suites. It binds each case to the exact retained input bytes and recorded test conditions. Use each group's simulator command and model dependency digests with the retained local sources. The current [LDO](../projects/ldo-130nm/simulation/README.md) and [Buck](../projects/two-phase-buck/simulation/README.md) templates cover their documented revisions and stimulus sets.
+The [input inventory](historical-replay-inputs.json) records 10104 historical Spectre cases, including PFAST1, R28, LDO layout and load experiments, and Buck smoke and qualification suites. It binds each case to the exact retained input bytes and recorded test conditions. Use each group's simulator command and model dependency digests with the retained local sources. The current [LDO](../projects/ldo-130nm/simulation/README.md) and [Buck](../projects/two-phase-buck/simulation/README.md) templates cover their documented revisions and stimulus sets.
 
 Pass the locally retained case directory and the installed model entry to the
 [input checker](../tools/check_historical_replay_inputs.py). The case directory
