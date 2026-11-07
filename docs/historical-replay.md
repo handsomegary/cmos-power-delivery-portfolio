@@ -1,12 +1,6 @@
 # Historical Spectre replay
 
-The [input inventory](historical-replay-inputs.json) identifies 34 historical
-PFAST1 LDO transient runs, 30 R28 v2b LDO load steps and the early B1 Buck
-startup case. It ties the case identifiers to the exact original input bytes
-and to the separately installed model entry. Use the inventory with the retained local inputs and the matching
-licensed model installation. The public [LDO](../projects/ldo-130nm/simulation/README.md)
-and [Buck](../projects/two-phase-buck/simulation/README.md) templates cover
-different revisions and stimulus sets.
+The [input inventory](historical-replay-inputs.json) records 282 historical Spectre cases, including PFAST1, R28, LDO layout and load experiments, and Buck smoke and qualification suites. It binds each case to the exact retained input bytes and recorded test conditions. Use each group's simulator command and model dependency digests with the retained local sources. The current [LDO](../projects/ldo-130nm/simulation/README.md) and [Buck](../projects/two-phase-buck/simulation/README.md) templates cover their documented revisions and stimulus sets.
 
 Pass the locally retained case directory and the installed model entry to the
 [input checker](../tools/check_historical_replay_inputs.py). The case directory
@@ -45,17 +39,3 @@ retained inputs and the matching licensed simulator and models.
 The B1 case was interrupted during startup, before its first load transition.
 Current extracted LDO work uses the separate
 [v32 fixture and matrix](../projects/ldo-130nm/simulation/README.md).
-
-The inventory also records 22 completed historical cases in buck-b2-b4-smoke, ldo-r7-balance-trial, ldo-r7-driver-trial, ldo-r7-trial. Each entry binds the exact retained input deck, configuration and companion files to its recorded test conditions. Use the group's simulator command and licensed dependency digests when replaying these cases. Their large waveforms and generated caches can be regenerated from those inputs after retaining the measurement summaries and analysis programs.
-
-The inventory also records 17 completed historical cases in buck-completed-r9, buck-completed-v3, ldo-baseline3457-diagnostic, ldo-gate-replay-v2, ldo-gate-replay-v3, ldo-gate-replay-v4, ldo-gate-replay-v5. Each entry binds the exact retained input deck, configuration and companion files to its recorded test conditions. Use the group's simulator command and licensed dependency digests when replaying these cases. Their large waveforms and generated caches can be regenerated from those inputs after retaining the measurement summaries and analysis programs.
-
-The inventory also records 20 completed historical cases in ldo-r5-r6-historical. Each entry binds the exact retained input deck, configuration and companion files to its recorded test conditions. Use the group's simulator command and licensed dependency digests when replaying these cases. Their large waveforms and generated caches can be regenerated from those inputs after retaining the measurement summaries and analysis programs.
-
-The inventory also records 43 completed historical cases in buck-v3-r9-archived. Each entry binds the exact retained input deck, configuration and companion files to its recorded test conditions. Use the group's simulator command and licensed dependency digests when replaying these cases. Their large waveforms and generated caches can be regenerated from those inputs after retaining the measurement summaries and analysis programs.
-
-The inventory also records 45 completed historical cases in ldo-archived-closure. Each entry binds the exact retained input deck, configuration and companion files to its recorded test conditions. Use the group's simulator command and licensed dependency digests when replaying these cases. Their large waveforms and generated caches can be regenerated from those inputs after retaining the measurement summaries and analysis programs.
-
-The inventory also records 22 completed historical cases in ldo-v32-completed-grid. Each entry binds the exact retained input deck, configuration and companion files to its recorded test conditions. Use the group's simulator command and licensed dependency digests when replaying these cases. Their large waveforms and generated caches can be regenerated from those inputs after retaining the measurement summaries and analysis programs.
-
-The inventory also records 30 completed historical cases in ldo-r5-r6-geometry-experiments. Each entry binds the exact retained input deck, configuration and companion files to its recorded test conditions. Use the group's simulator command and licensed dependency digests when replaying these cases. Their large waveforms and generated caches can be regenerated from those inputs after retaining the measurement summaries and analysis programs.

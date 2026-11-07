@@ -6336,6 +6336,171 @@
           "rb": 50000
         }
       }
+    },
+    "tt27_load10": {
+      "group": "ldo-retired-container-integrated_assist71_dynamic5_20261029_v2",
+      "files": {
+        "input.scs": "342e2b2bff3c1bab64a4affb3ca75199c63f8ce6f53b734e0f6dc7b2575a233f"
+      },
+      "conditions": "tt27_load10"
+    },
+    "tt27_startup_heavy": {
+      "group": "ldo-retired-container-integrated_assist71_dynamic5_20261029_v2",
+      "files": {
+        "input.scs": "a44ff5cc74f6aca6d5e0d3b0ae03ff31525e7d620fd4dc0183ab825ddbe46f3a"
+      },
+      "conditions": "tt27_startup_heavy"
+    },
+    "tt27_startup_light": {
+      "group": "ldo-retired-container-integrated_assist71_dynamic5_20261029_v2",
+      "files": {
+        "input.scs": "ce535ac7dc66102b5d3284b18d3d1d085a2d2ff28ae9ab3fddfdb0da76abaf8c"
+      },
+      "conditions": "tt27_startup_light"
+    },
+    "assist71_frontguard_startup4_20261030_v1_results_tt27_startup_heavy": {
+      "group": "ldo-retired-container-assist71_frontguard_startup4_20261030_v1",
+      "files": {
+        "input.scs": "f7a842ce185f6a50e1573b7505ac11ee542fedecee12789eec83bbdeaf97bd5a"
+      },
+      "conditions": "tt27_startup_heavy"
+    },
+    "assist71_frontguard_startup4_20261030_v1_results_tt27_startup_light": {
+      "group": "ldo-retired-container-assist71_frontguard_startup4_20261030_v1",
+      "files": {
+        "input.scs": "8f01c77f6ef76ee7bd39e40f935b0b0e3f913c768f013c3cb0d0cd7d789b2f76"
+      },
+      "conditions": "tt27_startup_light"
+    },
+    "diag_eacap1p_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-selected_eacap1p_transient3_20261026_v3",
+      "files": {
+        "input.scs": "592f99be90282db287bdd376826e3ae681dd8a970d66ddefe36e88fe69647c98",
+        "config.json": "8079b52f39c75303cb8ccbdd7ffd010908fbfe27b0a3223b797ecb6ec131ce81"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_RBUF25_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-RBUF25_transient12_v1",
+      "files": {
+        "input.scs": "23537408c77349da25480ef1ca4e72eb2804edf39be24dd275d2cfdb61f362be",
+        "config.json": "125e1fc90ac6019f7afdd3ef40f31ee7903edf404b7c5445f6bf86c758a24b88"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_RBUF25_tran_tt_t27_e100": {
+      "group": "ldo-retired-container-RBUF25_transient12_v1",
+      "files": {
+        "input.scs": "86cf5af7e5037e3878c168a2448a00f7696992286fd0d61c45015fd635f9c03e",
+        "config.json": "536cfc801c3b1a17f488c906b9aa51c061bd49f55e878c19f7f2011f9e8354aa"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_clamp57_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-selected_clamp57_transient3_20261029_v14",
+      "files": {
+        "input.scs": "dbe307b5dca1c1fec11cf5957df817aed9f051d3abf214faf3384bfe85ef195f",
+        "config.json": "0c9a3769808fcfe0c5aa7199ae7b0ab46b845aca1c7887a55157a0c9aafcf740"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_nbuf06_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-selected_nbuf06_transient3_20261026_v13",
+      "files": {
+        "input.scs": "55d3d9fe0babca28e7db7569d5adf154dfa2f58ffb5a2c0d01a440c763afee60",
+        "config.json": "7cc853638543bf83ce2c0156f3f94bb818d671cd9e77c1cfe3c3c9a82d3c2700"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_dynamic_aw54_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-selected_dynamic_aw54_transient3_20261026_v7",
+      "files": {
+        "input.scs": "ff189f5f83d42f028506f170ea163590c5626f4a5a6c8e4092a9fc358cd6ed9f",
+        "config.json": "162621f833e0e60eb044f042e557a1c46b103f1afe3d50ef65bc372b8be28a48"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_aw_recycle54_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-selected_aw_recycle54_transient3_20261026_v9b",
+      "files": {
+        "input.scs": "b7c1a53426d3916825d6fa3d2505e8e1ed6b685d216fb30072ab1ff87ec78100",
+        "config.json": "1b1882487f65c041cab3821ad7e6a4bedc2fb27734d07ff517882ec41dd7ac68"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_pbuf_long_cbuf8_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-selected_pbuf_long_cbuf8_transient3_20261026_v6",
+      "files": {
+        "input.scs": "5725a381075c0c8f4c1e390d01110248990a98a1cfaea451dbd827dac22a0be8",
+        "config.json": "4d98663deaab3df62df4db2c8de1e45f01eb8b52fb6e10e8e33d53ddd453b4fd"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_pbuf_r20_c20_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-selected_pbuf_r20_c20_transient3_20261026_v5",
+      "files": {
+        "input.scs": "586df6052e2f0c283f3934107ece1157d8dfc85e79c1492d68cb4491bd52df9a",
+        "config.json": "49598ee06503186d4b92076098bd917364b661b8cf21eeb64287223c85fc0068"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_pbuf_cff0p3_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-selected_pbuf_cff0p3_transient3_20261026_v8",
+      "files": {
+        "input.scs": "89bd1de27648ed2e0a89b06684a05231ec59aea19e9349e184cbde33e3096a2d",
+        "config.json": "d05aae79b82706d6b945c8c4f29ace72b1fd39ebb2d4fd8c143e7f22e4608023"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_rb835_cb15_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-selected_rb835_cb15_transient3_20261026_v1",
+      "files": {
+        "input.scs": "fca14cf273ed95bf1dcafce29aab3c940bf10cdd1e629bfe226295af291bf2e6",
+        "config.json": "7d5caa92ef85166ee0ffa5cec135b80707488fa1b9ea9c1dc1575e1422638cf2"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_pbuf_r5_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-selected_pbuf_r5_transient3_20261026_v4",
+      "files": {
+        "input.scs": "d2cbe9a7094cf767c64910e3b6287a2b5c6a2b798ff0652772358bef9dfa6982",
+        "config.json": "4416b918fe2c71f5cedc5b9eb495a55847bbd5f798d9fa3c9b6159766e84ec27"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
+    },
+    "diag_rb940_cb1_tran_tt_t27_e10": {
+      "group": "ldo-retired-container-selected_rb940_cb1_transient3_20261026_v1",
+      "files": {
+        "input.scs": "19d60c37f225e4a27915142f34b57ae6f110e4bca2bfe2767589785b7dc4c742",
+        "config.json": "4d9b1a3e0c6ee30dc93b7dee5e598eec915983462ad7a7d2a93c31f982a80759"
+      },
+      "conditions": {
+        "scope": "historical diagnostic"
+      }
     }
   },
   "replay_groups": {
@@ -6674,6 +6839,358 @@
         "spectre.log"
       ],
       "spectre_version": "18.1.0.077"
+    },
+    "ldo-retired-container-integrated_assist71_dynamic5_20261029_v2": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-assist71_frontguard_startup4_20261030_v1": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-selected_eacap1p_transient3_20261026_v3": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-RBUF25_transient12_v1": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-selected_clamp57_transient3_20261029_v14": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-selected_nbuf06_transient3_20261026_v13": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-selected_dynamic_aw54_transient3_20261026_v7": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-selected_aw_recycle54_transient3_20261026_v9b": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-selected_pbuf_long_cbuf8_transient3_20261026_v6": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-selected_pbuf_r20_c20_transient3_20261026_v5": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-selected_pbuf_cff0p3_transient3_20261026_v8": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-selected_rb835_cb15_transient3_20261026_v1": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-selected_pbuf_r5_transient3_20261026_v4": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
+    },
+    "ldo-retired-container-selected_rb940_cb1_transient3_20261026_v1": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "requires_exact_local_extracted_source": true
     }
   }
 }
