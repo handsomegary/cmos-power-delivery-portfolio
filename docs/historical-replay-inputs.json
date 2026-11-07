@@ -5564,6 +5564,778 @@
         "maxstep_s": 1e-09,
         "stop_s": 6e-05
       }
+    },
+    "r6t_P40_D2_C22_R30": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "97358f4c5ec26e722ce246e5d4eed951daa642d4f9df8875aff07357ce9314cd",
+        "config.json": "e4d451ce70b0742a7d2052bf8894f54e988c68aa99316599496153b19983815a"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.1999999999999998e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r6t_P40_D4_C22_R30": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "a4b26da3c4699e6ffdf797da523e64ed3cc3bd3230755b46ab90f17d8733e8f0",
+        "config.json": "77a7115a909059c38d03878f7cda1da6b9344c7717148c891bb0c863448fc007"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.1999999999999998e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r6t_P80_D2_C22_R30": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "43510f35e774ca872f11fb1cd605333887c81a6d3285d3ac6a00fb0fa0c9e847",
+        "config.json": "bff9d892c103bf757b1bf34fbf6571183762b5a39595829473c1069256d39740"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.1999999999999998e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r6t_P40_D4_C47_R30": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "6825de6973328b4749e2c190f61c8cd57f1cb1dfa396a894486d3c3a71329d03",
+        "config.json": "25516d1a6f1c99c81f2d6278a524f6ab9a2329f500aed0037f21e2e25d16975b"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 4.7e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r6t_P20_G2_M3": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "78849b4bf37e6efbfdf8427841ff72f1c515b2559851446e15802edec840dc2c",
+        "config.json": "54db384ff15b6c3bfdcd3b6902590edf725391af7204da2cdc3229824d1484cc"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cm": 3e-12,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
+    },
+    "r6t_P40_G2_M3": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "ebdc049afef31c00412efc76fb3ffafafc32515cf37de9e862d0de814884432d",
+        "config.json": "d1a66964e6e9a7d6716c479c34db06851fc53ee38ffa5dc6ad008e3e428397fa"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.2e-11,
+          "cm": 3e-12,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
+    },
+    "r6u_P20_G2_D1_C47_R30_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "25ec71a069af0c808387f956266144a636788de2fffdb1694aab7ec6519d6791",
+        "config.json": "72010095c4d503cd4631b1b725c8316fd5044ac9be50b155ad19875ac5c2bfcb"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 4.7e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r6u_P20_G2_D1_C47_R30_M3": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "61d3cc93d46ec751737c81b5d0011c24e391ff07933464c3fb2350fb8f9359e2",
+        "config.json": "91000e0aed20d14ef9c42046d36cd0c54a0ac1b6f39ba9914031f80032bc1cd8"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 4.7e-11,
+          "cm": 3e-12,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r6u_P40_G2_D1_C47_R30_M3": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "094c7b722dead067c16f9e80ad60f3c1abe342980334c3c0e9061fa5a83f6124",
+        "config.json": "4cf6b049173d70f0875387d9f0f67fe155cca401ae1efec4c1636472b1bad3e6"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 4.7e-11,
+          "cm": 3e-12,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r6u_P20_G2_D1_C47_R30_M10": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "e3654aa2329024d3f28f4d73fcf472827f9829e3968b784dd85f90cc0bfeccd8",
+        "config.json": "1dfea2dc5dcee90327521129d4ba8345d19cdc865fcefa0167bef421396b1110"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 4.7e-11,
+          "cm": 1e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r6u_P40_G2_D1_C47_R30_M10": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "31ac4946ce038c04d35fc2d244b7f5b6185e63b64bf52939bf240c652dce650e",
+        "config.json": "81625ace6dad9b4bbe8b86705232ac373cffa4d13c689c15488e74742e63b384"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 4.7e-11,
+          "cm": 1e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r6u_P40_G4_D1_C100_R20_M3": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "6c8390641263b0449e42dae094b1befbed93369564dcb64e770282a6f107db5d",
+        "config.json": "30906f4ed43fd24fa6a0a98b5f961dec00b8b2fe38e4f5906b8245c92faadf5e"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 1e-10,
+          "cm": 3e-12,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 20000
+        }
+      }
+    },
+    "r6u_P40_G1_D2_C47_R30_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "fc12eaa073f6b118a906aa91063572185eef318d9507452f4d405f1726460c9d",
+        "config.json": "01e320c91966c230dc2f0dfc5ada54266851915f0b3e72f7f92a16ece4c09626"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 4.7e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r6u_P80_G1_D2_C47_R20_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "dd78f12f89866d50e6605aa5f4c9c7b0a7570274309718cf1799e6dfdaf7b575",
+        "config.json": "266159ec3f777cfe215aeb717bf7291d1df115ee2c4a2ee794c7545a6e4de46d"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 4.7e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 20000
+        }
+      }
+    },
+    "r6w_P10_E2_D2_C18_R36_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "2c87a84f9dcbd3f84417052a8f30576625954bffc76650be30553b1aa7600d55",
+        "config.json": "1f64ea62a6f7315234e38f182c7bd2422c763d3b0945af8dcba496c5b206a0a2"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 1.8e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 36000,
+          "vin": 1.2
+        }
+      }
+    },
+    "r6w_P20_E1_D2_C15_R50_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "cf8d3a3d5ae75128feec66a64f83d321fc3955b40a90437f7267bc5139ec5a06",
+        "config.json": "7c10c2abb1786aa6bffd6e602654c166e76cb83221e0618d04d910c44c9d2f42"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 1.5e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000,
+          "vin": 1.2
+        }
+      }
+    },
+    "r6v_P20_E1_D2_C10_R50_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "fcdabadda72f2c49a1d41dcccaa0dca07f8d4af99a5721ce12ec0ccd50b4ac46",
+        "config.json": "202cb29de9f6142c8826b86859a20732060a715ba12ba7feb7d82aad7244d071"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 1e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
+    },
+    "r6v_P20_E1_D2_C22_R50_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "4771844dc0a642917376be514381927fad42fafa69f37f20120af60f9d9794d2",
+        "config.json": "0ab70c4e3d51bbe3fd5b448cf0b358ed1613d0815e03498435c33753482d3ebf"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.1999999999999998e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
+    },
+    "r6v_P20_E1_D4_C10_R50_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "c83b1cf883bcdbb5fd7ada3451639b1a35afd615f8ec5fad53f0309440503928",
+        "config.json": "85bbc0504bdf7189a5dfb81babcc14dccd9b0c58430bf0df22f2c61c89554c6e"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 1e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
+    },
+    "r6v_P20_E1_D4_C22_R50_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "efb9129055afb77d78187ba612e906730c06667d6f6e16899cb646b3def24e0b",
+        "config.json": "b8d971bdfd153ee68f88a6e6fe6eb17519bc2a6cff26cebbbd63417f50f7fc89"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.1999999999999998e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
+    },
+    "r6v_P10_E1_D1_C10_R50_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "c6fc1cb8f0f09d6d54fa7e1c929fecd0f51e54e269f38a061b2d901a1d7ac5a6",
+        "config.json": "50589b57cd5d9c543e928d7044bae6d525237c929ece2344223253c0d8b81962"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 1e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
+    },
+    "r6v_P10_E1_D2_C10_R50_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "8875015ac0afd1729d5af0531b890ba54028cbb66c45702817445ee6deaf4435",
+        "config.json": "33bf61bc6e3e50aefed0f2f6b0fbc93d0c2530d9f0c92fb798424ed10a98eb18"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 1e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
+    },
+    "r6v_P10_E2_D2_C22_R40_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "dc48db6d8f5ce540a66209cbc264fb6465585ec7c1c82a9c5302cdd4df86dfcc",
+        "config.json": "ebb5cea2793a0598a865960819ab436c68d6e709224a12053ab081f97054b1ec"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.1999999999999998e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 40000
+        }
+      }
+    },
+    "r6v_P20_E2_D2_C22_R30_M0": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "329252cd3645faf869631e13c2007b58812882121b26a4e98dee9a739aac1242",
+        "config.json": "fcf9b299f67c49875be498d1839411c801909e25a5b8b10d95ea11649c757c12"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.1999999999999998e-11,
+          "cm": 1e-15,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r5probe_tran_C10_R50": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "a54576c0550a4c350a95e61092909b76afc7147b95d1c738ed3b56836ae08373",
+        "config.json": "b5a6946327b2d8920f5073dbaf9d960a3f86bce5ab4e92694d8178092affa88b"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 1e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
+    },
+    "r5probe_tran_C22_R30": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "b369713861e9db264da78c18cda2b318ef8db5ba30d4239b610b55772b18e0ed",
+        "config.json": "0c0194cbfe189dc7a56dd4f3ff2153fcaec49c602d096cb251a0a9bb65b935e0"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.1999999999999998e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r5probe_tran_C22_R50": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "b3eaeccfed93b5bd5cb4c8fb36f8ab6ee830f48c47ba26317147e1c6eeecd798",
+        "config.json": "9b3a8d900ad4de1ede152afa88b595130e06edc82d207cb6b87cc7a97698651b"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.1999999999999998e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
+    },
+    "r5probe_tran_C47_R30": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "f512940dc35e187bc505883fcb69748d3eb3f2aeadaaf13f29529b525a8fbc9a",
+        "config.json": "c013257c1be68d077eedea49178fbf8bd7713fa38f09b458626087a05aa9ac4f"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 4.7e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 30000
+        }
+      }
+    },
+    "r5probe_tran_C22_R50_B2": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "cf9e0c2977299df7182fe3e483dc53ac598a0f60ba255ce3b01d22a483f0a048",
+        "config.json": "1310a9cc07d2c0cb1e1307b71405b6497209ebfdd30408f9dd786ad136833643"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 2.1999999999999998e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
+    },
+    "r5probe_tran_R4baseline": {
+      "group": "ldo-r5-r6-geometry-experiments",
+      "files": {
+        "input.scs": "fa69ce965dd1f44441e233a0016c248650d255559b0e4a139be9c40b34b7d890",
+        "config.json": "ab2eedca52e0f7b534dcbf96625580c1ba79d5234b26bf12b9c96585720df6b7"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "maxstep_s": 5e-09,
+        "parameters": {
+          "cb": 1e-10,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rb": 50000
+        }
+      }
     }
   },
   "replay_groups": {
@@ -5888,6 +6660,20 @@
       ],
       "requires_exact_local_extracted_source": true,
       "retained_numeric_signals": 204
+    },
+    "ldo-r5-r6-geometry-experiments": {
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "spectre_version": "18.1.0.077"
     }
   }
 }
