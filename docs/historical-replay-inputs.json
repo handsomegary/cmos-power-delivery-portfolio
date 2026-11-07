@@ -20271,6 +20271,161 @@
         "protocol_id": "LDO_NUMERICAL_MODEL_GMIN_V1",
         "protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
       }
+    },
+    "r7q_tran_tt27_T100": {
+      "group": "ldo-r7-formal-historical",
+      "files": {
+        "input.scs": "cfe93e6f22a0267e52ea7047ee3857735da88b0f286129f01783a63042a5ae53",
+        "config.json": "057043f31369619674196b4de266186950a9944aa5afb310bd19b6512c16f8f8"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7q_tran_tt27_T10": {
+      "group": "ldo-r7-formal-historical",
+      "files": {
+        "input.scs": "7f6c0cf36fe8cd9f86a112e926f6f25de4b7951827b27c51deb4e83f2d5c206e",
+        "config.json": "83511287285f858497cc4333a59553f5f2a72b4ff3b0e9ae745998273ad5253a"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r7q_tran_ffm40_T100": {
+      "group": "ldo-r7-formal-historical",
+      "files": {
+        "input.scs": "ca563769e518ae12432ba6780cbd17a277a08f6b61c0e8c94c0d9b6ad2a71205",
+        "config.json": "c04e14a1d12265f5be2d81971f7e42551ae6963256e5eb88a7718bc81fd601fe"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "ff",
+        "temperature_c": -40,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7q_tran_ss125_T100": {
+      "group": "ldo-r7-formal-historical",
+      "files": {
+        "input.scs": "9d27cc6728ecc8447c4831f184df54de3ca044e4bd0dc220ddcd28ceb744f443",
+        "config.json": "8382807b2fe6c8795930d915c722b791a5312ebc741f4b611b81c4f242f00440"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "ss",
+        "temperature_c": 125,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7q_convergence_tt27_T10_step0p5ns": {
+      "group": "ldo-r7-formal-historical",
+      "files": {
+        "input.scs": "be56175409fa58ce719f025ecdd475578534e6e65b74a337d83adad73c8fdac5",
+        "config.json": "d45d13b4f5f567675633bfb77631e777b429c3cbeb7e413690d6eea9a459d390"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-08,
+        "maxstep_s": 5e-10
+      }
+    },
+    "r7q_convergence_ss125_T100_step2p5ns": {
+      "group": "ldo-r7-formal-historical",
+      "files": {
+        "input.scs": "4be9fd018ae9260f2b43df4b46796984d7e9b66a55402c013eaefd7fc38bed09",
+        "config.json": "77dd87de63f2c013a313f1e58659c2ba3374d05d097f73b90e7a2377d49acf0a"
+      },
+      "conditions": {
+        "mode": "load_tran",
+        "model_section": "ss",
+        "temperature_c": 125,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "maxstep_s": 2.5e-09
+      }
+    },
+    "r7q_line_light": {
+      "group": "ldo-r7-formal-historical",
+      "files": {
+        "input.scs": "17be921ff6946f5a00cf26c5e07b90f09db4860d29b34818ca693450b1c513bb",
+        "config.json": "966ce6550585ed1c36f776e06eeac64f0cbff03fd02544a143927388f35182ef"
+      },
+      "conditions": {
+        "mode": "line_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r7q_line_heavy": {
+      "group": "ldo-r7-formal-historical",
+      "files": {
+        "input.scs": "1dc3727f048391cc0d7ac573e6521fd7c87703e77015b3dc984f44a246c0aee9",
+        "config.json": "3feb44418f3e283fa28415ad051d7249f089b80c3d4f1c588ee1dc908000bfb8"
+      },
+      "conditions": {
+        "mode": "line_tran",
+        "model_section": "tt",
+        "temperature_c": 27,
+        "stop_s": 6e-05,
+        "edge_s": 1e-07,
+        "maxstep_s": 5e-09
+      }
+    },
+    "ac55_v11_tt27_e10": {
+      "group": "ldo-completed-ac55-pulsec",
+      "files": {
+        "input.scs": "cbc08c03fa2d9548e609bad55deb88a58ff5820ad18330216f048e0927e3be44",
+        "config.json": "d80c8837556c5bb02cbb3743d70c33a5b41d6704d5da7a698589cebb6de0cd6a"
+      },
+      "conditions": {
+        "scope": "historical transient diagnostic"
+      }
+    },
+    "pulsec_tt27_load10": {
+      "group": "ldo-completed-ac55-pulsec",
+      "files": {
+        "input.scs": "ba9550a9867681908bc9ceea9bcec627a34a0ff8f5515bd22723c4665b7c725f"
+      },
+      "conditions": "tt27_load10"
+    },
+    "v32_SS125e10": {
+      "group": "ldo-v32-completed-SS125e10",
+      "files": {
+        "input.scs": "a131ad6167c86287c0e3c0fbc7d64e4f1a2a9db3dd70481b065a4f8b033cc3c6"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_C": 125,
+        "vin_V": 1.2,
+        "cout_F": 1e-09,
+        "analysis": "load_tran",
+        "load_A": 0.0001,
+        "source_condition_name": "v32_ss125_e10",
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-08
+      }
     }
   },
   "replay_groups": {
@@ -23755,6 +23910,69 @@
       "requires_exact_local_extracted_source": true,
       "retained_source_directory_count": 2,
       "scope": "Historical completed static and spectral experiments with original inputs retained in the licensed local environment."
+    },
+    "ldo-r7-formal-historical": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ]
+    },
+    "ldo-completed-ac55-pulsec": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ]
+    },
+    "ldo-v32-completed-SS125e10": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "7050s",
+        "spectre",
+        "input.scs",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "+escchars",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ]
     }
   }
 }
