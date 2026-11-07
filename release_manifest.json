@@ -898,8 +898,8 @@
     },
     {
       "path": "docs/simulation-inputs.md",
-      "bytes": 2012,
-      "sha256": "032a072d50f35ee38d743a1686376983e0b19fe45722b90a2adb209de09606dc"
+      "bytes": 2154,
+      "sha256": "5ab78679c1c5d70155eb89fb1559beb8e051a9a8b012760631d0f54d4178ff7b"
     },
     {
       "path": "projects/ldo-130nm/simulation/README.md",
@@ -985,8 +985,23 @@
       "path": "tools/stage_spectre_case.py",
       "bytes": 2010,
       "sha256": "a98753910c4e9af89fe37e55a07f86016234f221496a1fc0043dc82ea235fcaf"
+    },
+    {
+      "path": "docs/historical-replay-inputs.json",
+      "bytes": 19753,
+      "sha256": "f4c8c8d457d8a8d02ef1011afdc934eba0e2a54c61394010909efc6f3edf5024"
+    },
+    {
+      "path": "docs/historical-replay.md",
+      "bytes": 1668,
+      "sha256": "3cb77d524062a000d06f18dc16da142ec253926c6e063233ec87f880103d1835"
+    },
+    {
+      "path": "tools/check_historical_replay_inputs.py",
+      "bytes": 1693,
+      "sha256": "79d5435b5a7aae83bc59c3caa19563f6793f6d6bcd43e350b45fa9aae6cdef43"
     }
   ],
-  "file_count": 196,
-  "total_bytes": 38814670
+  "file_count": 199,
+  "total_bytes": 38837926
 }

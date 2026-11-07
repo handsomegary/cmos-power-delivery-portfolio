@@ -1,0 +1,651 @@
+{
+  "schema": "portfolio-historical-replay-inputs-v1",
+  "spectre_version": "18.1.0.077",
+  "licensed_model_entry_sha256": "fb70ef1fc3e536d9bbd993b954218c913b2ab1468d101a66d4a3033fd4f8cf7d",
+  "spectre_command": [
+    "spectre",
+    "input.scs",
+    "+escchars",
+    "-format",
+    "psfascii",
+    "-raw",
+    "psf",
+    "+log",
+    "spectre.log"
+  ],
+  "cases": {
+    "b1_smoke_off": {
+      "group": "buck-b1-startup",
+      "files": {
+        "input.scs": "310f87d1b73a03ec0e81ce965a6fcd8e2cec1d904a99c9313e8634eb0156674b",
+        "config.json": "9e3b0af531e319c7c3b26ce2a63abfb475d626a9bf1b4c3b6a2f605158cf9ccf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc",
+        "buck_control.va": "0ddc4c7297395a67cebd29fea0cf3dd1c3c519117d3667e128aa1fa02f76e20d"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 4e-05,
+        "down_s": 7e-05,
+        "stop_s": 0.0001,
+        "maxstep_s": 1e-09,
+        "assist_enabled": false
+      }
+    },
+    "r8f_fine_ss_125_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "1da80a97dc4ebe8a7927ade28b9f6e30048a70dd2f79b9816d8b9958c88413d4",
+        "config.json": "34068048033788c5257e41957f5e9e8ca9d7ec1e986ad39f6b1d9fcfd8fe47d9"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-10
+      }
+    },
+    "r8f_fine_tt_27_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "36975224841dd5abc23269be4ba51473fff9009eaf862bdb8a80b4a75a57f67e",
+        "config.json": "5af3bc7857f82550af785e068ff777a02e697b51f256394270470db673c1069c"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-10
+      }
+    },
+    "r8f_long_ff_m40_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "99602a4cb77f67d1a28ec5cceeb504acf2324ca6edd867d8ce063061b49fabaa",
+        "config.json": "f9af62817a6850344da935fa936fbbef5e04cbf1f7035ea64caa361343cf0abe"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": -40,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 1e-05,
+        "down_s": 6e-05,
+        "stop_s": 0.00015,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_long_ss_125_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "76664c791e17b953799758f6b6e0b9aa188f6cef22798bfa7e1b1212509c57ba",
+        "config.json": "bb34bbabe92c0f218e369cc863214872ef60a29c2c6e5910ef823b79926578bc"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 1e-05,
+        "down_s": 6e-05,
+        "stop_s": 0.00015,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_ff_125_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "c94718a199ba8339c30fa7ec91b508879be13e6d8bd7bf3bbd81498e6cc37e28",
+        "config.json": "ec141ec4b67d8afc314a91848bc32520bc4147bfb5a43574f7cc1ee75784bcf9"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_ff_125_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "9dc5aa3aba2c7ce22a1b4aa50089ce872f11691495c005171f931c741625758c",
+        "config.json": "11e6f2421e7c62e83b34376e19394bfb4862742097a2d983299fdb90d74ca2fc"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": 125,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_ff_27_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "aa3be6cac70b13fa5f71c12eb6bebf0241c3e0e66e20a7589161756b10451459",
+        "config.json": "3f34a67601d3e39fa039760e21c85c0418698744cf0ca67169336c55daeeb11c"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_ff_27_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "1c51cd745911610b73a08da92075ed3b5b212626db4c5890429bc6dfabe18318",
+        "config.json": "abf3690c22eaf6fc445bd40d1fb731c33c5c618539e780a80757098ff2a7dc84"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_ff_m40_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "8455de6c67868e40281081ad89f94bdad219127467bcbf13d8506173dc3ab2ce",
+        "config.json": "19866cb11702374fd9b1586a2c5f70a88d0f7676b4287e93c2ea9c43469d5b2e"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": -40,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_ff_m40_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "418ec1eb92c93c31bc91ce74d7a6ca6ed9178b0bf6aff3dab4aeedf949e0bb82",
+        "config.json": "62004a8d3fa83877a9bfdaf679d8e0fdeec859330266a4404da3a4a1d12c6e19"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": -40,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_fnsp_125_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "26f780b7058a744f670385ed507b4cce787b421bbc82e74c0f23fca680eff708",
+        "config.json": "23c69e8021c89f45bee78c9337f340ca159526bbaca35d6a9c59fecd586221fc"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_fnsp_125_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "a7595ac192fdd31179a000ce0deb39f4ccfb1bbd792f873b3986c19765739b75",
+        "config.json": "6f67d056f73c122fb4cddea5b3ae68e3e6d1dbfa895bfde08359757931578551"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": 125,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_fnsp_27_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "cf22632f07d572e1cd71d0f32ea933409786fd11aa27776480be09679d9b9beb",
+        "config.json": "346c4641ef8bfda8de3a9206b811d4355dbe364a7a64d8d1a0a142983d1eb69d"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_fnsp_27_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "5f7733a65db52c81f11a98dbe0aa9e4d117b26b7ebf1a9451bfdeaabfd384611",
+        "config.json": "6736477e29f39fe4955086d7cbf9cae07f4f92ceca5511e463a0151d911dd847"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_fnsp_m40_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "0099f1c6c0e7dafb9cac29e8fe1f9304e571ea2a996c6762709969421f7c884c",
+        "config.json": "bf31f9c9c037926aca812489c6da1a5444a4b572dcb618668dd5aa7373abb3c5"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": -40,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_fnsp_m40_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "35d41e70494df0652c74061d9eeb0b22eef9ea2f100b2b36a3c9866b35550477",
+        "config.json": "c369a44b465f99df7cd117494c82b78cbff42a8c9266559453f5a4b107c93901"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": -40,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_snfp_125_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "cf6b80ffd98def12f7de1b2548d90a85ea2a06f9dc3d66d8546120e0a0da6d13",
+        "config.json": "48e6fff007f5d21922a6de421691c7fd7aab91cb421934b5376683edf30aa80c"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_snfp_125_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "ac7ea24a7997765e2d174705830dfa9770507c81035404897366552b95ee02fe",
+        "config.json": "eead3dd5f6d949374934656d45858401b7a1dfdff85ea306bb6d8758c339850b"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": 125,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_snfp_27_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "50e50e28fc03a052496ebcc8577cfefb182c393464bd13ddc0159b9e9ab32c2d",
+        "config.json": "210f6c75ae24d05a8459eb759165f4e2a69f07449c496dd41cda8991da98035b"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_snfp_27_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "047da7642114df4e5a10449bae0fbc17acd66983019d12de9a42964bbbae1c76",
+        "config.json": "203f0c6ab619edbf6405855cf6cdd02e3a13bfa49909524a5bffa6dee2d55536"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_snfp_m40_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "21e27932c6644e7d43f59094c08175a49f6b1e15524f45108cb965045f29c923",
+        "config.json": "ae403e0d67c0646b616ed4566fdce35fc33bf4515051da2ae7bfa4cae837712e"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": -40,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_snfp_m40_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "be62a1910ddb232565a0efe8b7312f14ac2960f1bc845133eb9f848f6d83bd33",
+        "config.json": "107d9808417e624d237bfcf5471ad1860e65081cb3c5497d47c5c2cfe641c907"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": -40,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_ss_125_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "c29e3bf7507344fe0617c18a0a2d3470584016ef3101a0b1dfb133eb840ed2a8",
+        "config.json": "79af7ed4c79d3d8313e305843ff322043d0b2c2d85ba4d448c26e3b9371e9da7"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_ss_125_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "d45bb5b301241b1745cb7d7ad8a3ff892f4014976aa38e959b2b3816e6ea8e57",
+        "config.json": "163459ec02734c176c44dfab1a7a23cd53142b4d371dc9203d346ea12aa567bb"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": 125,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_ss_27_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "2387db5f20a3588f1075e1386d0a4fa656fb8d9bd70ff78521fe6dccede0b0be",
+        "config.json": "7ffe372cce300b7b3de9f6a35b3f931c189bc15cad210121cd067b3385827bbd"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_ss_27_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "58b550bf019df74097489217c82e5fbc8f2c04e1fbe8e980325cceecde23fb34",
+        "config.json": "7110c2bc2bfa0be4d6d1bcd0135ca10171b68f30092e24dcd51e8ac4490d43a9"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_ss_m40_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "053c43fffd3d41c30d770a5bb3044eb0fe6ba2009e3e3899c91c92301d825d96",
+        "config.json": "b288d9bb3996cb49fd1379fff32a6b8f04035c12b75b45a5e2bb4ea63fa4a54f"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": -40,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_ss_m40_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "6cc5d0d3476976250970e0f6abb2f26ec6bf9aeffcfc2f8d5163290d11f0620a",
+        "config.json": "cf42f13a2a4d22f4cf66acb7d199881f4cfa4deb3420d2e4c2202e70071adeb0"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": -40,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_tt_125_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "1e388e3ac9a8168d925a4af5c0c9e7418c91091c261ed27b94d02b26d7c792f4",
+        "config.json": "199a5dd120e9896436b3e6b390ce8b97fbf5384e66c6558704f02580fb097006"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_tt_125_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "fb62bfdbb2bffa297a1c13d1daa95cfcb7fdf1d34e82d282f27dae5b9ccc4775",
+        "config.json": "c574507b64c5e3ccca74bdd7e5d0d259d3b6da758dc11c790e8b571b12bde11a"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 125,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_tt_27_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "52555621f5e023dc4049912274687e5cfb419a84627eaacecbe6e0e17beeb063",
+        "config.json": "1291ca03c6ea08e4d5f8e116143f76542251c333ba130d6a2f322e6c1fe08f0e"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_tt_27_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "4ee72dddbfa219d9cdefd23e5d43089064b8e9eb2f356a0132ef483235475815",
+        "config.json": "1034eb72506c185688a8016a43c20c217eb683dd3880631592aa207aa7780b13"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    },
+    "r8f_tran_tt_m40_T10": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "a90c452286e246792d0c81c484be0519d1174840d860cf251353209641734184",
+        "config.json": "fc0d00e7a507ea1a2cd904f1f65835b64acc8296dc284befede50d8390f4a8d0"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": -40,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09
+      }
+    },
+    "r8f_tran_tt_m40_T100": {
+      "group": "ldo-pfast1",
+      "files": {
+        "input.scs": "a8a0cb2264f7f054b58883c125c55d7132196d11c16700417fa8d5e02246899d",
+        "config.json": "1c626fb99900c199abd7222c1502d014aae076ef470ed45195021d91863e5e47"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": -40,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 5e-09
+      }
+    }
+  }
+}

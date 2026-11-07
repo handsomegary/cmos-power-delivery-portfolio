@@ -2,6 +2,7 @@
 
 - [LDO](../projects/ldo-130nm/simulation/README.md) includes two r6 schematic-level decks, the v32 extracted load matrix and a portable v32 test fixture.
 - [Buck](../projects/two-phase-buck/simulation/README.md) includes the r8 nominal OFF/ON decks, the authored controller and the r8/r9 case and pair definitions.
+- [Historical replay](historical-replay.md) identifies the retained PFAST1 and B1 inputs and verifies their bytes against the archived cases.
 
 Prepare `private/models.local.scs` with the `include` paths and model sections for your authorized technology installation. The file must expose the MOS models used by the selected deck with matching D/G/S/B order, geometry parameters and voltage ratings. The transistor models needed by the LDO example are `n12` and `p12`. The Buck also uses `n33` and `p33` for the I/O devices. Keep generated runs in a separate local directory.
 
