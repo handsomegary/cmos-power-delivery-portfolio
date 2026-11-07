@@ -646,6 +646,656 @@
         "stop_s": 6e-05,
         "maxstep_s": 5e-09
       }
+    },
+    "r28v2formal_step_ff_t125_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "0864b3550889926b0158b7d3744c16ed859c5bc002718eaaf5e8c82589bf1406",
+        "config.json": "fe447fd1aac2e0a507e658e0a5981817c37489ab3fd7a5ff6c3ea331ac742e72"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_ff_t125_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "d34b97dfdddd226c00c79bb5d375835ed5b9ca099a9bc8d6a80d19553f28de7b",
+        "config.json": "244fdf6bd40c349716cde329f8aa5386f5b91eee1c714cca01624428d72e1c4f"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": 125,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_ff_t27_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "0067d3c66d85fa8fa7faab2b8ee23b6f6b1a206f0a2c21320e96dee3fae76580",
+        "config.json": "17f5c65678838bacafae4a94825ed62c09e8c37dd9bf0531109bbe3133e5e564"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_ff_t27_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "8b6e9455660c0c7c4418775733fecfc17390d4129c7fd2258b69cc9d600eebba",
+        "config.json": "da4e1a26d1a19d97ccaebfd26ed330acd20fbe88bf1f1c7a84af17801749c4c8"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_ff_tm40_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "372fae941efbce09c23925f2f4884e6620eb7b8f25e3cf6e8dea93e9b30a0e80",
+        "config.json": "4b0308f4eab0971007e5a3c0d954f7be1640045d28430653492c739b89bff889"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": -40,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_ff_tm40_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "2524ceb71b8e90d81a25f0f8e77012b1687514c1ead8ae499d6a5117bcb87113",
+        "config.json": "559490d417cda78522974c24b13fbd842c6c2756c6658fc6a2b56247cf4d0948"
+      },
+      "conditions": {
+        "model_section": "ff",
+        "temperature_c": -40,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_fnsp_t125_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "3e60df0a6feb12cb8dd175e1632615c243d311dfd581a25489c7df84289481b0",
+        "config.json": "f68cd30a7f9707d58c0fcc0fa9d7240bd8a3a66fc2148d62c78cba2e86aa6fe7"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_fnsp_t125_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "106911f09e2fe5faaef506b5e7983a3a20df521013ee2acedff2c34dddcf497b",
+        "config.json": "39df97a6400761009de9a1ec44aa2241818189235d89f5f50713779d155edd19"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": 125,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_fnsp_t27_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "29a9825b102cc8da5b3469304834e47a57679c44719f652dc4be0df254b110d3",
+        "config.json": "bdd3a4936903c4b434ae18e2f6160094591176782529bef69a2041bdaa1e9f9b"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_fnsp_t27_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "45ebc0289e6d8c9c912280694bf72d77182095cb51fb89ea144a9d9859555aff",
+        "config.json": "d72d04570cc6e8d62ac3f85b0064e352d05a20323bc7d5490f30bb3ad47ab48c"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_fnsp_tm40_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "fa2d2f24aeb634f023d23cbde78678b704c4d257cade03f8810c1561a108f40b",
+        "config.json": "ef7857eb57653e273272571608c3e1db29640c72719c57a7a14cb25872dbbd39"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": -40,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_fnsp_tm40_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "ff84e0d1ff0f4e2a9b59a0f5878b37d08aa23a234c707eaf96a74d9806aaa083",
+        "config.json": "94f6a7ad2fa346036ab859cd0f270a456b0aad7ba9ce09ceebd172667273409c"
+      },
+      "conditions": {
+        "model_section": "fnsp",
+        "temperature_c": -40,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_snfp_t125_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "79f7f16e5ab6b8e8783c8cce61812183c8d3f20ebbd1c01145d432acab8fceb3",
+        "config.json": "4ec187d8af7ba1b10eb95cc3e8f90a11b46a9c563c435a033c310634f51bf528"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_snfp_t125_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "d2a9765b4eddb13d4c2f5f31218de67c6e7f049dc530196dfdd819035b2814fe",
+        "config.json": "71131ac7ba5aa7c9b923f7e92d2c6f6906f7cd7edfa16f6aa1f5145ff2e84b8d"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": 125,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_snfp_t27_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "c9d448b4c3f21f8cfc8380bee7b2e847f6ff96d3c8eaed06916850ab675d86fa",
+        "config.json": "3ecc9d0b0e40ca0d62bf9fd3322e5c9b023c7fdda43b8f886745a32ec450ffcc"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_snfp_t27_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "aed96c06c1429fe5a393e75d817d816aaa714fb23cfaaf9fb57ca58043b331d9",
+        "config.json": "c638b187cd280711af4a221d81b2ce66d4ca2871e49abfdcb8323ae45cce50c9"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_snfp_tm40_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "593c7627e722df410f0e737d6af412f99873949630e565f591f72c7920293f4e",
+        "config.json": "38e44bfe06d308a8e1cd307445feeb460e6f197359e886d1b0769bb46caaae14"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": -40,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_snfp_tm40_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "46c78cabb5192343203f20bee027e07a9dfd7106b03180062a6d73b5d221fa6b",
+        "config.json": "d21ae0a18e351e8ae2906397f10ff41e60b27e44a0c72559f75112f06b28dab1"
+      },
+      "conditions": {
+        "model_section": "snfp",
+        "temperature_c": -40,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_ss_t125_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "fd7ffc43962a9a93bf1f9ae8f96d4fa4608b7fdba21e858082d44e407838b6f1",
+        "config.json": "938f6b0316b37b55906f92cf20de8e0aa82680317917a7b014ae7a1b66514e89"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_ss_t125_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "cefa946b67838e2489c536be4f6a18fef088d8b6bf5b5468084d0c940e88faa8",
+        "config.json": "0642d139f2f75b8b672fe59458a75b06d47835075573fef216d59e782abcff67"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": 125,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_ss_t27_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "1e694aa53a7432f91ef359cd91447d6a178293a32a2a610b30f24a9978596663",
+        "config.json": "246b625f1a2de904e3bca0c5044fda154ca14be384fa25a4208b5a69f90375fc"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_ss_t27_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "450bdaebecec2d93542011a2a2fc5380f30b7023042b689b74a6164ca7da5db0",
+        "config.json": "016e759ce5945ebbcd20b437f74c0e4c1b881eea355583a9d5d914baa0b6e2ab"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_ss_tm40_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "58528b1be7862e4412c1b17fd97572e78a11a95858a4790a2ca0ce05b2136d53",
+        "config.json": "6be74a8f9ebacbf74bb386f6636d1dd1c0ec0529c887effd89973fb489e195e2"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": -40,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_ss_tm40_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "b785b5948234906808c488eb8f6e228bff7623adfe63f943aa20f854aaa13f3e",
+        "config.json": "4416e959427cbbe77303f81cedf5a9fa7784d7b019370d1c9f00b36b881fb6b9"
+      },
+      "conditions": {
+        "model_section": "ss",
+        "temperature_c": -40,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_tt_t125_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "c30e80ccc700887e3e7f0cee206d8105e8ff7646b99007107a76c795ba766360",
+        "config.json": "63dfad316d3ee32a53ec0bb5e9c53463d7053a094d77c4b9fe07ae2e25364946"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 125,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_tt_t125_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "a6427799b8f5d7cce0171648492c128e4b35c060154fe19ae09969a5d903bf59",
+        "config.json": "5de8d3dfcc15eb7d99669eff3ded0607f5ae7e9563a29d59fdd8352532fa1f7d"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 125,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_tt_t27_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "5c20f54fea7d2bd18b6bcd78a3a9c3072afc21124e53feaad30937061c35c788",
+        "config.json": "f81c893ab7ca0dfa00dec1d252cdd9a45240360ae81608b51948cdb09dd6a349"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_tt_t27_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "6093c4710429b5a3eebffc27826641333e3f998be2b12a0c012db3aaf6fdd9f1",
+        "config.json": "86595a0fb2e0de82363e848106c6138ad3894fce487f1efadf637c77194abcd8"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_tt_tm40_e10": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "4d4026eb25a68d50ce4af0f18ec8673e8580fb77de8c8b70b6cebbd04097652a",
+        "config.json": "4bd2202195d6f387fc7ef08fa0e92074f21696acd7384004c476a9caf56e32b8"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": -40,
+        "edge_s": 1e-08,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    },
+    "r28v2formal_step_tt_tm40_e100": {
+      "group": "ldo-r28-v2b",
+      "files": {
+        "input.scs": "5a10a4829f2b8fabd9a2ec9b7f9c7729cdb5308610c5f158962401ffbe133fc2",
+        "config.json": "5fbd24882e403f499f91f88b5cb5c2cb2ed6c40d98d09f1d966a6d2944ca342d"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": -40,
+        "edge_s": 1e-07,
+        "load_low_a": 0.0001,
+        "load_high_a": 0.005,
+        "up_s": 5e-06,
+        "down_s": 3e-05,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "vin_v": 1.2,
+        "cout_f": 1e-09,
+        "vref_v": 0.45
+      }
+    }
+  },
+  "replay_groups": {
+    "ldo-r28-v2b": {
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "licensed_resistor_model_sha256": "fa3e2161e7651bdd7cd910034f475e63f4e4c8126932d25941cc359003eafadc"
     }
   }
 }
