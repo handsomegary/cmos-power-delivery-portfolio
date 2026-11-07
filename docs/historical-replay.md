@@ -47,3 +47,5 @@ Current extracted LDO work uses the separate
 [v32 fixture and matrix](../projects/ldo-130nm/simulation/README.md).
 
 The inventory also records 22 completed historical cases in buck-b2-b4-smoke, ldo-r7-balance-trial, ldo-r7-driver-trial, ldo-r7-trial. Each entry binds the exact retained input deck, configuration and companion files to its recorded test conditions. Use the group's simulator command and licensed dependency digests when replaying these cases. Their large waveforms and generated caches can be regenerated from those inputs after retaining the measurement summaries and analysis programs.
+
+The inventory also records 17 completed historical cases in buck-completed-r9, buck-completed-v3, ldo-baseline3457-diagnostic, ldo-gate-replay-v2, ldo-gate-replay-v3, ldo-gate-replay-v4, ldo-gate-replay-v5. Each entry binds the exact retained input deck, configuration and companion files to its recorded test conditions. Use the group's simulator command and licensed dependency digests when replaying these cases. Their large waveforms and generated caches can be regenerated from those inputs after retaining the measurement summaries and analysis programs.

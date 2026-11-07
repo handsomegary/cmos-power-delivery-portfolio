@@ -1680,6 +1680,1508 @@
         "stop_s": 0.0001,
         "maxstep_s": 1e-09
       }
+    },
+    "gate_replay_v2_tt27": {
+      "group": "ldo-gate-replay-v2",
+      "files": {
+        "input.scs": "e421b7cd09eea59856d8d60291c922cc77ef8cb1ad1ee93b7beb194d51c1df6c"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "scope": "historical open-loop replay with externally imposed gate and output voltage",
+        "LDO_qualification_claimed": false
+      }
+    },
+    "gate_replay_v3_tt27": {
+      "group": "ldo-gate-replay-v3",
+      "files": {
+        "input.scs": "bb11d6e4cbacabb8b3404d0c6f9c790c0b83aca179acba23f2688af66edd806b"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "scope": "historical open-loop replay with externally imposed gate and output voltage",
+        "LDO_qualification_claimed": false
+      }
+    },
+    "gate_replay_v4_tt27": {
+      "group": "ldo-gate-replay-v4",
+      "files": {
+        "input.scs": "6bff1ec270fafa03e871b21ae1a55ead954d5b5bf84c629ba1296671fadd7598"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "scope": "historical open-loop replay with externally imposed gate and output voltage",
+        "LDO_qualification_claimed": false
+      }
+    },
+    "gate_replay_v5_tt27": {
+      "group": "ldo-gate-replay-v5",
+      "files": {
+        "input.scs": "d3f0066fc206ca6f5cb9144b6dc8d576c6e6c1122f1639c99a1ede5502f884aa"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "scope": "historical open-loop replay with externally imposed gate and output voltage",
+        "LDO_qualification_claimed": false
+      }
+    },
+    "baseline3457_tt27_e10": {
+      "group": "ldo-baseline3457-diagnostic",
+      "files": {
+        "input.scs": "9f052a0c7530999e9b86b7b689ce11442765a96e3e1dd3cb20d90d2f2c5459b4",
+        "config.json": "746828b29eb00d2b8944a9d56544496071b48722c21e0b0e558aa045546563a1"
+      },
+      "conditions": {
+        "model_section": "tt",
+        "temperature_c": 27,
+        "edge_s": 1e-08,
+        "scope": "historical extracted baseline3457 transient diagnostic",
+        "qualification_claimed": false
+      }
+    },
+    "v3_nom100_off": {
+      "group": "buck-completed-v3",
+      "files": {
+        "input.scs": "6beae9209dc069d6ea9b2f556fe97b41c0b6cf753886ca37092065a950cba9d1",
+        "config.json": "bbe9e63e748c2cc07be29a83968cf2974e2fe64fe1fdad588c657a509812b946",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 2e-09,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 0.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 0.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 1e-08,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 5e-10,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.1,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.0100000000000004e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010010000000000001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
+    },
+    "v3_nom100_on": {
+      "group": "buck-completed-v3",
+      "files": {
+        "input.scs": "785b637802b43573eaf00f4ad09b5d0e33c61fcffb615143d829b90b944d791d",
+        "config.json": "049271978a85ee4b0dcc45c23ac6f3fdd52f2fe3a907c1f7e2544f60299389f6",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 2e-09,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 2.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 1.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 1e-08,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 5e-10,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.1,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.0100000000000004e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010010000000000001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
+    },
+    "v3_pdn_hard_p0_off": {
+      "group": "buck-completed-v3",
+      "files": {
+        "input.scs": "acf738e1450f08706917a1a9f85c70f4d7d218072745c88ab18725d95726ef70",
+        "config.json": "c2f8db3b3dc1ac19446bde69507a13032e5b3d29a5012fdff42c8599c541fa96",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 2e-09,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 0.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 0.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 2e-09,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 2e-09,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.3,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.001e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
+    },
+    "v3_pdn_hard_p0_on": {
+      "group": "buck-completed-v3",
+      "files": {
+        "input.scs": "7569fb48cbcd858455894ec5847961911fd4933b18566ba29519b3928581bab1",
+        "config.json": "eedd4f519cdadc2c3949cef2ae29779a1ca0e48ab49e3ccfdc4c0f0e0889620c",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 2e-09,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 2.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 1.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 2e-09,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 2e-09,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.3,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.001e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
+    },
+    "r9_nom10_p0_on": {
+      "group": "buck-completed-r9",
+      "files": {
+        "input.scs": "58a1c26ab0e0e213993dee470eadae0bfa260b87cf5652f8a17e31bc95e26bef",
+        "config.json": "151edb07962d01788dcdcc42c4f4ccf2b0c19d413a775bf9b7d2b0c6a241d1f8",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 2e-09,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 2.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 1.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 1e-08,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 5e-10,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.1,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.001e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
+    },
+    "r9_pdn_hard_p0_on": {
+      "group": "buck-completed-r9",
+      "files": {
+        "input.scs": "1cbe4402f2d187d99ea0724b281ed5e36df0cc51cdbb19aea4cd4575a0da7ffd",
+        "config.json": "9d7e96e947a808d496a0fbfaee90a58e939755339b5cec840b9c5c5749ea8889",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 2e-09,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 2.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 1.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 2e-09,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 2e-09,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.3,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.001e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
+    },
+    "r9_nom10_p0_off": {
+      "group": "buck-completed-r9",
+      "files": {
+        "input.scs": "aec1477f4cb709e6c421c68044a04fd6bb93f750de128c1e59e38130b0067b37",
+        "config.json": "b1f56847895639eb9295991c377bc1580d0c98cc21c6e4e62263e2adef253774",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 2e-09,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 0.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 0.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 1e-08,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 5e-10,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.1,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.001e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
+    },
+    "r9_pdn_hard_p0_off": {
+      "group": "buck-completed-r9",
+      "files": {
+        "input.scs": "865094b82eca295e650cd9adfbf87951cd9c16ceaca952662dcbff00c7961976",
+        "config.json": "9048d624e66a9c632533145f29b98fc4165192b8e4914441064acf07fdd041d9",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 2e-09,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 0.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 0.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 2e-09,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 2e-09,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.3,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.001e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
+    },
+    "r9_nom100_off": {
+      "group": "buck-completed-r9",
+      "files": {
+        "input.scs": "61fd8f14ecf935ab9d2bb987ca683c3971e0d33b89d7bb14eed6702ccbc0424c",
+        "config.json": "dc7be0757ceab41bc5e8168e647064d567426ba21116482151a22635361505f6",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 2e-09,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 0.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 0.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 1e-08,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 5e-10,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.1,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.0100000000000004e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010010000000000001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
+    },
+    "r9_fine_pdn_off": {
+      "group": "buck-completed-r9",
+      "files": {
+        "input.scs": "6a72a1038cc84336e2ecfccd34511160feaae3f3775b979e8106b39f2fc9b2f6",
+        "config.json": "39358f3c2dde98467f06822b5719ce2c86c0df111d710af494badedf5fe6c69c",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 5e-10,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 0.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 0.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 2e-09,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 2e-09,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.3,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "conservative",
+          "iabstol": 1e-12,
+          "maxstep_s": 5e-10,
+          "reltol": 0.0001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 1e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.001e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
+    },
+    "r9_nom100_on": {
+      "group": "buck-completed-r9",
+      "files": {
+        "input.scs": "78beaa04d633456426e8e247179c1abab09a8e573b1bd3d2801ba4a4796776e7",
+        "config.json": "1e94ae14b3a85d048eb417381ed7d0d69fa10eb82b40b074bd355738940f39c8",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 2e-09,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 2.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 1.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 1e-08,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 5e-10,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.1,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "moderate",
+          "iabstol": 1e-12,
+          "maxstep_s": 2e-09,
+          "reltol": 0.001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 2e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.0100000000000004e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010010000000000001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
+    },
+    "r9_fine_pdn_on": {
+      "group": "buck-completed-r9",
+      "files": {
+        "input.scs": "5a34fcafd4a0df0870b5cb0888a9a5b3d6d36a1bae8d93906521f9f32e366cd0",
+        "config.json": "9b454fc67debf04693391581b5b5995dc822cdadf58485d6f95dc6e1d5350299",
+        "buck_control.va": "621cbd0ad2ab782cedf25c5981926364e880f3385a434d42119dca1e6e225daf",
+        "buck_control_include.scs": "28453970807700571a90821ee6b7c25b3768babe9da6905c1d717fb46483aadc"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "load_low_a": 0.01,
+        "load_high_a": 0.1,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "actual_up_s": 6e-05,
+        "actual_down_s": 0.0001,
+        "stop_s": 0.00014,
+        "maxstep_s": 5e-10,
+        "phase_offset_s": 0.0,
+        "parameters": {
+          "ASSIST_BLANK": 5e-05,
+          "ASSIST_BOOST": 0.04,
+          "ASSIST_COOL": 5e-08,
+          "ASSIST_COORD": 2.0,
+          "ASSIST_DELAY": 1.5e-08,
+          "ASSIST_EN": 1.0,
+          "ASSIST_LIMIT": 0.12,
+          "ASSIST_MAX_PULSES": 4.0,
+          "ASSIST_PULSE": 2e-07,
+          "CLOAD": 2e-09,
+          "CLOAD_ESL": 5e-11,
+          "CLOAD_ESR": 0.02,
+          "COUT": 1e-06,
+          "COUT_ESL": 2e-10,
+          "COUT_ESR": 0.02,
+          "CTRL_TICK": 2e-09,
+          "DEAD_TIME": 1e-08,
+          "DIODE_EMULATION": 1.0,
+          "FSW": 5000000.0,
+          "ILOAD_DC": 0.01,
+          "KII": 2000000.0,
+          "KIV": 200000.0,
+          "KPI": 4.0,
+          "KPV": 1.0,
+          "L_PDN": 2e-09,
+          "L_PHASE": 2.2e-06,
+          "PHASES": 2.0,
+          "PHASE_LIMIT": 0.15,
+          "R_DCR": 0.05,
+          "R_PDN": 0.3,
+          "SENSE_TAU": 1.5e-07,
+          "SOFT_START": 2e-05,
+          "VIN_DC": 1.8,
+          "VLOGIC": 1.2,
+          "VOLTAGE_TAU": 1e-07,
+          "VOUT_REQ": 0.9,
+          "WINDOW": 0.025
+        },
+        "solver": {
+          "errpreset": "conservative",
+          "iabstol": 1e-12,
+          "maxstep_s": 5e-10,
+          "reltol": 0.0001,
+          "skipdc": "yes",
+          "stop_s": 0.00014,
+          "strobeoutput": "strobeonly",
+          "strobeperiod_s": 1e-09,
+          "vabstol": 1e-07
+        },
+        "steady_windows": {
+          "heavy": [
+            9e-05,
+            9.8e-05
+          ],
+          "post": [
+            0.00013,
+            0.000138
+          ],
+          "pre": [
+            5e-05,
+            5.8e-05
+          ]
+        },
+        "load_pwl": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3e-06,
+            0.0
+          ],
+          [
+            5e-06,
+            0.01
+          ],
+          [
+            6e-05,
+            0.01
+          ],
+          [
+            6.001e-05,
+            0.1
+          ],
+          [
+            0.0001,
+            0.1
+          ],
+          [
+            0.00010001,
+            0.01
+          ],
+          [
+            0.00014,
+            0.01
+          ]
+        ]
+      }
     }
   },
   "replay_groups": {
@@ -1756,6 +3258,182 @@
         "+log",
         "spectre.log"
       ]
+    },
+    "ldo-gate-replay-v2": {
+      "spectre_version": "18.1.0.077",
+      "replay_stimuli": {
+        "gate.pwl": "bfdd69f095da99ad5098174e24253f2bd5cc4a350989cc28100eb6952f600ee5",
+        "vout.pwl": "f81fef8385a79341a9841a4aa1ae9614663d692280cf33a27a988521a21237dc"
+      },
+      "scope": "Use retained original PWL files and native deck in a licensed local environment",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "120s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000",
+        "+mt=1"
+      ],
+      "configuration_manifest_sha256": "43b357fc87c2397b441eec9edfecae73bf6921a9a0901435c5a5db02e5655e92"
+    },
+    "ldo-gate-replay-v3": {
+      "spectre_version": "18.1.0.077",
+      "replay_stimuli": {
+        "gate.pwl": "bfdd69f095da99ad5098174e24253f2bd5cc4a350989cc28100eb6952f600ee5",
+        "vout.pwl": "f81fef8385a79341a9841a4aa1ae9614663d692280cf33a27a988521a21237dc"
+      },
+      "scope": "Use retained original PWL files and native deck in a licensed local environment",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "120s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000",
+        "+mt=1"
+      ],
+      "configuration_manifest_sha256": "0f398c729398de572745aae79f6f3e0e914fb31e4d03d9291781b5e8c89bf84f"
+    },
+    "ldo-gate-replay-v4": {
+      "spectre_version": "18.1.0.077",
+      "replay_stimuli": {
+        "gate.pwl": "bfdd69f095da99ad5098174e24253f2bd5cc4a350989cc28100eb6952f600ee5",
+        "vout.pwl": "f81fef8385a79341a9841a4aa1ae9614663d692280cf33a27a988521a21237dc"
+      },
+      "scope": "Use retained original PWL files and native deck in a licensed local environment",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "120s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000",
+        "+mt=1"
+      ],
+      "configuration_manifest_sha256": "3855a816dbccf382c12e9e340319f19abe6772850f1d2d0f46bf7fd2a59b4596"
+    },
+    "ldo-gate-replay-v5": {
+      "spectre_version": "18.1.0.077",
+      "replay_stimuli": {
+        "gate.pwl": "bfdd69f095da99ad5098174e24253f2bd5cc4a350989cc28100eb6952f600ee5",
+        "vout.pwl": "f81fef8385a79341a9841a4aa1ae9614663d692280cf33a27a988521a21237dc"
+      },
+      "scope": "Use retained original PWL files and native deck in a licensed local environment",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "120s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000",
+        "+mt=1"
+      ],
+      "configuration_manifest_sha256": "16a487daedef1723dea323a155d58c8a3dceff9bbf094ae0813728df8944f077"
+    },
+    "ldo-baseline3457-diagnostic": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "1800s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "licensed_model_entry_sha256": "fb70ef1fc3e536d9bbd993b954218c913b2ab1468d101a66d4a3033fd4f8cf7d",
+      "requires_exact_local_extracted_source": true
+    },
+    "buck-completed-r9": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "licensed_model_entry_sha256": "fb70ef1fc3e536d9bbd993b954218c913b2ab1468d101a66d4a3033fd4f8cf7d"
+    },
+    "buck-completed-v3": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "licensed_model_entry_sha256": "fb70ef1fc3e536d9bbd993b954218c913b2ab1468d101a66d4a3033fd4f8cf7d"
     }
   }
 }
