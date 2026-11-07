@@ -988,13 +988,13 @@
     },
     {
       "path": "docs/historical-replay-inputs.json",
-      "bytes": 821113,
-      "sha256": "63d2934303b449a9568c586842033e88247800a26cb6bf2b80d3e5cd5ed93f90"
+      "bytes": 1529023,
+      "sha256": "3c46d510807a2899fe19eb434b88b4e202f87862e3655df1a90206d8702e94b7"
     },
     {
       "path": "docs/historical-replay.md",
-      "bytes": 2376,
-      "sha256": "27feea9c9bea1b9a45dd4735cc9f25594615aa3f0d868db11063c7d38298332b"
+      "bytes": 2377,
+      "sha256": "42e03a1493af2da1de3eb4a8245807a3a426112ac0908c082c48c01562f53418"
     },
     {
       "path": "tools/check_historical_replay_inputs.py",
@@ -1003,5 +1003,5 @@
     }
   ],
   "file_count": 199,
-  "total_bytes": 39639994
+  "total_bytes": 40347905
 }
