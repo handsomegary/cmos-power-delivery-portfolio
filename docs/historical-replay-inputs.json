@@ -196922,6 +196922,304 @@
       },
       "simulation_status": "failed_exit2_truncated",
       "qualification_PASS_claimed": false
+    },
+    "line_heavy": {
+      "group": "ldo-initial-R0-R4-transients",
+      "files": {
+        "input.scs": "f419a8bfb7fa55f8ac1cc75817c087e300a8237a29b60b72891a745e28e765fc"
+      },
+      "conditions": {
+        "down_s": 2e-05,
+        "edge_s": 1e-07,
+        "mode": "line_tran",
+        "multipliers": {
+          "PBIAS": 4,
+          "PL": 8,
+          "PR": 8,
+          "PTAIL": 8
+        },
+        "name": "line_heavy",
+        "parameters": {
+          "cc": 1e-12,
+          "cm": 5e-11,
+          "cout": 1e-09,
+          "iload": 0.005,
+          "rbias": 100000,
+          "rbot": 200000,
+          "rtop": 100000,
+          "rz": 10000,
+          "vin": 1.2,
+          "vref": 0.6
+        },
+        "stop_s": 4e-05,
+        "temperature_c": 27,
+        "vin_high_v": 1.2,
+        "vin_low_v": 1.1
+      }
+    },
+    "line_light": {
+      "group": "ldo-initial-R0-R4-transients",
+      "files": {
+        "input.scs": "79e044b9c26912723483463d7020193cb00c47933e2dc0d5d6be460676c229fa"
+      },
+      "conditions": {
+        "down_s": 2e-05,
+        "edge_s": 1e-07,
+        "mode": "line_tran",
+        "multipliers": {
+          "PBIAS": 4,
+          "PL": 8,
+          "PR": 8,
+          "PTAIL": 8
+        },
+        "name": "line_light",
+        "parameters": {
+          "cc": 1e-12,
+          "cm": 5e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rbias": 100000,
+          "rbot": 200000,
+          "rtop": 100000,
+          "rz": 10000,
+          "vin": 1.2,
+          "vref": 0.6
+        },
+        "stop_s": 4e-05,
+        "temperature_c": 27,
+        "vin_high_v": 1.2,
+        "vin_low_v": 1.1
+      }
+    },
+    "load_C1000_T10": {
+      "group": "ldo-initial-R0-R4-transients",
+      "files": {
+        "input.scs": "54ea08f822187ad9bfac64c62bac6ce390fc043077fb81e288e3fe84fb000fa0"
+      },
+      "conditions": {
+        "down_s": 2e-05,
+        "edge_s": 1e-08,
+        "mode": "load_tran",
+        "multipliers": {
+          "PBIAS": 4,
+          "PL": 8,
+          "PR": 8,
+          "PTAIL": 8
+        },
+        "name": "load_C1000_T10",
+        "parameters": {
+          "cc": 1e-12,
+          "cm": 5e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rbias": 100000,
+          "rbot": 200000,
+          "rtop": 100000,
+          "rz": 10000,
+          "vin": 1.2,
+          "vref": 0.6
+        },
+        "stop_s": 4e-05,
+        "temperature_c": 27
+      }
+    },
+    "load_C1000_T100": {
+      "group": "ldo-initial-R0-R4-transients",
+      "files": {
+        "input.scs": "85ea20deb4e4dd3fb080302691f70107d506b43e34dac90477a33a59ab6e82df"
+      },
+      "conditions": {
+        "down_s": 2e-05,
+        "edge_s": 1e-07,
+        "mode": "load_tran",
+        "multipliers": {
+          "PBIAS": 4,
+          "PL": 8,
+          "PR": 8,
+          "PTAIL": 8
+        },
+        "name": "load_C1000_T100",
+        "parameters": {
+          "cc": 1e-12,
+          "cm": 5e-11,
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "rbias": 100000,
+          "rbot": 200000,
+          "rtop": 100000,
+          "rz": 10000,
+          "vin": 1.2,
+          "vref": 0.6
+        },
+        "stop_s": 4e-05,
+        "temperature_c": 27
+      }
+    },
+    "load_C100_T10": {
+      "group": "ldo-initial-R0-R4-transients",
+      "files": {
+        "input.scs": "dd383cd06f364cadf54febaedb103d90d3d6ced99535f737ac07578fbe31f79e"
+      },
+      "conditions": {
+        "down_s": 2e-05,
+        "edge_s": 1e-08,
+        "mode": "load_tran",
+        "multipliers": {
+          "PBIAS": 4,
+          "PL": 8,
+          "PR": 8,
+          "PTAIL": 8
+        },
+        "name": "load_C100_T10",
+        "parameters": {
+          "cc": 1e-12,
+          "cm": 5e-11,
+          "cout": 1e-10,
+          "iload": 0.0001,
+          "rbias": 100000,
+          "rbot": 200000,
+          "rtop": 100000,
+          "rz": 10000,
+          "vin": 1.2,
+          "vref": 0.6
+        },
+        "stop_s": 4e-05,
+        "temperature_c": 27
+      }
+    },
+    "load_C100_T100": {
+      "group": "ldo-initial-R0-R4-transients",
+      "files": {
+        "input.scs": "e5c6ee147147025d987ae8fab7ce4e93a6f90d09062218917be40e11f636affd"
+      },
+      "conditions": {
+        "down_s": 2e-05,
+        "edge_s": 1e-07,
+        "mode": "load_tran",
+        "multipliers": {
+          "PBIAS": 4,
+          "PL": 8,
+          "PR": 8,
+          "PTAIL": 8
+        },
+        "name": "load_C100_T100",
+        "parameters": {
+          "cc": 1e-12,
+          "cm": 5e-11,
+          "cout": 1e-10,
+          "iload": 0.0001,
+          "rbias": 100000,
+          "rbot": 200000,
+          "rtop": 100000,
+          "rz": 10000,
+          "vin": 1.2,
+          "vref": 0.6
+        },
+        "stop_s": 4e-05,
+        "temperature_c": 27
+      }
+    },
+    "load_C10_T10": {
+      "group": "ldo-initial-R0-R4-transients",
+      "files": {
+        "input.scs": "42a9ed3aa6abac0ce09904f6d25bc1de8486e19ba50f5fef772b23dc221d9188"
+      },
+      "conditions": {
+        "down_s": 2e-05,
+        "edge_s": 1e-08,
+        "mode": "load_tran",
+        "multipliers": {
+          "PBIAS": 4,
+          "PL": 8,
+          "PR": 8,
+          "PTAIL": 8
+        },
+        "name": "load_C10_T10",
+        "parameters": {
+          "cc": 1e-12,
+          "cm": 5e-11,
+          "cout": 1e-11,
+          "iload": 0.0001,
+          "rbias": 100000,
+          "rbot": 200000,
+          "rtop": 100000,
+          "rz": 10000,
+          "vin": 1.2,
+          "vref": 0.6
+        },
+        "stop_s": 4e-05,
+        "temperature_c": 27
+      }
+    },
+    "load_C10_T100": {
+      "group": "ldo-initial-R0-R4-transients",
+      "files": {
+        "input.scs": "30a11788469b31723a06072c7e03c6382510b5923656b54b725040ef2ee1c5d4"
+      },
+      "conditions": {
+        "down_s": 2e-05,
+        "edge_s": 1e-07,
+        "mode": "load_tran",
+        "multipliers": {
+          "PBIAS": 4,
+          "PL": 8,
+          "PR": 8,
+          "PTAIL": 8
+        },
+        "name": "load_C10_T100",
+        "parameters": {
+          "cc": 1e-12,
+          "cm": 5e-11,
+          "cout": 1e-11,
+          "iload": 0.0001,
+          "rbias": 100000,
+          "rbot": 200000,
+          "rtop": 100000,
+          "rz": 10000,
+          "vin": 1.2,
+          "vref": 0.6
+        },
+        "stop_s": 4e-05,
+        "temperature_c": 27
+      }
+    },
+    "r4_line_heavy": {
+      "group": "ldo-initial-R0-R4-transients",
+      "files": {
+        "input.scs": "35682625db86c20a5dc718960dcd961bde65414bacf7dd2c7cea4dd839569837"
+      },
+      "conditions": {
+        "down_s": 2e-05,
+        "edge_s": 1e-07,
+        "mode": "line_tran",
+        "name": "r4_line_heavy",
+        "parameters": {
+          "iload": 0.005
+        },
+        "stop_s": 4e-05,
+        "up_s": 5e-06,
+        "vin_high_v": 1.2,
+        "vin_low_v": 1.1
+      }
+    },
+    "r4_line_light": {
+      "group": "ldo-initial-R0-R4-transients",
+      "files": {
+        "input.scs": "eb6539a51ebd50e0c16fb565a74c120b1af0e557b65e8afac851ef4b8891b0aa"
+      },
+      "conditions": {
+        "down_s": 2e-05,
+        "edge_s": 1e-07,
+        "mode": "line_tran",
+        "name": "r4_line_light",
+        "parameters": {
+          "iload": 0.0001
+        },
+        "stop_s": 4e-05,
+        "up_s": 5e-06,
+        "vin_high_v": 1.2,
+        "vin_low_v": 1.1
+      }
     }
   },
   "replay_groups": {
@@ -203080,6 +203378,21 @@
         "RETAINED_SOURCE_DIRECTORY_2"
       ],
       "replay_details": "Resolve the ordered include directory placeholders using the retained original provenance command and run manifest; retain failure status."
+    },
+    "ldo-initial-R0-R4-transients": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "licensed_model_entry_sha256": "fb70ef1fc3e536d9bbd993b954218c913b2ab1468d101a66d4a3033fd4f8cf7d"
     }
   },
   "physical_replay_cases": {
