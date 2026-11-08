@@ -197220,6 +197220,20 @@
         "vin_high_v": 1.2,
         "vin_low_v": 1.1
       }
+    },
+    "closure_bleed67_native_load30_v32_20261103_00__v32_native_full_ss_tm40_e10": {
+      "group": "ldo-archived-closure",
+      "files": {
+        "input.scs": "7d61f52cdfcf513e39df3f8b62de504466922deb6ed430fc7c7604d8a381996c"
+      },
+      "conditions": {
+        "analysis": "load_tran",
+        "probe": null,
+        "stop_s": 6e-05,
+        "maxstep_s": 1e-09,
+        "edge_s": 1e-08,
+        "numerical_protocol_sha256": "6c5870ff6619202b1a113a26519d2644877d98161992bf70cd84138696cb5adf"
+      }
     }
   },
   "replay_groups": {
