@@ -192062,5 +192062,2495 @@
       "spectre_version": "18.1.0.077",
       "requires_exact_local_extracted_source": true
     }
+  },
+  "physical_replay_cases": {
+    "closure_array_60af9a7116cd_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "mim32_array_fixture",
+      "input_files": {
+        "core.gds": "9f30ebfb85de012be12a3f6db378a85ad2119d2c8cb39eeaf7856c47256cefaf",
+        "core.cdl": "678fdca1bd3f1017e75d7b45cdfa1430b22b170641a4755387c0cb0e52ea8332",
+        "source_verification/run.drc": "9f19433454a43edf8e0d2c3ce7ef7d6648877431788066ec9f6f3126e0907e8f",
+        "source_verification/run.lvs": "beaa91f7413a119898dcbf235139e473810a1b186547af7b81ff854e01b33aed",
+        "source_verification/run.rcx": "d31439e17fe4b3aaf6fc33cd41517892ced814ce9422f750aa957520af12df94",
+        "source_verification/worker.sh": "7d61b8b82b381aca17110458956bd1adc0e197f75fa737d254f7a4648404067c",
+        "format_variant/run.drc": "9f19433454a43edf8e0d2c3ce7ef7d6648877431788066ec9f6f3126e0907e8f",
+        "format_variant/run.lvs": "beaa91f7413a119898dcbf235139e473810a1b186547af7b81ff854e01b33aed",
+        "format_variant/run.rcx": "d31439e17fe4b3aaf6fc33cd41517892ced814ce9422f750aa957520af12df94",
+        "format_variant/worker.sh": "7d61b8b82b381aca17110458956bd1adc0e197f75fa737d254f7a4648404067c"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_array_de9b18c030b7_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "mim32_array_fixture",
+      "input_files": {
+        "core.gds": "c9c1a98852a394d2346cc192e378af0cbf81a83f552b9b9db9802f349c35b2e4",
+        "core.cdl": "ece35b07c285e55bdd276a6701ab340eae0c5761fbc21c136bead1dc9fa69ab7",
+        "source_verification/run.drc": "f87a3761bdb096de7d9a7072a0719acb02f52bb3e2fedd3f0ce96d376436a707",
+        "source_verification/run.lvs": "0a1dae1e14f727c6d0fb6a485b6a65d778602ec7e5368a7765c5f04af582d8f3",
+        "source_verification/run.rcx": "fe6cc0da4723a3d292b7ee4ff0ce04d5636a84ac441421a4960c5e3fe3326283",
+        "source_verification/worker.sh": "b169b2a4fd9827b0bd3cd29adf03300346e226ddae59cddadd8e696c126864f2",
+        "format_variant/run.drc": "f87a3761bdb096de7d9a7072a0719acb02f52bb3e2fedd3f0ce96d376436a707",
+        "format_variant/run.lvs": "0a1dae1e14f727c6d0fb6a485b6a65d778602ec7e5368a7765c5f04af582d8f3",
+        "format_variant/run.rcx": "fe6cc0da4723a3d292b7ee4ff0ce04d5636a84ac441421a4960c5e3fe3326283",
+        "format_variant/worker.sh": "b169b2a4fd9827b0bd3cd29adf03300346e226ddae59cddadd8e696c126864f2"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_24d2594eacd4_v32_20261103_a1_layoutnames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v32_build1",
+      "input_files": {
+        "core.gds": "6ffa7d6255ac3bfdaee0fc598dc990de37a5a7eef23ec4051d48f87bc05f367e",
+        "core.cdl": "ef40743a0940cbe139881bd6eae3aced0b2f0f7911411eb04ad6b4203e0e420d",
+        "source_verification/run.drc": "2f907642c682f68a3e57c664671bdd6af03675267475f1228a34881462c532f4",
+        "source_verification/run.lvs": "003cf865800d308e21749b87b27afa2135bb506d4809adadede6bbba4645743f",
+        "source_verification/run.rcx": "50d197149f5ad3cbf4be5c1f903f2e010fd8feeeaa3106c0f30efb03850ef4fd",
+        "source_verification/worker.sh": "8e457fa2243267c25cd3a8a2f5f434ba5f64a4495f4cf4093000f980f3e83520",
+        "format_variant/run.rcx": "9ce7b2770574dec52608d44ceed5786abf77e24e6af597d9275b339fc585603a",
+        "format_variant/format_manifest.json": "9c8b5d913a89ac2610270b343024c7ba0fb47edbee5262fd111eef2514066f3f",
+        "format_variant/worker.sh": "16d822e746b986ccc88e0d511d401662543dc348881e699200eecfa26a2a4906"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_24d2594eacd4_v32_20261103_a1_sourcenames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v32_build1",
+      "input_files": {
+        "core.gds": "6ffa7d6255ac3bfdaee0fc598dc990de37a5a7eef23ec4051d48f87bc05f367e",
+        "core.cdl": "ef40743a0940cbe139881bd6eae3aced0b2f0f7911411eb04ad6b4203e0e420d",
+        "source_verification/run.drc": "2f907642c682f68a3e57c664671bdd6af03675267475f1228a34881462c532f4",
+        "source_verification/run.lvs": "003cf865800d308e21749b87b27afa2135bb506d4809adadede6bbba4645743f",
+        "source_verification/run.rcx": "50d197149f5ad3cbf4be5c1f903f2e010fd8feeeaa3106c0f30efb03850ef4fd",
+        "source_verification/worker.sh": "8e457fa2243267c25cd3a8a2f5f434ba5f64a4495f4cf4093000f980f3e83520",
+        "format_variant/run.rcx": "c0eefce20804a5f034bd73e7ff059902ec22a99c9419af2d1c0b782758423d17",
+        "format_variant/format_manifest.json": "4ee1d67a4cdaccb1304a0455852eb292891c0a1a20616582746ec9feb6357a37",
+        "format_variant/worker.sh": "15af2b81c2bf05a2003c64bf2d515cb97b4f4361efdc414d23c673c13703a43b"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_2b6779d8f8ba_v31_20261103_a1_layoutnames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v31_build1",
+      "input_files": {
+        "core.gds": "5b2c8d0bb23d051c71592cc90cd9475724169c6a6509adbeb9f60e7ab9526aae",
+        "core.cdl": "fc0a3f37b1b584488088d48e186d97250e13f56f4541db7bd4ef1181c1eb9899",
+        "source_verification/run.drc": "2ffdb08f734377b3555e5cdce4683e10a695e03cde356e2c50677bfe017b81bd",
+        "source_verification/run.lvs": "f809bb43db3b97d36b190e8c18f03923d5c20d7910d55d295b5f506b8e3af8c3",
+        "source_verification/run.rcx": "3cbcac6afaf14ef1968a25206a08caaa8031ab3fbccc96bc7230b35f100b393c",
+        "source_verification/worker.sh": "dff89506d9a76445ec9dfdf7b9e07c88daebdf906dab2e5e2960b51db915c5c2",
+        "format_variant/run.rcx": "3f7cea86a28b29127a8d3d3567056ebc2e92c42b4e69c8a59abaefc8f6e285e7",
+        "format_variant/format_manifest.json": "0948fc6c29f4b8a528c90c762255dea414f9a8e79aa48fa5584010087bfd216d",
+        "format_variant/worker.sh": "3b71b2563960b25b9205412e1ab39932b4de78f6d2ee9e74127d6a419d72c385"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_2b6779d8f8ba_v31_20261103_a1_sourcenames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v31_build1",
+      "input_files": {
+        "core.gds": "5b2c8d0bb23d051c71592cc90cd9475724169c6a6509adbeb9f60e7ab9526aae",
+        "core.cdl": "fc0a3f37b1b584488088d48e186d97250e13f56f4541db7bd4ef1181c1eb9899",
+        "source_verification/run.drc": "2ffdb08f734377b3555e5cdce4683e10a695e03cde356e2c50677bfe017b81bd",
+        "source_verification/run.lvs": "f809bb43db3b97d36b190e8c18f03923d5c20d7910d55d295b5f506b8e3af8c3",
+        "source_verification/run.rcx": "3cbcac6afaf14ef1968a25206a08caaa8031ab3fbccc96bc7230b35f100b393c",
+        "source_verification/worker.sh": "dff89506d9a76445ec9dfdf7b9e07c88daebdf906dab2e5e2960b51db915c5c2",
+        "format_variant/run.rcx": "aa1c15fd48e88d81377aa0efc569dcb79a7439c5e0c789d7f043ab9a76d5b32d",
+        "format_variant/format_manifest.json": "f8ab566684a50789b755a3a64c0a131044b2a3cedc9a2f0cc6395dfadd766d5c",
+        "format_variant/worker.sh": "0c7478f8d8b74966dc15258041d76f356a306178060ff7b9a9b4fc520ab16066"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_bca8715ed01d_v30_20261031_layoutnames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "35ef23fe256f35c2b72fcb72b9c60145cfb2704181b2567548399447e3c13214",
+        "core.cdl": "b7fd02d61577d17501f075dea27aa55449d17d44ea02338bfe80f832a492c0a4",
+        "source_verification/run.drc": "ac9bed342b67ea1ea9f5e1702d680da0e78c2e3de38c44e8759c43253d629435",
+        "source_verification/run.lvs": "6c974e15f95427f69efca4cc58d5fe19e745d8c39cab403d4e022168f2039261",
+        "source_verification/run.rcx": "8201d7b74f8e95e05df8b181db4484afe9029da5b590da2b98a304326fe1889a",
+        "source_verification/worker.sh": "17a428f43d5c218a5587e55405402a565d29d11fe9e0787340f9621e0bace6af",
+        "format_variant/run.rcx": "d572555c9bfda4e8ef3b49e2c0c273039a8121decb225bf6fe55bbb5d4acdb05",
+        "format_variant/format_manifest.json": "c3059dc971dd84b85190c29076c99f57615383bfb2d8e9ce219717d6d010bfe6",
+        "format_variant/worker.sh": "47688db2c29af5fa38c5c2f6abe5c218072e489999feb9d75c966dac4081df69"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_bca8715ed01d_v30_20261031_sourcenames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "35ef23fe256f35c2b72fcb72b9c60145cfb2704181b2567548399447e3c13214",
+        "core.cdl": "b7fd02d61577d17501f075dea27aa55449d17d44ea02338bfe80f832a492c0a4",
+        "source_verification/run.drc": "ac9bed342b67ea1ea9f5e1702d680da0e78c2e3de38c44e8759c43253d629435",
+        "source_verification/run.lvs": "6c974e15f95427f69efca4cc58d5fe19e745d8c39cab403d4e022168f2039261",
+        "source_verification/run.rcx": "8201d7b74f8e95e05df8b181db4484afe9029da5b590da2b98a304326fe1889a",
+        "source_verification/worker.sh": "17a428f43d5c218a5587e55405402a565d29d11fe9e0787340f9621e0bace6af",
+        "format_variant/run.rcx": "4957236112f2004b6e0d4c83b2234a66d73d1cc2c454c6d6ca30a178e234cf1e",
+        "format_variant/format_manifest.json": "543a60bc7ccc23404346f389458333c3c62fba7d3075116e909ee92ceb5235c9",
+        "format_variant/worker.sh": "39bd86ade33769a51f00a8dc3caea68ff5005a383cceba62be570d845a17f33b"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_cf5f06b7070e_v30_20261031_layoutnames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "fa95ce15e623f5909b596c33c6f5d3b6355210604fcdb1529b1b9ba80391da02",
+        "core.cdl": "2dcaab90161964975ab281a604938f8222a55ba0703cad65799bf5d5cc1ee895",
+        "source_verification/run.drc": "bd22cdf3fecf2bb3a66443934f1cce716f2c8f0ff8b3dc3e7bcc55832380eaeb",
+        "source_verification/run.lvs": "d0a3f2c5667356a17fbbad3021d9adcbb6d3937f434afa7aa2f2f69948ec34c7",
+        "source_verification/run.rcx": "c0651247f379a15112af96a4eefe1da9f534fef1301feb83319533aac4b747a0",
+        "source_verification/worker.sh": "55c5b00f6445d3e7de64e8b71dd448a43cb1af5e31f33582c4c3ed1be5129a8c",
+        "format_variant/run.rcx": "ff52338b8cfaee98eaddf9a7e658cea5c70ca0dbf6940f72c769d44bbbca873d",
+        "format_variant/format_manifest.json": "812d32b68ffc0e9293e12522d353768b3fe997df05b41563cdfc53e9d3f2a57a",
+        "format_variant/worker.sh": "805563df4b2edae03786e41e4ceef16896b392534a924e88ee39345c315c74a4"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_cf5f06b7070e_v30_20261031_sourcenames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "fa95ce15e623f5909b596c33c6f5d3b6355210604fcdb1529b1b9ba80391da02",
+        "core.cdl": "2dcaab90161964975ab281a604938f8222a55ba0703cad65799bf5d5cc1ee895",
+        "source_verification/run.drc": "bd22cdf3fecf2bb3a66443934f1cce716f2c8f0ff8b3dc3e7bcc55832380eaeb",
+        "source_verification/run.lvs": "d0a3f2c5667356a17fbbad3021d9adcbb6d3937f434afa7aa2f2f69948ec34c7",
+        "source_verification/run.rcx": "c0651247f379a15112af96a4eefe1da9f534fef1301feb83319533aac4b747a0",
+        "source_verification/worker.sh": "55c5b00f6445d3e7de64e8b71dd448a43cb1af5e31f33582c4c3ed1be5129a8c",
+        "format_variant/run.rcx": "5b8637cc9087ddfe5ade8df7edabc47a9ea7159fba37b9c9a37c1f4f45f7b2a9",
+        "format_variant/format_manifest.json": "328db11d74bee2d34adcfc28f7af65c3df6adb3f522904d9034fbd52babdd639",
+        "format_variant/worker.sh": "6d4243ac164fcb152ae78e3c26f00fc92e6b99193ba91038a7d15c974fd16db8"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_e3177886e5ed_v30_20261031_layoutnames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "e2e46c8c3d9ceddfcb82b2c9697e8d89b137c504f7cc8572fb6d732ab878c5e4",
+        "core.cdl": "80a7bdfe4e85202e63a342d5de7f0f354bf82f827e1e41ea79476ffe5f659536",
+        "source_verification/run.drc": "6dffb1de3302ad0bb539ca722030ca015335ede000ae10c3c15d2a13a65b1037",
+        "source_verification/run.lvs": "e825b6d6e466f9d4e91b34edaca0479bfeb7db34ad83c3a787b82cb1b13e2d89",
+        "source_verification/run.rcx": "e67bde93c00019135d2127c17ac000e4d2e3a9b942ebaf8b48c9c9e3c0bfc763",
+        "source_verification/worker.sh": "c219858f19f2a852a5fc0b96d62ea3cbb1181e7abec9ec5684a3f9c552ee54c3",
+        "format_variant/run.rcx": "452826ffe439dcd028b27773f4d1f69b46a57f2b4149fd61ee9b556706f408c3",
+        "format_variant/format_manifest.json": "d68a5d574b226b289e35b59464c992eba94edb2b04f6982762b2151a700cd66a",
+        "format_variant/worker.sh": "51e73b8ee47319ab9c15d7dea9e8a4e01314b20d3365c527d3be821bf514b309"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_e3177886e5ed_v30_20261031_sourcenames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "e2e46c8c3d9ceddfcb82b2c9697e8d89b137c504f7cc8572fb6d732ab878c5e4",
+        "core.cdl": "80a7bdfe4e85202e63a342d5de7f0f354bf82f827e1e41ea79476ffe5f659536",
+        "source_verification/run.drc": "6dffb1de3302ad0bb539ca722030ca015335ede000ae10c3c15d2a13a65b1037",
+        "source_verification/run.lvs": "e825b6d6e466f9d4e91b34edaca0479bfeb7db34ad83c3a787b82cb1b13e2d89",
+        "source_verification/run.rcx": "e67bde93c00019135d2127c17ac000e4d2e3a9b942ebaf8b48c9c9e3c0bfc763",
+        "source_verification/worker.sh": "c219858f19f2a852a5fc0b96d62ea3cbb1181e7abec9ec5684a3f9c552ee54c3",
+        "format_variant/run.rcx": "161cddc6001bcafe425c229f5ab737ca629028bae3e0434215c27d9667c49d73",
+        "format_variant/format_manifest.json": "f67477badfb558d0cc44d5699c4bddcf54facb12b696b54db7b1f294f3866af3",
+        "format_variant/worker.sh": "6a48e375fcd67ce2515b19a09c841729c45cb6d0801de46b0beba990c3ce6c42"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_eb8ff3839b1e_v30_20261031_layoutnames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "c673390b825da81c410e56fbb2870c6dc5d3f0b36b7a8ab84f263cc77b1a4635",
+        "core.cdl": "9ee507577399d05f9db3a17281a4aa18e7a3fd869461e2c8acf39c83e55ffd64",
+        "source_verification/run.drc": "507c0cf2b803e4b7238b8010c8cf9d9ee1912529fbaccbde1b39a2c8235b4c5a",
+        "source_verification/run.lvs": "4b3442adcdac523e79b051dff3dd577a3210c754f96bc487aca91ec89e466f70",
+        "source_verification/run.rcx": "309d9e3819f32d8cbac3f5ed32702af73350dfe6f0ae742cbd39fae2f627001d",
+        "source_verification/worker.sh": "c8138a4e2451f8e2b069863febc7f220cbef0eac81db88b687c557a23e7a8291",
+        "format_variant/run.rcx": "627e0ac7d597b9fdd345e1d8541645efb479fc78e715258fdc22d9fc0293c942",
+        "format_variant/format_manifest.json": "8363aa96ff46fd82c89195548c24161dfef457b9202fb645f267fe48ccad680d",
+        "format_variant/worker.sh": "ec23632d79e6f7662cc5ea55dd115cd4dbed4740d0b114764bdd490b2a42eada"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_bleed67_actual_nativeFMT_eb8ff3839b1e_v30_20261031_sourcenames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "c673390b825da81c410e56fbb2870c6dc5d3f0b36b7a8ab84f263cc77b1a4635",
+        "core.cdl": "9ee507577399d05f9db3a17281a4aa18e7a3fd869461e2c8acf39c83e55ffd64",
+        "source_verification/run.drc": "507c0cf2b803e4b7238b8010c8cf9d9ee1912529fbaccbde1b39a2c8235b4c5a",
+        "source_verification/run.lvs": "4b3442adcdac523e79b051dff3dd577a3210c754f96bc487aca91ec89e466f70",
+        "source_verification/run.rcx": "309d9e3819f32d8cbac3f5ed32702af73350dfe6f0ae742cbd39fae2f627001d",
+        "source_verification/worker.sh": "c8138a4e2451f8e2b069863febc7f220cbef0eac81db88b687c557a23e7a8291",
+        "format_variant/run.rcx": "17cb133087b5dadb07a4e35cfe3e9320a5e1a79e4a9bbeeca20d9b11285f60af",
+        "format_variant/format_manifest.json": "89c47f9e64d6dd2bce4541ea3dc90ca5e6e52c674db22bd6f918d41466bfb779",
+        "format_variant/worker.sh": "8ae2ad51d473fb0031e43bd9dd3ead73fa0dd3ba7a2f80931e1641e065d38033"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fmt_spectre_25fd4eb6e99f": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "passive_mos_smoke",
+      "input_files": {
+        "core.gds": "361dc818f861f53bed706feeb386b2d35b78c7969c683c71763e4f006a9b75d9",
+        "core.cdl": "4bfeceaa58eeeab9e84cb64efc41b75840cf4b6f9c8a1ccc6b3232e6e0ccadde",
+        "source_verification/run.drc": "81cb0c3248fe186f869b9d560039401b25a77f2373edbd3ab707aa429375a8e7",
+        "source_verification/run.lvs": "fed0f49c8d9caa6a4bce99d4ea0aae696dace420ae238857abd4f3ea89814907",
+        "source_verification/run.rcx": "6083a2d7e3c0a42627fccb69b58516b2cfdae7c07885701e563756f229df7632",
+        "source_verification/worker.sh": "4e58a5aa1d99007b42a1da43b985b7b47c1d31c3e75553cf8f9ef21039e9a0b0",
+        "format_variant/run.rcx": "fcd466ed082c11062ef5c8369a24f2439c0ee344846d475aa94bdcd604ccdf40",
+        "format_variant/format_manifest.json": "39033a7ac2499fb7792727f58435d858cea7db471837014c0f144d31184708e3",
+        "format_variant/worker.sh": "5900022c3ff17f9699982a11aab1ff36650a2f51fdad3ec022a4a097b650c84d"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fmt_spectre_2a15bde65fb4": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "passive_mos_smoke",
+      "input_files": {
+        "core.gds": "361dc818f861f53bed706feeb386b2d35b78c7969c683c71763e4f006a9b75d9",
+        "core.cdl": "4bfeceaa58eeeab9e84cb64efc41b75840cf4b6f9c8a1ccc6b3232e6e0ccadde",
+        "source_verification/run.drc": "81cb0c3248fe186f869b9d560039401b25a77f2373edbd3ab707aa429375a8e7",
+        "source_verification/run.lvs": "fed0f49c8d9caa6a4bce99d4ea0aae696dace420ae238857abd4f3ea89814907",
+        "source_verification/run.rcx": "6083a2d7e3c0a42627fccb69b58516b2cfdae7c07885701e563756f229df7632",
+        "source_verification/worker.sh": "4e58a5aa1d99007b42a1da43b985b7b47c1d31c3e75553cf8f9ef21039e9a0b0",
+        "format_variant/run.rcx": "4c2b765a8da33ff3bd5ffb2fe90297d6ab37621fe3cfd4a969c1eb8c99440512",
+        "format_variant/format_manifest.json": "bc251adb689f80e27105125d875edd1e90b5aadfd835b1804712e7de527c1283",
+        "format_variant/worker.sh": "f882318c20a233c27764eb3e8c8af44d9a14374931850949de41f96e8f3726e2"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fmt_spectre_45615fcf38db": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "mim32_array_fixture",
+      "input_files": {
+        "core.gds": "9f30ebfb85de012be12a3f6db378a85ad2119d2c8cb39eeaf7856c47256cefaf",
+        "core.cdl": "678fdca1bd3f1017e75d7b45cdfa1430b22b170641a4755387c0cb0e52ea8332",
+        "source_verification/run.drc": "9f19433454a43edf8e0d2c3ce7ef7d6648877431788066ec9f6f3126e0907e8f",
+        "source_verification/run.lvs": "beaa91f7413a119898dcbf235139e473810a1b186547af7b81ff854e01b33aed",
+        "source_verification/run.rcx": "d31439e17fe4b3aaf6fc33cd41517892ced814ce9422f750aa957520af12df94",
+        "source_verification/worker.sh": "7d61b8b82b381aca17110458956bd1adc0e197f75fa737d254f7a4648404067c",
+        "format_variant/run.rcx": "3af5fa14bc3a665c68adec1a7d0c606ceb6c42483568e2fb0d70dcbc2020219d",
+        "format_variant/format_manifest.json": "6e3abdde374433a28c15a1a9c55fe61453db042307945cef9fc6c1b6cbaa0e45",
+        "format_variant/worker.sh": "057d946d8a99e75f44ca24202d36375228048ab0d9142ec2742910f8591b82cf"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fmt_spectre_5f254a122cfe": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "mim32_array_fixture",
+      "input_files": {
+        "core.gds": "9f30ebfb85de012be12a3f6db378a85ad2119d2c8cb39eeaf7856c47256cefaf",
+        "core.cdl": "678fdca1bd3f1017e75d7b45cdfa1430b22b170641a4755387c0cb0e52ea8332",
+        "source_verification/run.drc": "9f19433454a43edf8e0d2c3ce7ef7d6648877431788066ec9f6f3126e0907e8f",
+        "source_verification/run.lvs": "beaa91f7413a119898dcbf235139e473810a1b186547af7b81ff854e01b33aed",
+        "source_verification/run.rcx": "d31439e17fe4b3aaf6fc33cd41517892ced814ce9422f750aa957520af12df94",
+        "source_verification/worker.sh": "7d61b8b82b381aca17110458956bd1adc0e197f75fa737d254f7a4648404067c",
+        "format_variant/run.rcx": "aeb8e337eaa28efdccfb5a0d02fbb0eb746d89a59ea292423c472ca33c7b1028",
+        "format_variant/format_manifest.json": "57dda8e3b8a92a58533d67c9f1d7badd99df721c0fc9da719b45e9ee9bd35e63",
+        "format_variant/worker.sh": "7c9f97636eec9549e3aab1abe8357cf9c4a40a9305334c26c281bdcfbd30e227"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_053d244e6b36_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_r33",
+      "input_files": {
+        "core.gds": "c47b6e53ab2c98e6e2d0dd6506735d679875097148926c7144bb4f4cd50e9f3e",
+        "core.cdl": "4b5d056ce5e41f387a07e7f8bdf0513d61589f82b24c0b902c40135301bbf11b",
+        "source_verification/run.drc": "565d049aee3c6b348e5dc9bf8c497d08036fb026156eec984c6ddfb881fe0ebc",
+        "source_verification/run.lvs": "8e8b4f79106bbb1ba2e3061f2cc7d3fa1b47329f06043f2bc863d5f3a970db61",
+        "source_verification/run.rcx": "7d217e6c2f62b8fa088a062cd838bb10d39fed2d9344c0147a0e51963a3c64ba",
+        "source_verification/worker.sh": "0ea88a3a2951eeabd4369f8dc22c0365719ba2860b736e90fca13bf47e8c4d6f",
+        "format_variant/run.drc": "565d049aee3c6b348e5dc9bf8c497d08036fb026156eec984c6ddfb881fe0ebc",
+        "format_variant/run.lvs": "8e8b4f79106bbb1ba2e3061f2cc7d3fa1b47329f06043f2bc863d5f3a970db61",
+        "format_variant/run.rcx": "7d217e6c2f62b8fa088a062cd838bb10d39fed2d9344c0147a0e51963a3c64ba",
+        "format_variant/worker.sh": "0ea88a3a2951eeabd4369f8dc22c0365719ba2860b736e90fca13bf47e8c4d6f"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_24d2594eacd4_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v32_build1",
+      "input_files": {
+        "core.gds": "6ffa7d6255ac3bfdaee0fc598dc990de37a5a7eef23ec4051d48f87bc05f367e",
+        "core.cdl": "ef40743a0940cbe139881bd6eae3aced0b2f0f7911411eb04ad6b4203e0e420d",
+        "source_verification/run.drc": "2f907642c682f68a3e57c664671bdd6af03675267475f1228a34881462c532f4",
+        "source_verification/run.lvs": "003cf865800d308e21749b87b27afa2135bb506d4809adadede6bbba4645743f",
+        "source_verification/run.rcx": "50d197149f5ad3cbf4be5c1f903f2e010fd8feeeaa3106c0f30efb03850ef4fd",
+        "source_verification/worker.sh": "8e457fa2243267c25cd3a8a2f5f434ba5f64a4495f4cf4093000f980f3e83520",
+        "format_variant/run.drc": "2f907642c682f68a3e57c664671bdd6af03675267475f1228a34881462c532f4",
+        "format_variant/run.lvs": "003cf865800d308e21749b87b27afa2135bb506d4809adadede6bbba4645743f",
+        "format_variant/run.rcx": "50d197149f5ad3cbf4be5c1f903f2e010fd8feeeaa3106c0f30efb03850ef4fd",
+        "format_variant/worker.sh": "8e457fa2243267c25cd3a8a2f5f434ba5f64a4495f4cf4093000f980f3e83520"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_2b6779d8f8ba_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v31_build1",
+      "input_files": {
+        "core.gds": "5b2c8d0bb23d051c71592cc90cd9475724169c6a6509adbeb9f60e7ab9526aae",
+        "core.cdl": "fc0a3f37b1b584488088d48e186d97250e13f56f4541db7bd4ef1181c1eb9899",
+        "source_verification/run.drc": "2ffdb08f734377b3555e5cdce4683e10a695e03cde356e2c50677bfe017b81bd",
+        "source_verification/run.lvs": "f809bb43db3b97d36b190e8c18f03923d5c20d7910d55d295b5f506b8e3af8c3",
+        "source_verification/run.rcx": "3cbcac6afaf14ef1968a25206a08caaa8031ab3fbccc96bc7230b35f100b393c",
+        "source_verification/worker.sh": "dff89506d9a76445ec9dfdf7b9e07c88daebdf906dab2e5e2960b51db915c5c2",
+        "format_variant/run.drc": "2ffdb08f734377b3555e5cdce4683e10a695e03cde356e2c50677bfe017b81bd",
+        "format_variant/run.lvs": "f809bb43db3b97d36b190e8c18f03923d5c20d7910d55d295b5f506b8e3af8c3",
+        "format_variant/run.rcx": "3cbcac6afaf14ef1968a25206a08caaa8031ab3fbccc96bc7230b35f100b393c",
+        "format_variant/worker.sh": "dff89506d9a76445ec9dfdf7b9e07c88daebdf906dab2e5e2960b51db915c5c2"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_345760950d76_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_r33",
+      "input_files": {
+        "core.gds": "45c9566d1107674cfc4fd6abb5c526564545ff995994ee99e5fb55bc567a236a",
+        "core.cdl": "e7922a26c1c00ba6e860f5112085bb87720f41a98e162004163bf340e6ee4379",
+        "source_verification/run.drc": "37be7a75681b9f9b93d1669525ed7750fc811c97c309be5928bd8f3b5ecea2d1",
+        "source_verification/run.lvs": "48754523c039c1e5139b0a8aec0bef4e71689538b3d229631b83c65ae75cc674",
+        "source_verification/run.rcx": "b5b85d1a6895d0e396053b6b98933deb5d6a06deb4fb79b4e36a3c3e740cad4d",
+        "source_verification/worker.sh": "d71639c77b18c327872bf184c0926970570b8332a92e3b403c5f5daf3973ce8b",
+        "format_variant/run.drc": "37be7a75681b9f9b93d1669525ed7750fc811c97c309be5928bd8f3b5ecea2d1",
+        "format_variant/run.lvs": "48754523c039c1e5139b0a8aec0bef4e71689538b3d229631b83c65ae75cc674",
+        "format_variant/run.rcx": "b5b85d1a6895d0e396053b6b98933deb5d6a06deb4fb79b4e36a3c3e740cad4d",
+        "format_variant/worker.sh": "d71639c77b18c327872bf184c0926970570b8332a92e3b403c5f5daf3973ce8b"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_bca8715ed01d_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "35ef23fe256f35c2b72fcb72b9c60145cfb2704181b2567548399447e3c13214",
+        "core.cdl": "b7fd02d61577d17501f075dea27aa55449d17d44ea02338bfe80f832a492c0a4",
+        "source_verification/run.drc": "ac9bed342b67ea1ea9f5e1702d680da0e78c2e3de38c44e8759c43253d629435",
+        "source_verification/run.lvs": "6c974e15f95427f69efca4cc58d5fe19e745d8c39cab403d4e022168f2039261",
+        "source_verification/run.rcx": "8201d7b74f8e95e05df8b181db4484afe9029da5b590da2b98a304326fe1889a",
+        "source_verification/worker.sh": "17a428f43d5c218a5587e55405402a565d29d11fe9e0787340f9621e0bace6af",
+        "format_variant/run.drc": "ac9bed342b67ea1ea9f5e1702d680da0e78c2e3de38c44e8759c43253d629435",
+        "format_variant/run.lvs": "6c974e15f95427f69efca4cc58d5fe19e745d8c39cab403d4e022168f2039261",
+        "format_variant/run.rcx": "8201d7b74f8e95e05df8b181db4484afe9029da5b590da2b98a304326fe1889a",
+        "format_variant/worker.sh": "17a428f43d5c218a5587e55405402a565d29d11fe9e0787340f9621e0bace6af"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_cf5f06b7070e_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "fa95ce15e623f5909b596c33c6f5d3b6355210604fcdb1529b1b9ba80391da02",
+        "core.cdl": "2dcaab90161964975ab281a604938f8222a55ba0703cad65799bf5d5cc1ee895",
+        "source_verification/run.drc": "bd22cdf3fecf2bb3a66443934f1cce716f2c8f0ff8b3dc3e7bcc55832380eaeb",
+        "source_verification/run.lvs": "d0a3f2c5667356a17fbbad3021d9adcbb6d3937f434afa7aa2f2f69948ec34c7",
+        "source_verification/run.rcx": "c0651247f379a15112af96a4eefe1da9f534fef1301feb83319533aac4b747a0",
+        "source_verification/worker.sh": "55c5b00f6445d3e7de64e8b71dd448a43cb1af5e31f33582c4c3ed1be5129a8c",
+        "format_variant/run.drc": "bd22cdf3fecf2bb3a66443934f1cce716f2c8f0ff8b3dc3e7bcc55832380eaeb",
+        "format_variant/run.lvs": "d0a3f2c5667356a17fbbad3021d9adcbb6d3937f434afa7aa2f2f69948ec34c7",
+        "format_variant/run.rcx": "c0651247f379a15112af96a4eefe1da9f534fef1301feb83319533aac4b747a0",
+        "format_variant/worker.sh": "55c5b00f6445d3e7de64e8b71dd448a43cb1af5e31f33582c4c3ed1be5129a8c"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_e3177886e5ed_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "e2e46c8c3d9ceddfcb82b2c9697e8d89b137c504f7cc8572fb6d732ab878c5e4",
+        "core.cdl": "80a7bdfe4e85202e63a342d5de7f0f354bf82f827e1e41ea79476ffe5f659536",
+        "source_verification/run.drc": "6dffb1de3302ad0bb539ca722030ca015335ede000ae10c3c15d2a13a65b1037",
+        "source_verification/run.lvs": "e825b6d6e466f9d4e91b34edaca0479bfeb7db34ad83c3a787b82cb1b13e2d89",
+        "source_verification/run.rcx": "e67bde93c00019135d2127c17ac000e4d2e3a9b942ebaf8b48c9c9e3c0bfc763",
+        "source_verification/worker.sh": "c219858f19f2a852a5fc0b96d62ea3cbb1181e7abec9ec5684a3f9c552ee54c3",
+        "format_variant/run.drc": "6dffb1de3302ad0bb539ca722030ca015335ede000ae10c3c15d2a13a65b1037",
+        "format_variant/run.lvs": "e825b6d6e466f9d4e91b34edaca0479bfeb7db34ad83c3a787b82cb1b13e2d89",
+        "format_variant/run.rcx": "e67bde93c00019135d2127c17ac000e4d2e3a9b942ebaf8b48c9c9e3c0bfc763",
+        "format_variant/worker.sh": "c219858f19f2a852a5fc0b96d62ea3cbb1181e7abec9ec5684a3f9c552ee54c3"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_eb8ff3839b1e_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "c673390b825da81c410e56fbb2870c6dc5d3f0b36b7a8ab84f263cc77b1a4635",
+        "core.cdl": "9ee507577399d05f9db3a17281a4aa18e7a3fd869461e2c8acf39c83e55ffd64",
+        "source_verification/run.drc": "507c0cf2b803e4b7238b8010c8cf9d9ee1912529fbaccbde1b39a2c8235b4c5a",
+        "source_verification/run.lvs": "4b3442adcdac523e79b051dff3dd577a3210c754f96bc487aca91ec89e466f70",
+        "source_verification/run.rcx": "309d9e3819f32d8cbac3f5ed32702af73350dfe6f0ae742cbd39fae2f627001d",
+        "source_verification/worker.sh": "c8138a4e2451f8e2b069863febc7f220cbef0eac81db88b687c557a23e7a8291",
+        "format_variant/run.drc": "507c0cf2b803e4b7238b8010c8cf9d9ee1912529fbaccbde1b39a2c8235b4c5a",
+        "format_variant/run.lvs": "4b3442adcdac523e79b051dff3dd577a3210c754f96bc487aca91ec89e466f70",
+        "format_variant/run.rcx": "309d9e3819f32d8cbac3f5ed32702af73350dfe6f0ae742cbd39fae2f627001d",
+        "format_variant/worker.sh": "c8138a4e2451f8e2b069863febc7f220cbef0eac81db88b687c557a23e7a8291"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_fdea7bd9b2de_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_r33",
+      "input_files": {
+        "core.gds": "01346e632e897bf1e9ad80154e7146a9135dfde979a6d2600025375527d73233",
+        "core.cdl": "3b7b1b9e10a5c0ecd5509c9f270476f16e578d3375dc22975127a83d3d05cabd",
+        "source_verification/run.drc": "837f5dc121c98a0a72703e524ba43eb31e61f61ba29bb1ec86f8930bb0bfee8a",
+        "source_verification/run.lvs": "1ae17881cd1811ef0d5c80bb9e8f632182d8b1bdaddf23608f4517324cd4fe55",
+        "source_verification/run.rcx": "60c8b95110f8d2d425504c2e84efeda10f9586eb240f910b5c42f15291be0af9",
+        "source_verification/worker.sh": "761bd2798ef76b00f7fbc18df766c7844e314fbe25fd04d3d42a44c67323bd7b",
+        "format_variant/run.drc": "837f5dc121c98a0a72703e524ba43eb31e61f61ba29bb1ec86f8930bb0bfee8a",
+        "format_variant/run.lvs": "1ae17881cd1811ef0d5c80bb9e8f632182d8b1bdaddf23608f4517324cd4fe55",
+        "format_variant/run.rcx": "60c8b95110f8d2d425504c2e84efeda10f9586eb240f910b5c42f15291be0af9",
+        "format_variant/worker.sh": "761bd2798ef76b00f7fbc18df766c7844e314fbe25fd04d3d42a44c67323bd7b"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_nativefmt_053d_v1_layoutnames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_r33",
+      "input_files": {
+        "core.gds": "c47b6e53ab2c98e6e2d0dd6506735d679875097148926c7144bb4f4cd50e9f3e",
+        "core.cdl": "4b5d056ce5e41f387a07e7f8bdf0513d61589f82b24c0b902c40135301bbf11b",
+        "source_verification/run.drc": "565d049aee3c6b348e5dc9bf8c497d08036fb026156eec984c6ddfb881fe0ebc",
+        "source_verification/run.lvs": "8e8b4f79106bbb1ba2e3061f2cc7d3fa1b47329f06043f2bc863d5f3a970db61",
+        "source_verification/run.rcx": "7d217e6c2f62b8fa088a062cd838bb10d39fed2d9344c0147a0e51963a3c64ba",
+        "source_verification/worker.sh": "0ea88a3a2951eeabd4369f8dc22c0365719ba2860b736e90fca13bf47e8c4d6f",
+        "format_variant/run.rcx": "d349d4dc1ce6d14c3ee1ce072485035d0a658c82183d6afd8b68cac8804706aa",
+        "format_variant/format_manifest.json": "c829751be516376135e9e8407b2b2f26d7d8a6e6a86b493b07c74dc97c30c800",
+        "format_variant/worker.sh": "92bbcef63b8ffc4b84e7be370f4bbea5cf04c95f474ec9881a388399dad9c8e5"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_nativefmt_053d_v1_sourcenames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_r33",
+      "input_files": {
+        "core.gds": "c47b6e53ab2c98e6e2d0dd6506735d679875097148926c7144bb4f4cd50e9f3e",
+        "core.cdl": "4b5d056ce5e41f387a07e7f8bdf0513d61589f82b24c0b902c40135301bbf11b",
+        "source_verification/run.drc": "565d049aee3c6b348e5dc9bf8c497d08036fb026156eec984c6ddfb881fe0ebc",
+        "source_verification/run.lvs": "8e8b4f79106bbb1ba2e3061f2cc7d3fa1b47329f06043f2bc863d5f3a970db61",
+        "source_verification/run.rcx": "7d217e6c2f62b8fa088a062cd838bb10d39fed2d9344c0147a0e51963a3c64ba",
+        "source_verification/worker.sh": "0ea88a3a2951eeabd4369f8dc22c0365719ba2860b736e90fca13bf47e8c4d6f",
+        "format_variant/run.rcx": "2353f6edbbb8ee46d12df63430786f3ef04de89f72968e49fbb2d055836589d8",
+        "format_variant/format_manifest.json": "8d0b8cfa7ad228c591cc7e983a671eb57afdee2168d5490892665cc63e3d30b2",
+        "format_variant/worker.sh": "aec5f0d6c056e6d03719c35e6bf5b88c6be101a076c3c1a39d37f149e5d0c7e2"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_nativefmt_3457_v2_layoutnames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_r33",
+      "input_files": {
+        "core.gds": "45c9566d1107674cfc4fd6abb5c526564545ff995994ee99e5fb55bc567a236a",
+        "core.cdl": "e7922a26c1c00ba6e860f5112085bb87720f41a98e162004163bf340e6ee4379",
+        "source_verification/run.drc": "37be7a75681b9f9b93d1669525ed7750fc811c97c309be5928bd8f3b5ecea2d1",
+        "source_verification/run.lvs": "48754523c039c1e5139b0a8aec0bef4e71689538b3d229631b83c65ae75cc674",
+        "source_verification/run.rcx": "b5b85d1a6895d0e396053b6b98933deb5d6a06deb4fb79b4e36a3c3e740cad4d",
+        "source_verification/worker.sh": "d71639c77b18c327872bf184c0926970570b8332a92e3b403c5f5daf3973ce8b",
+        "format_variant/run.rcx": "3565017f2edd636120fca3c096f9118a4a504a16bbc86b9653aeebc44218bd22",
+        "format_variant/format_manifest.json": "0391ccf3d6afa25aa0f104c6fdf7125c38d2314a20c245260308d5036e9cc358",
+        "format_variant/worker.sh": "9d7bede7cee870ced29045382a4dc020fc48b6551b11e8ba7f9a2607e5caa566"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_nativefmt_3457_v2_sourcenames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_r33",
+      "input_files": {
+        "core.gds": "45c9566d1107674cfc4fd6abb5c526564545ff995994ee99e5fb55bc567a236a",
+        "core.cdl": "e7922a26c1c00ba6e860f5112085bb87720f41a98e162004163bf340e6ee4379",
+        "source_verification/run.drc": "37be7a75681b9f9b93d1669525ed7750fc811c97c309be5928bd8f3b5ecea2d1",
+        "source_verification/run.lvs": "48754523c039c1e5139b0a8aec0bef4e71689538b3d229631b83c65ae75cc674",
+        "source_verification/run.rcx": "b5b85d1a6895d0e396053b6b98933deb5d6a06deb4fb79b4e36a3c3e740cad4d",
+        "source_verification/worker.sh": "d71639c77b18c327872bf184c0926970570b8332a92e3b403c5f5daf3973ce8b",
+        "format_variant/run.rcx": "9b2769f826740e7d7d15a1cb4951900c222e7b5295dcfe35ae3f6f722621ef1e",
+        "format_variant/format_manifest.json": "041a754591cbd8bfe94320a8823ab5cd263f258b2a38220a55f9f582cf38e07d",
+        "format_variant/worker.sh": "2a5e025172eab4c9498dec38d524d1f76c05b84cf7c987032f7f94d2d42b76cb"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_nativefmt_fdea_v1_layoutnames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_r33",
+      "input_files": {
+        "core.gds": "01346e632e897bf1e9ad80154e7146a9135dfde979a6d2600025375527d73233",
+        "core.cdl": "3b7b1b9e10a5c0ecd5509c9f270476f16e578d3375dc22975127a83d3d05cabd",
+        "source_verification/run.drc": "837f5dc121c98a0a72703e524ba43eb31e61f61ba29bb1ec86f8930bb0bfee8a",
+        "source_verification/run.lvs": "1ae17881cd1811ef0d5c80bb9e8f632182d8b1bdaddf23608f4517324cd4fe55",
+        "source_verification/run.rcx": "60c8b95110f8d2d425504c2e84efeda10f9586eb240f910b5c42f15291be0af9",
+        "source_verification/worker.sh": "761bd2798ef76b00f7fbc18df766c7844e314fbe25fd04d3d42a44c67323bd7b",
+        "format_variant/run.rcx": "812e845a140c23bacc1e05df89c503026ab8b54e43516722416c5a1bdfe8d7e8",
+        "format_variant/format_manifest.json": "bd92bdbbc143baf212a55f69e9e109d95a2aa3b2b0962cd6f66712e5f51b89ff",
+        "format_variant/worker.sh": "efec05f99823a2ef3aa59210510bf37f3281fe1925d91abf219926b9b7e2d5fc"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_fullcore_nativefmt_fdea_v1_sourcenames": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_r33",
+      "input_files": {
+        "core.gds": "01346e632e897bf1e9ad80154e7146a9135dfde979a6d2600025375527d73233",
+        "core.cdl": "3b7b1b9e10a5c0ecd5509c9f270476f16e578d3375dc22975127a83d3d05cabd",
+        "source_verification/run.drc": "837f5dc121c98a0a72703e524ba43eb31e61f61ba29bb1ec86f8930bb0bfee8a",
+        "source_verification/run.lvs": "1ae17881cd1811ef0d5c80bb9e8f632182d8b1bdaddf23608f4517324cd4fe55",
+        "source_verification/run.rcx": "60c8b95110f8d2d425504c2e84efeda10f9586eb240f910b5c42f15291be0af9",
+        "source_verification/worker.sh": "761bd2798ef76b00f7fbc18df766c7844e314fbe25fd04d3d42a44c67323bd7b",
+        "format_variant/run.rcx": "59099fb2f201c95ba844b01ed8045bfdd609c14675b7bdbe8f9f0e4f8261773b",
+        "format_variant/format_manifest.json": "2e6a6ff61f694a8659f63f83975c8ded7a64ac69921bb6185c29395ae076e989",
+        "format_variant/worker.sh": "02c239b1ee0f5b986a6ddd3407c37b064afded6a7814889273df75636ed1d639"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_smoke_35503fc9004b_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "passive_mos_smoke",
+      "input_files": {
+        "core.gds": "361dc818f861f53bed706feeb386b2d35b78c7969c683c71763e4f006a9b75d9",
+        "core.cdl": "4bfeceaa58eeeab9e84cb64efc41b75840cf4b6f9c8a1ccc6b3232e6e0ccadde",
+        "source_verification/run.drc": "81cb0c3248fe186f869b9d560039401b25a77f2373edbd3ab707aa429375a8e7",
+        "source_verification/run.lvs": "fed0f49c8d9caa6a4bce99d4ea0aae696dace420ae238857abd4f3ea89814907",
+        "source_verification/run.rcx": "6083a2d7e3c0a42627fccb69b58516b2cfdae7c07885701e563756f229df7632",
+        "source_verification/worker.sh": "4e58a5aa1d99007b42a1da43b985b7b47c1d31c3e75553cf8f9ef21039e9a0b0",
+        "format_variant/run.drc": "81cb0c3248fe186f869b9d560039401b25a77f2373edbd3ab707aa429375a8e7",
+        "format_variant/run.lvs": "fed0f49c8d9caa6a4bce99d4ea0aae696dace420ae238857abd4f3ea89814907",
+        "format_variant/run.rcx": "6083a2d7e3c0a42627fccb69b58516b2cfdae7c07885701e563756f229df7632",
+        "format_variant/worker.sh": "4e58a5aa1d99007b42a1da43b985b7b47c1d31c3e75553cf8f9ef21039e9a0b0"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    }
   }
 }

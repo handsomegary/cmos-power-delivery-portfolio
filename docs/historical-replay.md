@@ -39,3 +39,5 @@ retained inputs and the matching licensed simulator and models.
 The B1 case was interrupted during startup, before its first load transition.
 Current extracted LDO work uses the separate
 [v32 fixture and matrix](../projects/ldo-130nm/simulation/README.md).
+
+The inventory's `physical_replay_cases` section records 34 Calibre extraction cases with GDS, CDL, runset and licensed-rule digests, tool versions, and PHDB/PDB/FMT commands. Retained local GDS, CDL, matching rules and runsets rebuild the large work databases; the completed PEX exports and DRC/LVS reports remain available.
