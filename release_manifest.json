@@ -23,8 +23,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5318,
-      "sha256": "cc2a1094f68ec54c3a0918b7c8973defe6b80a486552d880a0f2abffee698fe0"
+      "bytes": 5937,
+      "sha256": "b84106665d4d8032d5155c9b217766b82a5661061fb8f134978da1b7ddac2de5"
     },
     {
       "path": "docs/architecture.md",
@@ -47,9 +47,14 @@
       "sha256": "e1b8aa811ef989ad89ce72f03a0bdffafcf9282aa7d45c9ff79578ffacfb291b"
     },
     {
+      "path": "projects/ldo-130nm/ENGINEERING_JOURNAL.md",
+      "bytes": 9146,
+      "sha256": "d8174f89e3d3134d55c73be06c6190cd19dd064d1bc4b2c25074e9ace3d5aede"
+    },
+    {
       "path": "projects/ldo-130nm/README.md",
-      "bytes": 4310,
-      "sha256": "0cd57d9fc3cc3dfb1b2fcf1ac6401ce58f861697a348de58354d7b57ae6e89c9"
+      "bytes": 4923,
+      "sha256": "717be88647a30e8f1189f14d54c9011e50c3680e0c19a5982e4bdd9bc9d5ee50"
     },
     {
       "path": "projects/ldo-130nm/data/circuit.json",
@@ -988,13 +993,13 @@
     },
     {
       "path": "docs/historical-replay-inputs.json",
-      "bytes": 6780423,
-      "sha256": "b2b7ee1bc98f09522800fce376cda76a139cc1acd6271835491c621ee0e783d1"
+      "bytes": 6808748,
+      "sha256": "c97ede38563e5958c150609ca34cbba39621ecd80d7bb8062108de4c0c7a0192"
     },
     {
       "path": "docs/historical-replay.md",
       "bytes": 2704,
-      "sha256": "a5a3cb28cfc2f85f0190a023128adf804b2051fbaa530f1cadc81506f798e1aa"
+      "sha256": "48608de417026d8cd486a670a521e18eb8af3545c65b813d00961bc3c3a69510"
     },
     {
       "path": "tools/check_historical_replay_inputs.py",
@@ -1002,6 +1007,6 @@
       "sha256": "79d5435b5a7aae83bc59c3caa19563f6793f6d6bcd43e350b45fa9aae6cdef43"
     }
   ],
-  "file_count": 199,
-  "total_bytes": 45599632
+  "file_count": 200,
+  "total_bytes": 45638335
 }

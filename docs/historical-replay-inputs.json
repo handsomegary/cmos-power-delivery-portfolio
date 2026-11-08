@@ -194551,6 +194551,767 @@
         "fresh_source_verification"
       ],
       "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Completed PEX netlists and original verification reports remain available."
+    },
+    "closure_array_345c0bf0d974_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "mim32_array_fixture",
+      "input_files": {
+        "core.gds": "b2853cf3cd7d396763fa32183146659c7f82a93b378ee5d025f5318df796360a",
+        "core.cdl": "d6fcfa778e43cc0e92b1421937ec9302cac820908e0634069b81230a76be6b3b",
+        "source_verification/run.drc": "77653e2ad62709afb973768bb47f7fea423598c72a26314f93a79d88b7f90599",
+        "source_verification/run.lvs": "3c74501afc0ab1a53f91f58299e1a3611022e4d955d963d9b05310eb58a002e5",
+        "source_verification/run.rcx": "3f5d388743b920512d39279094ccc59488c29ec54d49fc6c6451eea1079749f6",
+        "source_verification/worker.sh": "a07af6c5c3265c260c61f1dbadfd61ee6983a43e9bf4bd314cff66448c8cd4d4",
+        "format_variant/run.drc": "77653e2ad62709afb973768bb47f7fea423598c72a26314f93a79d88b7f90599",
+        "format_variant/run.lvs": "3c74501afc0ab1a53f91f58299e1a3611022e4d955d963d9b05310eb58a002e5",
+        "format_variant/run.rcx": "3f5d388743b920512d39279094ccc59488c29ec54d49fc6c6451eea1079749f6",
+        "format_variant/worker.sh": "a07af6c5c3265c260c61f1dbadfd61ee6983a43e9bf4bd314cff66448c8cd4d4"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Original verification reports and available completed PEX netlists remain available.",
+      "recorded_stage_exit_codes": {
+        "drc": 0,
+        "lvs": 0
+      },
+      "completed_FMT": false,
+      "qualification_inferred_from_cleanup": false,
+      "outcome": "Historical terminated or failed attempt. Unexecuted PEX stages and failed formatting are unqualified."
+    },
+    "closure_array_4e2bc3677eed_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "mim32_array_fixture",
+      "input_files": {
+        "core.gds": "c2a42c8b51cfbf1420e120b614fbbd701f7dd89b258c5a620f3965a572cc9a96",
+        "core.cdl": "342a66ecc1d5e88f57a428abcdea113d99119089403bf4512765a6b8168a2c23",
+        "source_verification/run.drc": "bad5dcbdd45eebfb688d4a10699528ab2ed7cc9395d16ad5f99c27834a150df4",
+        "source_verification/run.lvs": "1584a3b1577b509f3cb462653485b0c6104a1bd29352732902e11f03790bf7d4",
+        "source_verification/run.rcx": "bf09608784a40f7f7df16bcf5d7a4d546299c33cb00984c1057a13a4aec6662a",
+        "source_verification/worker.sh": "2f4b680462b0fe0231655ca79978b93e5c2db9b88d42919f8f36527ed60f8bbd",
+        "format_variant/run.drc": "bad5dcbdd45eebfb688d4a10699528ab2ed7cc9395d16ad5f99c27834a150df4",
+        "format_variant/run.lvs": "1584a3b1577b509f3cb462653485b0c6104a1bd29352732902e11f03790bf7d4",
+        "format_variant/run.rcx": "bf09608784a40f7f7df16bcf5d7a4d546299c33cb00984c1057a13a4aec6662a",
+        "format_variant/worker.sh": "2f4b680462b0fe0231655ca79978b93e5c2db9b88d42919f8f36527ed60f8bbd"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Original verification reports and available completed PEX netlists remain available.",
+      "recorded_stage_exit_codes": {
+        "drc": 0,
+        "lvs": 0
+      },
+      "completed_FMT": false,
+      "qualification_inferred_from_cleanup": false,
+      "outcome": "Historical terminated or failed attempt. Unexecuted PEX stages and failed formatting are unqualified."
+    },
+    "closure_fill_diagnostic_8593449672a9_fill_present__20261023T005810_803490Z": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "mim32_array_fixture",
+      "input_files": {
+        "core.gds": "9f30ebfb85de012be12a3f6db378a85ad2119d2c8cb39eeaf7856c47256cefaf",
+        "core.cdl": "678fdca1bd3f1017e75d7b45cdfa1430b22b170641a4755387c0cb0e52ea8332",
+        "source_verification/run.drc": "afcbbb65204bb646aaba02a4f271cfd8a9d133f283037c4a1e22419f14affa05",
+        "source_verification/run.lvs": "bc4398439d1756a61085fb00b306ea133e54235a30a2b28a761cbdac8015051e",
+        "source_verification/run.rcx": "dc570438b89a9205878fd77dfdd1bcfed48f2d93d892b506253c0d8de3c6a79a",
+        "source_verification/worker.sh": "9998349af23b1f18cf9929de3cde0956cdbadf804ba8734818c3796c1c687624",
+        "format_variant/run.drc": "afcbbb65204bb646aaba02a4f271cfd8a9d133f283037c4a1e22419f14affa05",
+        "format_variant/run.lvs": "bc4398439d1756a61085fb00b306ea133e54235a30a2b28a761cbdac8015051e",
+        "format_variant/run.rcx": "dc570438b89a9205878fd77dfdd1bcfed48f2d93d892b506253c0d8de3c6a79a",
+        "format_variant/worker.sh": "9998349af23b1f18cf9929de3cde0956cdbadf804ba8734818c3796c1c687624"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Original verification reports and available completed PEX netlists remain available.",
+      "recorded_stage_exit_codes": {
+        "drc": 0,
+        "lvs": 0,
+        "phdb": 0,
+        "pdb": 0,
+        "fmt": 0
+      },
+      "completed_FMT": true,
+      "qualification_inferred_from_cleanup": false
+    },
+    "closure_fill_diagnostic_8593449672a9_fill_removed__20261023T005903_256476Z": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "mim32_array_fixture",
+      "input_files": {
+        "core.gds": "624cb5130a6c5f661972e4933a232fdf4bb132d5fdd9d40e69cf3cd0867b9516",
+        "core.cdl": "678fdca1bd3f1017e75d7b45cdfa1430b22b170641a4755387c0cb0e52ea8332",
+        "source_verification/run.drc": "990b9b9aaff750e7c775c9b0f5882c89a6de8492466f5dbbbe5ec46783fa616f",
+        "source_verification/run.lvs": "0459f0b4ec1c41129ce43bd0cb7152a1a48c125266a3f46395d7e2d86d60c9d3",
+        "source_verification/run.rcx": "bc3a3aa979d0acb9aa6d8bafb3e0501e96921306dca39b267dfae6f8c60cff67",
+        "source_verification/worker.sh": "0ee5d8c5d0683550557a772ed47d03d63e76945c55f5297256dc6e82408b270a",
+        "format_variant/run.drc": "990b9b9aaff750e7c775c9b0f5882c89a6de8492466f5dbbbe5ec46783fa616f",
+        "format_variant/run.lvs": "0459f0b4ec1c41129ce43bd0cb7152a1a48c125266a3f46395d7e2d86d60c9d3",
+        "format_variant/run.rcx": "bc3a3aa979d0acb9aa6d8bafb3e0501e96921306dca39b267dfae6f8c60cff67",
+        "format_variant/worker.sh": "0ee5d8c5d0683550557a772ed47d03d63e76945c55f5297256dc6e82408b270a"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Original verification reports and available completed PEX netlists remain available.",
+      "recorded_stage_exit_codes": {
+        "drc": 0,
+        "lvs": 0,
+        "phdb": 0,
+        "pdb": 0,
+        "fmt": 0
+      },
+      "completed_FMT": true,
+      "qualification_inferred_from_cleanup": false
+    },
+    "closure_fmt_spectre_85d25143cba5": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "passive_mos_smoke",
+      "input_files": {
+        "core.gds": "361dc818f861f53bed706feeb386b2d35b78c7969c683c71763e4f006a9b75d9",
+        "core.cdl": "4bfeceaa58eeeab9e84cb64efc41b75840cf4b6f9c8a1ccc6b3232e6e0ccadde",
+        "source_verification/run.drc": "81cb0c3248fe186f869b9d560039401b25a77f2373edbd3ab707aa429375a8e7",
+        "source_verification/run.lvs": "fed0f49c8d9caa6a4bce99d4ea0aae696dace420ae238857abd4f3ea89814907",
+        "source_verification/run.rcx": "6083a2d7e3c0a42627fccb69b58516b2cfdae7c07885701e563756f229df7632",
+        "source_verification/worker.sh": "4e58a5aa1d99007b42a1da43b985b7b47c1d31c3e75553cf8f9ef21039e9a0b0",
+        "format_variant/run.rcx": "9079303fd8f7fda91badffef19dfa1c63328d0cae01e4d72aaed8a8fc3e769ea",
+        "format_variant/format_manifest.json": "c2e594ba4f1fc41119a46711c0dfc460116f35c7af2df05ecdfc6d57167b91e5",
+        "format_variant/worker.sh": "02f43b3f56934678ab8831f74a1bc2d182a7a35f78796d50815cfd6c095361e9"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_format_variant"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Original verification reports and available completed PEX netlists remain available.",
+      "recorded_stage_exit_codes": {
+        "FMT_SPECTRE": 1
+      },
+      "completed_FMT": false,
+      "qualification_inferred_from_cleanup": false,
+      "outcome": "Historical terminated or failed attempt. Unexecuted PEX stages and failed formatting are unqualified."
+    },
+    "closure_fullcore_0e371efb0c80_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "eb737f7ed13a355f129f2cf3069a32373bca042079d88ce6db0b103582fdca93",
+        "core.cdl": "761b86d95e814b921e763fb9197c96e14dbbe9f0b2bfc1f24e6bcbead7a68e08",
+        "source_verification/run.drc": "d08c6e659116f150a0cb42b4d29a39425538e7059827017772874315d91ace6d",
+        "source_verification/run.lvs": "dbc9369105c2d7f4d826e238c516dcddf3bc9b173eb926e618d39c0f855a6cf6",
+        "source_verification/run.rcx": "8c74a10fb5c40c7e7aef90575303b04193fad7fc453a5cfeebc4519ab968b1ba",
+        "source_verification/worker.sh": "9ac6e242fb0eb12d82493e326e493cc94ac52948c7b7065ba92b5fa8404ef408",
+        "format_variant/run.drc": "d08c6e659116f150a0cb42b4d29a39425538e7059827017772874315d91ace6d",
+        "format_variant/run.lvs": "dbc9369105c2d7f4d826e238c516dcddf3bc9b173eb926e618d39c0f855a6cf6",
+        "format_variant/run.rcx": "8c74a10fb5c40c7e7aef90575303b04193fad7fc453a5cfeebc4519ab968b1ba",
+        "format_variant/worker.sh": "9ac6e242fb0eb12d82493e326e493cc94ac52948c7b7065ba92b5fa8404ef408"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Original verification reports and available completed PEX netlists remain available.",
+      "recorded_stage_exit_codes": {
+        "drc": 0,
+        "lvs": 0
+      },
+      "completed_FMT": false,
+      "qualification_inferred_from_cleanup": false,
+      "outcome": "Historical terminated or failed attempt. Unexecuted PEX stages and failed formatting are unqualified."
+    },
+    "closure_fullcore_c38721c04be7_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_r33",
+      "input_files": {
+        "core.gds": "c78b93b17b3e2e9541820155e5e688dd2b2dd75963b6e1194fc426ab57994197",
+        "core.cdl": "ff662303ff06e98dd72cd4afb065c9418c0cacab16ec57ebc37d69058aeccf32",
+        "source_verification/run.drc": "b73cb1e7c82304e3a8ddc690810bba587fe0ad995ebc44b5d8d490bfb0b2f9d3",
+        "source_verification/run.lvs": "1dbc838c5b90cba545eb44e54d569c11f7a2e61916a193270b95a10e4340012c",
+        "source_verification/run.rcx": "a7c89e6bea774e4165524bf508b0e0778b130e4610988233fd4f56040cdcf083",
+        "source_verification/worker.sh": "3a22dedfcf9dac1fb889f4a10f70329ac78493b99b50f7bcc073e500d338715c",
+        "format_variant/run.drc": "b73cb1e7c82304e3a8ddc690810bba587fe0ad995ebc44b5d8d490bfb0b2f9d3",
+        "format_variant/run.lvs": "1dbc838c5b90cba545eb44e54d569c11f7a2e61916a193270b95a10e4340012c",
+        "format_variant/run.rcx": "a7c89e6bea774e4165524bf508b0e0778b130e4610988233fd4f56040cdcf083",
+        "format_variant/worker.sh": "3a22dedfcf9dac1fb889f4a10f70329ac78493b99b50f7bcc073e500d338715c"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Original verification reports and available completed PEX netlists remain available.",
+      "recorded_stage_exit_codes": {
+        "drc": 0,
+        "lvs": 0
+      },
+      "completed_FMT": false,
+      "qualification_inferred_from_cleanup": false,
+      "outcome": "Historical terminated or failed attempt. Unexecuted PEX stages and failed formatting are unqualified."
+    },
+    "closure_fullcore_f2d259ce08c9_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_bleed67_v30_build1",
+      "input_files": {
+        "core.gds": "05018b09757a6154bbf44d23d800c829ffd6f483d7f879f740f74e513ae01892",
+        "core.cdl": "70f18add2fe8c7ee5cc502101b0cd441acaf5f4848c5ed2457b459441d8e5736",
+        "source_verification/run.drc": "8b1415f90acc52d3ef4ccf09bfa3dc58978b22c7df4046241e3b490b1ea6915d",
+        "source_verification/run.lvs": "ec2fb4a3aa66cbb0648c42d4675bedb72d658081f04bd02c25d1166b56403239",
+        "source_verification/run.rcx": "3b56a12ee7e9699268feafe12d17d3c8205611e043c86ebb6e3f5ed1c0ece574",
+        "source_verification/worker.sh": "e84b108b05ddcff00af028ba4a132c3cba32305f25baf60dff1d9fbdcbf7790e",
+        "format_variant/run.drc": "8b1415f90acc52d3ef4ccf09bfa3dc58978b22c7df4046241e3b490b1ea6915d",
+        "format_variant/run.lvs": "ec2fb4a3aa66cbb0648c42d4675bedb72d658081f04bd02c25d1166b56403239",
+        "format_variant/run.rcx": "3b56a12ee7e9699268feafe12d17d3c8205611e043c86ebb6e3f5ed1c0ece574",
+        "format_variant/worker.sh": "e84b108b05ddcff00af028ba4a132c3cba32305f25baf60dff1d9fbdcbf7790e"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Original verification reports and available completed PEX netlists remain available.",
+      "recorded_stage_exit_codes": {
+        "drc": 0,
+        "lvs": 0
+      },
+      "completed_FMT": false,
+      "qualification_inferred_from_cleanup": false,
+      "outcome": "Historical terminated or failed attempt. Unexecuted PEX stages and failed formatting are unqualified."
+    },
+    "closure_fullcore_f8bcc2648e35_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "ldo_core_r33",
+      "input_files": {
+        "core.gds": "919bd5b02633c179cf06a4f110c63a682a5669465d4bbb71cc84d8ee5d53b544",
+        "core.cdl": "975a7293cfce7e3a403215d38e6b2984218765ff040ce79ddbd262969e9f2f0c",
+        "source_verification/run.drc": "c7b771d166a72e4f5711564fef7c9527b4899380fc45ba0abd35ee4d05112e42",
+        "source_verification/run.lvs": "9898bf206c32667e123374b3f13fdf7f78e98d268adf3744a1ccdf2664760e17",
+        "source_verification/run.rcx": "54621ba30841b14012bb749c727d382ef85f15e8f12acb6189789686b3f67b8e",
+        "source_verification/worker.sh": "62cd95361938b98c5c582f3b861dbbe4b8cd5b4692ef7df09e46d65421167ba5",
+        "format_variant/run.drc": "c7b771d166a72e4f5711564fef7c9527b4899380fc45ba0abd35ee4d05112e42",
+        "format_variant/run.lvs": "9898bf206c32667e123374b3f13fdf7f78e98d268adf3744a1ccdf2664760e17",
+        "format_variant/run.rcx": "54621ba30841b14012bb749c727d382ef85f15e8f12acb6189789686b3f67b8e",
+        "format_variant/worker.sh": "62cd95361938b98c5c582f3b861dbbe4b8cd5b4692ef7df09e46d65421167ba5"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Original verification reports and available completed PEX netlists remain available.",
+      "recorded_stage_exit_codes": {
+        "drc": 0,
+        "lvs": 0
+      },
+      "completed_FMT": false,
+      "qualification_inferred_from_cleanup": false,
+      "outcome": "Historical terminated or failed attempt. Unexecuted PEX stages and failed formatting are unqualified."
+    },
+    "closure_smoke_07afa76a1830_verify": {
+      "tool_version": "Calibre 2019.3_15.11",
+      "top": "passive_mos_smoke",
+      "input_files": {
+        "core.gds": "f5ebcfe3dfa12e2c6726e445bc6e57bbf70ae13d026c9196658a07622a9503f9",
+        "core.cdl": "107811e9c32c64b7e48d5828be29fd3c523aa9819ec81ed40f1030239b7f07e5",
+        "source_verification/run.drc": "358732f165b9e0bbc50d60801ce06e77d401a7bd4a336ea2d4e9c31db32d3665",
+        "source_verification/run.lvs": "6d34f0724c995559e91396fb4d05abca0ab69765ce6a5c624a110d1c67d240be",
+        "source_verification/run.rcx": "5f194e847e255b503800054e59ebd87b4b7217fb4330829cca5163863c1dcbdf",
+        "source_verification/worker.sh": "274fcd7f447a79625af49fe15d175229176f3e4bf706b26fb050d0a694910661",
+        "format_variant/run.drc": "358732f165b9e0bbc50d60801ce06e77d401a7bd4a336ea2d4e9c31db32d3665",
+        "format_variant/run.lvs": "6d34f0724c995559e91396fb4d05abca0ab69765ce6a5c624a110d1c67d240be",
+        "format_variant/run.rcx": "5f194e847e255b503800054e59ebd87b4b7217fb4330829cca5163863c1dcbdf",
+        "format_variant/worker.sh": "274fcd7f447a79625af49fe15d175229176f3e4bf706b26fb050d0a694910661"
+      },
+      "licensed_rule_sha256": {
+        "rules.C": "33818ef5ce5f24337528950e4d2c978b38ab6bcf00c2b6599e8b85b0833d7fce",
+        "rules.R": "3ed03636d2d4b2c23a5cd92b790407afd3100914173c5f73c05e84c2282e125b",
+        "rules.S": "785a5cbc32eaf73021dc7cabeb3f42ff046d7899ea65344736005ff5b1de92d7"
+      },
+      "commands": [
+        [
+          "calibre",
+          "-drc",
+          "-hier",
+          "-nowait",
+          "run.drc"
+        ],
+        [
+          "calibre",
+          "-lvs",
+          "-hier",
+          "-nowait",
+          "run.lvs"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-phdb",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-pdb",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ],
+        [
+          "calibre",
+          "-xrc",
+          "-fmt",
+          "-rcc",
+          "-nowait",
+          "run.rcx"
+        ]
+      ],
+      "command_workspaces": [
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification",
+        "fresh_source_verification"
+      ],
+      "purpose": "Rebuild disposable PHDB/PDB from retained exact GDS/CDL and licensed rules. Original verification reports and available completed PEX netlists remain available.",
+      "recorded_stage_exit_codes": {
+        "drc": 0,
+        "lvs": 0
+      },
+      "completed_FMT": false,
+      "qualification_inferred_from_cleanup": false,
+      "outcome": "Historical terminated or failed attempt. Unexecuted PEX stages and failed formatting are unqualified."
     }
   }
 }
