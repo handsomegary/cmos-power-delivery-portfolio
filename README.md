@@ -20,6 +20,10 @@ The published evidence belongs to **LDO r6 and Buck r8/r9**. These historical sc
 
 The quoted LDO transient uses an external ideal 1 nF output capacitor. Buck OFF/ON values are paired within each revision. Recovery definitions differ between the studies; their detailed result pages retain the conditions, measurement windows, FoM equations and adverse cases.
 
+## Engineering decisions in progress
+
+The [LDO engineering journal](projects/ldo-130nm/ENGINEERING_JOURNAL.md) records later v32 numerical controls and the model-first design process. Classic DC passed the frozen comparison gates while APS2 high-load retained a 27-node mismatch; the bridge is unqualified. The later final classic Grid24 task passed its selected transient/stress checks and stopped after analysis and scoped cleanup; whole-LDO qualification remains open. These later observations remain separate from the published r6/Buck measurements. New circuit changes follow model validation and human approval.
+
 ## Read the design
 
 The six-page technical report presents the measurements and design tradeoffs. The circuit atlas presents the architecture and transistor circuits as editable **American CircuitikZ** drawings, with PDF and white-background SVG exports from the same sources.
