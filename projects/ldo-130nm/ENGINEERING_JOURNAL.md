@@ -59,3 +59,30 @@ Job `739751` completed with exit0:0 in 7min17s. Both DC cases reproduced the ori
 **Retention result.** Exactly three new-job bulk files were removed after validation: 640,483,985logical bytes and273,273,344allocated bytes (260.614MiB allocated). Retained compact evidence includes 3483 VOUT/current samples and 1152 witness rows covering 402 terminal pairs, plus scalar DC, metrics, source hashes, decks and logs. The original reference was rehashed unchanged; no full waveform backup was made locally.
 
 **Inference/decision.** This completes the user-authorized classic execution/analysis/cleanup task and passes its four selected checks. `all_LDO_specs_passed` and whole-LDO qualification remain **false**; the earlier APS2 high-load bridge remains unqualified. No Grid25 or additional LDO task was launched. Stop here under the user's finite-task instruction; any future design change requires a new model-backed plan and approval.
+
+## 2026-11-08 — newly authorized frozen Grid25 check (preparing)
+
+**Hypothesis/reason.** The prior classic Grid24 case passed its four selected checks at10ns edges. The next original frozen matrix case changes only the load ramp to100ns at the same FNSP/27°C condition. This tests that named pre-existing condition; it is not a circuit-design optimization or a claim of complete qualification.
+
+**Actual change/authorization.** The user explicitly resumed one finite LDO task today. Keep the original classic solver, circuit, model/source hashes, physical gates and numerical comparison tolerances. Grid25 uses1.2V, ideal1nF,0.1↔5mA,100ns edges,60µs observation and1ns maxstep, allocated2CPUs/8GiB. Native24/25 low/high DC input bytes are identical; the transient difference is confined to the original load-PWL edge endpoints. The original native25 manifest and independent-review hashes were checked before preparing this continuation.
+
+**Evidence/result status.** Job `740068` has been submitted with2CPUs/8GiB; no new scientific result or cleanup outcome is available at this entry. Preserve the earlier APS2 high-load27-node mismatch as an unqualified bridge; this classic task does not erase it or relax the original tolerance. The previous selected Grid24 pass remains limited to its stated condition.
+
+**Decision/next validation.** Seal the exact frozen inputs and criteria before submission, run two DC checks and only the named Grid25 transient if their gates permit continuation, then analyze and retain compact evidence. Clean only reviewed new-job bulk after valid analysis; tool/parser/integrity failure retains diagnostics. Original references stay protected. Append all measured pass/fail outcomes and stop after this single task. Yesterday's stop is preserved as history; today's explicit authorization permits this one new finite cycle, not an automatic design sweep.
+
+### Result appended — frozen Grid25 completed; observed edge-rate sensitivity
+
+Job `740068` completed 0:0 in 7 min 12 s. Both DC cases passed the unchanged 201-voltage/4-current/402-stress comparisons. The single frozen FNSP/27 °C, 1.2 V, ideal 1 nF, 0.1↔5 mA transient used 100 ns load edges, 60 µs observation and 1 ns maximum step. All four selected criteria passed; whole-LDO qualification remains **false**.
+
+| Metric | Prior Grid24, 10 ns | Grid25, 100 ns | Grid25 limit | Grid25 headroom |
+| --- | ---: | ---: | ---: | ---: |
+| Worst absolute output deviation | 106.614 mV | 82.910630 mV | 125 mV | 42.089370 mV |
+| Worst sustained-band recovery, from ramp end | 1.445711 µs | 1.410516 µs | 2.5 µs | 1.089484 µs |
+| Unload secondary dip | 0 mV | 0 mV | 9 mV | 9 mV |
+| Maximum 402-pair stress | 1.174401 V | 1.166996 V | 1.2 V | 33.004 mV |
+
+**Observation/inference.** The slower frozen load ramp produced 23.703336 mV less peak deviation under the same circuit, PEX, corner, bias, model and classic solver. Recovery values retain the same definition, measured from each ramp's own end. This is **edge-rate sensitivity**, not a circuit redesign or matched-edge design improvement. The previous APS2 bridge failure and incomplete full-LDO qualification remain separate, unchanged findings.
+
+**Evidence/retention.** Analysis covered 61,336 actual samples/204 signals. Independent compact replay reproduced both event extrema and recovery interpolation; 3651 VOUT/current samples plus 1152 rows witness all 402 terminal pairs. 98 protected and 94 retained-file hashes matched, including preserved original reference waveforms. Only three new bulk files were removed: 272,372,224 allocated bytes (259.754 MiB), separately 638,891,058 logical bytes. No full-waveform local archive or new process-model copy was made. Compute-only support was verified by the within-job guard; independent postjob checks covered available shared evidence.
+
+**Decision/next action.** This one authorized Grid25 task has completed its analysis and scoped cleanup. No Grid26 or further LDO task was started. Stop this branch of the finite cycle; preserve the selected-pass result and its condition limits rather than extending it to all 30 conditions.
