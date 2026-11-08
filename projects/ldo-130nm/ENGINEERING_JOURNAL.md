@@ -86,3 +86,21 @@ Job `740068` completed 0:0 in 7 min 12 s. Both DC cases passed the unchanged 201
 **Evidence/retention.** Analysis covered 61,336 actual samples/204 signals. Independent compact replay reproduced both event extrema and recovery interpolation; 3651 VOUT/current samples plus 1152 rows witness all 402 terminal pairs. 98 protected and 94 retained-file hashes matched, including preserved original reference waveforms. Only three new bulk files were removed: 272,372,224 allocated bytes (259.754 MiB), separately 638,891,058 logical bytes. No full-waveform local archive or new process-model copy was made. Compute-only support was verified by the within-job guard; independent postjob checks covered available shared evidence.
 
 **Decision/next action.** This one authorized Grid25 task has completed its analysis and scoped cleanup. No Grid26 or further LDO task was started. Stop this branch of the finite cycle; preserve the selected-pass result and its condition limits rather than extending it to all 30 conditions.
+
+## 2026-11-08 — separately authorized overnight original Grid26–29 coverage (preparing)
+
+**Hypothesis/reason.** The next four entries are the remaining original indices in the frozen 30-condition load matrix: Grid26 SNFP/27 °C/10 ns, Grid27 SNFP/27 °C/100 ns, Grid28 SNFP/125 °C/10 ns, and Grid29 SNFP/125 °C/100 ns. They test the named source conditions and edge-rate/corner sensitivity; they are not new circuit variants or an assumed extension of earlier selected passes.
+
+**Actual change/authorization.** After the completed daytime cycle, the user explicitly authorized these four server-queued tasks for overnight execution, analysis and scoped cleanup before reading results tomorrow. Each uses the unchanged classic solver, circuit/PEX/model sources, numerical tolerances and electrical gates, with 2 CPUs/8 GiB, 1.2 V input, ideal 1 nF, 0.1↔5 mA, 60 µs observation and 1 ns maxstep. Prior STOP entries remain historical; this separate authorization is limited to four predeclared cases, with no invented Grid30 or design sweep.
+
+**Reference evidence.** SNFP/27 °C DC endpoints use the frozen original PEX static slot17; SNFP/125 °C endpoints use slot18. All 201 voltage, 4 current and 402 terminal-pair values are reconstructed from their original scalar PSFs and tied to the matching reviewed source, condition and snapshot. FNSP values and native schematic DC are not substituted. The original matrix function, native case manifests/reviews and native-to-PEX renderer pin the four load fixtures before execution.
+
+**Decision/failure semantics.** Four jobs form an afterok chain. A valid measured electrical failure remains an explicit failed scientific result, with its values preserved; tool/parser/integrity/analysis or cleanup failure exits nonzero and blocks later jobs without retry. Each start checks more than 2 GiB available space. After valid analysis, retain compact event/recovery/current/402-pair witnesses and logs, delete only the new task's three reviewed bulk outputs, and protect original references. Do not copy full waveforms locally or clear unrelated files.
+
+**Current status/next validation.** Preparation only; this entry declares no overnight result, selected pass or cleanup success. Actual submission IDs and frozen source fingerprints will be appended after submission. Read all four outcomes tomorrow, including failures, and stop at the original matrix boundary; full-LDO qualification and the earlier unqualified APS2 bridge remain separate questions.
+
+### Submission appended — four original cases queued; results pending
+
+The approved afterok chain is **Grid26 `740093` → Grid27 `740094` → Grid28 `740095` → Grid29 `740096`**. Submission receipts exist for all four; queue submission is not a scientific pass or cleanup-success claim. Deployment source manifest SHA256 is `a3c6f41c511dc5d290dbcc251636d9cef1765315e0f09c5f01f0acbc65233174`; the full private package passed23 source/scope/cleanup tests before staging, and compute-side Python3.6 staging reproduced the four exact source/reference contracts. The original26–29 conditions remain unchanged.
+
+Read actual compact scientific results and scoped deletion receipts after these jobs run. No overnight metrics have been inferred from job IDs, queue state, or prior Grid24/25 outcomes.
