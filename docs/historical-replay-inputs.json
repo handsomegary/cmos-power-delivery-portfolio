@@ -258691,6 +258691,398 @@
         "recorded_exit_code": 0,
         "measurement_status": "measured_actual_PEX"
       }
+    },
+    "Buck_CSV_v1_nom100_local": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "977aeaf2ae68eca614208ad847944b0c9505455af0879bc45ea1ee3fdb2eaaa8",
+        "config.json": "cc4f10d4c1cccbe25c1e6ac59ae51a38925e57a9011dcb6c730ac1ca66dbdd5d"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v1_nom100_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "6a6e6333cb252a115e49990352c3ada10a53aa0edb3d4093093790ac9cf0b9aa",
+        "config.json": "825edc3b9cb95cdd2f77b03a04025899e0048aaf00704fb62053c117bccc6a01"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v1_nom100_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "ac5e23b392a1d896cd912721045c20b38b5d475de4617466dea8a6b624858e18",
+        "config.json": "9c9633fe93db116eaea4f08f0bc337e4be35f042241e1027245183dff1d22d81"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_nom10_p0_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "182cd5888c868cd00e2509a5e3e59305e6a6c4cc2b51bf102c18831bf8904322",
+        "config.json": "60dc2632ea12dc77099cc28043d02f55a05aea6c98b657c798180b819c54578e"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_nom10_p0_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "64400355ee31f92758263d7c1d14e1cfcf6a5d46788b8efb2b117c7785bd7c71",
+        "config.json": "25ec2567fd152a11a01c45b64f9109f32795b1e32a081eb3da4e70d8d607cb69"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_pdn_hard_p0_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "acf738e1450f08706917a1a9f85c70f4d7d218072745c88ab18725d95726ef70",
+        "config.json": "c2f8db3b3dc1ac19446bde69507a13032e5b3d29a5012fdff42c8599c541fa96"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_pdn_hard_p0_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "7569fb48cbcd858455894ec5847961911fd4933b18566ba29519b3928581bab1",
+        "config.json": "eedd4f519cdadc2c3949cef2ae29779a1ca0e48ab49e3ccfdc4c0f0e0889620c"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_nom100_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "785b637802b43573eaf00f4ad09b5d0e33c61fcffb615143d829b90b944d791d",
+        "config.json": "049271978a85ee4b0dcc45c23ac6f3fdd52f2fe3a907c1f7e2544f60299389f6"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_nom100_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "6beae9209dc069d6ea9b2f556fe97b41c0b6cf753886ca37092065a950cba9d1",
+        "config.json": "bbe9e63e748c2cc07be29a83968cf2974e2fe64fe1fdad588c657a509812b946"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_nom100_local": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "5869cdb9d2b74d7c91da235e24897472f4f25b11f2379dbfccfbd72a2e252ea0",
+        "config.json": "bd93f75aca94698d6f7227e6387e056d555a4bb62c43846deaebb398d3f6ba25"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_fine10_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "01911c85932509b90473d8cfddccbe21d15963e9a1497392132e4f66ff0b7da1",
+        "config.json": "90aba27b520244270980486a74413198d14fa72fee1d090a977e8f3ee4e05186"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_fine10_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "6946e56310dfe4a2d7ef8f07c79fd4fedfda47776dc1c334238e04c661f635aa",
+        "config.json": "469bee76c8844d97d2947e7c56333398c15a31c317d94a92c343503ef5141460"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_fine_pdn_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "dc1e8c61aae57d6a5cb89f0f7f8a75d43050430ac49da5b9370775efbdd33521",
+        "config.json": "3e322da5693f6fb461400d27d39d76b1693009adbc243258403aa9eb4bead6af"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_fine_pdn_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "349187a1b32ffc1717c8bf5891d619cd3e48a71ff3a20f969bbd3d580912761a",
+        "config.json": "48701457e3fdb48076de8c81de9a2acf25cb30ab5da2698ce7b398b79c91dc88"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_line100_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "ea0cfc079a75c7949a38554bf0ece276ecd25fcc547e5a0b1cd0f5ff1af3354e",
+        "config.json": "99746fb440f6656992027dbb595c3b512d454b77ef539b6598282161cfb0f1e0"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v3_line100_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "570ce37dd281716ad19afc7c9f0c495f2a0a2b77a454e722fbba40065015581f",
+        "config.json": "1c7d948a5ebe20b1c71c844abafbe1c12711ff83eb14e43b2c9f33bdebfb2536"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_r9_nom100_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "61fd8f14ecf935ab9d2bb987ca683c3971e0d33b89d7bb14eed6702ccbc0424c",
+        "config.json": "dc7be0757ceab41bc5e8168e647064d567426ba21116482151a22635361505f6"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_r9_nom100_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "78beaa04d633456426e8e247179c1abab09a8e573b1bd3d2801ba4a4796776e7",
+        "config.json": "1e94ae14b3a85d048eb417381ed7d0d69fa10eb82b40b074bd355738940f39c8"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_r9_fine_pdn_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "6a72a1038cc84336e2ecfccd34511160feaae3f3775b979e8106b39f2fc9b2f6",
+        "config.json": "39358f3c2dde98467f06822b5719ce2c86c0df111d710af494badedf5fe6c69c"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_r9_fine_pdn_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "5a34fcafd4a0df0870b5cb0888a9a5b3d6d36a1bae8d93906521f9f32e366cd0",
+        "config.json": "9b454fc67debf04693391581b5b5995dc822cdadf58485d6f95dc6e1d5350299"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_r9_nom10_p0_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "58a1c26ab0e0e213993dee470eadae0bfa260b87cf5652f8a17e31bc95e26bef",
+        "config.json": "151edb07962d01788dcdcc42c4f4ccf2b0c19d413a775bf9b7d2b0c6a241d1f8"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_r9_nom10_p0_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "aec1477f4cb709e6c421c68044a04fd6bb93f750de128c1e59e38130b0067b37",
+        "config.json": "b1f56847895639eb9295991c377bc1580d0c98cc21c6e4e62263e2adef253774"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_r9_pdn_hard_p0_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "865094b82eca295e650cd9adfbf87951cd9c16ceaca952662dcbff00c7961976",
+        "config.json": "9048d624e66a9c632533145f29b98fc4165192b8e4914441064acf07fdd041d9"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_r9_pdn_hard_p0_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "1cbe4402f2d187d99ea0724b281ed5e36df0cc51cdbb19aea4cd4575a0da7ffd",
+        "config.json": "9d7e96e947a808d496a0fbfaee90a58e939755339b5cec840b9c5c5749ea8889"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-08,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_v2_nom100_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "4fd0da3cd96cc10e3586d3977c2068f5b545e2bf7b353e87c58e861c960526c4",
+        "config.json": "4d9fcac834e7cff57aebdcf2ddb3a69f6c4a19b11e35f860c3b7c31007254c17"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 6e-05,
+        "down_s": 0.0001,
+        "stop_s": 0.00014
+      }
+    },
+    "Buck_CSV_b4_smoke_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "d142661b24f64b104ddb2793bcc33f8a4225c8f761ba036e1c33bbf048e9af50",
+        "config.json": "3f3eaf6176c6dcd3c55d7e2195913ea4351dbd062dda6bbd59c61522ae5890cf"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 4e-05,
+        "down_s": 7e-05,
+        "stop_s": 0.0001
+      }
+    },
+    "Buck_CSV_b4_smoke_on": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "83047a39bb0585d088de5566a1b5af53dfe10b101f5233499e0bcb3694d35cae",
+        "config.json": "a4fa74c1ea7fe2945c391281f078e6a79994ff46eda23b27947493a469ce12fa"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 4e-05,
+        "down_s": 7e-05,
+        "stop_s": 0.0001
+      }
+    },
+    "Buck_CSV_b3_smoke_off": {
+      "group": "buck-measured-historical-csv",
+      "files": {
+        "input.scs": "ab901078812d6c375324778dcf05cdad4641e79c828260a5ed848c85c854bb70",
+        "config.json": "c68c9c59162460f3c16067e40d5a99083eebe1a883e7c22a50e60440a7ab8cbe"
+      },
+      "conditions": {
+        "temperature_c": 27.0,
+        "edge_s": 1e-07,
+        "up_s": 4e-05,
+        "down_s": 7e-05,
+        "stop_s": 0.0001
+      }
     }
   },
   "replay_groups": {
@@ -264880,6 +265272,21 @@
       ],
       "retained_run_manifest_required": true,
       "replay_details": "Use the retained original per-case command, source deck, variant/model hashes and include-search order. Original failed and unmeasured statuses remain unchanged."
+    },
+    "buck-measured-historical-csv": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "retained_original_run_snapshots_required": true
     }
   },
   "physical_replay_cases": {
