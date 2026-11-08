@@ -185985,6 +185985,837 @@
         "name": "v32_native_static_02_09"
       },
       "source_closure_sha256": "9b900724ba4d3696c2678032ba0ac1d69a45480ef1b65eda623072d5adab0bea"
+    },
+    "final_loose_20261023T022425_911320Z_r33formal_step_tt_t27_e100_0412ea83": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "73a1574a41a68fe8343138e59f13a2e4db13ab5c9dd68dc768fb3ab82c8e1d50",
+        "config.json": "b77f700ad9dded414eec445a0da8203a27ed7ee34d9514d6b1105ffdc393e546"
+      },
+      "conditions": {
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "mode": "load_tran",
+        "model_section": "tt",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 6e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T022442_031906Z_r33formal_step_tt_t27_e10_52deca55": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "a35c11900feb0438e4d62be5c9668b4158da378e48a3a8362429a17f2fb8fff2",
+        "config.json": "89f449c94865b46296b7fc46edb7b34ed2a4857038c1b5898adea2b8f0c37fda"
+      },
+      "conditions": {
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "mode": "load_tran",
+        "model_section": "tt",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 6e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T022656_932017Z_r33formal_step_ff_t125_e10_7d49383f": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "09befa16bc7724fa8c0ff8609d32526d4b7e7bdb42270e82eb786ad9bd8067da",
+        "config.json": "14c9389617c72896b6501007789ab0363ee9fa1efaad56e1facd8b557f345981"
+      },
+      "conditions": {
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "mode": "load_tran",
+        "model_section": "ff",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 6e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_20261023T022837_972317Z_r33formal_step_ss_t125_e10_00ba629d": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "b95ed30b6b7d1748eaa25448341c037e65e884532d9c693b56d3dceb8a17d100",
+        "config.json": "5d8d21e581ff90b530f25fd0e17fa1ddd395f03051799dc57627841eed5ecfd2"
+      },
+      "conditions": {
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "mode": "load_tran",
+        "model_section": "ss",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 6e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_20261022T171147_040358Z_r8p_ss125_T10_efab4317": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "7473f400e5a2ad2ab2d92d50634c74de69711af3ee3301088538dbe1b59c89d4",
+        "config.json": "f70bb803f943a4efc8f4f7116cafc528bcf635c2305f2f1063e5e4c52812906c"
+      },
+      "conditions": {
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "mode": "load_tran",
+        "model_section": "ss",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 6e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_original_down_730deb46": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "a176f19182a35c8ed0c9292a2d09c9ac22f2e901d907fe4c90eecdfdd936c2ef"
+      },
+      "conditions": {}
+    },
+    "final_loose_original_up_347c9aea": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "14d1d1ebc204f09fc2f881e29ce96f60209764f56c4239f4e77472813d489545"
+      },
+      "conditions": {}
+    },
+    "final_loose_original_down_f2f3129a": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "7e1ceae611ddc4d659f497ee21df0ef3c5a147540b3b1a19a28a3c5f14a25fe8"
+      },
+      "conditions": {}
+    },
+    "final_loose_original_up_67a553b0": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "294fcd891d4997f8f462dd8b47ff134cdf9395af0d2c2a676e8bd9b67bbb10da"
+      },
+      "conditions": {}
+    },
+    "final_loose_original_down_4e6120ba": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "66554f642c9de44f38f439466f524e7e4531ccb1e34cea85ff88c68059f15223"
+      },
+      "conditions": {}
+    },
+    "final_loose_original_up_749fd6ec": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "aac63d6a1d2263aebe22a3834aeb3bfd5286afbf5a672955943e4a9caf2c90e2"
+      },
+      "conditions": {}
+    },
+    "final_loose_r33formal_step_ff_t125_e10_7d19aa47": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "09befa16bc7724fa8c0ff8609d32526d4b7e7bdb42270e82eb786ad9bd8067da",
+        "config.json": "14c9389617c72896b6501007789ab0363ee9fa1efaad56e1facd8b557f345981"
+      },
+      "conditions": {
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "mode": "load_tran",
+        "model_section": "ff",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 6e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_r33formal_step_ss_t125_e10_19b17c93": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "b95ed30b6b7d1748eaa25448341c037e65e884532d9c693b56d3dceb8a17d100",
+        "config.json": "5d8d21e581ff90b530f25fd0e17fa1ddd395f03051799dc57627841eed5ecfd2"
+      },
+      "conditions": {
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "mode": "load_tran",
+        "model_section": "ss",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 6e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_r33formal_step_tt_t27_e10_6bdfc96b": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "a35c11900feb0438e4d62be5c9668b4158da378e48a3a8362429a17f2fb8fff2",
+        "config.json": "89f449c94865b46296b7fc46edb7b34ed2a4857038c1b5898adea2b8f0c37fda"
+      },
+      "conditions": {
+        "edge_s": 1e-08,
+        "maxstep_s": 1e-09,
+        "mode": "load_tran",
+        "model_section": "tt",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 6e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_r33formal_step_tt_t27_e100_2c586920": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "73a1574a41a68fe8343138e59f13a2e4db13ab5c9dd68dc768fb3ab82c8e1d50",
+        "config.json": "b77f700ad9dded414eec445a0da8203a27ed7ee34d9514d6b1105ffdc393e546"
+      },
+      "conditions": {
+        "edge_s": 1e-07,
+        "maxstep_s": 1e-09,
+        "mode": "load_tran",
+        "model_section": "tt",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 6e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T005340_919501Z_startup_tt_m40_100uA_660ea507": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "58d914e219b5ce6acca0efa85b6d5e040ac1c16dc61f69ad7e21a4d610061db4",
+        "config.json": "0b90d40fa292d043326521a59b7e7954160fdb5951a80e83e6b929047384b9f1"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "tt",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": -40
+      }
+    },
+    "final_loose_20261023T005345_364167Z_startup_tt_m40_5000uA_32abef23": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "a4001f287c1a6c31dfa87b5e9f54a5566cfe2e89c5f4fc0d780e7ce6c24eef62",
+        "config.json": "29bd171397276b2dc9c2a5590310f4400ec1b9838654bd7860b71b71210ce9de"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "tt",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": -40
+      }
+    },
+    "final_loose_20261023T005349_671622Z_startup_tt_27_100uA_65c76930": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "c06db162942fa9a2027d29ec16ab3272103595badc742e53640152dc3516b5ea",
+        "config.json": "1d718726ac526a421c56aa86e838f7a7ad5b662c125ff150d5f30555a2c26d36"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "tt",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T005353_943433Z_startup_tt_27_5000uA_6a448d11": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "693865b2532b992a346b040a69a89c5d0d9c0232d62b7b46bca0a582eead77d6",
+        "config.json": "615620459e09c5e6efff31cd660cfef5fae6078a5e11ecf846d6ee14f0948716"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "tt",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T005358_234712Z_startup_tt_125_100uA_6dd0799b": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "46147ca6377203bdbae129baab775c8bb8e8a4dcc2226c2de03cf1273720907d",
+        "config.json": "980ad07af3baf9dbd18dd99ebe2b1331c1bf7859f71a92afd408664942f126ed"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "tt",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_20261023T005402_485897Z_startup_tt_125_5000uA_5b4f0ea6": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "2d7b01ac30807debfd675a4a5271fd3c72a0715cbf2ea2bc35bb418f8cc49751",
+        "config.json": "292ba24360bd145d93e661a10e291288ec9aebbe5f512618347429a4697eb874"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "tt",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_20261023T005406_888315Z_startup_ff_m40_100uA_305b9edf": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "3a1d53cd50587949c8bcb030e33338b5db7beef607042a9a779d8c412ebd7c70",
+        "config.json": "68087fda108e2003446fc7662a9c91b081ce9c2a12a2633a66597afbaf089832"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ff",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": -40
+      }
+    },
+    "final_loose_20261023T005411_290120Z_startup_ff_m40_5000uA_eb5834b3": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "2fdb15a2d5707efcdb2815d2524e702c93b8fead51785500a910441b0327978f",
+        "config.json": "2acdaa7eee29bb6fcdcad587aeca969caf9a434b330ab0a78ade01a421a36167"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ff",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": -40
+      }
+    },
+    "final_loose_20261023T005415_742567Z_startup_ff_27_100uA_59b11b43": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "798ee6e64ba41a62a34043be2de914b09bf5a56128397cb6cdd8127871812f10",
+        "config.json": "a715a7815be8069489a7e6d55274670ed5273acfa3a3ee1464ea6a2f7377cd19"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ff",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T005420_040908Z_startup_ff_27_5000uA_6afc2254": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "2c2cc8ded8aecc3876d29c3b9f136466f2ba494fe477b28733a1fe5981aaef65",
+        "config.json": "d0b06d4af28bc7c09ddc4855876739cacf3f010fd3f825a1a3ec9d05107f5925"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ff",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T005424_349432Z_startup_ff_125_100uA_98bf861e": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "6ad222930db05fbfcaf01e9525123833212d46409a25d0168867d14b0c431ab9",
+        "config.json": "667795f51e46f7b9f7acb9ee1cd01ed0122d6198a14b5caf51c52ad790d1c545"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ff",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_20261023T005428_635092Z_startup_ff_125_5000uA_f519aacf": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "f6b0c768cb89620f5795f316f10dbfbfd763c89e33c8fe7c1f676c5755997e29",
+        "config.json": "c99631b2214229723bf891c8a96248f57fac4bc6bcf6f0eddc5a06f36a3feebe"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ff",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_20261023T005433_065520Z_startup_ss_m40_100uA_a4a1f6db": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "1127ac39bd5d69e113b9a749a93b28cc4ef12c772969df5bd95f6214fac2c11d",
+        "config.json": "e844104307f959e6e4f51be96dc56b5aa8398d1100daa1177f3798101dd36e44"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ss",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": -40
+      }
+    },
+    "final_loose_20261023T005437_409737Z_startup_ss_m40_5000uA_9406005f": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "67ad7b5990721a8942da0ae509047732d5500cc2a9e6ac99794ae7ae3f70cf85",
+        "config.json": "0e9901d5015224e29eef9ed38d6cb518ecb33fcc62b7b53b7e84d104f6a8a615"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ss",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": -40
+      }
+    },
+    "final_loose_20261023T005441_779328Z_startup_ss_27_100uA_ee7278d8": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "2cfd8784536ff4fd4f419e9cf65e4c57f543920d83109004a5c019c4269c7a94",
+        "config.json": "7001afd89329e5f076a074f0ec51efc16f9c3a9d8a75a0b3cc780c5d08398a91"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ss",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T005446_109076Z_startup_ss_27_5000uA_bbed1f28": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "b13cef1254293cf5efc9e3c8485abaf5430c93679f5e01e6ca98d13d4fd4505f",
+        "config.json": "dfba677178e9041d183201c024289fc0629e7fd7c47f4082542e43f7cfe3ad83"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ss",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T005450_436054Z_startup_ss_125_100uA_67601102": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "ac335fac75212be40e24d906fb46722a42bee6767256bc592ed693e6676f6353",
+        "config.json": "95fc69ed8c3817dd5c09086e16beb59594d2a6c0ff62f8dcf16c263789141618"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ss",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_20261023T005454_722684Z_startup_ss_125_5000uA_ef99af7b": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "e6c76a99dca73d0660c947af6a295d33f03d677a5ce180f4b8417f1a8386e9c0",
+        "config.json": "edb5af62b17306c10d4e77c03d4adb5d1a6a5a1758c2ddffbeb019087b28acf6"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "ss",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_20261023T005458_933102Z_startup_fnsp_m40_100uA_ef999a53": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "6ac5c7ae8a18e1986d34ce14779179a967cac181d51e38f9831f7ff246a4a049",
+        "config.json": "bc53c275dc401641465b53f88461a883b7783380b422eadccb1cb2cb68e94dc3"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "fnsp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": -40
+      }
+    },
+    "final_loose_20261023T005503_192301Z_startup_fnsp_m40_5000uA_cb764c68": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "122609f0906dc473905b829b85c0a56705b52da968c160c240e137a59db59fbe",
+        "config.json": "9d2d8fa4cc8f9ece916583e7e7a70df9d4643a3ac16c081cecb8193937c11cf9"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "fnsp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": -40
+      }
+    },
+    "final_loose_20261023T005507_497285Z_startup_fnsp_27_100uA_52046066": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "ee02e9b054de62873bef2a81fb43c072640e9d113b71d79ab98c1fedc6a57beb",
+        "config.json": "b2a863ed38e8321ee802323f33f81c351fbb35f8170b7c13399459ce6c577f9e"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "fnsp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T005511_721976Z_startup_fnsp_27_5000uA_5bbfa358": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "9ad917feff60a7fb06c5265cdae5ee529b65dd0bdd7378b368e3d877f8e4334e",
+        "config.json": "3d7168a0588f8fa912d3d3d43d718b1a407e6626536907c03bebe19c57bc95a7"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "fnsp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T005516_002591Z_startup_fnsp_125_100uA_42d2ea5e": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "2d34bdd88977c62b2b948d6f2e2120ed2bbd25c6b4e80690267d0136fc7b4f53",
+        "config.json": "76d6722c662ec1aff6b3341485182cf87a7baa2a6208089c9f6a59a3834da89e"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "fnsp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_20261023T005520_249648Z_startup_fnsp_125_5000uA_6a465792": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "7bf377f3b72a73dd6a1397f34d9b29be64331d5c95bac1c58b038c8d84426407",
+        "config.json": "ed3ec085469fed2c1aa1dc95b2ef3bf3110717a5f8e12a6aa01dc60a346dcece"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "fnsp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_20261023T005524_570548Z_startup_snfp_m40_100uA_2d52b6ab": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "97017f01310f4c96537263972dbb4f3f1c9963920e4ef04693103ddecd2a7b79",
+        "config.json": "fb3a73ed73a0bd80935d54ffe6a8c26498997013af832594df26dd252cc96991"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "snfp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": -40
+      }
+    },
+    "final_loose_20261023T005528_866121Z_startup_snfp_m40_5000uA_51ed89be": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "d6a5886b70324b305d9181efd5dbf1fcf7ca451f69bd397799adca444270d302",
+        "config.json": "de6b1cf87232bb9d2cde3079b03c55911c256d049763085d93f9b67cbdc5b8bd"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "snfp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": -40
+      }
+    },
+    "final_loose_20261023T005533_123892Z_startup_snfp_27_100uA_8cb99873": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "3650346f7dbc7127c2521c4347aad3ccb4f9527dac942414f1c6966c0c618f60",
+        "config.json": "10e7dbba40aa97ea10178a7543304a0bc6d30b810ca472fa4552bde86040592c"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "snfp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T005537_432246Z_startup_snfp_27_5000uA_604565c6": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "28012613505feac410f321b3332fe57844027b79730e16db439a47d7309a900f",
+        "config.json": "c7572925be600e01ef42576790b345b1a9e146da420ce5bd9eabd8437c556295"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "snfp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 27
+      }
+    },
+    "final_loose_20261023T005541_918361Z_startup_snfp_125_100uA_48144ae2": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "3ef8b09d5dc62d73a0804dfbc4aa4eac4e54535ae903ceab8e8b961380341c9b",
+        "config.json": "78fc7a9c238cc819f3490e777ae7c4870f6685f024936543825a5f4a257f4e57"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "snfp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.0001,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 125
+      }
+    },
+    "final_loose_20261023T005546_156740Z_startup_snfp_125_5000uA_b645a5d1": {
+      "group": "alan-final-measured-transients",
+      "files": {
+        "input.scs": "cc5d446949a20c2b8ae7f0c56a7ac581ae110ac2dc429125bca7e574d23c47af",
+        "config.json": "9a889fe69fa1fcb94fb148e6a98bfa61bce6ebce28be41cf0fa7d87adf9f855f"
+      },
+      "conditions": {
+        "maxstep_s": 5e-09,
+        "mode": "startup",
+        "model_section": "snfp",
+        "parameters": {
+          "cout": 1e-09,
+          "iload": 0.005,
+          "vin": 1.2,
+          "vref": 0.45
+        },
+        "stop_s": 3e-05,
+        "temperature_c": 125
+      }
     }
   },
   "replay_groups": {
@@ -192061,6 +192892,21 @@
       ],
       "spectre_version": "18.1.0.077",
       "requires_exact_local_extracted_source": true
+    },
+    "alan-final-measured-transients": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log"
+      ],
+      "retained_original_run_command_required": true
     }
   },
   "physical_replay_cases": {
