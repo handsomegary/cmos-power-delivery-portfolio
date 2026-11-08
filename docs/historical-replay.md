@@ -40,4 +40,14 @@ The B1 case was interrupted during startup, before its first load transition.
 Current extracted LDO work uses the separate
 [v32 fixture and matrix](../projects/ldo-130nm/simulation/README.md).
 
+Historical full PSF files and redundant full time-series CSV/NPZ exports are
+rebuildable generated outputs and are retired after measured conclusions, test
+conditions, original outcome flags and short critical waveform segments have
+been retained. Calibre PDB/PHDB databases, compiled AHDL caches and duplicate
+transfer archives are also excluded. Bulky generated PEX/extraction data are
+regenerated in the licensed environment; this repository keeps portable replay
+inputs and digests. Required current local PEX and original layout/model inputs
+remain with that environment. Cleanup does not upgrade failed or unmeasured
+observations into passing results.
+
 The inventory's `physical_replay_cases` section records 44 Calibre extraction cases with GDS, CDL, runset and licensed-rule digests, tool versions, and PHDB/PDB/FMT commands. Retained local GDS, CDL, matching rules and runsets rebuild the large work databases; the completed PEX exports and DRC/LVS reports remain available.

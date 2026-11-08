@@ -268539,5 +268539,22 @@
       "qualification_inferred_from_cleanup": false,
       "outcome": "Historical terminated or failed attempt. Unexecuted PEX stages and failed formatting are unqualified."
     }
+  },
+  "output_retention_policy": {
+    "as_of": "2026-11-07",
+    "purpose": "Retain reproducible inputs and measured conclusions; regenerate bulky native outputs when needed.",
+    "excluded_generated_outputs": [
+      "Historical full PSF and compressed native waveforms",
+      "Redundant full time-series CSV and NPZ exports",
+      "Calibre PDB/PHDB work databases and generated AHDL caches",
+      "Duplicate transfer archives and obsolete VM saved-memory backups"
+    ],
+    "retained_evidence": [
+      "Exact available circuit/configuration/stimulus inputs and tool/model dependency digests",
+      "Original scalar measurements, frequency-domain results, test conditions and original pass/fail/unmeasured flags",
+      "Short original critical waveform segments and hashes linking them to retired full outputs"
+    ],
+    "licensed_local_environment": "The index records original input digests and replay commands. Matching licensed models, local native layout/extraction inputs and required current PEX are retained outside this public repository. Large generated extraction data are regenerated locally.",
+    "qualification": "Storage cleanup does not turn incomplete or failed observations into passing results."
   }
 }
