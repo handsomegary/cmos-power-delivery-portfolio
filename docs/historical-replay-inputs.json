@@ -196903,6 +196903,25 @@
         "scope": "diagnostic_native_numeric_no_electrical_qualification",
         "condition": "retained original manifest"
       }
+    },
+    "eadrive69_failed_short_load10": {
+      "group": "ldo-failed-diagnostic-prefix",
+      "files": {
+        "input.scs": "3a32d142afeca191f3725201e9f0840b9aaff23e36cd35b9612ad4899b607ae1"
+      },
+      "conditions": {
+        "temperature_c": 27,
+        "vin_V": 1.2,
+        "vref_V": 0.45,
+        "cout_F": 1e-09,
+        "edge_s": 1e-08,
+        "load_A": [
+          0.0001,
+          0.005
+        ]
+      },
+      "simulation_status": "failed_exit2_truncated",
+      "qualification_PASS_claimed": false
     }
   },
   "replay_groups": {
@@ -203029,6 +203048,38 @@
         "spectre.log"
       ],
       "retained_original_case_command_required": true
+    },
+    "ldo-failed-diagnostic-prefix": {
+      "spectre_version": "18.1.0.077",
+      "spectre_command": [
+        "timeout",
+        "--foreground",
+        "-k",
+        "5s",
+        "600s",
+        "spectre",
+        "input.scs",
+        "+escchars",
+        "-format",
+        "psfascii",
+        "-raw",
+        "psf",
+        "+log",
+        "spectre.log",
+        "-I$RETAINED_SOURCE_DIRECTORY_1",
+        "-I$RETAINED_SOURCE_DIRECTORY_2",
+        "-maxwarns",
+        "10000",
+        "-maxwarnstolog",
+        "10000"
+      ],
+      "retained_variant_manifest_required": true,
+      "retained_run_manifest_required": true,
+      "ordered_include_directory_placeholders": [
+        "RETAINED_SOURCE_DIRECTORY_1",
+        "RETAINED_SOURCE_DIRECTORY_2"
+      ],
+      "replay_details": "Resolve the ordered include directory placeholders using the retained original provenance command and run manifest; retain failure status."
     }
   },
   "physical_replay_cases": {
