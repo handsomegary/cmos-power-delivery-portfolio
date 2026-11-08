@@ -104,3 +104,23 @@ Job `740068` completed 0:0 in 7 min 12 s. Both DC cases passed the unchanged 201
 The approved afterok chain is **Grid26 `740093` → Grid27 `740094` → Grid28 `740095` → Grid29 `740096`**. Submission receipts exist for all four; queue submission is not a scientific pass or cleanup-success claim. Deployment source manifest SHA256 is `a3c6f41c511dc5d290dbcc251636d9cef1765315e0f09c5f01f0acbc65233174`; the full private package passed23 source/scope/cleanup tests before staging, and compute-side Python3.6 staging reproduced the four exact source/reference contracts. The original26–29 conditions remain unchanged.
 
 Read actual compact scientific results and scoped deletion receipts after these jobs run. No overnight metrics have been inferred from job IDs, queue state, or prior Grid24/25 outcomes.
+
+### Results appended — original Grid26–29 selected checks passed; scoped cleanup verified
+
+The four jobs completed `0:0` in 7 min 13 s, 7 min 11 s, 7 min 10 s and 7 min 11 s respectively (28 min 45 s of allocated job time in total). Completion was checked separately from the actual transient measurements and retention receipts. The unchanged classic solver, circuit, 1.2 V input, ideal 1 nF, 0.1↔5 mA load, 60 µs observation and 1 ns maxstep were retained.
+
+| Grid / job | Frozen corner | Load edges | Worst deviation (limit125 mV) | Worst recovery (limit2.5 µs) | Unload secondary dip (limit9 mV) | Max402-pair stress (limit1.2 V) | Selected checks |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
+| 26 /740093 | SNFP,27 °C | 10 ns | 102.025224 mV | 1.208842 µs | 0 mV | 1.171172 V | Pass |
+| 27 /740094 | SNFP,27 °C | 100 ns | 78.903303 mV | 1.156503 µs | 0 mV | 1.164281 V | Pass |
+| 28 /740095 | SNFP,125 °C | 10 ns | 114.450950 mV | 1.348512 µs | 0 mV | 1.162944 V | Pass |
+| 29 /740096 | SNFP,125 °C | 100 ns | 94.151537 mV | 1.312805 µs | 0 mV | 1.158777 V | Pass |
+
+**Observation/inference.** Grid28 is the closest selected peak-deviation result to its gate, retaining10.549050 mV headroom. Across these four cases the worst recovery has1.151488 µs headroom and the largest terminal stress has28.827868 mV headroom. At both temperatures, the slower original100 ns ramp reduces the measured peak relative to the matched10 ns condition. These are frozen edge-rate/corner sensitivities of the same circuit, not a design optimization; recovery is measured from each ramp's own end. They do not erase the earlier unqualified APS2 bridge or establish whole-LDO qualification.
+
+**Evidence/retention.** Independent compact replay checked168 transferred file hashes,16 event extrema,8 recovery interpolations, and402 central pair witnesses per case with4600 total neighbor/witness rows. Retained VOUT/current rows are3477/3630/3465/3586. The completed compute jobs performed full-rate array/CSV and global402-peak checks before deletion; the later compact replay verifies the saved witnesses and interpolation rather than reconstructing deleted raw. Each remote audit reported159 protected and94 retained hashes unchanged, with the original reference hash map equal across all four audits; available local retained files were rehashed separately.
+
+Exactly three new bulk files per case were removed after valid analysis: **1,055,746,048 allocated bytes (1006.838 MiB)** in total, separately2,515,224,970 logical bytes. No full waveform was downloaded or archived, and no original reference waveform was a cleanup target. This closes the four explicitly authorized matrix cases; there is no Grid30 or new design sweep, and `all_LDO_specs_passed=false` remains unchanged.
+
+
+**Final source/DC closeout.** Independent source review reproduced all four original native-rendered SNFP fixtures, reparsed the scalar PSFs for all eight DC endpoints, and verified all eight endpoint comparisons against the correct frozen original PEX references:201 voltages,4 currents and402 stresses each, with the unchanged absolute-plus-relative tolerances and zero failures. Actual classic/AHDL command policies matched. Source manifest remains `a3c6f41c511dc5d290dbcc251636d9cef1765315e0f09c5f01f0acbc65233174`. The [sanitized combined closeout checkpoint](https://github.com/handsomegary/olympus-cadence-ocean-analog-notes/blob/main/expected/overnight_results_20261108.json) retains this limited qualification scope and source/report hashes. The collector submitted no job or Git update; journal publication is a separate workflow action. No new scientific task follows this check.
