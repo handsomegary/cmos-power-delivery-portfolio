@@ -1,5 +1,13 @@
 # LDO engineering observation and decision journal
 
+## 2026-11-08 — historical POR 1 µs and 2 µs line replay
+
+The old ideal POR R/C trials used 500 kΩ / 2 pF and 1 MΩ / 2 pF to study startup repair. This replay checked their **line response** at the original TT 27 °C, 100 µA, 1 nF, and 1.15→1.2→1.15 V input steps. Each trial kept its own two DC references and 100 ns edges; the original designs, model sections, and measurement definitions were preserved.
+
+Job 740945 completed all six classic cases in 43 seconds with 2 CPUs / 8 GiB. Both profiles reproduced about 22.41 mV rise-edge overshoot, 18.93 mV fall-edge undershoot, and 0.94–0.95 µs recovery. Static VOUT, IQ and phase margin matched the old values. The maximum differences were 1.06e-14 V for line extrema, 1.09e-13 V for measured terminal peaks and 2.19e-5 dB for PSRR. These results preserve the historical line observations; startup and overall specification status are unchanged.
+
+After full-rate analysis, Olympus kept compact witnesses and removed its four new bulk files. The two corresponding old VM raw files were then removed, preserving 16 small source, log, and scalar files per case. This removed 17,317,888 allocated bytes inside the guest. The earlier CTRL retirement is a separate entry; the broader local-output migration remains in progress.
+
 <!-- PHASE2_CURRENT_STATE -->
 ## Current phase2 checkpoint — 2026-11-08
 
