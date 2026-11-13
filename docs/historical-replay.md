@@ -51,3 +51,5 @@ remain with that environment. Cleanup does not upgrade failed or unmeasured
 observations into passing results.
 
 The inventory's `physical_replay_cases` section records 44 Calibre extraction cases with GDS, CDL, runset and licensed-rule digests, tool versions, and PHDB/PDB/FMT commands. Retained local GDS, CDL, matching rules and runsets rebuild the large work databases; the completed PEX exports and DRC/LVS reports remain available.
+
+The scripts that reran these cases and compared the outputs are in [projects/ldo-130nm/scripts/historical_replay](../projects/ldo-130nm/scripts/historical_replay/README.md).

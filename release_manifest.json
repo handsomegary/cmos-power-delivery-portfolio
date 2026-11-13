@@ -48,8 +48,8 @@
     },
     {
       "path": "projects/ldo-130nm/ENGINEERING_JOURNAL.md",
-      "bytes": 9146,
-      "sha256": "d8174f89e3d3134d55c73be06c6190cd19dd064d1bc4b2c25074e9ace3d5aede"
+      "bytes": 36353,
+      "sha256": "168ab15b0893cc6c919b667e35115ad96e77314791522ceb733e0f7b42198e7a"
     },
     {
       "path": "projects/ldo-130nm/README.md",
@@ -998,15 +998,130 @@
     },
     {
       "path": "docs/historical-replay.md",
-      "bytes": 3363,
-      "sha256": "92c9c6b739195899601899f2716506bcec930318782d41444951f8e5c632a3f2"
+      "bytes": 3538,
+      "sha256": "70aed3e013608bd2d09302182cd824e5549a4e7bb071189dadf6eb58dbb572d4"
     },
     {
       "path": "tools/check_historical_replay_inputs.py",
       "bytes": 1693,
       "sha256": "79d5435b5a7aae83bc59c3caa19563f6793f6d6bcd43e350b45fa9aae6cdef43"
+    },
+    {
+      "path": "projects/ldo-130nm/results/trial-por-historical-lineage-20261108.json",
+      "bytes": 8588,
+      "sha256": "a69d58dd85c589c0a0cbd994caaa10effe84c03181e43e3b470108f6c7117e4c"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/README.md",
+      "bytes": 2808,
+      "sha256": "b7ab07e54501e9cbc08481fa5e881611cdd48003617040aa888a443a7b363036"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/pex/netcmp.py",
+      "bytes": 1590,
+      "sha256": "bf29ee47f57aa408f82d9654262c1dea8c2e0c9630f76325da71877db1ead2e8"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/pex/pexcmp.py",
+      "bytes": 3536,
+      "sha256": "875de6dec0dc28cfd60189cc0b01edc9b4e03f5e656e71ccae8cf3affd3c545f"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/replay/ldorep.py",
+      "bytes": 6416,
+      "sha256": "e162a69aa0f14faa3dd43b65864408c8f66a1f82dc7020a70c4ad3f6301ae980"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/replay/ldorep.sbatch",
+      "bytes": 567,
+      "sha256": "b19e33c6867999eb287f29b3658ac03cafc7bdc8d6578183465eb5b2efade4c8"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/replay/psfcmp.py",
+      "bytes": 4717,
+      "sha256": "8195a5c33bc966244ae57cb1426d1d25da7f02db71ce4a500aa6a42af49906ad"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/replay/sp36.py",
+      "bytes": 8756,
+      "sha256": "b971830692d19658e23a2ff2c56707116f4f9cfe693f58b6cce6dfc142a578b1"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/replay/sp36.sbatch",
+      "bytes": 571,
+      "sha256": "feda1893486cee2df219c8280447a847f6d934d50f527f89c556ca3b1e3624fe"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/replay/spdc.py",
+      "bytes": 6512,
+      "sha256": "62c77f1fd07fa6abb2ec07b8e04c6e04ae9057771e70d25b86eaf51011d3b4c3"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/replay/sprest.py",
+      "bytes": 12163,
+      "sha256": "48d4dddf26524e31c4ab4b965754b04faf964f23aa8f7e6c9dae85ad5c744931"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/replay/sprest.sbatch",
+      "bytes": 584,
+      "sha256": "6185693319ef941abffb3b1ae218aadb81e2733ee7c6e66cc9affc0f6f5205ea"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/vm_side/rest_collect.py",
+      "bytes": 3265,
+      "sha256": "34cc4febd7b967ee27ff959b2f965afa97570a2807feced87e138e2c46a93450"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/vm_side/rest_dcpack.py",
+      "bytes": 869,
+      "sha256": "678ed3c17c25db4ea2e3191734682a8668a1e25700a7198c04444e6fa732cb82"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/vm_side/rest_pack.py",
+      "bytes": 1560,
+      "sha256": "74e7f204910e690d5624eb4150aee057423ca4331caf73ddad95f615a8efd8f1"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/vm_side/special_closure.py",
+      "bytes": 2571,
+      "sha256": "64fd461b4e9778622dbfdb9a33f69c7aca4f6a4a1b746625dd0fee44bf637bd2"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/vm_side/special_list.py",
+      "bytes": 1316,
+      "sha256": "3bbed14ce3415c14c5cd0e42da1f59fede35762b99aabba81344b322242185de"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/vm_side/special_pack.py",
+      "bytes": 1356,
+      "sha256": "dd9351ad5769e9a97cd3fabcca37c5e5bc2c04de662b0dd1717e1780952829fc"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/vm_side/special_refs.py",
+      "bytes": 1061,
+      "sha256": "d76268ed13f4b80c62546b3ad371f05d370080fffa707e9966724c7725acacd1"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/vm_side/vm_delete_analyzed_psf.py",
+      "bytes": 2504,
+      "sha256": "72bae04a6a9fa35f0f3d853e1d6347083e75b993aa978cb3b86d702696cd7cf5"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/vm_side/vm_delete_rest1297.py",
+      "bytes": 2352,
+      "sha256": "a6719c48b469934fc8c34d9caf408933fecae43f242c54df2129f391ce117858"
+    },
+    {
+      "path": "projects/ldo-130nm/scripts/historical_replay/vm_side/vm_delete_special36.py",
+      "bytes": 2031,
+      "sha256": "98200b6a78c519f6ebc48408d73288b2a38209ffd68119f0f7dea8a498512471"
+    },
+    {
+      "path": "tests/test_historical_replay_tools.py",
+      "bytes": 2641,
+      "sha256": "d90d22177942bada8a133e3c0aaab1eee7feb3e408dd3e832a3fbd729df472b0"
     }
   ],
-  "file_count": 200,
-  "total_bytes": 48562536
+  "file_count": 223,
+  "total_bytes": 48668252
 }
