@@ -1,0 +1,31 @@
+% Historical r6: functional polarity and components follow data/circuit.json.
+\begin{circuitikz}[american, font=\sffamily\bfseries\small]
+  \begin{scope}[on background layer]
+    \draw[pmic group] (2.0,1.5) rectangle (8.8,5.2);
+  \end{scope}
+  \node[anchor=north west] at (2.12,5.12) {Error amplifier and gate driver};
+  \node[op amp, yscale=-1] (ea) at (3.9,3.2) {};
+  \node[align=center,font=\sffamily\bfseries\footnotesize] at (3.75,2.15) {Differential\\amplifier};
+  \node[pmic block,minimum width=1.6cm,minimum height=.8cm] (driver) at (7.2,3.2) {Driver $-A_2$};
+  \draw[-{Triangle[length=1.8mm,width=1.5mm]}] (ea.out) -- (driver.west)
+    node[midway,above] {$V_{\mathrm{EA}}$};
+  \node[pmos,bulk] (pass) at (10.5,3.2) {};
+  \draw (driver.east) -- (pass.G) node[midway,above] {$V_{\mathrm{G}}$};
+  \draw (pass.S) -- (10.5,4.55) node[above] {$V_{\mathrm{IN}}=1.2\,\mathrm{V}$};
+  \draw (pass.bulk) -- ++(.35,0) node[right,font=\small] {$B=V_{\mathrm{IN}}$};
+  \node[above left] at (pass.north west) {$M_1$};
+  \draw (pass.D) -- (10.5,2.0) -- (14.5,2.0) node[right] {$V_{\mathrm{OUT}}=0.9\,\mathrm{V}$};
+  \draw (11.8,2.0) node[circ] {} to[R,l={$R_{\mathrm{TOP}}$},a={$200\,\mathrm{k\Omega}$}] (11.8,.7)
+    node[circ] (fb) {} to[R,l={$R_{\mathrm{BOT}}$},a={$200\,\mathrm{k\Omega}$}] (11.8,-.6) node[ground] {};
+  \draw (13.5,2.0) node[circ] {} to[C,l={$C_{\mathrm{OUT}}$},a={$1\,\mathrm{nF}$}] (13.5,-.6) node[ground] {};
+  \node[below,align=center,font=\sffamily\bfseries\footnotesize] at (13.5,-1.1) {External\\ideal capacitor};
+  \draw (fb) -- (2.4,.7) -- (2.4,2.92) |- (ea.-);
+  \node[above] at (8.7,.7) {$V_{\mathrm{FB}}$};
+  \draw (ea.+) -- (1.0,0 |- ea.+) to[V,l={$V_{\mathrm{REF}}$},a={$0.45\,\mathrm{V}$}] (1.0,1.8) node[ground] {};
+  \node[above,font=\sffamily\bfseries\footnotesize] at (1.0,3.65) {Ideal reference};
+  \node[pmic block,minimum width=2.1cm,minimum height=.62cm,font=\sffamily\bfseries\footnotesize] (comp) at (6.2,4.05) {Compensation};
+  \draw (5.1,3.2) node[circ] {} |- (comp.west);
+  \draw (comp.east) -| (8.35,3.2) node[circ] {};
+  \node[font=\sffamily\bfseries\footnotesize,anchor=west] at (2.1,-.45)
+    {Negative feedback: $V_{\mathrm{FB}}\!\uparrow\;\Rightarrow\;V_{\mathrm{EA}}\!\downarrow\;\Rightarrow\;V_{\mathrm{G}}\!\uparrow\;\Rightarrow\;I_{\mathrm{PASS}}\!\downarrow$};
+\end{circuitikz}

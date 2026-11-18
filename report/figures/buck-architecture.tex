@@ -1,0 +1,62 @@
+\begin{circuitikz}[american, font=\sffamily\bfseries\small]
+  \begin{scope}[on background layer]
+    \path[pmic group] (-.25,1.1) rectangle (4.3,6.5);
+    \path[pmic group] (7.0,-1.8) rectangle (13.0,2.5);
+  \end{scope}
+  \node at (2,6.15) {MOS power path};
+  \node[pmic block,minimum width=1.6cm,minimum height=1.3cm] (drv) at (.9,3.4)
+    {Four gate\\drivers\\16 MOS};
+  \node[pmic block,minimum width=1.7cm,minimum height=.95cm] (b1) at (3.2,4.6)
+    {Phase 1\\6 MOS};
+  \node[pmic block,minimum width=1.7cm,minimum height=.95cm] (b2) at (3.2,2.2)
+    {Phase 2\\6 MOS};
+  \draw[->] (drv.east) -- (2,3.4) |- (b1.west);
+  \draw[->] (2,3.4) |- (b2.west);
+  \fill (2,3.4) circle (1.2pt);
+  \draw (b1.north) -- ++(0,.35) node[above] {$V_{\mathrm{IN}}$};
+  \draw (b2.south) -- ++(0,-.35) node[below] {$V_{\mathrm{IN}}$};
+  \draw (b1.east) -- (4.5,4.6) to[L,l=$L_1$] (6,4.6) -- (6.4,4.6);
+  \draw (b2.east) -- (4.5,2.2) to[L,l=$L_2$] (6,2.2) -- (6.4,2.2) -- (6.4,4.6);
+  \node[above] at (4.5,4.6) {$V_{\mathrm{SW1}}$};
+  \node[above] at (4.5,2.2) {$V_{\mathrm{SW2}}$};
+  \draw (6.4,4.6) to[short,*-] (7.1,4.6)
+    to[R,l=$R_{\mathrm{PDN}}$] (8.5,4.6)
+    to[L,l=$L_{\mathrm{PDN}}$] (10,4.6) -- (12.7,4.6);
+  \node[above] at (6.45,4.8) {$V_{\mathrm{CONV}}$};
+  \node[above] at (11.4,4.6) {$V_{\mathrm{LOAD}}$};
+  \draw (6.9,4.6) to[C,l_=$C_{\mathrm{OUT}}$,*-] (6.9,3.1) node[ground] {};
+  \draw (11.4,4.6) to[C,l=$C_{\mathrm{L}}$,*-] (11.4,3.1) node[ground] {};
+  \draw (12.7,4.6) to[I,l=$I_{\mathrm{LOAD}}$,*-] (12.7,3.1) node[ground] {};
+  \node[align=center] at (8.6,3.2) {External passives\\with DCR / ESR / ESL};
+
+  \node[pmic block,minimum width=2.3cm,minimum height=1.25cm] (assist) at (11.4,1.3)
+    {Source / sink assist\\3 MOS + 2 drivers\\8 driver MOS};
+  \draw (assist.north) -- (11.4,2.2) -- (13.5,2.2) -- (13.5,4.6) -- (12.7,4.6);
+  \draw (assist.south) -- ++(0,-.3) node[below] {$V_{\mathrm{IN}}$};
+  \node[pmic block,minimum width=2cm,minimum height=1.0cm] (det) at (8.4,-.8)
+    {Window detectors\\CU / CD: 20 MOS};
+  \node[pmic block,minimum width=1.6cm,minimum height=.85cm] (div) at (11.4,-.8)
+    {Equal-$R$ divider\\$V_{\mathrm{FB}}=V_{\mathrm{LOAD}}/2$};
+  \draw[->] (13.5,2.2) -- (13.5,-.8) -- (div.east);
+  \fill (13.5,2.2) circle (1.2pt);
+  \draw[->] (div.west) -- (det.east);
+  \draw[->] (8.4,.65) -- (det.north)
+    node[pos=0,above] {$V_{\mathrm{REFUP}}, V_{\mathrm{REFDN}}$};
+
+  \node[pmic block,minimum width=3.6cm,minimum height=1.65cm] (ctl) at (2.2,-.8)
+    {Behavioral PI / PWM\\$f_{\mathrm{SW}}=5\,\mathrm{MHz}$; $180^{\circ}$\\Assist arbitration};
+  \draw[->] (ctl.north) -- (2.2,.45) -- (.9,.45) -- (drv.south);
+  \draw[->] (det.west) -- (ctl.east)
+    node[midway,above] {Droop / over};
+  \draw[->] (ctl.south) -- (2.2,-2.3) -- (6.8,-2.3) -- (6.8,1.3) -- (assist.west);
+  \node[above] at (4.5,-2.3) {Assist commands};
+  \draw[->] (-.75,-.8) -- (ctl.west);
+  \node[left,align=center] at (-.75,-.8) {$i_{L1},i_{L2}$\\Ideal sensing};
+  \draw[->] (13.5,-.8) -- (13.5,-2.8) -- (1.2,-2.8) -- (1.2,-1.63);
+  \fill (13.5,-.8) circle (1.2pt);
+  \node[below] at (6,-2.8) {Remote voltage feedback};
+  \node[align=center] at (6.8,-3.65)
+    {$V_{\mathrm{IN}}=1.8\,\mathrm{V}$, $V_{\mathrm{LOAD}}=0.9\,\mathrm{V}$;
+     $L_1=L_2=2.2\,\mathrm{\mu H}$;
+     $C_{\mathrm{OUT}}=1\,\mathrm{\mu F}$, $C_{\mathrm{L}}=10\,\mathrm{nF}$};
+\end{circuitikz}

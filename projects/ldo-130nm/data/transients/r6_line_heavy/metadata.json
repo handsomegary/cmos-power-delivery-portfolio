@@ -1,0 +1,99 @@
+{
+  "case": "r6_line_heavy",
+  "process": "130 nm CMOS",
+  "model_section": "tt",
+  "temperature_c": 27,
+  "cout_f": 1e-09,
+  "mode": "line_tran",
+  "sampling": {
+    "configured_maxstep_s": 5e-09,
+    "native_maxstep_s": 5e-09,
+    "native_strobeperiod_s": null,
+    "maximum_saved_interval_s": 5.0000000000109636e-09,
+    "saved_intervals_within_native_maxstep": true,
+    "numerical_convergence": "not_checked; compare same-input independent maxstep runs"
+  },
+  "dc_references": {
+    "high": {
+      "case": "r6_pvt_tt_27_heavy",
+      "dc": {
+        "vin_v": 1.2,
+        "load_a": 0.005,
+        "vout_v": 0.8999504618287572,
+        "iq_a": 7.016236934955216e-05
+      },
+      "native_stability_state": "stable"
+    },
+    "post": {
+      "case": "r6_vin_1100mV_heavy",
+      "dc": {
+        "vin_v": 1.1,
+        "load_a": 0.005,
+        "vout_v": 0.8999027994943447,
+        "iq_a": 6.171535502971781e-05
+      },
+      "native_stability_state": "not_available"
+    },
+    "pre": {
+      "case": "r6_vin_1100mV_heavy",
+      "dc": {
+        "vin_v": 1.1,
+        "load_a": 0.005,
+        "vout_v": 0.8999027994943447,
+        "iq_a": 6.171535502971781e-05
+      },
+      "native_stability_state": "not_available"
+    }
+  },
+  "stimulus": {
+    "mode": "line_tran",
+    "knots": [
+      [
+        0.0,
+        1.1
+      ],
+      [
+        5e-06,
+        1.1
+      ],
+      [
+        5.1e-06,
+        1.2
+      ],
+      [
+        3e-05,
+        1.2
+      ],
+      [
+        3.01e-05,
+        1.1
+      ],
+      [
+        6e-05,
+        1.1
+      ]
+    ],
+    "ramps": [
+      {
+        "edge_start_s": 5e-06,
+        "edge_end_s": 5.1e-06,
+        "before": 1.1,
+        "after": 1.2
+      },
+      {
+        "edge_start_s": 3e-05,
+        "edge_end_s": 3.01e-05,
+        "before": 1.2,
+        "after": 1.1
+      }
+    ],
+    "tran": {
+      "stop": 6e-05,
+      "maxstep": 5e-09
+    }
+  },
+  "target_v": 0.9,
+  "tolerance_fraction": 0.01,
+  "reference_scope": "ideal reference; reference power and noise excluded",
+  "capacitor_scope": "external ideal zero-ESR output capacitor"
+}

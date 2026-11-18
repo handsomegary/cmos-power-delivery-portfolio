@@ -1,0 +1,364 @@
+{
+  "cases": [
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "r9_nom10_p0_off",
+      "phase_offset_fraction": 0
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "r9_nom10_p0_on",
+      "phase_offset_fraction": 0
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.3,
+        "L_PDN": 2e-09,
+        "CLOAD": 2e-09
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "r9_pdn_hard_p0_off",
+      "phase_offset_fraction": 0
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.3,
+        "L_PDN": 2e-09,
+        "CLOAD": 2e-09
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "r9_pdn_hard_p0_on",
+      "phase_offset_fraction": 0
+    },
+    {
+      "edge_s": 1e-07,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "r9_nom100_off"
+    },
+    {
+      "edge_s": 1e-07,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "r9_nom100_on"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 5e-10,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.3,
+        "L_PDN": 2e-09,
+        "CLOAD": 2e-09
+      },
+      "solver": {
+        "strobeperiod_s": 1e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "conservative",
+        "reltol": 0.0001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "r9_fine_pdn_off"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 5e-10,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.3,
+        "L_PDN": 2e-09,
+        "CLOAD": 2e-09
+      },
+      "solver": {
+        "strobeperiod_s": 1e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "conservative",
+        "reltol": 0.0001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "r9_fine_pdn_on"
+    }
+  ]
+}

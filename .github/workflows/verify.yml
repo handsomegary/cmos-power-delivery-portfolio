@@ -1,0 +1,26 @@
+name: Verify published analysis
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-verification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify release bytes and documentation
+        run: python -B tools/verify_repository.py
+      - name: Check downloaded-directory behavior
+        run: python -B tests/test_download.py
+      - name: Check Buck measurement invariants
+        run: python -B projects/two-phase-buck/tests/test_reproduce.py
+      - name: Reproduce saved numerical results
+        run: python -B tools/reproduce_all.py --no-plots --outdir "$RUNNER_TEMP/portfolio-results"

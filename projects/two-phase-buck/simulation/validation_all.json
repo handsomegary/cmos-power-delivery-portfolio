@@ -1,0 +1,2133 @@
+{
+  "cases": [
+    {
+      "edge_s": 1e-07,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_nom100_off"
+    },
+    {
+      "edge_s": 1e-07,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_nom100_on"
+    },
+    {
+      "edge_s": 1e-07,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_nom100_local"
+    },
+    {
+      "edge_s": 1e-07,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.04,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_small30_off"
+    },
+    {
+      "edge_s": 1e-07,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.04,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_small30_on"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_nom10_p0_off",
+      "phase_offset_fraction": 0
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_nom10_p0_on",
+      "phase_offset_fraction": 0
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_nom10_p1_off",
+      "phase_offset_fraction": 0.25
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_nom10_p1_on",
+      "phase_offset_fraction": 0.25
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_nom10_p2_off",
+      "phase_offset_fraction": 0.5
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_nom10_p2_on",
+      "phase_offset_fraction": 0.5
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_nom10_p3_off",
+      "phase_offset_fraction": 0.75
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_nom10_p3_on",
+      "phase_offset_fraction": 0.75
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.3,
+        "L_PDN": 2e-09,
+        "CLOAD": 2e-09
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_pdn_hard_p0_off",
+      "phase_offset_fraction": 0
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.3,
+        "L_PDN": 2e-09,
+        "CLOAD": 2e-09
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_pdn_hard_p0_on",
+      "phase_offset_fraction": 0
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.3,
+        "L_PDN": 2e-09,
+        "CLOAD": 2e-09
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_pdn_hard_p1_off",
+      "phase_offset_fraction": 0.5
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.3,
+        "L_PDN": 2e-09,
+        "CLOAD": 2e-09
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_pdn_hard_p1_on",
+      "phase_offset_fraction": 0.5
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.02,
+        "L_PDN": 1e-10
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_pdn_short_off"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.02,
+        "L_PDN": 1e-10
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_pdn_short_on"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "VIN_DC": 1.6
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_vin16_off"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "VIN_DC": 1.6
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_vin16_on"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "VIN_DC": 2.0
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_vin20_off"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "VIN_DC": 2.0
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_vin20_on"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": -40,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_ffm40_off",
+      "model_section": "ff"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": -40,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_ffm40_on",
+      "model_section": "ff"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 125,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_ss125_off",
+      "model_section": "ss"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 125,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_ss125_on",
+      "model_section": "ss"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": -40,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_ttm40_off",
+      "model_section": "tt"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": -40,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_ttm40_on",
+      "model_section": "tt"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 125,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_tt125_off",
+      "model_section": "tt"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 125,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_tt125_on",
+      "model_section": "tt"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_ff27_off",
+      "model_section": "ff"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_ff27_on",
+      "model_section": "ff"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_ss27_off",
+      "model_section": "ss"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_ss27_on",
+      "model_section": "ss"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_fnsp27_off",
+      "model_section": "fnsp"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_fnsp27_on",
+      "model_section": "fnsp"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_snfp27_off",
+      "model_section": "snfp"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_snfp27_on",
+      "model_section": "snfp"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "COUT": 4.7e-07
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_cout470n_off"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "COUT": 4.7e-07
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_cout470n_on"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 5e-10,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 1e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "conservative",
+        "reltol": 0.0001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_fine10_off"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 5e-10,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 1e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "conservative",
+        "reltol": 0.0001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_fine10_on"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 5e-10,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.3,
+        "L_PDN": 2e-09,
+        "CLOAD": 2e-09
+      },
+      "solver": {
+        "strobeperiod_s": 1e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "conservative",
+        "reltol": 0.0001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_fine_pdn_off"
+    },
+    {
+      "edge_s": 1e-08,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.01,
+      "load_high_a": 0.1,
+      "maxstep_s": 5e-10,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          5e-05,
+          5.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05,
+        "R_PDN": 0.3,
+        "L_PDN": 2e-09,
+        "CLOAD": 2e-09
+      },
+      "solver": {
+        "strobeperiod_s": 1e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "conservative",
+        "reltol": 0.0001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_fine_pdn_on"
+    },
+    {
+      "edge_s": 1e-07,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.1,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          6e-05,
+          6.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 0,
+        "ASSIST_COORD": 0,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_line100_off",
+      "input_pwl": [
+        [
+          0,
+          1.8
+        ],
+        [
+          7e-05,
+          1.8
+        ],
+        [
+          7.01e-05,
+          1.6
+        ],
+        [
+          0.00011,
+          1.6
+        ],
+        [
+          0.0001101,
+          1.8
+        ],
+        [
+          0.00014,
+          1.8
+        ]
+      ]
+    },
+    {
+      "edge_s": 1e-07,
+      "up_s": 6e-05,
+      "down_s": 0.0001,
+      "stop_s": 0.00014,
+      "load_low_a": 0.1,
+      "load_high_a": 0.1,
+      "maxstep_s": 2e-09,
+      "temperature_c": 27,
+      "timeout_s": 900,
+      "steady_windows": {
+        "pre": [
+          6e-05,
+          6.8e-05
+        ],
+        "heavy": [
+          9e-05,
+          9.8e-05
+        ],
+        "post": [
+          0.00013,
+          0.000138
+        ]
+      },
+      "parameters": {
+        "ASSIST_EN": 1,
+        "ASSIST_COORD": 2,
+        "ASSIST_BOOST": 0.04,
+        "ASSIST_BLANK": 5e-05
+      },
+      "solver": {
+        "strobeperiod_s": 2e-09,
+        "strobeoutput": "strobeonly",
+        "errpreset": "moderate",
+        "reltol": 0.001
+      },
+      "pair_mutable_parameters": [
+        "ASSIST_EN",
+        "ASSIST_COORD"
+      ],
+      "current_orientation_status": "verified_by_separate_native_audit",
+      "name": "v3_line100_on",
+      "input_pwl": [
+        [
+          0,
+          1.8
+        ],
+        [
+          7e-05,
+          1.8
+        ],
+        [
+          7.01e-05,
+          1.6
+        ],
+        [
+          0.00011,
+          1.6
+        ],
+        [
+          0.0001101,
+          1.8
+        ],
+        [
+          0.00014,
+          1.8
+        ]
+      ]
+    }
+  ]
+}

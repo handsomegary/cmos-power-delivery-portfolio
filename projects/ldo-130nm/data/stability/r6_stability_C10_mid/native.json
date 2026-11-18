@@ -1,0 +1,9 @@
+{
+  "phase_margin_deg": null,
+  "gain_margin_db": null,
+  "pm_frequency_hz": null,
+  "gm_frequency_hz": null,
+  "status": "native_margin_file_export",
+  "native_state_text": "The circuit is not stable, because the gain(db) is larger than 0 at 5.011872e+07 Hz when phase of loopGain crosses zero degree.",
+  "native_stability_state": "unstable"
+}

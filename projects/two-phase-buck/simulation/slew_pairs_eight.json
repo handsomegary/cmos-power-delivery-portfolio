@@ -1,0 +1,28 @@
+{
+  "pairs": [
+    {
+      "name": "r9_nom10_p0",
+      "baseline": "r9_nom10_p0_off",
+      "variant": "r9_nom10_p0_on",
+      "scope": "exploratory 1k/2k assist-gate filtering; same r9 hardware OFF/ON"
+    },
+    {
+      "name": "r9_pdn_hard_p0",
+      "baseline": "r9_pdn_hard_p0_off",
+      "variant": "r9_pdn_hard_p0_on",
+      "scope": "exploratory 1k/2k assist-gate filtering; same r9 hardware OFF/ON"
+    },
+    {
+      "name": "r9_nom100",
+      "baseline": "r9_nom100_off",
+      "variant": "r9_nom100_on",
+      "scope": "same r9 gate-R hardware OFF/ON; selected TT27 conditions"
+    },
+    {
+      "name": "r9_fine_pdn",
+      "baseline": "r9_fine_pdn_off",
+      "variant": "r9_fine_pdn_on",
+      "scope": "same r9 gate-R hardware OFF/ON; selected TT27 conditions"
+    }
+  ]
+}

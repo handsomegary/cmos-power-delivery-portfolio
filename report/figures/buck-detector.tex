@@ -1,0 +1,84 @@
+\begin{circuitikz}[american,font=\sffamily\bfseries\small]
+  \node at (4,7.25) {(a) Detector $X\in\{\mathrm{CU},\mathrm{CD}\}$};
+  \node[pmos] (pb) at (.4,5.85) {};
+  \node[pmos] (pt) at (4.5,5.85) {};
+  \node[pmos] (pl) at (3,3.85) {};
+  \node[pmos] (pr) at (6,3.85) {};
+  \node[nmos] (nl) at (3,1.35) {};
+  \node[nmos] (nr) at (6,1.35) {};
+  \draw (pb.S) -- (.4,6.65) -- (4.5,6.65) -- (pt.S);
+  \node[above] at (2.5,6.65) {$V_{\mathrm{DDC}}=1.2\,\mathrm{V}$};
+  \draw (pb.D) -- (.4,4.9) to[R,l_=$R_B$] (.4,3.3) node[ground] {};
+  \draw (pb.G) -- (-.65,5.85) -- (-.65,4.9) -- (.4,4.9) node[circ] {};
+  \node[below,align=center] at (.4,2.1) {$R_B=100\,\mathrm{k\Omega}$};
+  \node[right] at (.75,5.85) {$P_B$};
+  \node[right] at (.75,4.9) {$V_{X,\mathrm{BIAS}}$};
+  \draw (pt.G) -- (3.2,5.85) node[left] {$V_{X,\mathrm{BIAS}}$};
+  \node[right] at (4.85,5.85) {$P_T$};
+  \draw (pt.D) -- (4.5,4.75) -- (3,4.75) -- (pl.S);
+  \draw (4.5,4.75) to[short,*-] (6,4.75) -- (pr.S);
+  \node[above] at (6,4.75) {$V_{X,\mathrm{TAIL}}$};
+  \draw (pl.D) -- (3,2.65) -- (nl.D);
+  \draw (pr.D) -- (6,2.65) -- (nr.D);
+  \draw (pl.G) -- (1.65,3.85) node[left] {$V_L$};
+  \draw (pr.G) -- (4.65,3.85) node[left] {$V_R$};
+  \node[right] at (3.35,3.85) {$P_L$};
+  \node[right] at (6.35,3.85) {$P_R$};
+  \draw (nl.G) -- (1.95,1.35) -- (1.95,2.65) -- (3,2.65) node[circ] {};
+  \node[left] at (1.95,2.65) {$V_{X,\mathrm{MIR}}$};
+  \draw (nr.G) -- (4.65,1.35) -- (4.65,1.85) node[above] {$V_{X,\mathrm{MIR}}$};
+  \draw (nl.S) -- (3,.45) node[ground] {};
+  \draw (nr.S) -- (6,.45) node[ground] {};
+  \node[right] at (3.35,1.35) {$N_L$};
+  \node[right] at (6.35,1.35) {$N_R$};
+  \draw (6,2.65) to[short,*-] (7.75,2.65)
+    to[C,l=$C_E$] (7.75,1.05) node[ground] {};
+  \node[above] at (7.3,2.65) {$V_{X,\mathrm{EA}}$};
+  \node[below] at (7.75,.45) {$C_E=20\,\mathrm{fF}$};
+
+  \node at (12,7.25) {(b) Two restoring inverters};
+  \node[pmos] (pi1) at (10.6,4.05) {};
+  \node[nmos] (ni1) at (10.6,1.35) {};
+  \node[pmos] (pi2) at (14,4.05) {};
+  \node[nmos] (ni2) at (14,1.35) {};
+  \draw (pi1.S) -- (10.6,4.95) -- (14,4.95) -- (pi2.S);
+  \node[above] at (12.3,4.95) {$V_{\mathrm{DDC}}$};
+  \draw (ni1.S) -- (10.6,.45) -- (14,.45) -- (ni2.S);
+  \draw (12.3,.45) to[short,*-] (12.3,.05) node[ground] {};
+  \draw (pi1.D) -- (10.6,2.65) -- (ni1.D);
+  \draw (pi2.D) -- (14,2.65) -- (ni2.D);
+  \draw (pi1.G) -- (9.35,4.05) -- (9.35,1.35) -- (ni1.G);
+  \draw (7.75,2.65) to[short,*-*] (9.35,2.65);
+  \draw (pi2.G) -- (12.7,4.05) -- (12.7,1.35) -- (ni2.G);
+  \draw (10.6,2.65) to[short,*-*] (12.7,2.65);
+  \node[above] at (11.65,2.65) {$V_{X,\mathrm{MID}}$};
+  \draw (14,2.65) to[short,*-] (15.65,2.65) node[right] {$V_O$};
+  \node[right] at (10.95,4.05) {$P_{I1}$};
+  \node[right] at (10.95,1.35) {$N_{I1}$};
+  \node[right] at (14.35,4.05) {$P_{I2}$};
+  \node[right] at (14.35,1.35) {$N_{I2}$};
+
+  \node[anchor=north,font=\sffamily\small] at (4,-.65) {\begin{tabular}{lllll}
+  \textbf{Suffix} & $W_{\mathrm{unit}}/L\ (\mathrm{\mu m})$ & $m$ & $n_f$ & $W_{\mathrm{total}}\ (\mathrm{\mu m})$\\\hline
+  \_PB & $2.5/1$ & $1$ & $1$ & $2.5$\\
+  \_PT & $2.5/1$ & $16$ & $1$ & $40$\\
+  \_PL, \_PR & $5/0.5$ & $4$ & $1$ & $20$ each\\
+  \_NL, \_NR & $2/1$ & $4$ & $1$ & $8$ each\\
+  \_PI1, \_PI2 & $2/0.15$ & $1$ & $1$ & $2$ each\\
+  \_NI1, \_NI2 & $1/0.15$ & $1$ & $1$ & $1$ each\\
+  \end{tabular}};
+  \node[anchor=north,font=\sffamily\small] at (12,-.65) {\begin{tabular}{llll}
+  $X$ & $V_L$ & $V_R$ & $V_O$\\\hline
+  CU & REFUP & FB & DROOP\_RAW\\
+  CD & FB & REFDN & OVER\_RAW\\
+  \end{tabular}};
+  \node[align=center] at (12,-2.95)
+    {$V_{\mathrm{FB}}=V_{\mathrm{LOAD}}/2$\\
+    $V_{\mathrm{REFUP}}=(V_{\mathrm{REQ}}-V_{\mathrm{WINDOW}})/2$\\
+    $V_{\mathrm{REFDN}}=(V_{\mathrm{REQ}}+V_{\mathrm{WINDOW}})/2$};
+  \node[align=center] at (8,-4.1)
+    {Two templates $\times$ ten named MOS = 20 MOS. PMOS bulks: $V_{\mathrm{DDC}}$; NMOS bulks: ground.\\
+    Equal divider resistors: $200\,\mathrm{k\Omega}$. Ideal threshold references: $0.4375/0.4625\,\mathrm{V}$.\\
+    $V_{\mathrm{REQ}}=0.9\,\mathrm{V}$, $V_{\mathrm{WINDOW}}=25\,\mathrm{mV}$;
+    nominal output window: $0.875$--$0.925\,\mathrm{V}$.};
+\end{circuitikz}

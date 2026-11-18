@@ -1,0 +1,187 @@
+// Public algorithm source. Final effective overrides are in data/selected_parameters.json.
+`include "constants.vams"
+`include "disciplines.vams"
+// Algorithmic controller only. Internal digital/DAC power is NOT modeled.
+// Gate drivers, power switches and voltage-window comparators are technology-model MOS in the private design.
+module buck_control(vin,vload,is1,is2,dropraw,overraw,iasup,iasdn,vreq,
+                    cmdh1,cmdl1,cmdh2,cmdl2,cmdup,cmddn,vset,iref,duty1,duty2);
+inout vin,vload,is1,is2,dropraw,overraw,iasup,iasdn,vreq;
+inout cmdh1,cmdl1,cmdh2,cmdl2,cmdup,cmddn,vset,iref,duty1,duty2;
+electrical vin,vload,is1,is2,dropraw,overraw,iasup,iasdn,vreq;
+electrical cmdh1,cmdl1,cmdh2,cmdl2,cmdup,cmddn,vset,iref,duty1,duty2;
+parameter real fsw=5e6;
+parameter integer phases=2;
+parameter integer assist_en=1;
+parameter integer assist_coord=0;
+parameter real assist_boost_a=0.06;
+parameter real tick_s=2e-9;
+parameter real dead_s=10e-9;
+parameter real soft_s=20e-6;
+parameter real assist_blank_s=30e-6;
+parameter real assist_delay_s=15e-9;
+parameter real assist_pulse_s=200e-9;
+parameter real assist_cool_s=50e-9;
+parameter integer assist_max_pulses=4;
+parameter real assist_limit_a=0.12;
+parameter real phase_limit_a=0.15;
+parameter real kpv=1.2;
+parameter real kiv=5e5;
+parameter real kpi=2.0;
+parameter real kii=2e5;
+parameter real sense_tau_s=150e-9;
+parameter real voltage_tau_s=100e-9;
+parameter integer diode_emulation=1;
+real vsoft,vf,i1f,i2f,vint,iint1,iint2,ev,ei1,ei2,ir,irraw;
+real d1,d2,d1raw,d2raw,feed,dtloop,iref_limit;
+real vh1,vl1,vh2,vl2,vup,vdn,drive,coord_bias;
+integer ticks,loopcount,nticks,dticks,ph1,ph2,on1,on2;
+integer hup,lup,h2up,l2up,aup,adn,assist_state,pulse_count,blocked1,blocked2,idle1,idle2,zero1,zero2,coord_state,coord_used_up,coord_used_dn;
+integer q_up,q_dn,p_end,c_end,q_start,cq_up,cq_dn,coord_end_tick,n_delay,n_pulse,n_cool,n_quiet,n_coord;
+analog begin
+ @(initial_step) begin
+  ticks=0;loopcount=0;vf=0;i1f=0;i2f=0;vint=0;iint1=0;iint2=0;
+  d1=0.05;d2=0.05;ir=0;vsoft=0;
+  vh1=V(vin);vl1=0;vh2=V(vin);vl2=0;vup=V(vin);vdn=0;
+  q_up=-1;q_dn=-1;p_end=-1;c_end=0;q_start=-1;assist_state=0;pulse_count=0;
+  blocked1=0;blocked2=0;idle1=1;idle2=1;on1=5;on2=5;
+  zero1=0;zero2=0;coord_state=0;coord_used_up=0;coord_used_dn=0;
+  coord_bias=0;coord_end_tick=-1;cq_up=-1;cq_dn=-1;
+  hup=0;lup=0;h2up=0;l2up=0;aup=0;adn=0;
+  // floor yields an integer-valued real before Cadence's real-to-int cast.
+  nticks=$rtoi(floor(1.0/(fsw*tick_s)+0.5));
+  dticks=$rtoi(floor(dead_s/tick_s+0.5));
+  n_delay=$rtoi(ceil(assist_delay_s/tick_s-1e-9));
+  n_pulse=$rtoi(floor(assist_pulse_s/tick_s+0.5));
+  n_cool=$rtoi(ceil(assist_cool_s/tick_s-1e-9));
+  n_quiet=$rtoi(floor(1e-6/tick_s+0.5));
+  n_coord=$rtoi(floor(2e-6/tick_s+0.5));
+  // Average-reference headroom below the separate instantaneous OC threshold.
+  iref_limit=0.75*phase_limit_a;
+ end
+ @(timer(0,tick_s)) begin
+  drive=V(vin);
+  vsoft=V(vreq)*min(1.0,$abstime/soft_s);
+  // Optional fast reference coordination: 1=bounded bias, 2=one state kick.
+  // Both use independently qualified real
+  // window flags, one bounded (<=2 us) episode per direction between quiet
+  // re-arms. Bias is outside vint; opposite flag/target crossing cancels it.
+  if(!assist_en || !assist_coord || $abstime<assist_blank_s) begin
+   coord_state=0;cq_up=-1;cq_dn=-1;coord_used_up=0;coord_used_dn=0;
+  end else begin
+   if(coord_state==1 && (ticks>=coord_end_tick || V(overraw)>0.6 || V(vload)>=V(vreq))) coord_state=0;
+   if(coord_state==-1 && (ticks>=coord_end_tick || V(dropraw)>0.6 || V(vload)<=V(vreq))) coord_state=0;
+   if(V(dropraw)>0.6 && V(overraw)<0.6) begin
+    if(cq_up<0) cq_up=ticks;
+    if(coord_state==0 && !coord_used_up && ticks-cq_up>=n_delay) begin
+     coord_state=1;coord_used_up=1;coord_end_tick=ticks+n_coord;
+     if(assist_coord==2) vint=max(-0.1,min(phases*iref_limit,vint+assist_boost_a));
+    end
+   end else cq_up=-1;
+   if(V(overraw)>0.6 && V(dropraw)<0.6) begin
+    if(cq_dn<0) cq_dn=ticks;
+    if(coord_state==0 && !coord_used_dn && ticks-cq_dn>=n_delay) begin
+     coord_state=-1;coord_used_dn=1;coord_end_tick=ticks+n_coord;
+     if(assist_coord==2) vint=max(-0.1,min(phases*iref_limit,vint-assist_boost_a));
+    end
+   end else cq_dn=-1;
+  end
+  coord_bias=(assist_coord==1)?coord_state*assist_boost_a:0;
+  loopcount=loopcount+1;
+  if(loopcount>=10) begin
+   loopcount=0;dtloop=10*tick_s;
+   vf=vf+(V(vload)-vf)*dtloop/(voltage_tau_s+dtloop);
+   i1f=i1f+(V(is1)-i1f)*dtloop/(sense_tau_s+dtloop);
+   i2f=i2f+(V(is2)-i2f)*dtloop/(sense_tau_s+dtloop);
+   ev=vsoft-vf;
+   irraw=kpv*ev+vint+coord_bias;
+   if(((irraw>0 && irraw<phases*iref_limit) || (irraw<=0 && ev>0) || (irraw>=phases*iref_limit && ev<0)) && !(blocked1 && (phases==1 || blocked2) && ev>0))
+    vint=vint+kiv*ev*dtloop;
+   vint=max(-0.1,min(phases*iref_limit,vint));
+   ir=max(0,min(phases*iref_limit,kpv*ev+vint+coord_bias));
+   feed=max(0.05,min(0.9,vsoft/max(drive,0.1)));
+   ei1=ir/phases-i1f;ei2=ir/phases-i2f;
+   d1raw=feed+kpi*ei1+iint1;
+   d2raw=feed+kpi*ei2+iint2;
+   if(((d1raw>0.05 && d1raw<0.9) || (d1raw<=0.05 && ei1>0) || (d1raw>=0.9 && ei1<0)) && !(blocked1 && ei1>0)) iint1=iint1+kii*ei1*dtloop;
+   if(((d2raw>0.05 && d2raw<0.9) || (d2raw<=0.05 && ei2>0) || (d2raw>=0.9 && ei2<0)) && !(blocked2 && ei2>0)) iint2=iint2+kii*ei2*dtloop;
+   iint1=max(-0.4,min(0.4,iint1));iint2=max(-0.4,min(0.4,iint2));
+   d1=max(0.05,min(0.9,feed+kpi*ei1+iint1));
+   d2=max(0.05,min(0.9,feed+kpi*ei2+iint2));
+  end
+  ph1=ticks%nticks;ph2=(ticks+nticks/2)%nticks;
+  // Latch duty at each phase's frame boundary; PI updates cannot move an edge.
+  if(ph1==0) begin on1=$rtoi(d1*nticks);blocked1=0;idle1=(ir<0.0005);zero1=0;end
+  if(ph2==0) begin on2=$rtoi(d2*nticks);blocked2=0;idle2=(ir<0.0005);zero2=0;end
+  // Zero-reference pulse skip is separate from the over-current latch:
+  // voltage-integrator recovery remains enabled while phases are idle.
+  // Once cut, a high-side pulse cannot restart inside the same PWM frame.
+  if(ir<0.0005) begin idle1=1;idle2=1;end
+  if(V(is1)>=phase_limit_a) blocked1=1;
+  if(V(is2)>=phase_limit_a) blocked2=1;
+  // Latch zero-current turn-off for the rest of each freewheel interval.
+  // Ringing across 1 mA cannot repeatedly re-enable a low-side gate.
+  if(ph1>=on1+dticks && V(is1)<=0.001) zero1=1;
+  if(ph2>=on2+dticks && V(is2)<=0.001) zero2=1;
+  hup=(ph1>=dticks && ph1<on1 && !blocked1 && !idle1);
+  lup=(ph1>=on1+dticks && (!diode_emulation || (!zero1 && V(is1)>0.001)));
+  h2up=(phases==2 && ph2>=dticks && ph2<on2 && !blocked2 && !idle2);
+  l2up=(phases==2 && ph2>=on2+dticks && (!diode_emulation || (!zero2 && V(is2)>0.001)));
+  if(vsoft<0.02) begin hup=0;lup=0;h2up=0;l2up=0;end
+  vh1=hup?0:drive;vl1=lup?drive:0;
+  vh2=h2up?0:drive;vl2=l2up?drive:0;
+  if(!assist_en || $abstime<assist_blank_s) begin
+   assist_state=0;q_up=-1;q_dn=-1;pulse_count=0;
+  end else begin
+   // Re-arm only after one microsecond continuously inside the window.
+   // A comparator glitch cannot reset the four-pulse energy budget.
+   if(V(dropraw)<0.6 && V(overraw)<0.6 && assist_state==0 && coord_state==0) begin
+    if(q_start<0) q_start=ticks;
+    if(ticks-q_start>=n_quiet && coord_state==0) begin
+     pulse_count=0;coord_used_up=0;coord_used_dn=0;
+    end
+   end else q_start=-1;
+   if(assist_state==1 && (ticks>=p_end || V(iasup)>=assist_limit_a || V(overraw)>0.6 || V(dropraw)<0.6)) begin
+    assist_state=0;c_end=ticks+n_cool;q_up=-1;
+   end
+   if(assist_state==-1 && (ticks>=p_end || V(iasdn)>=assist_limit_a || V(dropraw)>0.6 || V(overraw)<0.6)) begin
+    assist_state=0;c_end=ticks+n_cool;q_dn=-1;
+   end
+   if(assist_state==0 && ticks>=c_end && pulse_count<assist_max_pulses) begin
+    if(V(dropraw)>0.6 && V(overraw)<0.6) begin
+     if(q_up<0) q_up=ticks;
+     if(ticks-q_up>=n_delay) begin assist_state=1;p_end=ticks+n_pulse;pulse_count=pulse_count+1;end
+    end else q_up=-1;
+    if(V(overraw)>0.6 && V(dropraw)<0.6) begin
+     if(q_dn<0) q_dn=ticks;
+     if(ticks-q_dn>=n_delay) begin assist_state=-1;p_end=ticks+n_pulse;pulse_count=pulse_count+1;end
+    end else q_dn=-1;
+   end
+  end
+  aup=(assist_state==1);adn=(assist_state==-1);
+  ticks=ticks+1;
+ end
+ // Filter only sampled binary states. The ideal command amplitude tracks VIN.
+ V(cmdh1)<+V(vin)*(1-transition(hup,0,0.5e-9,0.5e-9));
+ V(cmdl1)<+V(vin)*transition(lup,0,0.5e-9,0.5e-9);
+ V(cmdh2)<+V(vin)*(1-transition(h2up,0,0.5e-9,0.5e-9));
+ V(cmdl2)<+V(vin)*transition(l2up,0,0.5e-9,0.5e-9);
+ V(cmdup)<+V(vin)*(1-transition(aup,0,0.5e-9,0.5e-9));
+ V(cmddn)<+V(vin)*transition(adn,0,0.5e-9,0.5e-9);
+ // Isolated debug ports do not drive circuitry. No physical DAC is implied.
+ V(vset)<+V(vreq)*min(1.0,$abstime/soft_s);
+ V(iref)<+ir;
+ V(duty1)<+d1;
+ V(duty2)<+d2;
+end
+endmodule
+
+// Ideal zero-drop current transducer. Sense voltage uses a declared 1 V/A gain.
+// Its circuit implementation and power are not modeled in this revision.
+module buck_sense(p,n,sense);
+inout p,n,sense;
+electrical p,n,sense;
+analog begin
+ V(p,n)<+0;
+ V(sense)<+I(p,n);
+end
+endmodule

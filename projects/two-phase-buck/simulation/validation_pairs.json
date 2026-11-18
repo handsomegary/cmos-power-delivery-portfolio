@@ -1,0 +1,148 @@
+{
+  "pairs": [
+    {
+      "name": "v3_nom100",
+      "baseline": "v3_nom100_off",
+      "variant": "v3_nom100_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_local_only_ablation",
+      "baseline": "v3_nom100_off",
+      "variant": "v3_nom100_local",
+      "scope": "local MOS charge assist only"
+    },
+    {
+      "name": "v3_small30",
+      "baseline": "v3_small30_off",
+      "variant": "v3_small30_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_nom10_p0",
+      "baseline": "v3_nom10_p0_off",
+      "variant": "v3_nom10_p0_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_nom10_p1",
+      "baseline": "v3_nom10_p1_off",
+      "variant": "v3_nom10_p1_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_nom10_p2",
+      "baseline": "v3_nom10_p2_off",
+      "variant": "v3_nom10_p2_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_nom10_p3",
+      "baseline": "v3_nom10_p3_off",
+      "variant": "v3_nom10_p3_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_pdn_hard_p0",
+      "baseline": "v3_pdn_hard_p0_off",
+      "variant": "v3_pdn_hard_p0_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_pdn_hard_p1",
+      "baseline": "v3_pdn_hard_p1_off",
+      "variant": "v3_pdn_hard_p1_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_pdn_short",
+      "baseline": "v3_pdn_short_off",
+      "variant": "v3_pdn_short_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_vin16",
+      "baseline": "v3_vin16_off",
+      "variant": "v3_vin16_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_vin20",
+      "baseline": "v3_vin20_off",
+      "variant": "v3_vin20_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_ffm40",
+      "baseline": "v3_ffm40_off",
+      "variant": "v3_ffm40_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_ss125",
+      "baseline": "v3_ss125_off",
+      "variant": "v3_ss125_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_ttm40",
+      "baseline": "v3_ttm40_off",
+      "variant": "v3_ttm40_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_tt125",
+      "baseline": "v3_tt125_off",
+      "variant": "v3_tt125_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_ff27",
+      "baseline": "v3_ff27_off",
+      "variant": "v3_ff27_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_ss27",
+      "baseline": "v3_ss27_off",
+      "variant": "v3_ss27_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_fnsp27",
+      "baseline": "v3_fnsp27_off",
+      "variant": "v3_fnsp27_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_snfp27",
+      "baseline": "v3_snfp27_off",
+      "variant": "v3_snfp27_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_cout470n",
+      "baseline": "v3_cout470n_off",
+      "variant": "v3_cout470n_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_fine10",
+      "baseline": "v3_fine10_off",
+      "variant": "v3_fine10_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_fine_pdn",
+      "baseline": "v3_fine_pdn_off",
+      "variant": "v3_fine_pdn_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    },
+    {
+      "name": "v3_line100",
+      "baseline": "v3_line100_off",
+      "variant": "v3_line100_on",
+      "scope": "local MOS charge assist plus one qualified sampled current-reference state handoff"
+    }
+  ]
+}

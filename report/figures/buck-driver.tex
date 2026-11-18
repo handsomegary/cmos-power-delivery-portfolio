@@ -1,0 +1,45 @@
+\begin{circuitikz}[american,font=\sffamily\bfseries\small]
+  \node at (4.4,6.35) {Driver template $X$: two cascaded inverters};
+  \node[pmos] (p1) at (2.5,4.35) {};
+  \node[nmos] (n1) at (2.5,1.7) {};
+  \node[pmos] (p2) at (6.3,4.35) {};
+  \node[nmos] (n2) at (6.3,1.7) {};
+  \draw (p1.S) -- (2.5,5.15) -- (6.3,5.15) -- (p2.S);
+  \draw (4.4,5.15) to[short,*-] (4.4,5.5) node[above] {$V_{\mathrm{IN}}$};
+  \draw (n1.S) -- (2.5,.8) -- (6.3,.8) -- (n2.S);
+  \draw (4.4,.8) to[short,*-] (4.4,.4) node[ground] {};
+  \draw (p1.D) -- (2.5,3) -- (n1.D);
+  \draw (p2.D) -- (6.3,3) -- (n2.D);
+  \draw (p1.G) -- (1.25,4.35) -- (1.25,1.7) -- (n1.G);
+  \draw (.2,3) -- (1.25,3) node[circ] {};
+  \node[left] at (.2,3) {$V_{\mathrm{CMD}}$};
+  \draw (p2.G) -- (4.9,4.35) -- (4.9,1.7) -- (n2.G);
+  \draw (2.5,3) to[short,*-*] (4.9,3);
+  \node[above] at (3.6,3) {$V_{X,\mathrm{MID}}$};
+  \draw (6.3,3) to[short,*-] (8,3) node[right] {$V_G$};
+  \node[right] at (2.85,4.35) {$P_1$};
+  \node[right] at (2.85,1.7) {$N_1$};
+  \node[right] at (6.65,4.35) {$P_2$};
+  \node[right] at (6.65,1.7) {$N_2$};
+  \node[anchor=north,font=\sffamily\small] at (4.4,-.35) {\begin{tabular}{lllll}
+  \textbf{Instance suffix} & $W_{\mathrm{unit}}/L\ (\mathrm{\mu m})$ & $m$ & $n_f$ & $W_{\mathrm{total}}\ (\mathrm{\mu m})$\\\hline
+  \_P1 & $8/0.5$ & $2$ & $1$ & $16$\\
+  \_N1 & $4/0.5$ & $2$ & $1$ & $8$\\
+  \_P2 & $20/0.5$ & $20$ & $1$ & $400$\\
+  \_N2 & $10/0.5$ & $20$ & $1$ & $200$\\
+  \end{tabular}};
+  \node[anchor=north,font=\sffamily\small] at (4.4,-2.4) {\begin{tabular}{llll}
+  \textbf{Prefix $X$} & $V_{\mathrm{CMD}}$ & $V_{X,\mathrm{MID}}$ & $V_G$\textbf{ (r8)}\\\hline
+  DH1 & CMDH1 & DH1\_MID & GH1\\
+  DH2 & CMDH2 & DH2\_MID & GH2\\
+  DL1 & CMDL1 & DL1\_MID & GL1\\
+  DL2 & CMDL2 & DL2\_MID & GL2\\
+  DAU & CMDUP & DAU\_MID & GBUP\\
+  DAD & CMDDN & DAD\_MID & GBDN\\
+  \end{tabular}};
+  \node[align=center] at (4.4,-6.5)
+    {Six templates $\times$ four named MOS = 24 MOS.\\
+    PMOS bulks: $V_{\mathrm{IN}}$; NMOS bulks: ground.\\
+    r9: DAU / DAD outputs become GBUP\_DRV / GBDN\_DRV;\\
+    $1\,\mathrm{k\Omega}$ / $2\,\mathrm{k\Omega}$ connect them to GBUP / GBDN.};
+\end{circuitikz}

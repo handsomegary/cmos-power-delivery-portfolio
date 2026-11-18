@@ -1,0 +1,22 @@
+% Shared American CircuitikZ drawing profile.
+\ctikzset{
+  transistors/scale=0.8,
+  resistors/scale=0.5,
+  capacitors/scale=0.5,
+  sources/scale=0.8,
+  logic ports/scale=0.6,
+  flipflops/scale=0.6,
+  tripoles/mos style=arrows,
+  transistors/arrow pos=end,
+  amplifiers/scale=0.7,
+  blocks/scale=0.7
+}
+\ctikzset{bipoles/thickness=1.25,tripoles/thickness=1.25}
+\newcommand{\PMICfigurefont}{\sffamily\bfseries}
+\tikzset{every picture/.append style={line width=.60pt,
+  >={Triangle[length=3pt,width=3pt]},
+  execute at begin picture={\PMICfigurefont}},
+  pmic block/.style={draw=black,fill=white,line width=.85pt,
+    rounded corners=0pt,align=center,font=\PMICfigurefont\small},
+  pmic group/.style={draw=black!40,fill=black!5,line width=.4pt},
+  pmic wire/.style={draw=black,line width=.60pt}}

@@ -1,0 +1,48 @@
+[
+  {
+    "name": "load_up_1",
+    "edge_start_s": 5e-06,
+    "edge_end_s": 5.01e-06,
+    "pre_window_s": [
+      4.49e-06,
+      4.9900000000000005e-06
+    ],
+    "post_window_s": [
+      2.7492e-05,
+      2.9990000000000003e-05
+    ],
+    "analysis_window_s": [
+      5e-06,
+      2.9990000000000003e-05
+    ],
+    "pre_dc_role": "pre",
+    "post_dc_role": "high",
+    "tail_fit_window_s": [
+      1.7500000000000002e-05,
+      2.9990000000000003e-05
+    ]
+  },
+  {
+    "name": "load_down_2",
+    "edge_start_s": 3e-05,
+    "edge_end_s": 3.001e-05,
+    "pre_window_s": [
+      2.7491e-05,
+      2.9990000000000003e-05
+    ],
+    "post_window_s": [
+      5.7001e-05,
+      6e-05
+    ],
+    "analysis_window_s": [
+      3e-05,
+      6e-05
+    ],
+    "pre_dc_role": "high",
+    "post_dc_role": "post",
+    "tail_fit_window_s": [
+      4.5005e-05,
+      6e-05
+    ]
+  }
+]

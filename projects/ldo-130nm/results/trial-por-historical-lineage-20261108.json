@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "record_id": "LDO_trial_POR_v1_20261022",
+  "recorded_on": "2026-11-08",
+  "historical_experiment_date": "2026-10-22",
+  "status": "historical_evidence_recorded_exact_replay_preparation",
+  "parent": {
+    "native_base_sha256": "f8ad18f77c524ad5174806f1860fe9e292b797955982380ca0665b6bd4ccd8dd",
+    "existing_MOS_count": 13,
+    "existing_core_R_C_changed": false
+  },
+  "reason": {
+    "classification": "contemporaneous_explicit",
+    "documented": "Existing hard limits unchanged. Study isolates startup repair while separate real-native compensation profiles are prepared. Native full-network QZ proof pending simulator crash repair.",
+    "bounded_scope": "POR feasibility only on real-r8 baseline; 13existingMOS and nativeR/C unchanged; NSTART exact callback clone, only newPOR R/C idealtargets"
+  },
+  "predeclared_changes": [
+    {
+      "candidate": "CTRL",
+      "POR_added": false,
+      "MOS_count": 13
+    },
+    {
+      "candidate": "POR1US",
+      "POR_added": true,
+      "added_MOS": "NSTART exact callback clone",
+      "MOS_count": 14,
+      "POR_R_ohm": 500000,
+      "POR_C_F": 2e-12,
+      "nominal_RC_us": 1
+    },
+    {
+      "candidate": "POR2US",
+      "POR_added": true,
+      "added_MOS": "NSTART exact callback clone",
+      "MOS_count": 14,
+      "POR_R_ohm": 1000000,
+      "POR_C_F": 2e-12,
+      "nominal_RC_us": 2
+    }
+  ],
+  "new_POR_R_C_scope": "Ideal feasibility targets, not verified native implementation.",
+  "original_analysis": {
+    "validated_cases": 27,
+    "expected_cases": 27,
+    "startup_corner": "SS125 light",
+    "startup_supply_rise_us": 1,
+    "startup_limits": {
+      "overshoot_mV_max": 125,
+      "recovery_us_max": 10
+    },
+    "startup_observations": [
+      {
+        "candidate": "CTRL",
+        "case": "r9por_CTRL_startup_ss125_light",
+        "overshoot_mv": 164.04276214498103,
+        "startup_sampled_limits_pass": false,
+        "input_sha256": "1c9dd6fdfd95b0f5a22af1149291648916aab446a54b3b1391ee1ee364b13cc3",
+        "raw_sha256": "ba020f68c43487f828e797d581371473d37c7b9891f3ff668a2fe4ca99434258",
+        "recovery_us": 2.2435016696822867,
+        "recovery_status": "computed_estimate"
+      },
+      {
+        "candidate": "POR1US",
+        "case": "r9por_POR1US_startup_ss125_light",
+        "overshoot_mv": 23.669923186350307,
+        "startup_sampled_limits_pass": true,
+        "input_sha256": "d5841b6fdaedbe11052e8f2dae72a1e2792bc7897a48f0e0dc40d2b8faa09fd3",
+        "raw_sha256": "e2e0e46910577d1753cd1573ffe037ddb924b1e71a68ab05fbdc61995ea3d5b3",
+        "recovery_us": 2.524418763017932,
+        "recovery_status": "computed_estimate"
+      },
+      {
+        "candidate": "POR2US",
+        "case": "r9por_POR2US_startup_ss125_light",
+        "overshoot_mv": 1.2118078261590393,
+        "startup_sampled_limits_pass": true,
+        "input_sha256": "0612352190d645c8280189bc5b976835a70c716ef6a5e96941f0ccfded5c44c5",
+        "raw_sha256": "7387a4dc6743186a0fe2d4066707d8fcd865c1e40d2d87767d7c0f264683006b",
+        "recovery_us": 2.765200617502058,
+        "recovery_status": "computed_estimate"
+      }
+    ],
+    "all_sampled_terminals_within_1p2V": true,
+    "terminal_scope": "Actual six terminal pairs at saved samples; no reliability signoff or full powerdown characterization.",
+    "formal_qualification": false
+  },
+  "preserved_baseline_failures": [
+    "Real-r8 SS125heavyPSRR100k9.0225dB<10",
+    "Real-r8 SS12510ns under127.145mV/over136.376mV/uprecovery2.880us",
+    "Real-r8 startup light overshootTT135mV/SS164mV/FF116mV"
+  ],
+  "observations_vs_inference": {
+    "observed": "Longer nominal POR RC reduced this SS125-light startup overshoot while increasing measured recovery. CTRL failed its original125mV startup peak limit; both ideal-POR trials passed the two sampled startup limits.",
+    "not_proven": "Whole-design qualification, all-PVT POR behavior, native POR R/C implementation, repair of the separate PSRR/heavy-load failures, or a selected final POR winner."
+  },
+  "decision": "Preserve bounded feasibility result and original failed flags; keep formal qualification false. Record exact historical cases for replay; no new design adjustment or inferred selection.",
+  "first_actual_bulk_replay": {
+    "case": "r9por_CTRL_line_tt27_light",
+    "CTRL_has_POR": false,
+    "input_sha256": "b480e43e35b48fb2268a6de0727ea02a2a6a189113b254963b78c790cea3f3a6",
+    "original_raw_sha256": "0c6cd20a58e8fe424ac64c9bfe8c97f7c3475ad4e4a31e3be80d0b1cfe4225fd",
+    "original_raw_bytes": 8225219,
+    "original_simulator_build": "18.1.0.077",
+    "condition": "TT27C,0.1mA,ideal1nF,0.45V reference,VIN1.15↔1.2V,100ns edges,30us,2ns maxstep,17 saved signals.",
+    "original_line_events": [
+      {
+        "name": "line_up_1",
+        "minimum_V": 0.9004910685016071,
+        "maximum_V": 0.9224102786465819,
+        "recovery": {
+          "band_center_v": 0.9,
+          "band_crossing_bracket": {
+            "first_saved_or_boundary_sample_inside_s": 6.040332031006923e-06,
+            "time_s": [
+              6.038332031006923e-06,
+              6.040332031006923e-06
+            ],
+            "vout_v": [
+              0.9090123438607305,
+              0.9089862659340585
+            ],
+            "width_s": 2.0000000000001503e-09
+          },
+          "band_half_width_v": 0.009000000000000001,
+          "band_v": [
+            0.891,
+            0.909
+          ],
+          "from_edge_end_s": 9.392787213543357e-07,
+          "from_edge_start_s": 1.0392787213543356e-06,
+          "method": "last_outside_sample_then_linear_boundary_interpolation",
+          "observation_end_s": 1.49e-05,
+          "precision_note": "linear-interpolant estimate within saved-point bracket; no substep physical accuracy claim",
+          "qualification": "remains_in_band_only_until_observation_end",
+          "recovered_at_s": 6.039278721354336e-06,
+          "status": "computed_estimate",
+          "unit": "s",
+          "value": 9.392787213543357e-07
+        }
+      },
+      {
+        "name": "line_down_2",
+        "minimum_V": 0.8810737199155819,
+        "maximum_V": 0.9005288857249415,
+        "recovery": {
+          "band_center_v": 0.9,
+          "band_crossing_bracket": {
+            "first_saved_or_boundary_sample_inside_s": 1.605145318997143e-05,
+            "time_s": [
+              1.604945318997143e-05,
+              1.605145318997143e-05
+            ],
+            "vout_v": [
+              0.8909798176117433,
+              0.8910067742144686
+            ],
+            "width_s": 2.0000000000009973e-09
+          },
+          "band_half_width_v": 0.009000000000000001,
+          "band_v": [
+            0.891,
+            0.909
+          ],
+          "from_edge_end_s": 9.509505884724502e-07,
+          "from_edge_start_s": 1.0509505884724492e-06,
+          "method": "last_outside_sample_then_linear_boundary_interpolation",
+          "observation_end_s": 3e-05,
+          "precision_note": "linear-interpolant estimate within saved-point bracket; no substep physical accuracy claim",
+          "qualification": "remains_in_band_only_until_observation_end",
+          "recovered_at_s": 1.605095058847245e-05,
+          "status": "computed_estimate",
+          "unit": "s",
+          "value": 9.509505884724502e-07
+        }
+      }
+    ],
+    "original_transient_performance_verdict": "not_assigned; completion/time/source+observations, no automatic electricalqualification",
+    "original_cross_version_numeric_tolerances": null,
+    "analysis_limit": "Use the actual13-MOS original contract; do not import later v32 201-node/402-PEX gates or its1mV/20ns/2mV bridge thresholds.",
+    "status": "preparation_no_new_result_or_local_deletion_claim",
+    "local_deletion_performed": false
+  },
+  "evidence": [
+    {
+      "original_project_relative_path": "outputs/ldo_closure_20261022/circuit/trial_por_v1/manifest.json",
+      "sha256": "c64db94ec5368a976140196e741f0e73854bc3db58d2566f07874362c454ffe0"
+    },
+    {
+      "original_project_relative_path": "outputs/ldo_closure_20261022/circuit/trial_por_v1/review_complete27_actual_v1/por_feasibility_review.json",
+      "sha256": "cd0c96bdd9f9ec87ae372ffa3014ca2b696073fc0a56dacdf8f9328d1c0a0179"
+    },
+    {
+      "original_project_relative_path": "outputs/ldo_closure_20261022/circuit/analyze_por_trial_v1.py",
+      "sha256": "18c173d3a890e1e8017f3bb3900f643446674c0282ee6ad8d1c3e5bd92bfeeda"
+    }
+  ],
+  "evidence_note": "Only selected aggregate historical facts/hashes are published; original netlists, device cards, PDK and private run locations are excluded."
+}

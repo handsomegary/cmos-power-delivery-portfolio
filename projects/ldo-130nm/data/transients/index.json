@@ -1,0 +1,42 @@
+[
+  {
+    "case": "r6_load_C1000_T100",
+    "directory": "data/transients/r6_load_C1000_T100"
+  },
+  {
+    "case": "r6_load_C1000_T10",
+    "directory": "data/transients/r6_load_C1000_T10"
+  },
+  {
+    "case": "r6_convergence_T100_step2p5ns",
+    "directory": "data/transients/r6_convergence_T100_step2p5ns"
+  },
+  {
+    "case": "r6_convergence_T10_step0p5ns",
+    "directory": "data/transients/r6_convergence_T10_step0p5ns"
+  },
+  {
+    "case": "r6_line_light",
+    "directory": "data/transients/r6_line_light"
+  },
+  {
+    "case": "r6_line_heavy",
+    "directory": "data/transients/r6_line_heavy"
+  },
+  {
+    "case": "r6_corner_tran_ff_m40",
+    "directory": "data/transients/r6_corner_tran_ff_m40"
+  },
+  {
+    "case": "r6_corner_tran_ff_125",
+    "directory": "data/transients/r6_corner_tran_ff_125"
+  },
+  {
+    "case": "r6_corner_tran_ss_m40",
+    "directory": "data/transients/r6_corner_tran_ss_m40"
+  },
+  {
+    "case": "r6_corner_tran_ss_125",
+    "directory": "data/transients/r6_corner_tran_ss_125"
+  }
+]
